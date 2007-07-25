@@ -1,6 +1,9 @@
 import gobject
 import gtk
 import gtk.glade
+from menu import *
+from xml.sax import make_parser
+from xml.sax.handler import feature_namespaces
 
 # Trait columns
 (
@@ -23,31 +26,33 @@ availableTraits = {
 	]
 }
 
-grapevine_xml_file = '/home/lorien/Documents/Grapevine.glade'
-traitbox_xml_file  = '/home/lorien/Documents/TraitBox.glade'
+grapevine_xml_file = '/home/lorien/tmp/crapvine/interface/Grapevine.glade'
+traitbox_xml_file  = '/home/lorien/tmp/crapvine/interface/TraitBox.glade'
 
 globally_focused_traitbox = None
 
 menu_path = []
 
+overlord = MenuLoader()
+
 def create_available_traits_model():
 	model = gtk.ListStore(
 		gobject.TYPE_STRING,
-		gobject.TYPE_INT,
+		gobject.TYPE_STRING,
 		gobject.TYPE_STRING
 	)
 	return model
 
 def populate_traits_model(model, trait_category='Physical'):
-	if trait_category not in availableTraits:
-		trait_category = 'Physical'
-	for item in availableTraits[trait_category]:
-		iter = model.append()
-		model.set(iter,
-			COLUMN_NAME, item[COLUMN_NAME],
-			COLUMN_VALUE, item[COLUMN_VALUE],
-			COLUMN_NOTE, item[COLUMN_NOTE]
-		)
+	if overlord.has_menu(trait_category):
+		menu = overlord.menus[trait_category]
+		for item in menu.items:
+			iter = model.append()
+			model.set(iter,
+				COLUMN_NAME, item.name,
+				COLUMN_VALUE, item.name,
+				COLUMN_NOTE, item.name
+			)
 
 def add_trait_to_current_traitbox():
 	print globally_focused_traitbox
@@ -72,11 +77,13 @@ def set_main_trait_tree(widget):
 	print widget
 
 class SingleTraitBox:
-	def __init__(self, trait_menu_name):
+	def __init__(self, trait_menu_name, trait_display_name):
 		self.xml = gtk.glade.XML(traitbox_xml_file, 'traitbox')
 		self.vbox = self.xml.get_widget('traitbox')
 		self.title = self.xml.get_widget('lblTraitBoxTitle')
 		self.tree = self.xml.get_widget('treeTraits')
+		self.trait_menu_name = trait_menu_name
+		self.trait_display_name = trait_display_name
 
 		model = create_available_traits_model()
 		populate_traits_model(model, trait_menu_name)
@@ -99,8 +106,7 @@ class SingleTraitBox:
 
 		self.tree.connect('cursor-changed', self.set_traitbox_focus)
 
-		self.trait_menu_name = trait_menu_name
-		self.title.set_label(self.trait_menu_name)
+		self.title.set_label(self.trait_display_name)
 
 		self.xml.signal_autoconnect({
 			'on_add_to_trait': self.on_add_to_trait,
@@ -135,6 +141,11 @@ def set_trait_menu(trait_category='Physical'):
 	populate_traits_model(model, trait_category)
 	treeMenu.set_model(model)
 
+parser = make_parser()
+parser.setFeature(feature_namespaces, 0)
+parser.setContentHandler(overlord)
+parser.parse('/home/lorien/tmp/crapvine/menus.gvm')
+
 xml = gtk.glade.XML(grapevine_xml_file)
 
 treeMenu = xml.get_widget('treeMenu')
@@ -149,21 +160,21 @@ column = gtk.TreeViewColumn("Name", renderer, text=COLUMN_NAME)
 treeMenu.append_column(column)
 
 vpane = xml.get_widget('physicalsPaned')
-my_vbox = SingleTraitBox("Physical")
+my_vbox = SingleTraitBox('Physical', 'Physicals')
 vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox("Negative Physical")
+my_vbox = SingleTraitBox('Negative Physical', 'Negative Physicals')
 vpane.pack2(my_vbox.get_vbox(), True, True)
 
 vpane = xml.get_widget('socialsPaned')
-my_vbox = SingleTraitBox("Social")
+my_vbox = SingleTraitBox('Social', 'Socials')
 vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox("Negative Social")
+my_vbox = SingleTraitBox('Negative Social', 'Negative Socials')
 vpane.pack2(my_vbox.get_vbox(), True, True)
 
 vpane = xml.get_widget('mentalsPaned')
-my_vbox = SingleTraitBox("Mental")
+my_vbox = SingleTraitBox('Mental', 'Mentals')
 vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox("Negative Mental")
+my_vbox = SingleTraitBox('Negative Mental', 'Negative Mentals')
 vpane.pack2(my_vbox.get_vbox(), True, True)
 
 window = xml.get_widget('winCharacter')
