@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Tue Jul 24 00:17:57 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Tue Jul 24 18:59:24 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="winCharacter">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -60,7 +60,8 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                    <property name="label" translatable="yes">Add</property>
+                    <property name="label" translatable="yes">_Add</property>
+                    <property name="use_underline">True</property>
                     <property name="response_id">0</property>
                     <signal name="clicked" handler="on_btnAddTrait_clicked"/>
                   </widget>
@@ -75,7 +76,8 @@
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                    <property name="label" translatable="yes">Remove</property>
+                    <property name="label" translatable="yes">Re_move</property>
+                    <property name="use_underline">True</property>
                     <property name="response_id">0</property>
                     <signal name="clicked" handler="on_btnRemoveTrait_clicked"/>
                   </widget>
@@ -86,12 +88,13 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkButton" id="button3">
+                  <widget class="GtkButton" id="btnAddNoteToEntry">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                    <property name="label" translatable="yes">button</property>
+                    <property name="label" translatable="yes">Add _Note to Entry</property>
+                    <property name="use_underline">True</property>
                     <property name="response_id">0</property>
                   </widget>
                   <packing>
@@ -101,12 +104,13 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkButton" id="button4">
+                  <widget class="GtkButton" id="btnCustomEntry">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                    <property name="label" translatable="yes">button</property>
+                    <property name="label" translatable="yes">_Custom Entry</property>
+                    <property name="use_underline">True</property>
                     <property name="response_id">0</property>
                   </widget>
                   <packing>
