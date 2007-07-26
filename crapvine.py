@@ -35,6 +35,14 @@ menu_path = []
 
 overlord = MenuLoader()
 
+class MenuNavigator:
+	def __init__(self):
+		pass
+
+	def __create_menu_model():
+		pass
+
+
 def create_available_traits_model():
 	model = gtk.ListStore(
 		gobject.TYPE_STRING,
@@ -55,13 +63,14 @@ def populate_traits_model(model, trait_category='Physical'):
 			)
 
 def add_trait_to_current_traitbox():
-	print globally_focused_traitbox
 	model = globally_focused_traitbox.tree.get_model()
 	iter = model.append()
 	(mainModel, selIter) = treeMenu.get_selection().get_selected()
-	for num in range(3):
-		print mainModel.get_value(selIter, num)
-		model.set(iter, num, mainModel.get_value(selIter, num))
+	path = mainModel.get_path(selIter)
+	trait = mainModel.get_trait(path[0])
+	model.set(iter, 0, trait.name)
+	model.set(iter, 1, trait.cost)
+	model.set(iter, 2, trait.note)
 
 def on_btnAddTrait_clicked(widget):
 	add_trait_to_current_traitbox()
@@ -137,8 +146,7 @@ class SingleTraitBox:
 
 def set_trait_menu(trait_category='Physical'):
 	treeMenu = xml.get_widget('treeMenu')
-	model = create_available_traits_model()
-	populate_traits_model(model, trait_category)
+	model = MenuModel(overlord.menus[trait_category])
 	treeMenu.set_model(model)
 
 parser = make_parser()
@@ -149,14 +157,14 @@ parser.parse('/home/lorien/tmp/crapvine/menus.gvm')
 xml = gtk.glade.XML(grapevine_xml_file)
 
 treeMenu = xml.get_widget('treeMenu')
-model = create_available_traits_model()
-populate_traits_model(model)
+menu = overlord.menus['Physical']
+model = MenuModel(overlord.menus['Physical'])
 treeMenu.set_model(model)
 
 renderer = gtk.CellRendererText()
 renderer.set_data("column", COLUMN_NAME)
 
-column = gtk.TreeViewColumn("Name", renderer, text=COLUMN_NAME)
+column = gtk.TreeViewColumn("Name", renderer, text=0)
 treeMenu.append_column(column)
 
 vpane = xml.get_widget('physicalsPaned')
