@@ -58,8 +58,8 @@ def populate_traits_model(model, trait_category='Physical'):
 			iter = model.append()
 			model.set(iter,
 				COLUMN_NAME, item.name,
-				COLUMN_VALUE, item.name,
-				COLUMN_NOTE, item.name
+				COLUMN_VALUE, item.cost,
+				COLUMN_NOTE, item.note
 			)
 
 def add_trait_to_current_traitbox():
@@ -198,5 +198,8 @@ xml.signal_autoconnect({
 )
 
 print "Muahaha"
+
+blahmen = overlord.menus['Flaws, Vampire']
+print blahmen.get_xml('   ')
 
 gtk.main()

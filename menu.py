@@ -20,13 +20,52 @@ class MenuLoader(ContentHandler):
 
 	def startElement(self, name, attrs):
 		if name == 'menu':
-			self.current_menu = Menu(attrs.get('name'), attrs.get('category'), attrs.get('abc'), attrs.get('required'), attrs.get('display'))
+			if not attrs.has_key('name'):
+				return
+			menu = Menu(attrs.get('name'))
+			for aname in attrs.keys():
+				if aname == 'category':
+					menu.category = attrs.get('category')
+				elif aname == 'abc':
+					abc = attrs.get('abc')
+					if abc == 'yes':
+						menu.alphabetical = True
+				elif aname == 'required':
+					required = attrs.get('required')
+					if required == 'yes':
+						menu.required = True
+				elif aname == 'display':
+					menu.display = attrs.get('display')
+				elif aname == 'autonote':
+					autonote = attrs.get('autonote')
+					if autonote == 'yes':
+						menu.autonote = True
+				elif aname == 'negative':
+					negative = attrs.get('negative')
+					if negative == 'yes':
+						menu.negative = True
+			self.current_menu = menu
 
 		elif name == 'item':
-			self.current_menu.add_item(MenuItem(attrs.get('name'), attrs.get('cost'), attrs.get('note')))
+			if not attrs.has_key('name'):
+				return
+			item = MenuItem(attrs.get('name'))
+			for aname in attrs.keys():
+				if aname == 'cost':
+					item.cost = attrs.get('cost')
+				elif aname == 'note':
+					item.note = attrs.get('note')
+			self.current_menu.add_item(item)
 
-		elif name == 'submenu':
-			self.current_menu.add_item(MenuLink(attrs.get('name'), attrs.get('link')))
+		elif name == 'submenu' or name == 'include':
+			if not attrs.has_key('name'):
+				return
+			link = MenuReference(name, attrs.get('name'))
+			if attrs.has_key('link'):
+				link.reference = attrs.get('link')
+			else:
+				link.reference = link.name
+			self.current_menu.add_item(link)
 
 	def endElement(self, name):
 		if name == 'menu':
@@ -34,16 +73,40 @@ class MenuLoader(ContentHandler):
 			self.current_menu = None
 
 class Menu:
-	def __init__(self, name, category="0", alphabetical=False, required=False, display='0'):
+	""" Note that negative is whether they values should be calculated as a negative value when computing the base character spend points """
+	def __init__(self, name, category='1', alphabetical=False, required=False, display='0', negative=False, autonote=False):
 		self.name = name
 		self.category = category
 		self.alphabetical = alphabetical
 		self.required = required
 		self.display = display
+		self.negative = negative
+		self.autonote = autonote
 		self.items = []
 
 	def add_item(self, item):
 		self.items.append(item)
+
+	def get_xml(self, indent):
+		outs = ['%s<menu name="%s"' % (indent, self.name)]
+		if not self.category == '1':
+			outs.append('category="%s"' % (self.category))
+		if self.alphabetical:
+			outs.append('abc="yes"')
+		if self.negative:
+			outs.append('negative="yes"')
+		if self.required:
+			outs.append('required="yes"')
+		if self.autonote:
+			outs.append('autonote="yes"')
+		outs.append('display="%s"' % (self.display))
+		outs.append(">\n")
+		local_indent = '%s   ' % (indent)
+		for item in self.items:
+			outs.append(item.get_xml(local_indent))
+		outs.append('%s<menu/>' % (indent))
+		outs.append("\n")
+		return ' '.join(outs)
 
 class MenuItem:
 	def __init__(self, name, cost='1', note=''):
@@ -51,10 +114,27 @@ class MenuItem:
 		self.cost = cost
 		self.note = note
 
-class MenuLink:
-	def __init__(self, name, reference):
+	def get_xml(self, indent):
+		outs = ['%s<item name="%s"' % (indent, self.name)]
+		if not self.cost == '1':
+			outs.append('cost="%s"' % (self.cost))
+		if not self.note == '':
+			outs.append('note="%s"' % (self.note))
+		outs.append("/>\n")
+		return ' '.join(outs)
+
+class MenuReference:
+	def __init__(self, tagname, name, reference=''):
 		self.name = name
 		self.reference = reference
+		self.tagname = tagname
+
+	def get_xml(self, indent):
+		outs = ['%s<%s name="%s"' % (indent, self.tagname, self.name)]
+		if self.reference != self.name:
+			outs.append('link="%s"' % (self.reference))
+		outs.append("/>\n")
+		return ' '.join(outs)
 
 class MenuModel(gtk.GenericTreeModel):
 	def __init__(self, menu):
