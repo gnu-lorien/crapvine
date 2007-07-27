@@ -4,13 +4,7 @@ import gtk.glade
 from menu import *
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
-
-# Trait columns
-(
-	COLUMN_NAME,
-	COLUMN_VALUE,
-	COLUMN_NOTE
-) = range(3)
+from single_trait_box import SingleTraitBox
 
 # Available traits
 availableTraits = { 
@@ -27,7 +21,6 @@ availableTraits = {
 }
 
 grapevine_xml_file = '/home/lorien/tmp/crapvine/interface/Grapevine.glade'
-traitbox_xml_file  = '/home/lorien/tmp/crapvine/interface/TraitBox.glade'
 
 globally_focused_traitbox = None
 
@@ -41,26 +34,6 @@ class MenuNavigator:
 
 	def __create_menu_model():
 		pass
-
-
-def create_available_traits_model():
-	model = gtk.ListStore(
-		gobject.TYPE_STRING,
-		gobject.TYPE_STRING,
-		gobject.TYPE_STRING
-	)
-	return model
-
-def populate_traits_model(model, trait_category='Physical'):
-	if overlord.has_menu(trait_category):
-		menu = overlord.get_expanded_menu(trait_category)
-		for item in menu.items:
-			iter = model.append()
-			model.set(iter,
-				COLUMN_NAME, item.name,
-				COLUMN_VALUE, item.cost,
-				COLUMN_NOTE, item.note
-			)
 
 def add_trait_to_current_traitbox():
 	if globally_focused_traitbox is None:
@@ -135,21 +108,21 @@ column = gtk.TreeViewColumn("Name", renderer, text=0)
 treeMenu.append_column(column)
 
 vpane = xml.get_widget('physicalsPaned')
-my_vbox = SingleTraitBox('Physical', 'Physicals')
+my_vbox = SingleTraitBox('Physical', 'Physicals', overlord)
 vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox('Negative Physical', 'Negative Physicals')
+my_vbox = SingleTraitBox('Negative Physical', 'Negative Physicals', overlord)
 vpane.pack2(my_vbox.get_vbox(), True, True)
 
 vpane = xml.get_widget('socialsPaned')
-my_vbox = SingleTraitBox('Social', 'Socials')
+my_vbox = SingleTraitBox('Social', 'Socials', overlord)
 vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox('Negative Social', 'Negative Socials')
+my_vbox = SingleTraitBox('Negative Social', 'Negative Socials', overlord)
 vpane.pack2(my_vbox.get_vbox(), True, True)
 
 vpane = xml.get_widget('mentalsPaned')
-my_vbox = SingleTraitBox('Mental', 'Mentals')
+my_vbox = SingleTraitBox('Mental', 'Mentals', overlord)
 vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox('Negative Mental', 'Negative Mentals')
+my_vbox = SingleTraitBox('Negative Mental', 'Negative Mentals', overlord)
 vpane.pack2(my_vbox.get_vbox(), True, True)
 
 window = xml.get_widget('winCharacter')
