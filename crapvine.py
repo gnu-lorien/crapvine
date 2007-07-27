@@ -22,90 +22,82 @@ availableTraits = {
 
 grapevine_xml_file = '/home/lorien/tmp/crapvine/interface/Grapevine.glade'
 
-globally_focused_traitbox = None
-
-menu_path = []
-
-overlord = MenuLoader()
-
 class MenuNavigator:
-	def __init__(self):
+	def __init__(self, xml):
+		self.target_traitbox = None
+		self.menu_loader = MenuLoader()
+		self.menu_path = []
+		self.xml = xml
+		self.treeMenu = self.xml.get_widget('treeMenu')
+		renderer = gtk.CellRendererText()
+		renderer.set_data("column", 0)
+
+		column = gtk.TreeViewColumn("Name", renderer, text=0)
+		self.treeMenu.append_column(column)
+
+
+
+	def __create_menu_model(self):
 		pass
 
-	def __create_menu_model():
-		pass
+	def show_menu(self, trait_category):
+		self.__change_menu_model(trait_category)
+		self.menu_path = []
 
-def add_trait_to_current_traitbox():
-	if globally_focused_traitbox is None:
-		return
-	model = globally_focused_traitbox.tree.get_model()
-	iter = model.append()
-	(mainModel, selIter) = treeMenu.get_selection().get_selected()
-	path = mainModel.get_path(selIter)
-	trait = mainModel.get_item(path[0])
-	model.set(iter, 0, trait.name)
-	model.set(iter, 1, trait.cost)
-	model.set(iter, 2, trait.note)
+	def __change_menu_model(self, trait_category):
+		menu = self.menu_loader.get_expanded_menu(trait_category)
+		if not menu:
+			raise 'Selected invalid menu %s' % (trait_category)
+		model = MenuModel(menu)
+		self.treeMenu.set_model(model)
+		self.xml.get_widget('lblMenuTitle').set_label(trait_category)
 
-def on_btnAddTrait_clicked(widget):
-	add_trait_to_current_traitbox()
+	def __back_up_menu_path(self):
+		if len(self.menu_path) == 0:
+			return
+		self.__change_menu_model(self.menu_path[-1])
+		del self.menu_path[-1]
 
-def on_btnRemoveTrait_clicked(widget):
-	print "Removing a trait"
+	def __add_to_menu_path(self, trait_category):
+		old_menu_name == self.treeMenu.get_model().menu.name
+		swap_menu(trait_category)
+		menu_path.append(old_menu_name)
 
-def on_treeMenu_row_activated(treeview, path, view_column):
-	menu_item = treeview.get_model().get_item_from_path(path)
-	if isinstance(menu_item, MenuReference) and menu_item.tagname == 'submenu':
-		if menu_item.reference == '(back)':
-			back_up_menu_path()
+	def __add_trait_to_current_traitbox(self):
+		if self.target_traitbox is None:
+			return
+		model = self.target_traitbox.tree.get_model()
+		iter = model.append()
+		(mainModel, selIter) = self.treeMenu.get_selection().get_selected()
+		path = mainModel.get_path(selIter)
+		trait = mainModel.get_item(path[0])
+		model.set(iter, 0, trait.name)
+		model.set(iter, 1, trait.cost)
+		model.set(iter, 2, trait.note)
+
+	def on_btnAddTrait_clicked(self, widget):
+		self.__add_trait_to_current_traitbox()
+
+	def on_btnRemoveTrait_clicked(self, widget):
+		print "Removing a trait"
+
+	def on_treeMenu_row_activated(self, treeview, path, view_column):
+		menu_item = treeview.get_model().get_item_from_path(path)
+		if isinstance(menu_item, MenuReference) and menu_item.tagname == 'submenu':
+			if menu_item.reference == '(back)':
+				self.__back_up_menu_path()
+			else:
+				self.__add_to_menu_path(menu_item.reference)
 		else:
-			add_to_menu_path(menu_item.reference)
-	else:
-		add_trait_to_current_traitbox()
+			self.__add_trait_to_current_traitbox()
 
-def set_main_trait_tree(widget):
-	print "Setting main trait tree"
-	print widget
-
-def add_to_menu_path(trait_category='Physical'):
-	treeMenu = xml.get_widget('treeMenu')
-	menu_path.append(treeMenu.get_model().menu.name)
-	swap_menu(trait_category)
-
-def back_up_menu_path():
-	if len(menu_path) == 0:
-		return
-	swap_menu(menu_path[-1])
-	del menu_path[-1]
-
-def swap_menu(trait_category='Physical'):
-	treeMenu = xml.get_widget('treeMenu')
-	model = MenuModel(overlord.get_expanded_menu(trait_category))
-	treeMenu.set_model(model)
-	xml.get_widget('lblMenuTitle').set_label(trait_category)
-
-def set_trait_menu(trait_category='Physical'):
-	add_to_menu_path(trait_category)
-	menu_path = []
+xml = gtk.glade.XML(grapevine_xml_file)
+overlord = MenuNavigator(xml)
 
 parser = make_parser()
 parser.setFeature(feature_namespaces, 0)
-parser.setContentHandler(overlord)
+parser.setContentHandler(overlord.menu_loader)
 parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
-
-xml = gtk.glade.XML(grapevine_xml_file)
-
-treeMenu = xml.get_widget('treeMenu')
-model = MenuModel(overlord.get_expanded_menu('Flaws, Vampire'))
-treeMenu.set_model(model)
-
-xml.get_widget('lblMenuTitle').set_label('Flaws, Vampire')
-
-renderer = gtk.CellRendererText()
-renderer.set_data("column", COLUMN_NAME)
-
-column = gtk.TreeViewColumn("Name", renderer, text=0)
-treeMenu.append_column(column)
 
 vpane = xml.get_widget('physicalsPaned')
 my_vbox = SingleTraitBox('Physical', 'Physicals', overlord)
@@ -129,17 +121,13 @@ window = xml.get_widget('winCharacter')
 window.show()
 
 xml.signal_autoconnect({ 
-	'on_btnAddTrait_clicked' : on_btnAddTrait_clicked,
-	'on_btnRemoveTrait_clicked' : on_btnRemoveTrait_clicked,
-	'on_treeMenu_row_activated' : on_treeMenu_row_activated,
-	'set_main_trait_tree' : set_main_trait_tree,
+	'on_btnAddTrait_clicked' : overlord.on_btnAddTrait_clicked,
+	'on_btnRemoveTrait_clicked' : overlord.on_btnRemoveTrait_clicked,
+	'on_treeMenu_row_activated' : overlord.on_treeMenu_row_activated,
 	'gtk_main_quit' : lambda *w: gtk.main_quit()
 	}
 )
 
 print "Muahaha"
-
-blahmen = overlord.menus['Flaws, Vampire']
-print blahmen.get_xml('   ')
 
 gtk.main()
