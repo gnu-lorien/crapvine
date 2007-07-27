@@ -14,8 +14,6 @@ class MenuNavigator:
 		column = gtk.TreeViewColumn("Name", renderer, text=0)
 		self.treeMenu.append_column(column)
 
-
-
 	def __create_menu_model(self):
 		pass
 
