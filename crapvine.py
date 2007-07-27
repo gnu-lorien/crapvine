@@ -94,65 +94,6 @@ def set_main_trait_tree(widget):
 	print "Setting main trait tree"
 	print widget
 
-class SingleTraitBox:
-	def __init__(self, trait_menu_name, trait_display_name):
-		self.xml = gtk.glade.XML(traitbox_xml_file, 'traitbox')
-		self.vbox = self.xml.get_widget('traitbox')
-		self.title = self.xml.get_widget('lblTraitBoxTitle')
-		self.tree = self.xml.get_widget('treeTraits')
-		self.trait_menu_name = trait_menu_name
-		self.trait_display_name = trait_display_name
-
-		model = create_available_traits_model()
-		populate_traits_model(model, trait_menu_name)
-		self.tree.set_model(model)
-
-		renderer = gtk.CellRendererText()
-		renderer.set_data("column", COLUMN_NAME)
-		column = gtk.TreeViewColumn("Name", renderer, text=COLUMN_NAME)
-		self.tree.append_column(column)
-
-		renderer = gtk.CellRendererText()
-		renderer.set_data("column", COLUMN_VALUE)
-		column = gtk.TreeViewColumn("Value", renderer, text=COLUMN_VALUE)
-		self.tree.append_column(column)
-
-		renderer = gtk.CellRendererText()
-		renderer.set_data("column", COLUMN_NOTE)
-		column = gtk.TreeViewColumn("Note", renderer, text=COLUMN_NOTE)
-		self.tree.append_column(column)
-
-		self.tree.connect('cursor-changed', self.set_traitbox_focus)
-
-		self.title.set_label(self.trait_display_name)
-
-		self.xml.signal_autoconnect({
-			'on_add_to_trait': self.on_add_to_trait,
-			'on_subtract_from_trait': self.on_subtract_from_trait,
-			'set_traitbox_focus': self.set_traitbox_focus,
-			'on_row_activated': self.on_row_activated
-		})
-
-	def on_add_to_trait(self, widget):
-		print "Adding trait on %s" % self.trait_menu_name
-
-	def on_subtract_from_trait(self, widget):
-		print "Subtracting trait from %s" % self.trait_menu_name
-
-	def set_traitbox_focus(self, widget):
-		globals()["globally_focused_traitbox"] = self
-		set_trait_menu(self.trait_menu_name)
-
-	def get_vbox(self):
-		return self.vbox
-
-	def on_row_activated(self, treeview, path, view_column):
-		print "Row activated"
-		print path
-		row_num = path[0]
-		print row_num
-		print view_column
-
 def add_to_menu_path(trait_category='Physical'):
 	treeMenu = xml.get_widget('treeMenu')
 	menu_path.append(treeMenu.get_model().menu.name)
