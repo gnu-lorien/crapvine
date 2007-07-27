@@ -53,7 +53,7 @@ def create_available_traits_model():
 
 def populate_traits_model(model, trait_category='Physical'):
 	if overlord.has_menu(trait_category):
-		menu = overlord.menus[trait_category]
+		menu = overlord.get_expanded_menu(trait_category)
 		for item in menu.items:
 			iter = model.append()
 			model.set(iter,
@@ -63,11 +63,13 @@ def populate_traits_model(model, trait_category='Physical'):
 			)
 
 def add_trait_to_current_traitbox():
+	if globally_focused_traitbox is None:
+		return
 	model = globally_focused_traitbox.tree.get_model()
 	iter = model.append()
 	(mainModel, selIter) = treeMenu.get_selection().get_selected()
 	path = mainModel.get_path(selIter)
-	trait = mainModel.get_trait(path[0])
+	trait = mainModel.get_item(path[0])
 	model.set(iter, 0, trait.name)
 	model.set(iter, 1, trait.cost)
 	model.set(iter, 2, trait.note)
@@ -79,7 +81,14 @@ def on_btnRemoveTrait_clicked(widget):
 	print "Removing a trait"
 
 def on_treeMenu_row_activated(treeview, path, view_column):
-	add_trait_to_current_traitbox()
+	menu_item = treeview.get_model().get_item_from_path(path)
+	if isinstance(menu_item, MenuReference) and menu_item.tagname == 'submenu':
+		if menu_item.reference == '(back)':
+			back_up_menu_path()
+		else:
+			add_to_menu_path(menu_item.reference)
+	else:
+		add_trait_to_current_traitbox()
 
 def set_main_trait_tree(widget):
 	print "Setting main trait tree"
@@ -144,10 +153,26 @@ class SingleTraitBox:
 		print row_num
 		print view_column
 
-def set_trait_menu(trait_category='Physical'):
+def add_to_menu_path(trait_category='Physical'):
 	treeMenu = xml.get_widget('treeMenu')
-	model = MenuModel(overlord.menus[trait_category])
+	menu_path.append(treeMenu.get_model().menu.name)
+	swap_menu(trait_category)
+
+def back_up_menu_path():
+	if len(menu_path) == 0:
+		return
+	swap_menu(menu_path[-1])
+	del menu_path[-1]
+
+def swap_menu(trait_category='Physical'):
+	treeMenu = xml.get_widget('treeMenu')
+	model = MenuModel(overlord.get_expanded_menu(trait_category))
 	treeMenu.set_model(model)
+	xml.get_widget('lblMenuTitle').set_label(trait_category)
+
+def set_trait_menu(trait_category='Physical'):
+	add_to_menu_path(trait_category)
+	menu_path = []
 
 parser = make_parser()
 parser.setFeature(feature_namespaces, 0)
@@ -157,9 +182,10 @@ parser.parse('/home/lorien/tmp/crapvine/menus.gvm')
 xml = gtk.glade.XML(grapevine_xml_file)
 
 treeMenu = xml.get_widget('treeMenu')
-menu = overlord.menus['Physical']
-model = MenuModel(overlord.menus['Physical'])
+model = MenuModel(overlord.get_expanded_menu('Flaws, Vampire'))
 treeMenu.set_model(model)
+
+xml.get_widget('lblMenuTitle').set_label('Flaws, Vampire')
 
 renderer = gtk.CellRendererText()
 renderer.set_data("column", COLUMN_NAME)

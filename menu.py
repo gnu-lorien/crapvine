@@ -2,6 +2,9 @@ from xml.sax import ContentHandler
 import string
 import gtk
 import gobject
+import copy
+import operator
+from grapevine_xml import AttributeReader
 
 def normalize_whitespace(text):
     "Remove redundant whitespace from a string"
@@ -15,6 +18,25 @@ class MenuLoader(ContentHandler):
 	def add_menu(self, menu):
 		self.menus[menu.name] = menu
 
+	def __recursive_item_append(self, core_menu, new_menu):
+		for item in core_menu.items:
+			if isinstance(item, MenuReference) and item.tagname == 'include':
+				print 'Found an include'
+				if self.menus.has_key(item.reference):
+					self.__recursive_item_append(self.menus[item.reference], new_menu)
+			else:
+				new_menu.add_item(copy.copy(item))
+
+	def get_expanded_menu(self, menu_name):
+		if not self.menus.has_key(menu_name):
+			return None
+		core_menu = self.menus[menu_name]
+		new_menu = Menu(core_menu.name, core_menu.category, core_menu.alphabetical, core_menu.required, core_menu.display, core_menu.negative, core_menu.autonote)
+		self.__recursive_item_append(core_menu, new_menu)
+		if new_menu.alphabetical:
+			new_menu.items.sort(key=operator.attrgetter('name'))
+		return new_menu
+
 	def has_menu(self, menu_name):
 		return menu_name in self.menus
 
@@ -23,48 +45,30 @@ class MenuLoader(ContentHandler):
 			if not attrs.has_key('name'):
 				return
 			menu = Menu(attrs.get('name'))
-			for aname in attrs.keys():
-				if aname == 'category':
-					menu.category = attrs.get('category')
-				elif aname == 'abc':
-					abc = attrs.get('abc')
-					if abc == 'yes':
-						menu.alphabetical = True
-				elif aname == 'required':
-					required = attrs.get('required')
-					if required == 'yes':
-						menu.required = True
-				elif aname == 'display':
-					menu.display = attrs.get('display')
-				elif aname == 'autonote':
-					autonote = attrs.get('autonote')
-					if autonote == 'yes':
-						menu.autonote = True
-				elif aname == 'negative':
-					negative = attrs.get('negative')
-					if negative == 'yes':
-						menu.negative = True
+			r = AttributeReader(attrs)
+			menu.category = r.text('category', '1')
+			menu.alphabetical = r.boolean('abc')
+			menu.required = r.boolean('required')
+			menu.display = r.text('display', '0')
+			menu.autonote = r.boolean('autonote')
+			menu.negative = r.boolean('negative')
 			self.current_menu = menu
 
 		elif name == 'item':
 			if not attrs.has_key('name'):
 				return
 			item = MenuItem(attrs.get('name'))
-			for aname in attrs.keys():
-				if aname == 'cost':
-					item.cost = attrs.get('cost')
-				elif aname == 'note':
-					item.note = attrs.get('note')
+			r = AttributeReader(attrs)
+			item.cost = r.text('cost', '1')
+			item.note = r.text('note', '')
 			self.current_menu.add_item(item)
 
 		elif name == 'submenu' or name == 'include':
 			if not attrs.has_key('name'):
 				return
 			link = MenuReference(name, attrs.get('name'))
-			if attrs.has_key('link'):
-				link.reference = attrs.get('link')
-			else:
-				link.reference = link.name
+			r = AttributeReader(attrs)
+			link.reference = r.text('link', link.name)
 			self.current_menu.add_item(link)
 
 	def endElement(self, name):
@@ -86,6 +90,10 @@ class Menu:
 
 	def add_item(self, item):
 		self.items.append(item)
+
+	def get_display_length(self):
+		includes = [inc for inc in self.items if isinstance(inc, MenuReference)]
+		print includes
 
 	def get_xml(self, indent):
 		outs = ['%s<menu name="%s"' % (indent, self.name)]
@@ -140,8 +148,12 @@ class MenuModel(gtk.GenericTreeModel):
 	def __init__(self, menu):
 		gtk.GenericTreeModel.__init__(self)
 		self.menu = menu
-	def get_trait(self, index):
+		assert menu is not None
+		self.menu.items.insert(0, MenuReference('submenu', '(back)', '(back)'))
+	def get_item(self, index):
 		return self.menu.items[index]
+	def get_item_from_path(self, path):
+		return self.menu.items[path[0]]
 	def on_get_flags(self):
 		return gtk.TREE_MODEL_LIST_ONLY|gtk.TREE_MODEL_ITERS_PERSIST
 	def on_get_n_columns(self):
@@ -154,7 +166,11 @@ class MenuModel(gtk.GenericTreeModel):
 		return path[0]
 	def on_get_value(self, index, column):
 		assert column == 0
-		return self.menu.items[index].name
+		menu_item = self.menu.items[index]
+		ret_name = menu_item.name
+		if isinstance(menu_item, MenuReference) and menu_item.tagname == 'submenu':
+			ret_name += ':'
+		return ret_name
 	def on_iter_next(self, index):
 		if index >= (len(self.menu.items) - 1):
 			return None
@@ -178,10 +194,3 @@ class MenuModel(gtk.GenericTreeModel):
 			return n
 	def on_iter_parent(self, node):
 		return None
-	def invalidate_iters():
-		pass
-	def iter_is_valid(iter):
-		print "Calling iter_is_valid"
-		if iter >= (len(self.menu.items) - 1):
-			return False
-		return True
