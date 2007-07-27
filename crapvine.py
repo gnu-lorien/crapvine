@@ -177,7 +177,7 @@ def set_trait_menu(trait_category='Physical'):
 parser = make_parser()
 parser.setFeature(feature_namespaces, 0)
 parser.setContentHandler(overlord)
-parser.parse('/home/lorien/tmp/crapvine/menus.gvm')
+parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
 
 xml = gtk.glade.XML(grapevine_xml_file)
 
