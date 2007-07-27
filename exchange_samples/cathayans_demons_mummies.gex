@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <kueijin name="The Cathayan" nature="Au Courant" demeanor="Curmudgeon" dharma="Way of the Resplendent Crane" balance="Balance" direction="South" station="Mandarin" poarchetype="Legalist" hun="1" po="3" yinchi="1" yangchi="1" demonchi="1" dharmatraits="4" willpower="6" physicalmax="11" status="Active" startdate="7/26/2007 10:02:54 PM" narrator="Balls (andshaft)" npc="yes" lastmodified="7/26/2007 10:06:02 PM">
+    <experience unspent="-59" earned="0">
+      <entry date="7/26/2007" change="59" type="3" reason="Purchased (Artifacts and Devices), Bard's Tongue, Berserker, Bone Flower Techniques: Bitter Yin Caress, Bone Flower Techniques: Gentle Yielding, Bone Flower Techniques: Taking What is Given x2, Dark Jade Lover: Center the Demon, Dark Jade Lover: Earth's Embrace, Delicate, Dharma x3, Empathetic, Exalted, Feared, Health x2, The Cathayan, Willpower x5." earned="0" unspent="-59"/>
+      <entry date="7/26/2007 10:02:54 PM" change="0" type="6" reason="Created 6/7/4 with 8 Abilities and 6 Backgrounds, using 1 Negative and 5 Free Traits" earned="0" unspent="-59"/>
+    </experience>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous" val="3"/>
+      <trait name="Resilient" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Compassionate"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Threatening" val="2"/>
+      <trait name="Witty" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Disciplined" val="4"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Empathetic"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Squeamish"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Exalted"/>
+      <trait name="Feared"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Bureaucracy"/>
+      <trait name="Empathy"/>
+      <trait name="Flight" val="3"/>
+      <trait name="Lore: Chi'n Ta"/>
+      <trait name="Martial Arts"/>
+      <trait name="Occult"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Health" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Herd" val="3"/>
+      <trait name="Influence"/>
+      <trait name="Retainers"/>
+      <trait name="Rites"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Torpor"/>
+    </traitlist>
+    <traitlist name="Guanxi" abc="yes" display="1">
+      <trait name="The Cathayan"/>
+    </traitlist>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="5">
+      <trait name="Bone Flower Techniques: Gentle Yielding" val="6" note="first int. flesh"/>
+      <trait name="Bone Flower Techniques: Taking What is Given" val="6" note="second int. flesh"/>
+      <trait name="Bone Flower Techniques: Taking What is Given" val="6" note="second int. flesh"/>
+      <trait name="Bone Flower Techniques: Bitter Yin Caress" val="6" note="second int. yin prana"/>
+    </traitlist>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5">
+      <trait name="Dark Jade Lover: Center the Demon" val="2" note="basic"/>
+      <trait name="Dark Jade Lover: Earth's Embrace" val="4" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Berserker" val="2-3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Bard's Tongue"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="(Artifacts and Devices)"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[bio]]>
+    </biography>
+    <notes>
+      <![CDATA[notes]]>
+    </notes>
+  </kueijin>
+  <demon name="The Demon" house="Scourge" faction="Ravener" nature="Au Courant" demeanor="Avant-Garde" torment="3" faith="3" willpower="4" conscience="2" conviction="2" courage="2" physicalmax="11" status="Active" startdate="7/26/2007 10:03:07 PM" npc="yes" lastmodified="7/26/2007 10:06:00 PM">
+    <experience unspent="-33" earned="0">
+      <entry date="7/26/2007" change="33" type="3" reason="Purchased Allergic, Assault Rifle, Beast: Command Animals, Beast: Possess Animals, Beast: Summon Animals, Callous, Code of Honor, Conscience, Conviction, Courage, Dagan, Awakening: Improved Physical Capabilities, Dagan, Awakening: Miasma, Finance, Humanity: Fade, Humanity: Insinuate, Humanity: Translate, Ignorant." earned="0" unspent="-33"/>
+      <entry date="7/26/2007 10:03:08 PM" change="0" type="6" reason="Created 6/3/8 with 7 Abilities and 7 Backgrounds, using 1 Negative and 5 Free Traits" earned="0" unspent="-33"/>
+    </experience>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile" val="2"/>
+      <trait name="Energetic"/>
+      <trait name="Graceful"/>
+      <trait name="Rugged" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Genial"/>
+      <trait name="Intense" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Astute"/>
+      <trait name="Disciplined"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Reflective"/>
+      <trait name="Wise" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Lame"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Ignorant"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Etiquette"/>
+      <trait name="Repair"/>
+      <trait name="Security"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Finance"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Fame" val="4"/>
+      <trait name="Influence"/>
+      <trait name="Resources"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Lores" abc="no" atomic="yes" display="5">
+      <trait name="Humanity: Translate" val="3" note="basic"/>
+      <trait name="Humanity: Insinuate" val="3" note="basic"/>
+      <trait name="Humanity: Fade" val="6" note="int."/>
+      <trait name="Beast: Summon Animals" val="3" note="basic"/>
+      <trait name="Beast: Command Animals" val="3" note="basic"/>
+      <trait name="Beast: Possess Animals" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Apocalyptic Form" abc="no" atomic="yes" display="5">
+      <trait name="Dagan, Awakening: Improved Physical Capabilities" val="0"/>
+      <trait name="Dagan, Awakening: Miasma" val="0" note="torment"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Code of Honor" val="1-2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Allergic" val="1-4"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Assault Rifle" note="+3, 2 Lethal, Loud"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[aoeu]]>
+    </biography>
+    <notes>
+      <![CDATA[aoeu]]>
+    </notes>
+  </demon>
+  <mummy name="The Mummy" amenti="Udja-Sen" nature="Arbitrator" demeanor="Au Courant" willpower="5" sekhem="1" balance="1" memory="1" integrity="1" joy="1" ba="5" ka="5" physicalmax="12" status="Active" startdate="7/26/2007 10:03:01 PM" npc="yes" lastmodified="7/26/2007 10:07:23 PM">
+    <experience unspent="-40" earned="0">
+      <entry date="7/26/2007" change="40" type="3" reason="Purchased Amulets: Ashen Shroud x2, Amulets: Eyes of the Horizon, Anachronism, Ballistic Vest, Celestial Attunement, Chivalrous, Effigy: Advanced Path, Effigy: First Basic Path, Effigy: First Intermediate Path, Effigy: Second Basic Path x2, Effigy: Second Intermediate Path, Health x2, Helpful x2, Judicious, Nomenclature: Naming the Body's Destruction, Temperate." earned="0" unspent="-40"/>
+      <entry date="7/26/2007 10:03:01 PM" change="0" type="6" reason="Created 12/6/4 with 5 Abilities and 5 Backgrounds, using 2 Negative and 5 Free Traits" earned="0" unspent="-40"/>
+    </experience>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Deadly"/>
+      <trait name="Lithe"/>
+      <trait name="Resilient" val="2"/>
+      <trait name="Robust" val="3"/>
+      <trait name="Tireless" val="3"/>
+      <trait name="Vigorous"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Threatening" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever" val="2"/>
+      <trait name="Dedicated"/>
+      <trait name="Knowledgeable"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Soft"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Haggard"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Demolitions"/>
+      <trait name="Expression" val="3"/>
+      <trait name="Repair"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Health" val="2"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Chivalrous"/>
+      <trait name="Helpful" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Judicious"/>
+      <trait name="Temperate"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Legacy"/>
+      <trait name="Resources"/>
+      <trait name="Vessel" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+      <trait name="Dead" val="2"/>
+    </traitlist>
+    <traitlist name="Hekau" abc="no" display="5">
+      <trait name="Effigy: First Basic Path" val="3"/>
+      <trait name="Effigy: Second Basic Path" val="6"/>
+      <trait name="Effigy: First Intermediate Path" val="6"/>
+      <trait name="Effigy: Second Intermediate Path" val="6"/>
+      <trait name="Effigy: Advanced Path" val="9"/>
+    </traitlist>
+    <traitlist name="Spells" abc="no" atomic="yes" display="5">
+      <trait name="Amulets: Ashen Shroud" note="basic"/>
+      <trait name="Amulets: Ashen Shroud" note="basic"/>
+      <trait name="Amulets: Eyes of the Horizon" note="basic"/>
+    </traitlist>
+    <traitlist name="Rituals" abc="no" atomic="yes" display="5">
+      <trait name="Nomenclature: Naming the Body's Destruction" val="3" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Celestial Attunement"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Anachronism" val="5"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <inheritance>
+      <![CDATA[Inherited something]]>
+    </inheritance>
+    <biography>
+      <![CDATA[bio]]>
+    </biography>
+    <notes>
+      <![CDATA[notes]]>
+    </notes>
+  </mummy>
+</grapevine>

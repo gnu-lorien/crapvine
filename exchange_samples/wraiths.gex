@@ -1,0 +1,2648 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <wraith name="&quot;Pops&quot; the Ferryman" ethnos="Wraith" nature="Mediator" demeanor="Bon Vivant" legion="The Grim Legion" rank="Overlord" pathos="10" corpus="10" willpower="7" angst="9" physicalmax="18" status="Active" startdate="9/12/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="3"/>
+      <trait name="Quick" val="3"/>
+      <trait name="Rugged" val="3"/>
+      <trait name="Tenacious" val="3"/>
+      <trait name="Tireless" val="3"/>
+      <trait name="Vigorous" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling" val="3"/>
+      <trait name="Charismatic" val="3"/>
+      <trait name="Charming" val="3"/>
+      <trait name="Commanding" val="3"/>
+      <trait name="Persuasive" val="3"/>
+      <trait name="Witty" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Attentive" val="3"/>
+      <trait name="Calm" val="3"/>
+      <trait name="Dedicated" val="3"/>
+      <trait name="Patient" val="3"/>
+      <trait name="Wily" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="3"/>
+      <trait name="Brawl"/>
+      <trait name="Computer"/>
+      <trait name="Enigmas" val="4"/>
+      <trait name="Firearms"/>
+      <trait name="Investigation" val="4"/>
+      <trait name="Linguistics" val="12"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Performance" val="7" note="Singing"/>
+      <trait name="Subterfuge" val="5"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Argos: Phantom Wings" val="3" note="basic"/>
+      <trait name="Argos: Flicker" val="6" note="int."/>
+      <trait name="Embody: Phantom Whispers" val="3" note="basic"/>
+      <trait name="Embody: Statue" val="3" note="basic"/>
+      <trait name="Embody: Life-in-Death" val="6" note="int."/>
+      <trait name="Keening: Ballad" val="3" note="basic"/>
+      <trait name="Keening: Muse" val="3" note="basic"/>
+      <trait name="Keening: Crescendo" val="6" note="int."/>
+      <trait name="Keening: Requiem" val="9" note="adv."/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+      <trait name="Lifeweb: Splice Strand" val="6" note="int., great war"/>
+      <trait name="Lifeweb: Sever Strand" val="6" note="int."/>
+      <trait name="Lifeweb: Soul Pact" val="9" note="adv."/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+      <trait name="Outrage: Death's Touch" val="6" note="int."/>
+      <trait name="Outrage: Obliviate" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <darkpassions>
+      <![CDATA[Brawl x 7 
+Melee x 7 <scythe>
+3 more brutal traits
+Moliate to advanced]]>
+    </darkpassions>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Merits: 
+
+Enchanting Voice
+
+Flaws: 
+Driving Goal: Protect Paris
+
+Driving Goal: Cut down on Traffic through Shadowlands]]>
+    </notes>
+  </wraith>
+  <wraith name="Adam Sinclair" ethnos="Wraith" nature="Tyrant" demeanor="Architect" guild="Mnemoi" faction="Renegade" pathos="6" corpus="10" willpower="4" angst="2" physicalmax="11" status="Active" startdate="8/24/2002" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:38:27 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Energetic"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Diplomatic"/>
+      <trait name="Magnetic"/>
+      <trait name="Manipulative"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Disciplined" val="3"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Shrewd"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Deceitful"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="2"/>
+      <trait name="Alchemy" val="3"/>
+      <trait name="Awareness"/>
+      <trait name="Body Craft" val="2"/>
+      <trait name="Chemistry" val="2"/>
+      <trait name="Computer" val="3"/>
+      <trait name="Dodge"/>
+      <trait name="Finance"/>
+      <trait name="Firearms"/>
+      <trait name="Intimidation"/>
+      <trait name="Investigation"/>
+      <trait name="Medicine"/>
+      <trait name="Meditation" val="2"/>
+      <trait name="Melee"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Generation" val="2"/>
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Bureaucracy"/>
+      <trait name="Finance"/>
+      <trait name="Occult"/>
+      <trait name="Underworld"/>
+    </traitlist>
+    <life>
+      <![CDATA[Having Fun]]>
+    </life>
+    <death>
+      <![CDATA[Stopped by the Evil Giovanni]]>
+    </death>
+    <regret>
+      <![CDATA[Screwed up to Much]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Mnemosynis: Rewind" val="0" note="innate"/>
+      <trait name="Mnemosynis: In Memoriam" val="0" note="innate"/>
+      <trait name="Mnemosynis: Mnemotechnics" val="3" note="basic"/>
+      <trait name="Mnemosynis: Mindspeak" val="3" note="basic"/>
+      <trait name="Mnemosynis: Casting the Scene" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+      <trait name="Eidetic Memory" val="2"/>
+      <trait name="Medium" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Bad Sight" val="1-3"/>
+      <trait name="Grip of the Damned" val="4"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[ST NOTE: 
+
+Character was killed and turned into a wraith on 3/8/03 Compelled for 1 year on that same date.
+
+Effect of the Post Tramatic Stress Disorder: Any time in the future where your character comes upon a stressful situation he will make a test ( against Courage ) WIN = your ok / TIE = Your character is slighty afraid as some memories come back to you of that night / LOOSE = Your character is wrapped up in reliving the week with Caine and the torture that was there and done to you.
+
+
+Character Killed by unknown force 3/8/03.]]>
+    </notes>
+  </wraith>
+  <wraith name="Amadeus" ethnos="Wraith" nature="Visionary" demeanor="Survivor" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="4/14/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:41:28 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="2"/>
+      <trait name="Brawny"/>
+      <trait name="Dexterous"/>
+      <trait name="Energetic"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Tough"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charming" val="3"/>
+      <trait name="Compassionate"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever" val="2"/>
+      <trait name="Creative"/>
+      <trait name="Cunning" val="3"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Shy" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Enigmas"/>
+      <trait name="Occult"/>
+      <trait name="Science"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="2"/>
+      <trait name="Haunt" val="2"/>
+      <trait name="Memoriam"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Love, Lust]]>
+    </passions>
+    <fetters>
+      <![CDATA[class ring (Maria has)
+war medal earned in Gulf
+engagement ring
+baseball trophy]]>
+    </fetters>
+    <life>
+      <![CDATA[baseball player in high school, then joined the army for the college benefits.  Engaged to Jessica Smith.  Faught in Gulf War]]>
+    </life>
+    <death>
+      <![CDATA[Died in a weapons malfunction in the Gulf War.]]>
+    </death>
+    <haunt>
+      <![CDATA[Paris' Castle]]>
+    </haunt>
+    <regret>
+      <![CDATA[Not telling those he loved how much he cared for them and not saying goodbye]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Embody: Ghostly Touch*"/>
+      <trait name="Embody: Maintain the Material Form*"/>
+      <trait name="Flux: Grave Mold*"/>
+      <trait name="Puppetry: Detect Possession*"/>
+      <trait name="Embody: Phantom Whispers" val="3" note="basic"/>
+      <trait name="Flux: Altered States" val="3" note="basic"/>
+      <trait name="Flux: Decay" val="3" note="basic"/>
+      <trait name="Puppetry: Skinride" val="3" note="basic"/>
+      <trait name="Puppetry: Master's Control" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+  <wraith name="Angelique Giovanni" ethnos="Wraith" nature="Architect" demeanor="Teacher" guild="Sandman" faction="Hierarchy" pathos="5" corpus="10" willpower="5" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:41:22 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Lithe"/>
+      <trait name="Rugged"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Beguiling"/>
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Elegant"/>
+      <trait name="Eloquent"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Calm"/>
+      <trait name="Creative"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Patient"/>
+      <trait name="Reflective"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Lore: Guild"/>
+      <trait name="Lore: Heirarchy"/>
+      <trait name="Lore: Heretic"/>
+      <trait name="Lore: Renegade"/>
+      <trait name="Lore: Vampire"/>
+      <trait name="Occult" val="5" note="Specialization-Necromancy rituals"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="2"/>
+      <trait name="Memoriam" val="4"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Sandman"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Hatred-Avenge My Murder
+Lust- For Knowledge
+Greed- Gain Money
+Hope- Protect the Family]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' Suit
+Book of Necromancy
+Mauseleaum
+Statue on Crete]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Mansion
+House in Blythe]]>
+    </haunt>
+    <regret>
+      <![CDATA[Need to teach more]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Lifeweb: Locate Fetter*"/>
+      <trait name="Mnemosynis: In Memoriam*"/>
+      <trait name="Mnemosynis: Rewind*"/>
+      <trait name="Phantasm: Dreams of Sleep"/>
+      <trait name="Phantasm: Sleepsense*"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+      <trait name="Mnemosynis: Mnemotechnics" val="3" note="basic"/>
+      <trait name="Phantasm: Elysia" val="3" note="basic"/>
+      <trait name="Phantasm: Dreams of Sleep" val="3" note="basic"/>
+      <trait name="Phantasm: Phantasmagoria" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon once per night velma can foil the stategy of her shadow for one hour
+Memoriam(4)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.
+
+Paris' Spirit Mentor]]>
+    </notes>
+  </wraith>
+  <wraith name="Caroline Giovanni" ethnos="Wraith" nature="Survivor" demeanor="Bon Vivant" pathos="3" corpus="7" willpower="2" shadowarchetype="Monster" angst="2" physicalmax="11" status="Active" startdate="6/14/2002" narrator="John Snyder" npc="yes" lastmodified="1/6/2003 12:07:25 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Ferocious" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Rugged" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Gorgeous"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Disciplined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Linguistics" note="Italian"/>
+      <trait name="Occult"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon"/>
+      <trait name="Relic" val="4" note="Stygian Steel Sword"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Pandemonium: Sense Chaos" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Outrage: Leap of Rage" val="0" note="innate"/>
+      <trait name="Outrage: Ping" val="0" note="innate"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+  <wraith name="Charles" ethnos="Wraith" nature="Explorer" demeanor="Leader" guild="None" faction="Renegade" pathos="5" corpus="10" willpower="4" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:42:13 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Enduring"/>
+      <trait name="Energetic"/>
+      <trait name="Resilient"/>
+      <trait name="Stalwart"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Gorgeous"/>
+      <trait name="Magnetic"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Clever"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Shrewd"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Dull"/>
+      <trait name="Naive"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Ignorant"/>
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="3" note="Shadowlands Travel"/>
+      <trait name="Investigation"/>
+      <trait name="Leadership" val="2"/>
+      <trait name="Linguistics" note="Italian"/>
+      <trait name="Meditation"/>
+      <trait name="Occult"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Artifact" val="4"/>
+      <trait name="Eidolon" val="3"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Pot was my life
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' left shoe
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+House in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Argos: Phantom Wings" val="3" note="basic"/>
+      <trait name="Argos: Flicker" val="6" note="int."/>
+      <trait name="Inhabit: Sense Gremlin" val="0" note="innate"/>
+      <trait name="Inhabit: Shellride" val="0" note="innate"/>
+      <trait name="Inhabit: Surge" val="0" note="innate"/>
+      <trait name="Inhabit: Lightning's Bite" val="3" note="basic"/>
+      <trait name="Inhabit: Gremlinize" val="3" note="basic"/>
+      <trait name="Inhabit: Claim" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night Charles can foil the stategy of his shadow for one hour]]>
+    </notes>
+  </wraith>
+  <wraith name="Daphne" ethnos="Wraith" nature="Bon Vivant" demeanor="Follower" guild="Chanteur" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:42:22 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Beguiling"/>
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Magnetic"/>
+      <trait name="Persuasive"/>
+      <trait name="Seductive" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Rational"/>
+      <trait name="Shrewd"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Cowardly"/>
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Dull"/>
+      <trait name="Naive"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Linguistics" note="Italian"/>
+      <trait name="Occult"/>
+      <trait name="Subterfuge" val="3" note="secrets"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon"/>
+      <trait name="Memoriam" val="4"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Pot was my life
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' right cuff button
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Wasn't a mother]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Keening: Perfect Pitch*"/>
+      <trait name="Keening: Sotto Voce*"/>
+      <trait name="Usury: Assessment*"/>
+      <trait name="Keening: Ballad" val="3" note="basic"/>
+      <trait name="Usury: Transfer" val="3" note="basic"/>
+      <trait name="Usury: Charitable Trust" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour
+Memoriam(2)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.]]>
+    </notes>
+  </wraith>
+  <wraith name="Dick" ethnos="Wraith" nature="Bon Vivant" demeanor="Child" guild="None" faction="Renegade" pathos="5" corpus="10" willpower="3" shadowarchetype="Freak" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:42:37 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Energetic" val="3"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Wiry" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly" val="2"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+      <trait name="Naive"/>
+      <trait name="Obnoxious"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+      <trait name="Witless"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="3"/>
+      <trait name="Disguise"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Artifact" val="3"/>
+      <trait name="Eidolon" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Gotta get that woman
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' left shoe
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Flux: Grave Mold*"/>
+      <trait name="Outrage: Leap of Rage*"/>
+      <trait name="Outrage: Ping*"/>
+      <trait name="Flux: Altered States" val="3" note="basic"/>
+      <trait name="Flux: Decay" val="3" note="basic"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Sack full of Scooby Snacks-When one Pathos is put into it, everyone in room (Both sides of the Shroud) feels happily excited..
+Eidolon(3)-3 times per night Dick can foil the stategy of his shadow for one hour]]>
+    </notes>
+  </wraith>
+  <wraith name="FBI #1" ethnos="Wraith" nature="Arbitrator" demeanor="Conformist" guild="Puppeteer" faction="Renegade" pathos="6" corpus="10" willpower="2" angst="2" physicalmax="11" status="Active" startdate="3/13/2003" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:42:59 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="3"/>
+      <trait name="Dexterous"/>
+      <trait name="Energetic" val="2"/>
+      <trait name="Graceful"/>
+      <trait name="Resilient"/>
+      <trait name="Rugged" val="2"/>
+      <trait name="Wiry" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Dignified" val="2"/>
+      <trait name="Diplomatic" val="2"/>
+      <trait name="Friendly"/>
+      <trait name="Genial" val="2"/>
+      <trait name="Ingratiating"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Attentive"/>
+      <trait name="Dedicated" val="2"/>
+      <trait name="Disciplined" val="3"/>
+      <trait name="Focused" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="3"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Dodge"/>
+      <trait name="Empathy" val="2"/>
+      <trait name="Enigmas"/>
+      <trait name="Expression"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Intimidation" val="2"/>
+      <trait name="Leadership"/>
+      <trait name="Lore: Wraith" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Living Family" val="3"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Puppeteer" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Intrigue, Lust]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris Giovanni]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle]]>
+    </haunt>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Puppetry: Detect Possession" val="0" note="innate"/>
+      <trait name="Puppetry: Skinride" val="3" note="basic"/>
+      <trait name="Puppetry: Master's Control" val="3" note="basic"/>
+      <trait name="Puppetry: Rein in the Mind" val="6" note="int."/>
+      <trait name="Puppetry: Obliterate the Soul" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Code of Honor" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Driving Goal" val="3" note="Find his killer"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Compelled for 1 year by Paris Giovanni on 4/10/03]]>
+    </notes>
+  </wraith>
+  <wraith name="Fred" ethnos="Wraith" nature="Explorer" demeanor="Leader" pathos="5" corpus="10" willpower="4" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="7/30/2003 1:01:08 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="3"/>
+      <trait name="Enduring"/>
+      <trait name="Energetic"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick"/>
+      <trait name="Resilient"/>
+      <trait name="Stalwart"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Gorgeous"/>
+      <trait name="Magnetic"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Clever"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Shrewd"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Dull"/>
+      <trait name="Naive"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Ignorant"/>
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="3" note="Shadowlands Travel"/>
+      <trait name="Investigation"/>
+      <trait name="Leadership" val="2"/>
+      <trait name="Linguistics" note="Italian"/>
+      <trait name="Meditation"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Artifact" val="5"/>
+      <trait name="Eidolon" val="3"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Pot was my life
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' left shoe
+Book in Paris' Library
+The Mystery Machine
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Argos: Phantom Wings" val="3" note="basic"/>
+      <trait name="Argos: Flicker" val="6" note="int."/>
+      <trait name="Argos: Oubliette" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+      <trait name="Mystery Machine"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night Fred can foil the stategy of his shadow for one hour]]>
+    </notes>
+  </wraith>
+  <wraith name="Genivieve" ethnos="Wraith" nature="Survivor" demeanor="Caregiver" pathos="5" corpus="6" willpower="3" angst="2" physicalmax="11" status="Active" startdate="9/18/2002" narrator="John Snyder" npc="yes" lastmodified="5/28/2003 11:13:09 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Lithe"/>
+      <trait name="Quick"/>
+      <trait name="Rugged"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Compassionate"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Gorgeous"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Dodge"/>
+      <trait name="Empathy"/>
+      <trait name="Investigation"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Living Family"/>
+      <trait name="Wraith Family"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Embody: Ghostly Touch" val="0" note="innate"/>
+      <trait name="Embody: Maintain the Material Form" val="0" note="innate"/>
+      <trait name="Embody: Phantom Whispers" val="3" note="basic"/>
+      <trait name="Lifeweb: Locate Fetter" val="0" note="innate"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Natural Linguist" val="2-3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Improperly Buried"/>
+      <trait name="Soft-Hearted" val="1-2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+  <wraith name="Harry" ethnos="Wraith" nature="Scientist" demeanor="Visionary" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:43:30 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Robust"/>
+      <trait name="Stalwart"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Empathetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Clever"/>
+      <trait name="Creative"/>
+      <trait name="Cunning"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Insightful"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+      <trait name="Lame"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl"/>
+      <trait name="Enigmas"/>
+      <trait name="Investigation" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Memoriam" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Hatred-Avenge My Murder
+Fear-Safety of Family
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' right cuff button
+
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Castigate: Bulwark*"/>
+      <trait name="Castigate: Soulsight*"/>
+      <trait name="Intimation: Self-Intimation*"/>
+      <trait name="Intimation: Twinge*"/>
+      <trait name="Lifeweb: Locate Fetter*"/>
+      <trait name="Castigate: Dark Secrets" val="3" note="basic"/>
+      <trait name="Castigate: Purify" val="3" note="basic"/>
+      <trait name="Intimation: The Gleaming" val="3" note="basic"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour
+Memoriam(2)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.]]>
+    </notes>
+  </wraith>
+  <wraith name="Jerry" ethnos="Wraith" nature="Conniver" demeanor="Daredevil" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:43:40 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick"/>
+      <trait name="Robust"/>
+      <trait name="Stalwart"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Empathetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Clever"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Shortsighted"/>
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl"/>
+      <trait name="Dodge"/>
+      <trait name="Firearms"/>
+      <trait name="Melee"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Memoriam" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Hatred-Avenge My Murder
+Fear-Safety of Family
+Greed- Gotta get that
+Hope- pull of the most dangerous stunt]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' right cuff button
+
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish big amazing thing]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Castigate: Bulwark*"/>
+      <trait name="Castigate: Soulsight*"/>
+      <trait name="Intimation: Self-Intimation*"/>
+      <trait name="Intimation: Twinge*"/>
+      <trait name="Lifeweb: Locate Fetter*"/>
+      <trait name="Castigate: Dark Secrets" val="3" note="basic"/>
+      <trait name="Castigate: Purify" val="3" note="basic"/>
+      <trait name="Intimation: The Gleaming" val="3" note="basic"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour
+Memoriam(2)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.]]>
+    </notes>
+  </wraith>
+  <wraith name="Juliette Giovanni" ethnos="Wraith" nature="Architect" demeanor="Teacher" guild="Sandman" faction="Hierarchy" pathos="5" corpus="10" willpower="5" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:43:45 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Lithe"/>
+      <trait name="Rugged"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Beguiling"/>
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Elegant"/>
+      <trait name="Eloquent"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Calm"/>
+      <trait name="Creative"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Patient"/>
+      <trait name="Reflective"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Lore: Guild"/>
+      <trait name="Lore: Heirarchy"/>
+      <trait name="Lore: Heretic"/>
+      <trait name="Lore: Renegade"/>
+      <trait name="Lore: Vampire"/>
+      <trait name="Occult" val="5" note="Specialization-Necromancy rituals"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="2"/>
+      <trait name="Memoriam" val="4"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Sandman"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Hatred-Avenge My Murder
+Lust- For Knowledge
+Greed- Gain Money
+Hope- Protect the Family]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' Suit
+Book of Necromancy
+Mauseleaum
+Statue on Crete]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Mansion
+House in Blythe]]>
+    </haunt>
+    <regret>
+      <![CDATA[Need to teach more]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Lifeweb: Locate Fetter*"/>
+      <trait name="Mnemosynis: In Memoriam*"/>
+      <trait name="Mnemosynis: Rewind*"/>
+      <trait name="Phantasm: Dreams of Sleep"/>
+      <trait name="Phantasm: Sleepsense*"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+      <trait name="Mnemosynis: Mnemotechnics" val="3" note="basic"/>
+      <trait name="Phantasm: Elysia" val="3" note="basic"/>
+      <trait name="Phantasm: Dreams of Sleep" val="3" note="basic"/>
+      <trait name="Phantasm: Phantasmagoria" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon once per night velma can foil the stategy of her shadow for one hour
+Memoriam(4)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.
+
+Paris' Spirit Mentor]]>
+    </notes>
+  </wraith>
+  <wraith name="Larry Payne" ethnos="Wraith" nature="Bon Vivant" demeanor="Child" faction="Renegade" pathos="5" corpus="10" willpower="3" shadowarchetype="Freak" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:43:49 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Energetic" val="3"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Wiry" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly" val="2"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+      <trait name="Naive"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+      <trait name="Witless"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="3"/>
+      <trait name="Meditation"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Artifact" val="3"/>
+      <trait name="Eidolon" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Pot was my life
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' left shoe
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Flux: Grave Mold*"/>
+      <trait name="Outrage: Leap of Rage*"/>
+      <trait name="Outrage: Ping*"/>
+      <trait name="Flux: Altered States" val="3" note="basic"/>
+      <trait name="Flux: Decay" val="3" note="basic"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Sack full of Scooby Snacks-
+  When one Pathos is put into it, everyone in room (Both sides of the Shroud) feels happily excited..
+Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour]]>
+    </notes>
+  </wraith>
+  <wraith name="Lemp John" ethnos="Wraith" nature="Survivor" demeanor="Caregiver" pathos="5" corpus="2" willpower="3" shadowarchetype="Director" angst="5" physicalmax="11" status="Active" startdate="9/18/2002" narrator="John Snyder" npc="yes" lastmodified="5/28/2003 12:31:18 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Lithe"/>
+      <trait name="Quick"/>
+      <trait name="Rugged"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Compassionate"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Gorgeous"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Dodge"/>
+      <trait name="Empathy"/>
+      <trait name="Investigation"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Living Family"/>
+      <trait name="Wraith Family"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Hierarchy"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Anger (Avenge your Death)
+Anger (Punish those who enslave)
+Faith (Help Family keep Faith)
+Hope (Portect Opressed)]]>
+    </passions>
+    <fetters>
+      <![CDATA[Lemp Manson
+Lemp Brewry Key
+Brown cap
+BaseBall Catchers Glove]]>
+    </fetters>
+    <life>
+      <![CDATA[Workaholic: 80-hour work weeks and 2AM planning meetings swallowed your life; now you're wondering what you missed]]>
+    </life>
+    <death>
+      <![CDATA[Mystery: You don't know what happened to you and you have a sneaking suspicion you're better off that way]]>
+    </death>
+    <regret>
+      <![CDATA[Revenge: Someone made your life a living hell, or even ended it. Now it's payback time, and you got all eternity]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Fatalism: Kismet" val="0" note="innate"/>
+      <trait name="Flux: Grave Mold" val="0" note="innate"/>
+      <trait name="Inhabit: Sense Gremlin" val="0" note="innate"/>
+      <trait name="Inhabit: Shellride" val="0" note="innate"/>
+      <trait name="Inhabit: Surge" val="0" note="innate"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Natural Linguist" val="2-3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Improperly Buried"/>
+      <trait name="Soft-Hearted" val="1-2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <darkpassions>
+      <![CDATA[Fear: Hide from all Shadowlands involvement
+
+Jealousy: Bring down all wraiths of higher Status]]>
+    </darkpassions>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Aura of Corruption" val="2"/>
+    </traitlist>
+  </wraith>
+  <wraith name="Lemp Luke" ethnos="Wraith" nature="Soldier" demeanor="Judge" pathos="5" corpus="2" willpower="3" shadowarchetype="Martyr" angst="5" physicalmax="11" status="Active" startdate="9/17/2002" narrator="John Snyder" npc="yes" lastmodified="5/28/2003 12:31:12 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Ferocious"/>
+      <trait name="Lithe"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Intimidating"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Disciplined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl"/>
+      <trait name="Law"/>
+      <trait name="Soulforging"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon"/>
+      <trait name="Relic" val="4" note="Stygian Steel Sword"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Hierarchy"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Anger (Avenge your Death)
+Anger (Punish those who enslave)
+Faith (Help Family keep Faith)
+Hope (Portect Opressed)]]>
+    </passions>
+    <fetters>
+      <![CDATA[Lemp Manson
+Lemp Brewry Key
+Saint Louis Brown's cap
+BaseBall Bat]]>
+    </fetters>
+    <life>
+      <![CDATA[Workaholic: 80-hour work weeks and 2AM planning meetings swallowed your life; now you're wondering what you missed]]>
+    </life>
+    <death>
+      <![CDATA[Mystery: You don't know what happened to you and you have a sneaking suspicion you're better off that way]]>
+    </death>
+    <regret>
+      <![CDATA[Revenge: Someone made your life a living hell, or even ended it. Now it's payback time, and you got all eternity]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Embody: Ghostly Touch" val="0" note="innate"/>
+      <trait name="Embody: Maintain the Material Form" val="0" note="innate"/>
+      <trait name="Fascinate: Deja Vu" val="0" note="innate"/>
+      <trait name="Fascinate: Distraction" val="0" note="innate"/>
+      <trait name="Fascinate: Tuning In" val="0" note="innate"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Bruiser"/>
+      <trait name="Iron Will" val="3-5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Derangement: Berserk" val="2" note="If Giovanni Family is endangered"/>
+      <trait name="Permanent Wound" val="3" note="bullet holes in torso"/>
+      <trait name="Territorial" val="2-3" note="Dominic"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Longsword" note="Stygian Steel"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <darkpassions>
+      <![CDATA[Fear: Hide from all Shadowlands involvement
+
+Jealousy: Bring down all wraiths of higher Status]]>
+    </darkpassions>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Aura of Corruption" val="2"/>
+    </traitlist>
+  </wraith>
+  <wraith name="Lemp Mark" ethnos="Wraith" nature="Survivor" demeanor="Bon Vivant" pathos="5" corpus="2" willpower="3" shadowarchetype="Merchant" angst="5" physicalmax="11" status="Active" startdate="6/14/2002" narrator="John Snyder" npc="yes" lastmodified="5/28/2003 12:31:23 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Ferocious" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Rugged" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Gorgeous"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Disciplined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Linguistics" note="Italian"/>
+      <trait name="Occult"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon"/>
+      <trait name="Relic" val="4" note="Stygian Steel Sword"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Hierarchy"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Anger (Avenge your Death)
+Anger (Punish those who enslave)
+Faith (Help Family keep Faith)
+Hope (Portect Opressed)]]>
+    </passions>
+    <fetters>
+      <![CDATA[Lemp Manson
+Lemp Brewry Key
+Brown's Ball Cap
+BaseBall Glove]]>
+    </fetters>
+    <life>
+      <![CDATA[Workaholic: 80-hour work weeks and 2AM planning meetings swallowed your life; now you're wondering what you missed]]>
+    </life>
+    <death>
+      <![CDATA[Mystery: You don't know what happened to you and you have a sneaking suspicion you're better off that way]]>
+    </death>
+    <regret>
+      <![CDATA[Revenge: Someone made your life a living hell, or even ended it. Now it's payback time, and you got all eternity]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Behest: Link" val="0" note="innate"/>
+      <trait name="Castigate: Bulwark" val="0" note="innate"/>
+      <trait name="Castigate: Soulsight" val="0" note="innate"/>
+      <trait name="Chains of the Emperor: Soul Anchor" val="0" note="innate"/>
+      <trait name="Displace: Straddle" val="0" note="innate"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <darkpassions>
+      <![CDATA[Fear: Hide from all Shadowlands involvement
+
+Jealousy: Bring down all wraiths of higher Status]]>
+    </darkpassions>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Aura of Corruption" val="2"/>
+    </traitlist>
+  </wraith>
+  <wraith name="Lemp Mathew" ethnos="Wraith" nature="Survivor" demeanor="Caregiver" pathos="5" corpus="2" willpower="3" shadowarchetype="Officer" angst="5" physicalmax="11" status="Active" startdate="9/18/2002" narrator="John Snyder" npc="yes" lastmodified="5/28/2003 12:31:32 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Lithe"/>
+      <trait name="Quick"/>
+      <trait name="Rugged"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Compassionate"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Gorgeous"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Dodge"/>
+      <trait name="Empathy"/>
+      <trait name="Investigation"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Living Family"/>
+      <trait name="Wraith Family"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Hierarchy"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Anger (Avenge your Death)
+Anger (Punish those who enslave)
+Faith (Help Family keep Faith)
+Hope (Portect Opressed)]]>
+    </passions>
+    <fetters>
+      <![CDATA[Lemp Manson
+Lemp Brewry Key
+Brown Derby Hat
+BaseBall]]>
+    </fetters>
+    <life>
+      <![CDATA[Workaholic: 80-hour work weeks and 2AM planning meetings swallowed your life; now you're wondering what you missed]]>
+    </life>
+    <death>
+      <![CDATA[Mystery: You don't know what happened to you and you have a sneaking suspicion you're better off that way]]>
+    </death>
+    <regret>
+      <![CDATA[Revenge: Someone made your life a living hell, or even ended it. Now it's payback time, and you got all eternity]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Embody: Ghostly Touch" val="0" note="innate"/>
+      <trait name="Embody: Maintain the Material Form" val="0" note="innate"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Natural Linguist" val="2-3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Improperly Buried"/>
+      <trait name="Soft-Hearted" val="1-2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <darkpassions>
+      <![CDATA[Fear: Hide from all Shadowlands involvement
+
+Jealousy: Bring down all wraiths of higher Status]]>
+    </darkpassions>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Aura of Corruption" val="2"/>
+    </traitlist>
+  </wraith>
+  <wraith name="Maria Luanna Giovanni" ethnos="Wraith" nature="Soldier" demeanor="Judge" guild="Spook" pathos="5" corpus="10" willpower="3" shadowarchetype="Pusher" angst="2" physicalmax="11" status="Active" startdate="9/17/2002" narrator="John Snyder" npc="yes" lastmodified="1/30/2003 7:18:20 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Ferocious"/>
+      <trait name="Lithe"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Intimidating"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Disciplined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl"/>
+      <trait name="Law"/>
+      <trait name="Soulforging"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon"/>
+      <trait name="Relic" val="4" note="Stygian Steel Sword"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Outrage: Leap of Rage" val="0" note="innate"/>
+      <trait name="Outrage: Ping" val="0" note="innate"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+      <trait name="Pandemonium: Sense Chaos" val="0" note="innate"/>
+      <trait name="Pandemonium: Weirdness" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Bruiser"/>
+      <trait name="Iron Will" val="3-5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Derangement: Berserk" val="2" note="If Giovanni Family is endangered"/>
+      <trait name="Permanent Wound" val="3" note="bullet holes in torso"/>
+      <trait name="Territorial" val="2-3" note="Dominic"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Longsword" note="Stygian Steel"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+  <wraith name="Nephwrack (Spectre Type 1)" ethnos="Wraith" nature="The Director" demeanor="The Rationalist" guild="Spectre" pathos="2" corpus="2" willpower="2" angst="2" physicalmax="12" status="Active" startdate="8/10/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:44:01 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Energetic"/>
+      <trait name="Quick"/>
+      <trait name="Rugged"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Beguiling"/>
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Elegant"/>
+      <trait name="Eloquent"/>
+      <trait name="Ingratiating"/>
+      <trait name="Magnetic"/>
+      <trait name="Persuasive"/>
+      <trait name="Seductive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Clever"/>
+      <trait name="Cunning"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Insightful"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="6" note="Specialization : Sense the Shadow"/>
+      <trait name="Investigation" val="5"/>
+      <trait name="Specialization : Awaken Thorns"/>
+      <trait name="Subterfuge" val="5"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+  <wraith name="Reginald Goldstein" ethnos="Wraith" nature="Monster" demeanor="Martyr" guild="Haunter" faction="Heretic" legion="None" rank="None" pathos="10" corpus="10" willpower="6" shadowarchetype="Weakling" shadowplayer="Jason Jahr" angst="2" physicalmax="15" status="Active" startdate="3/27/2003 10:21:14 PM" narrator="John Snyder" npc="yes" lastmodified="3/29/2003 2:34:28 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="5"/>
+      <trait name="Quick" val="5"/>
+      <trait name="Tough" val="5"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="4"/>
+      <trait name="Fearsome" val="4"/>
+      <trait name="Intimidating" val="3"/>
+      <trait name="Magnetic" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Clever" val="3"/>
+      <trait name="Cunning" val="3"/>
+      <trait name="Depraved" val="3"/>
+      <trait name="Knowledgeable" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Eerie"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="4" note="Vampiric Powers"/>
+      <trait name="Brawl" val="4" note="Stonehand Punch"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Empathy" val="2"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Intimidation" val="5" note="Incite Fear"/>
+      <trait name="Investigation" val="3"/>
+      <trait name="Linguistics" note="German"/>
+      <trait name="Lore: Vampire" val="3"/>
+      <trait name="Lore: Wraith" val="4"/>
+      <trait name="Medicine" val="2"/>
+      <trait name="Melee" val="4" note="Shovel"/>
+      <trait name="Occult" val="4" note="Necromancy Defense"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Subterfuge" val="3"/>
+      <trait name="Survival" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Artifact" val="3"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Wants Joel dead
+Wants all Nazis dead
+Wants to find his grave]]>
+    </passions>
+    <fetters>
+      <![CDATA[Unknown]]>
+    </fetters>
+    <life>
+      <![CDATA[Holocaust Victim]]>
+    </life>
+    <death>
+      <![CDATA[Bullet to the Head]]>
+    </death>
+    <haunt>
+      <![CDATA[Joel Rosenburg]]>
+    </haunt>
+    <regret>
+      <![CDATA[Joel isn't dead]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering" val="0" note="innate"/>
+      <trait name="Argos: Tempestpeek" val="0" note="innate"/>
+      <trait name="Argos: Tempest Threshold" val="0" note="innate"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Argos: Phantom Wings" val="3" note="basic"/>
+      <trait name="Argos: Flicker" val="6" note="int."/>
+      <trait name="Outrage: Leap of Rage" val="0" note="innate"/>
+      <trait name="Outrage: Ping" val="0" note="innate"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+      <trait name="Pandemonium: Sense Chaos" val="0" note="innate"/>
+      <trait name="Pandemonium: Weirdness" val="3" note="basic"/>
+      <trait name="Pandemonium: Dark Ether" val="3" note="basic"/>
+      <trait name="Pandemonium: Foul Humour" val="6" note="int."/>
+      <trait name="Pandemonium: Tempus Fugit" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Unknown Fetter" val="1-5"/>
+      <trait name="Weak Shadow" val="4"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Obsession" val="2" note="Joel Rosenburg"/>
+      <trait name="Vengeance" val="2" note="Joel Rosenburg"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Shovel" note="Artifact 3 - Death's Touch"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Tremere Chantry"/>
+      <trait name="Wherever Joel is"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+  <wraith name="Romeo Giovanni" ethnos="Wraith" nature="Mediator" demeanor="Caretaker" pathos="2" corpus="2" willpower="2" angst="2" physicalmax="11" status="Active" startdate="3/25/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:44:18 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Enduring"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Charming"/>
+      <trait name="Dignified"/>
+      <trait name="Elegant"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Disciplined" val="3"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Patient"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Leadership"/>
+      <trait name="Steward" val="3"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon"/>
+      <trait name="Haunt" val="5"/>
+      <trait name="Relic" val="3"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Duty
+Love]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris
+Mansion
+Phone
+Desk]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris Mansion]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't fulfill duty]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Embody: Ghostly Touch*"/>
+      <trait name="Embody: Maintain the Material Form*"/>
+      <trait name="Inhabit: Sense Gremlin*"/>
+      <trait name="Inhabit: Shellride*"/>
+      <trait name="Inhabit: Surge*"/>
+      <trait name="Embody: Phantom Whispers" val="3" note="basic"/>
+      <trait name="Embody: Materialize" val="6" note="int."/>
+      <trait name="Inhabit: Lightning's Bite" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon Once per night he can foil the stategy of her shadow for one hour
+
+Romeo is Stuck at the Mansion and Can't leave it
+
+Relic-  Phone that works into the Skinlands]]>
+    </notes>
+  </wraith>
+  <wraith name="Scooby" ethnos="Wraith" nature="Bon Vivant" demeanor="Child" faction="Renegade" pathos="5" corpus="10" willpower="3" shadowarchetype="Freak" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:44:23 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Energetic" val="3"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Wiry" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly" val="2"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+      <trait name="Naive"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+      <trait name="Witless"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="3"/>
+      <trait name="Meditation"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Artifact" val="3"/>
+      <trait name="Eidolon" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Pot was my life
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' left shoe
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Flux: Grave Mold*"/>
+      <trait name="Outrage: Leap of Rage*"/>
+      <trait name="Outrage: Ping*"/>
+      <trait name="Flux: Altered States" val="3" note="basic"/>
+      <trait name="Flux: Decay" val="3" note="basic"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Sack full of Scooby Snacks-
+  When one Pathos is put into it, everyone in room (Both sides of the Shroud) feels happily excited..
+Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour]]>
+    </notes>
+  </wraith>
+  <wraith name="Shaggy" ethnos="Wraith" nature="Child" demeanor="Bon Vivant" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:44:29 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Enduring"/>
+      <trait name="Energetic" val="4"/>
+      <trait name="Graceful"/>
+      <trait name="Robust"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Expressive"/>
+      <trait name="Friendly"/>
+      <trait name="Genial"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Creative" val="2"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Intuitive" val="2"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+      <trait name="Ignorant"/>
+      <trait name="Oblivious"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="5" note="Specilization-Skinlands"/>
+      <trait name="Subterfuge" val="5" note="Specilization-Puppetry"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Memoriam" val="5"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[fear-Avenge My Murder
+Lust- Pot was my life
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' necklace
+Bong
+Van in junkyard
+Poster of Pink Floyd]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Mansion
+House in Blythe]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Outrage: Leap of Rage*"/>
+      <trait name="Outrage: Ping*"/>
+      <trait name="Puppetry: Detect Possession*"/>
+      <trait name="Puppetry: Detect Possession*"/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+      <trait name="Outrage: Death's Touch" val="6" note="int."/>
+      <trait name="Puppetry: Skinride" val="3" note="basic"/>
+      <trait name="Puppetry: Master's Control" val="3" note="basic"/>
+      <trait name="Puppetry: Rein in the Mind" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night shaggy can foil the stategy of her shadow for one hour
+Memoriam(5)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.
+
+Intermediate Wraith]]>
+    </notes>
+  </wraith>
+  <wraith name="Shawn" ethnos="Wraith" nature="Caretaker" demeanor="Follower" guild="Alchemist" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/5/2001" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:44:33 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="2"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Ferocious"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Quick"/>
+      <trait name="Steady"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charming"/>
+      <trait name="Dignified"/>
+      <trait name="Elegant"/>
+      <trait name="Eloquent"/>
+      <trait name="Gorgeous"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Creative"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Sickly"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Firearms" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Haunt" val="4"/>
+      <trait name="Legacy" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Guild" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Protect the Weak
+Uphold the Law]]>
+    </passions>
+    <fetters>
+      <![CDATA[Her badge that is with Dancer
+Dancer himself
+Grave Stone
+Ring that Paris has]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Dancers PI office
+Police HQ in Phoenix]]>
+    </haunt>
+    <regret>
+      <![CDATA[Died before marrying Dancer]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Flux: Grave Mold*"/>
+      <trait name="Flux: Altered States" val="3" note="basic"/>
+      <trait name="Flux: Decay" val="3" note="basic"/>
+      <trait name="Flux: Puppet Theater" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Haunts Dancer- Trying to make is life better]]>
+    </notes>
+  </wraith>
+  <wraith name="Spectre" ethnos="Wraith" pathos="10" corpus="10" willpower="6" angst="2" physicalmax="12" status="Active" startdate="10/26/1999" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:45:19 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="3"/>
+      <trait name="Ferocious" val="3"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe" val="2"/>
+      <trait name="Vigorous" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Charismatic"/>
+      <trait name="Commanding" val="4"/>
+      <trait name="Gorgeous"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Attentive"/>
+      <trait name="Cunning" val="3"/>
+      <trait name="Dedicated" val="2"/>
+      <trait name="Determined" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent" val="5"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="5"/>
+      <trait name="Melee" val="5" note="Spec. Scythe"/>
+      <trait name="Soulforging" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Relic"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Argos: Orienteering*"/>
+      <trait name="Argos: Tempest Threshold*"/>
+      <trait name="Argos: Tempestpeek*"/>
+      <trait name="Moliate: Glow*"/>
+      <trait name="Moliate: Shapesense*"/>
+      <trait name="Outrage: Leap of Rage*"/>
+      <trait name="Outrage: Ping*"/>
+      <trait name="Argos: Enshroud" val="3" note="basic"/>
+      <trait name="Argos: Flicker" val="6" note="int."/>
+      <trait name="Moliate: Martialry" val="3" note="basic"/>
+      <trait name="Moliate: Rend" val="6" note="int."/>
+      <trait name="Moliate: Bodyshape" val="9" note="adv."/>
+      <trait name="Outrage: Wraithgrasp" val="3" note="basic"/>
+      <trait name="Outrage: Stonehand Punch" val="3" note="basic"/>
+      <trait name="Outrage: Death's Touch" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Scythe: Bonus 4 neg clumsy
+]]>
+    </notes>
+  </wraith>
+  <wraith name="Velma" ethnos="Wraith" nature="Scientist" demeanor="Visionary" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:45:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Robust"/>
+      <trait name="Stalwart"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Empathetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Clever"/>
+      <trait name="Creative"/>
+      <trait name="Cunning"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Insightful"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+      <trait name="Lame"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Enigmas"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Lore: Heirarchy"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Memoriam" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Hatred-Avenge My Murder
+Fear-Safety of Family
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' right cuff button
+
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Castigate: Bulwark*"/>
+      <trait name="Castigate: Soulsight*"/>
+      <trait name="Intimation: Self-Intimation*"/>
+      <trait name="Intimation: Twinge*"/>
+      <trait name="Lifeweb: Locate Fetter*"/>
+      <trait name="Castigate: Dark Secrets" val="3" note="basic"/>
+      <trait name="Castigate: Purify" val="3" note="basic"/>
+      <trait name="Intimation: The Gleaming" val="3" note="basic"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour
+Memoriam(2)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.]]>
+    </notes>
+  </wraith>
+  <wraith name="Voltre de Rios" ethnos="Wraith" nature="Capitalist" demeanor="Daredevil" pathos="6" corpus="10" willpower="4" angst="2" physicalmax="11" status="Active" startdate="4/29/2003 4:43:48 AM" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:45:14 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="2"/>
+      <trait name="Dexterous"/>
+      <trait name="Energetic"/>
+      <trait name="Fierce" val="3"/>
+      <trait name="Quick"/>
+      <trait name="Rugged"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="3"/>
+      <trait name="Diplomatic" val="2"/>
+      <trait name="Fearsome"/>
+      <trait name="Magnetic" val="2"/>
+      <trait name="Manipulative"/>
+      <trait name="Threatening"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Inhumane" val="4"/>
+      <trait name="Shrewd" val="3"/>
+      <trait name="Vigilant"/>
+      <trait name="Wise" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Haggard"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Shortsighted" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="2"/>
+      <trait name="Acting"/>
+      <trait name="Alertness"/>
+      <trait name="Commerce" val="3"/>
+      <trait name="Enigmas"/>
+      <trait name="Finance" val="2"/>
+      <trait name="Fire Dancing" val="3"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Hearth Wisdom" val="3"/>
+      <trait name="Herbalism" val="3"/>
+      <trait name="Intimidation" val="4"/>
+      <trait name="Melee" val="4"/>
+      <trait name="Rituals"/>
+      <trait name="Seamanship"/>
+      <trait name="Security" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="2"/>
+      <trait name="Domain" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Fatalism: Kismet" val="0" note="innate"/>
+      <trait name="Fatalism: Foreshadow" val="3" note="basic"/>
+      <trait name="Fatalism: Interpretation" val="3" note="basic"/>
+      <trait name="Lifeweb: Locate Fetter" val="0" note="innate"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+      <trait name="Double-Jointed"/>
+      <trait name="Spy Network" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Cannot Embrace" val="2"/>
+      <trait name="Light-Sensitive" val="5"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Compelled for 1 year by Paris Giovanni on 3/17/03]]>
+    </notes>
+  </wraith>
+  <wraith name="Wraith #3" ethnos="Wraith" nature="Scientist" demeanor="Visionary" faction="Renegade" pathos="5" corpus="10" willpower="3" angst="2" physicalmax="11" status="Active" startdate="1/26/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:45:08 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Robust"/>
+      <trait name="Stalwart"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Empathetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Clever"/>
+      <trait name="Creative"/>
+      <trait name="Cunning"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Insightful"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+      <trait name="Lame"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Naive"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Enigmas"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Lore: Heirarchy"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Eidolon" val="3"/>
+      <trait name="Memoriam" val="2"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <passions>
+      <![CDATA[Hatred-Avenge My Murder
+Fear-Safety of Family
+Greed- Gotta get that
+Hope- protect the good]]>
+    </passions>
+    <fetters>
+      <![CDATA[Paris' right cuff button
+
+Book in Paris' Library
+TV in wife's attic
+Couch in basement]]>
+    </fetters>
+    <haunt>
+      <![CDATA[Paris' Castle
+house in Blyth]]>
+    </haunt>
+    <regret>
+      <![CDATA[Didn't accomplish anything]]>
+    </regret>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5">
+      <trait name="Castigate: Bulwark*"/>
+      <trait name="Castigate: Soulsight*"/>
+      <trait name="Intimation: Self-Intimation*"/>
+      <trait name="Intimation: Twinge*"/>
+      <trait name="Lifeweb: Locate Fetter*"/>
+      <trait name="Castigate: Dark Secrets" val="3" note="basic"/>
+      <trait name="Castigate: Purify" val="3" note="basic"/>
+      <trait name="Intimation: The Gleaming" val="3" note="basic"/>
+      <trait name="Lifeweb: Sense Strand" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Artifact Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Artifact Walkie Talkie"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+      <trait name="Verona Ranch"/>
+    </traitlist>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <notes>
+      <![CDATA[Eidolon(3)-3 times per night velma can foil the stategy of her shadow for one hour
+Memoriam(2)-for each level of memoriam, wraith gets a static test at the beginning of night .  for each success the wraith gains a point of Pathos.]]>
+    </notes>
+  </wraith>
+</grapevine>

@@ -1,0 +1,3471 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <mortal name="Andy Knotts" nature="Survivor" demeanor="Judge" motivation="Power" willpower="1" humanity="3" conscience="1" selfcontrol="1" courage="1" blood="4" truefaith="0" physicalmax="11" status="Active" startdate="2/20/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:15 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Ferocious"/>
+      <trait name="Stalwart" val="2"/>
+      <trait name="Steady"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Friendly"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Cunning"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Shrewd"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl"/>
+      <trait name="Firearms"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Occult"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Legal"/>
+      <trait name="Street"/>
+      <trait name="Underworld"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Chivalrous"/>
+      <trait name="Fair"/>
+      <trait name="Honorable"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Afraid of the Dark"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Celerity: Alacrity"/>
+      <trait name="Celerity: Swiftness"/>
+      <trait name="Fortitude: Endurance"/>
+      <trait name="Fortitude: Mettle"/>
+      <trait name="Potence: Might"/>
+      <trait name="Potence: Prowess"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="+1 Disc - potence"/>
+      <trait name="Learn Other Disciplines" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Clan Weakness" val="3" note="gangrel"/>
+      <trait name="Twisted Upbringing" note="belives in sterotypes"/>
+      <trait name="Vitae Sink" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+9mm glock
+cel phone
+badge
+]]>
+    </notes>
+  </mortal>
+  <mortal name="Arthur Landsdown (NPC)" nature="Director" demeanor="Conformist" motivation="Duty" association="Ghoul" willpower="1" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="6/17/2000" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:14 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="2"/>
+      <trait name="Dexterous"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Shy" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Computer"/>
+      <trait name="Drive"/>
+      <trait name="Finance"/>
+      <trait name="Firearms"/>
+      <trait name="Investigation"/>
+      <trait name="Security"/>
+      <trait name="Stealth"/>
+      <trait name="Steward"/>
+      <trait name="Streetwise"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Helpful"/>
+      <trait name="Honorable" val="2"/>
+      <trait name="Loyal"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Immortal Fear"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Fortitude: Endurance"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Retainer to Lucas McNamara
+Blood Bound to Lucas McNamara]]>
+    </notes>
+  </mortal>
+  <mortal name="Bernard Oromos" nature="Traditionalist" demeanor="Caregiver" motivation="Duty" association="Ghoul" willpower="1" humanity="3" conscience="1" selfcontrol="1" courage="1" blood="5" truefaith="0" physicalmax="11" status="Active" startdate="1/14/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:20 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile" val="2"/>
+      <trait name="Brawny"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charming"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Calm" val="2"/>
+      <trait name="Clever"/>
+      <trait name="Determined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Bureaucracy"/>
+      <trait name="Drive"/>
+      <trait name="Firearms"/>
+      <trait name="Investigation"/>
+      <trait name="Steward"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Chivalrous"/>
+      <trait name="Honorable"/>
+      <trait name="Loyal"/>
+      <trait name="Pious"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Commandant Kriemer" nature="Autocrat" demeanor="Soldier" motivation="Hatred" association="Hunter" willpower="4" humanity="2" conscience="1" selfcontrol="4" courage="5" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="3/26/2003 9:18:34 PM" narrator="John Snyder" npc="yes" lastmodified="3/27/2003 10:14:54 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="3"/>
+      <trait name="Quick" val="3"/>
+      <trait name="Stalwart" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="3"/>
+      <trait name="Intimidating" val="3"/>
+      <trait name="Magnetic" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Clever" val="3"/>
+      <trait name="Knowledgeable" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="3"/>
+      <trait name="Awareness" val="2"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Demolitions" val="2"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Empathy" val="2"/>
+      <trait name="Etiquette" val="3"/>
+      <trait name="Expression" val="3"/>
+      <trait name="Firearms" val="4" note="Rifles"/>
+      <trait name="Haven Scouting" val="5"/>
+      <trait name="Intimidation" val="4" note="Interrogation"/>
+      <trait name="Investigation" val="3"/>
+      <trait name="Law" val="2"/>
+      <trait name="Leadership" val="4" note="Public Speaking"/>
+      <trait name="Linguistics" note="German"/>
+      <trait name="Lore: Vampire" val="2"/>
+      <trait name="Melee" val="2"/>
+      <trait name="Occult"/>
+      <trait name="Politics" val="2"/>
+      <trait name="Psychology" val="3"/>
+      <trait name="Security"/>
+      <trait name="Sniping" val="4"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Streetwise"/>
+      <trait name="Subterfuge" val="3"/>
+      <trait name="Survival" val="3"/>
+      <trait name="Torture"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Bureaucracy" val="3"/>
+      <trait name="Street" val="2"/>
+      <trait name="Transportation" val="3"/>
+      <trait name="Underworld" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arsenal" val="4"/>
+      <trait name="Resources" val="4"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Intimidation"/>
+      <trait name="Coldly Logical"/>
+      <trait name="Higher Purpose" note="Mein Kampf"/>
+      <trait name="Natural Leader"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Hatred" val="1-4" note="Jews, Blacks, Gays"/>
+      <trait name="Vengeance" val="2" note="Joel Rosenburg"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Connor Burke" nature="Critic" demeanor="Curmudgeon" association="Ventrue (Ghoul)" willpower="5" humanity="4" conscience="3" selfcontrol="4" courage="4" blood="3" truefaith="0" physicalmax="9" status="Active" startdate="9/6/2002" narrator="John Snyder" npc="yes" lastmodified="5/29/2003 10:34:41 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="5" note="str"/>
+      <trait name="Quick" note="dex"/>
+      <trait name="Tough" val="2" note="str"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="3" note="man"/>
+      <trait name="Intimidating" val="5" note="misc"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2" note="wits"/>
+      <trait name="Dedicated" note="misc"/>
+      <trait name="Disciplined" note="int"/>
+      <trait name="Observant" val="2" note="per"/>
+      <trait name="Shrewd" val="2" note="wits"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Animal Ken"/>
+      <trait name="Brawl"/>
+      <trait name="Drive"/>
+      <trait name="Firearms"/>
+      <trait name="Intimidation"/>
+      <trait name="Investigation"/>
+      <trait name="Law"/>
+      <trait name="Melee"/>
+      <trait name="Security"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Health" val="3"/>
+      <trait name="Legal" val="3"/>
+      <trait name="Media" val="3"/>
+      <trait name="Police" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Retainers"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Investigation"/>
+      <trait name="Ambidextrous"/>
+      <trait name="Clear-Sighted" val="5"/>
+      <trait name="Supernatural Ally" note="Per JRS (st)"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Enemy" val="5" note="The Mob"/>
+      <trait name="Notoriety" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy (Police Issue)"/>
+      <trait name="Batton" note="+2, 1 Bashing"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud (9mm)"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Arch Grounds"/>
+      <trait name="Fabous Fox Theatre"/>
+      <trait name="St. Louis Art Museum"/>
+    </traitlist>
+  </mortal>
+  <mortal name="Deirdre" motivation="Love" association="Independent" willpower="2" humanity="4" conscience="4" selfcontrol="2" courage="2" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="5/4/2003 4:01:11 PM" narrator="Anna Blumstein" npc="yes" lastmodified="9/10/2003 11:50:36 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Energetic"/>
+      <trait name="Graceful"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Compassionate" val="2"/>
+      <trait name="Expressive"/>
+      <trait name="Gorgeous"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Creative" val="2"/>
+      <trait name="Discerning"/>
+      <trait name="Knowledgeable"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Crafts: Ceramics"/>
+      <trait name="Drive"/>
+      <trait name="Empathy" val="2"/>
+      <trait name="Mythlore" val="2"/>
+      <trait name="Performance" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="High Society"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="True Love"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Coupon for free drink at Lit at Both Ends" val="8"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Lit at Both Ends"/>
+    </traitlist>
+    <biography>
+      <![CDATA[One of the lead singers for the band "Kobalds Ate My Baby!" along with her ture love Renyard, a fox pooka. The band plays at a club in south Berkeley  called Lit At Both Ends]]>
+    </biography>
+    <notes>
+      <![CDATA[Created by Anna Blumstein with a little help form Elliott Belser.]]>
+    </notes>
+  </mortal>
+  <mortal name="Det. Q ( Quentin Rodriguez)" nature="Judge" demeanor="Director" motivation="Duty" association="Local Police" willpower="2" humanity="2" conscience="2" selfcontrol="4" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="11/23/2000" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:14 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Steady"/>
+      <trait name="Tenacious" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Commanding" val="3"/>
+      <trait name="Intimidating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Discerning" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Bureaucracy"/>
+      <trait name="Drive"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Investigation" val="3"/>
+      <trait name="Law"/>
+      <trait name="Leadership"/>
+      <trait name="Linguistics" note="Spanish"/>
+      <trait name="Psychology"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Legal"/>
+      <trait name="Police" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Baretta 40 Claiber (+2 traits)
+Ballistic Vest (+2 Health Levels)
+Radio to Dispatch Automatically
+(unless surprised)
+]]>
+    </notes>
+  </mortal>
+  <mortal name="Emira McSkeath" nature="Survivor" demeanor="Bravo" association="WARD" willpower="3" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="3" truefaith="0" physicalmax="11" status="Active" startdate="2/1/1998" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="3"/>
+      <trait name="Quick" val="3"/>
+      <trait name="Rugged" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Ingratiating" val="3"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Creative" val="2"/>
+      <trait name="Cunning" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Blindfighting" val="2"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Firearms"/>
+      <trait name="Medicine" val="2"/>
+      <trait name="Meditation"/>
+      <trait name="Melee" val="4"/>
+      <trait name="Sniping"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Benevolent"/>
+      <trait name="Charitable"/>
+      <trait name="Honorable"/>
+      <trait name="Loyal"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Sadism"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Celerity: Alacrity"/>
+      <trait name="Celerity: Swiftness"/>
+      <trait name="Cursing I: Curse of Inconvenience"/>
+      <trait name="Cursing I: Curse of Trouble"/>
+      <trait name="Fortitude: Endurance"/>
+      <trait name="Fortitude: Mettle"/>
+      <trait name="Potence: Might"/>
+      <trait name="Potence: Prowess"/>
+      <trait name="Potence: Vigor"/>
+      <trait name="Pyrokinesis: Candleflame"/>
+      <trait name="Pyrokinesis: Combustion"/>
+      <trait name="Pyrokinesis: Conflagration"/>
+      <trait name="Pyrokinesis: Fan the Flame"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Damned Visage"/>
+      <trait name="Ghoul" val="5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Intolerance" note="Brujah"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Father Gabriel Michael Trebonious" nature="Fanatic" demeanor="Caregiver" motivation="Compassion" association="Society of Leopold" willpower="6" humanity="5" conscience="5" selfcontrol="5" courage="5" blood="10" truefaith="6" physicalmax="11" status="Active" startdate="12/1/2002" narrator="John Snyder" npc="yes" lastmodified="3/4/2003 11:00:27 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Enduring" val="4" note="sta"/>
+      <trait name="Graceful" val="2" note="dex"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Dignified" val="2" note="cha"/>
+      <trait name="Expressive" val="2" note="cha"/>
+      <trait name="Friendly" val="2" note="misc"/>
+      <trait name="Ingratiating" val="3" note="man"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Dedicated" note="misc"/>
+      <trait name="Knowledgeable" val="2" note="int"/>
+      <trait name="Observant" val="2" note="per"/>
+      <trait name="Reflective" val="2" note="int"/>
+      <trait name="Wise" val="2" note="misc"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Decrepit"/>
+      <trait name="Frail"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Kind"/>
+      <trait name="Naive"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="3"/>
+      <trait name="Awareness" val="5"/>
+      <trait name="Computer"/>
+      <trait name="Dodge" val="5"/>
+      <trait name="Empathy" val="5"/>
+      <trait name="Etiquette" val="3"/>
+      <trait name="Expression" val="5"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Haven Scouting" val="3"/>
+      <trait name="History" val="3"/>
+      <trait name="Investigation" val="5"/>
+      <trait name="Leadership" val="5"/>
+      <trait name="Lore: Camarilla" val="3"/>
+      <trait name="Lore: Clan: Malkavian" val="3"/>
+      <trait name="Lore: Kindred" val="4"/>
+      <trait name="Masquerade" val="5"/>
+      <trait name="Meditation" val="5"/>
+      <trait name="Performance" val="5"/>
+      <trait name="Security"/>
+      <trait name="Sniping" val="5"/>
+      <trait name="Stealth" val="3"/>
+      <trait name="Steward" val="5"/>
+      <trait name="Subterfuge" val="2"/>
+      <trait name="Theology" val="5"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Bureaucracy" val="5"/>
+      <trait name="Church" val="5"/>
+      <trait name="Health"/>
+      <trait name="Legal" val="3"/>
+      <trait name="Media" val="4"/>
+      <trait name="Politics" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Fair"/>
+      <trait name="Helpful"/>
+      <trait name="Honorable"/>
+      <trait name="Loyal"/>
+      <trait name="Merciful"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="True Faith: 6 - Miracle"/>
+      <trait name="True Faith: 5 - Blessing"/>
+      <trait name="True Faith: 4 - Holy Invulnerability"/>
+      <trait name="True Faith: 3 - Pacify"/>
+      <trait name="True Faith: 2 - Faith Healing"/>
+      <trait name="True Faith: 2 - Holy Resistance"/>
+      <trait name="True Faith: 1 - Repel Vampires"/>
+      <trait name="True Faith: 1 - Substitute for Willpower"/>
+      <trait name="True Faith: 1- Regaining Willpower"/>
+      <trait name="Theurgy [Unrevised]: Via Oraculi: True Visions" val="9" note="adv."/>
+      <trait name="Theurgy [Unrevised]: Via Oraculi: Secret Whispers" val="6" note="int."/>
+      <trait name="Theurgy [Unrevised]: Via Oraculi: Attunement" val="6" note="int."/>
+      <trait name="Theurgy [Unrevised]: Via Oraculi: Hidden Meaning" val="3" note="basic"/>
+      <trait name="Theurgy [Unrevised]: Via Oraculi: Query" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Theology +2 Traits"/>
+      <trait name="Burning Aura" val="2"/>
+      <trait name="Clear Sighted" val="5"/>
+      <trait name="Ecclesiastical Rank" val="1-3"/>
+      <trait name="Higher Purpose" note="+2 Traits - Serve God, Bring Redemption to Vampires"/>
+      <trait name="Psychic Awareness" val="3"/>
+      <trait name="Symbol Independence" val="3"/>
+      <trait name="True Faith" val="7"/>
+      <trait name="Well-Rested"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Aging" val="3"/>
+      <trait name="Dark Secret" note="Once Was a Vampire"/>
+      <trait name="Nightmares"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Briefcase"/>
+      <trait name="Lighter"/>
+      <trait name="Palm Pilot"/>
+      <trait name="Unicator" note=", Fragile"/>
+      <trait name="VUE" note="+0, 4 Armor Levels"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="FBI Agent" nature="Crusader" demeanor="Analyst" association="Federal Bureau of Investigation" willpower="2" humanity="3" conscience="3" selfcontrol="4" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="5/10/2003 12:52:00 PM" narrator="Anna Blumstein" npc="yes" lastmodified="8/15/2003 5:19:44 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Deadly"/>
+      <trait name="Enduring"/>
+      <trait name="Quick"/>
+      <trait name="Steady"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Expressive"/>
+      <trait name="Intense"/>
+      <trait name="Intimidating"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Analytical"/>
+      <trait name="Attentive"/>
+      <trait name="Dedicated"/>
+      <trait name="Rational"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Dull" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Bureaucracy"/>
+      <trait name="Dodge"/>
+      <trait name="Drive"/>
+      <trait name="Etiquette"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Interrogation" val="2"/>
+      <trait name="Investigation" val="3"/>
+      <trait name="Leadership" val="2"/>
+      <trait name="Politics"/>
+      <trait name="Psychology"/>
+      <trait name="Security" val="2"/>
+      <trait name="Stealth"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Media"/>
+      <trait name="Police" val="4"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="4"/>
+      <trait name="Contacts" val="3"/>
+      <trait name="Influence" val="5"/>
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Banality 8]]>
+    </other>
+    <notes>
+      <![CDATA[Created by Casey Loufek]]>
+    </notes>
+  </mortal>
+  <mortal name="Female Ghoul" nature="Eye of the Storm" demeanor="Caregiver" motivation="Power" association="Ghoul" willpower="3" humanity="4" conscience="4" selfcontrol="3" courage="3" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="5/29/2003 12:50:00 PM" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:46:05 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring" val="3"/>
+      <trait name="Beguiling"/>
+      <trait name="Charming"/>
+      <trait name="Expressive" val="2"/>
+      <trait name="Persuasive"/>
+      <trait name="Seductive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Insightful"/>
+      <trait name="Intuitive"/>
+      <trait name="Reflective"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Frail"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" note="Medical"/>
+      <trait name="Drive"/>
+      <trait name="Medical Knowledge" val="2"/>
+      <trait name="Medicine"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Health" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Celerity: Alacrity" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ghoul" val="5"/>
+      <trait name="Independant Income"/>
+      <trait name="Lifegiver" val="5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Addicted to Vampiric Vitae" val="3"/>
+      <trait name="Potent Blood" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Bound to Garrett]]>
+    </other>
+  </mortal>
+  <mortal name="Financial Ghoul" nature="Mediator" demeanor="Analyst" motivation="Control" association="Ghoul" willpower="3" humanity="4" conscience="4" selfcontrol="4" courage="2" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="5/28/2003 10:19:50 PM" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:46:37 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Stalwart"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Genial"/>
+      <trait name="Ingratiating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Attentive"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Patient"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Dull"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="2" note="Accounting &amp; Finances"/>
+      <trait name="Bureaucracy"/>
+      <trait name="Computer"/>
+      <trait name="Drive"/>
+      <trait name="Etiquette"/>
+      <trait name="Finance" val="3"/>
+      <trait name="Law"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Finance" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Fortitude: Endurance" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ghoul" val="5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Low Pain Threshold" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Sony Vaio" note="+0, 0 N/A, Clumsy, Fragile x2"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Bound to Garrett]]>
+    </other>
+  </mortal>
+  <mortal name="Garret's Female Ghoul" nature="Eye of the Storm" demeanor="Caregiver" motivation="Power" association="Ghoul" regnant="Garrett Morgan" willpower="3" humanity="4" conscience="4" selfcontrol="3" courage="3" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="5/29/2003 12:50:00 PM" narrator="Andy Knudsen" npc="yes" lastmodified="8/9/2003 8:05:59 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring" val="3"/>
+      <trait name="Beguiling"/>
+      <trait name="Charming"/>
+      <trait name="Expressive" val="2"/>
+      <trait name="Persuasive"/>
+      <trait name="Seductive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Insightful"/>
+      <trait name="Intuitive"/>
+      <trait name="Reflective"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Frail"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" note="Medical"/>
+      <trait name="Drive"/>
+      <trait name="Medical Knowledge" val="2"/>
+      <trait name="Medicine"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Health" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Celerity: Alacrity" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ghoul" val="5"/>
+      <trait name="Independant Income"/>
+      <trait name="Lifegiver" val="5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Addicted to Vampiric Vitae" val="3"/>
+      <trait name="Potent Blood" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Bound to Garrett]]>
+    </other>
+  </mortal>
+  <mortal name="Garrett's Financial Ghoul" nature="Mediator" demeanor="Analyst" motivation="Control" association="Ghoul" regnant="Garrett Morgan" willpower="3" humanity="4" conscience="4" selfcontrol="4" courage="2" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="5/28/2003 10:19:50 PM" narrator="Andy Knudsen" npc="yes" lastmodified="8/9/2003 8:05:54 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Stalwart"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Eloquent"/>
+      <trait name="Friendly"/>
+      <trait name="Genial"/>
+      <trait name="Ingratiating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Attentive"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Patient"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Dull"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="2" note="Accounting &amp; Finances"/>
+      <trait name="Bureaucracy"/>
+      <trait name="Computer"/>
+      <trait name="Drive"/>
+      <trait name="Etiquette"/>
+      <trait name="Finance" val="3"/>
+      <trait name="Law"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Finance" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Fortitude: Endurance" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ghoul" val="5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Low Pain Threshold" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Sony Vaio" note="+0, 0 N/A, Clumsy, Fragile x2"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Bound to Garrett]]>
+    </other>
+  </mortal>
+  <mortal name="Harry Bobbin" nature="Judge" demeanor="Judge" motivation="Duty" association="Hunter (Ghoul)" willpower="2" humanity="1" conscience="5" selfcontrol="4" courage="4" blood="3" truefaith="0" physicalmax="11" status="Active" startdate="12/11/2002" narrator="John Snyder" npc="yes" lastmodified="1/30/2003 5:58:02 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="10" note="misc"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring" val="10" note="app"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="9" note="wits"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="5"/>
+      <trait name="Awareness" val="5"/>
+      <trait name="Blindfighting" val="5"/>
+      <trait name="Brawl" val="5"/>
+      <trait name="Dodge" val="5"/>
+      <trait name="Firearms" val="5"/>
+      <trait name="Intimidation" val="5"/>
+      <trait name="Leadership" val="5"/>
+      <trait name="Linguistics" val="5"/>
+      <trait name="Masquerade" val="5"/>
+      <trait name="Melee" val="5"/>
+      <trait name="Occult" val="5"/>
+      <trait name="Performance" val="5"/>
+      <trait name="Sleight of Hand" val="5"/>
+      <trait name="Sniping" val="5"/>
+      <trait name="Stealth" val="5"/>
+      <trait name="Subterfuge" val="3"/>
+      <trait name="Survival" val="5"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="3"/>
+      <trait name="Contacts" val="3"/>
+      <trait name="Library" val="5"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="6" note="Huge Size Mettle Ballistic Vest"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Benevolent"/>
+      <trait name="Charitable"/>
+      <trait name="Generous"/>
+      <trait name="Giving"/>
+      <trait name="Honorable"/>
+      <trait name="Kind"/>
+      <trait name="Loyal"/>
+      <trait name="Moral"/>
+      <trait name="Sympathetic"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Addiction" val="2" note="Vampire Blood"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Celerity: Alacrity" val="3" note="basic"/>
+      <trait name="Disciplines: Celerity: Swiftness" val="3" note="basic"/>
+      <trait name="Disciplines: Celerity: Rapidity" val="6" note="int."/>
+      <trait name="Disciplines: Celerity: Legerity" val="6" note="int."/>
+      <trait name="Disciplines: Celerity: Fleetness" val="9" note="adv."/>
+      <trait name="Disciplines: Fortitude: Endurance" val="3" note="basic"/>
+      <trait name="Disciplines: Fortitude: Mettle" val="3" note="basic"/>
+      <trait name="Disciplines: Fortitude: Resilience" val="6" note="int."/>
+      <trait name="Disciplines: Fortitude: Resistance" val="6" note="int."/>
+      <trait name="Disciplines: Fortitude: Aegis" val="9" note="adv."/>
+      <trait name="Disciplines: Potence: Prowess" val="3" note="basic"/>
+      <trait name="Disciplines: Potence: Might" val="3" note="basic"/>
+      <trait name="Disciplines: Potence: Vigor" val="6" note="int."/>
+      <trait name="Disciplines: Potence: Intensity" val="6" note="int."/>
+      <trait name="Disciplines: Potence: Puissance" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Burning Aura" val="2"/>
+      <trait name="Clear Sighted" val="5"/>
+      <trait name="Higher Purpose"/>
+      <trait name="Huge Size" val="4"/>
+      <trait name="Iron Will" val="3-5"/>
+      <trait name="Magic Resistance" val="2"/>
+      <trait name="Natural Leader"/>
+      <trait name="Natural Linguist" val="2-3"/>
+      <trait name="Unbondable" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Addicted to Vampiric Vitae" val="3"/>
+      <trait name="Bad Sight" val="1-3"/>
+      <trait name="Company Man" val="3"/>
+      <trait name="Dark Fate" val="5" note="Active hunt vampires"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Armor-Piercing Ammo [Clip of 10]" val="2"/>
+      <trait name="Assault Rifle" note="+3, 2 Lethal, Loud"/>
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+      <trait name="Car" note="+0, 4 Armor Levels"/>
+      <trait name="Cell Phone"/>
+      <trait name="Dagger" note="+2, 1 Lethal, Short"/>
+      <trait name="Dragon Breath Round" note="+0, 1 Aggravated"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="LapTop"/>
+      <trait name="Lighter"/>
+      <trait name="Universal Tracking System" note=", Electronic"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Inquisition thug" nature="Fanatic" demeanor="Hunter" association="Independent" willpower="5" humanity="3" conscience="3" selfcontrol="3" courage="4" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="1/4/2003" narrator="Zoe Mora" npc="yes" lastmodified="5/4/2003 11:05:51 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Energetic"/>
+      <trait name="Ferocious"/>
+      <trait name="Tireless"/>
+      <trait name="Vigorous"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="2"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Calm"/>
+      <trait name="Cunning"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Disciplined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Archery" val="3"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Disguise"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Drive"/>
+      <trait name="Haven Scouting"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Medicine"/>
+      <trait name="Melee" val="3"/>
+      <trait name="Security"/>
+      <trait name="Sniping"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Streetwise" val="2"/>
+      <trait name="Subterfuge" val="2"/>
+      <trait name="Survival" val="2"/>
+      <trait name="Theology" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Higher Purpose"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Driving Goal" val="3"/>
+      <trait name="Hatred" val="1-4"/>
+      <trait name="Overconfident" val="1-2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Jay" nature="Loner" demeanor="Bravo" motivation="Recognition" association="Kinfolk" willpower="3" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="8/7/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="7/18/2003 12:35:31 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Stalwart"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Compassionate"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Calm"/>
+      <trait name="Clever"/>
+      <trait name="Determined"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Computer"/>
+      <trait name="Demolition"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Electronics"/>
+      <trait name="Law"/>
+      <trait name="Lore: Garou"/>
+      <trait name="Sleight of Hand"/>
+      <trait name="Stealth"/>
+      <trait name="Streetwise"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Street"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Contacts" val="2"/>
+      <trait name="Influence"/>
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+      <trait name="Kinfolk" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Jennifer Tweedy (NPC)" nature="Conformist" demeanor="Supplicant" motivation="Power" association="Servitor" title="Assistant" willpower="3" humanity="2" conscience="2" selfcontrol="3" courage="2" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="1/5/2001" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:14 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Lithe"/>
+      <trait name="Quick"/>
+      <trait name="Resilient"/>
+      <trait name="Tireless"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Empathetic" val="2"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Genial" val="2"/>
+      <trait name="Ingratiating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Clever"/>
+      <trait name="Creative"/>
+      <trait name="Cunning"/>
+      <trait name="Observant"/>
+      <trait name="Shrewd"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending" val="2"/>
+      <trait name="Obnoxious"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Submissive"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Computer"/>
+      <trait name="Disguise"/>
+      <trait name="Empathy"/>
+      <trait name="Enigmas"/>
+      <trait name="Investigation" val="3"/>
+      <trait name="Lore: Vampire" val="2"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Church" val="2"/>
+      <trait name="Occult" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="2"/>
+      <trait name="Contacts" val="2"/>
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Naive"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Power Madness"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Conjuration I: Levitate Object"/>
+      <trait name="Daimonis: Summoning"/>
+      <trait name="Daimonis: Truce"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Blackmail Material" val="1-3"/>
+      <trait name="Danger Sense" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Low Pain Threshold" val="2"/>
+      <trait name="Ostentatious Toady" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Jennifer Tweedy - reseach scientist and anthropologist assigned to one of the artifacts that held the deamon's spirit - he has totally corrupted her and driven her almost insane with visions of overreaching power - her personality does not lend to leadership, as she is a follower by nature and cowardly but she will do anything up to acts of murder and great evil to get what she thinks she deserves.]]>
+    </notes>
+  </mortal>
+  <mortal name="Jericho" nature="Caregiver" demeanor="Fanatic" motivation="Revenge" association="Society of Leopold" regnant="Father Andrew" willpower="5" humanity="4" conscience="1" selfcontrol="1" courage="1" blood="10" truefaith="1" physicalmax="11" status="Active" startdate="4/4/2002" narrator="John Snyder" npc="yes" lastmodified="6/3/2003 2:15:10 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="3"/>
+      <trait name="Dexterous" val="3"/>
+      <trait name="Ferocious"/>
+      <trait name="Resilient" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Intimidating" val="4"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Disciplined" val="3"/>
+      <trait name="Intuitive"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Blindfighting"/>
+      <trait name="Brawl" val="5" note="SPEC:  Boxing"/>
+      <trait name="Computer" val="2"/>
+      <trait name="Demolitions"/>
+      <trait name="Dodge" val="5"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Electronics"/>
+      <trait name="Empathy" val="2"/>
+      <trait name="Etiquette"/>
+      <trait name="Firearms" val="3" note="SPEC:  Shotguns"/>
+      <trait name="Haven Scouting" val="2"/>
+      <trait name="Intimidation" val="4"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Leadership" val="3"/>
+      <trait name="Melee" val="6" note="SPEC:  Broadsword"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Security" val="2"/>
+      <trait name="Sniping" val="4"/>
+      <trait name="Stealth" val="3"/>
+      <trait name="Subterfuge" val="2"/>
+      <trait name="Survival" val="3"/>
+      <trait name="Theology" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="2"/>
+      <trait name="Sanctuary" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Chivalrous"/>
+      <trait name="Helpful"/>
+      <trait name="Honorable"/>
+      <trait name="Humane"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Celerity: Alacrity" val="3" note="basic"/>
+      <trait name="Disciplines: Celerity: Swiftness" val="3" note="basic"/>
+      <trait name="Disciplines: Celerity: Rapidity" val="6" note="int."/>
+      <trait name="Disciplines: Celerity: Legerity" val="6" note="int."/>
+      <trait name="Disciplines: Fortitude: Endurance" val="3" note="basic"/>
+      <trait name="Disciplines: Fortitude: Mettle" val="3" note="basic"/>
+      <trait name="Disciplines: Fortitude: Resilience" val="6" note="int."/>
+      <trait name="Disciplines: Potence: Prowess" val="3" note="basic"/>
+      <trait name="Disciplines: Potence: Might" val="3" note="basic"/>
+      <trait name="Disciplines: Potence: Vigor" val="6" note="int."/>
+      <trait name="Psychic: Precognition: Intuition" val="3" note="basic"/>
+      <trait name="Psychic: Precognition: Insight" val="3" note="basic"/>
+      <trait name="Psychic: Precognition: Danger Sense" val="6" note="int."/>
+      <trait name="Theurgy: Via Ignis: Burning" val="3" note="basic"/>
+      <trait name="Theurgy: Via Ignis: Searing" val="3" note="basic"/>
+      <trait name="Theurgy: Via Ignis: Branding" val="6" note="int."/>
+      <trait name="Theurgy: Via Ignis: Branding Weapon" val="2" note="basic ritual"/>
+      <trait name="Theurgy: Via Ignis: Cleansing" val="6" note="int."/>
+      <trait name="Theurgy: Via Ignis: Purifying" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+      <trait name="Burning Aura" val="2"/>
+      <trait name="Clear Sighted" val="5"/>
+      <trait name="Danger Sense" val="2"/>
+      <trait name="Higher Purpose"/>
+      <trait name="Luck" val="3"/>
+      <trait name="Natural Leader"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Addiction" note="Alcohol"/>
+      <trait name="Amnesia" val="2"/>
+      <trait name="Dark Fate" val="5"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[Wife and family murdered before his eyes, was Forgetful Minded to forget the faces.  Wants to find those responsible.  He has spent many a night speaking with Father Andrew within the church at St. Louis, and simply wants to avenge the memory of his beloved family.]]>
+    </biography>
+    <notes>
+      <![CDATA[Since the death of Father Andrew, he has become more unstable.  He continues to plan the death of the Giovanni, and is working hand in hand with the Sons of Tertillian.]]>
+    </notes>
+  </mortal>
+  <mortal name="Jessica &quot;Jezzie&quot; Santiago" nature="Judge" demeanor="Caregiver" motivation="Compassion" association="Local Police" title="Sergeant" willpower="4" humanity="4" conscience="4" selfcontrol="4" courage="4" blood="10" truefaith="0" physicalmax="11" status="Active" id="4" startdate="10/13/2001" narrator="Raymond Terry" npc="yes" lastmodified="7/16/2003 1:11:30 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Steady"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified" val="2"/>
+      <trait name="Intimidating" val="3"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Dedicated" val="2"/>
+      <trait name="Discerning"/>
+      <trait name="Insightful"/>
+      <trait name="Intuitive"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Disguise"/>
+      <trait name="Dodge"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Law" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Legal" val="2"/>
+      <trait name="Police" val="3"/>
+      <trait name="Underworld"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+      <trait name="Common Sense"/>
+      <trait name="Concentration"/>
+      <trait name="Danger Sense" val="2"/>
+      <trait name="Double-Jointed"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Light Sensitivity" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+      <trait name="Combat Shotgun" note="+3, 2 Lethal, Loud"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Juliet" nature="Conformist" demeanor="Curmudgeon" motivation="Recognition" association="Ghoul" willpower="2" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="8" truefaith="0" physicalmax="11" status="Active" startdate="1/28/2000" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:46:49 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Graceful"/>
+      <trait name="Stalwart"/>
+      <trait name="Steady"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Dignified"/>
+      <trait name="Diplomatic"/>
+      <trait name="Empathetic"/>
+      <trait name="Ingratiating"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Calm"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Patient"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Docile"/>
+      <trait name="Flabby"/>
+      <trait name="Lame"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Animal Ken"/>
+      <trait name="Medical Knowledge" val="3"/>
+      <trait name="Occult"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Familiar"/>
+      <trait name="Mentor" val="4"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Benevolent"/>
+      <trait name="Fair"/>
+      <trait name="Giving"/>
+      <trait name="Helpful"/>
+      <trait name="Moral"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Delusional Identity" note="Madaline Giovanni"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Celerity: Alacrity"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Animal Friendship" val="2"/>
+      <trait name="Code of Honor" val="1-2" note="Giovanni"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Allergic" val="1-4" note="Blood with hard drugs"/>
+      <trait name="Deep Sleeper"/>
+      <trait name="Driving Goal" val="3" note="Be embraced Giovanni"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Mini-Hospital at Castle
+2 Pit Bulls that she keeps at the outside entrance to the Hospital.  She trains them as guard dogs.
+Paris' Ghoul
+Trained Nurse
+Wants to be embraced]]>
+    </notes>
+  </mortal>
+  <mortal name="Kelvin Frost" nature="Survivor" demeanor="Bravo" motivation="Power" association="WARD" willpower="3" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="3" truefaith="0" physicalmax="11" status="Active" startdate="9/5/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Graceful"/>
+      <trait name="Lithe" val="2"/>
+      <trait name="Nimble"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Resilient"/>
+      <trait name="Tenacious"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Commanding" val="3"/>
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive" val="2"/>
+      <trait name="Cunning" val="3"/>
+      <trait name="Determined" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Frail" note="Albinism"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Apathetic"/>
+      <trait name="Impatient"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="2" note="Acrobatics"/>
+      <trait name="Firearms" val="4"/>
+      <trait name="hemotology"/>
+      <trait name="Lore: Vampire" val="2"/>
+      <trait name="Masquerade"/>
+      <trait name="Medicine" note="Phelbmotoy"/>
+      <trait name="Mentatics" val="4"/>
+      <trait name="Science" note="Hemotology"/>
+      <trait name="Sniping"/>
+      <trait name="Stealth"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Loyal" val="4"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Obsession"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Celerity: Alacrity"/>
+      <trait name="Fortitude: Endurance"/>
+      <trait name="Fortitude: Mettle"/>
+      <trait name="Telekinesis: Fling"/>
+      <trait name="Telekinesis: Hidden Forces"/>
+      <trait name="Telekinesis: Nudge"/>
+      <trait name="Telekinesis: Phantom Arm"/>
+      <trait name="Telekinesis: Psychic Levitation"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Firearms"/>
+      <trait name="Ambidextrous"/>
+      <trait name="Pale Aura" val="2"/>
+      <trait name="Prestigious Regnant"/>
+      <trait name="Unbondable" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Albinism"/>
+      <trait name="Clan Enmity" note="Tremere"/>
+      <trait name="Hatred" val="1-4" note="Ravnos"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Has a pair of awakened Browning 9mm's that are attuned to him.   "Vengence", "Justice"]]>
+    </notes>
+  </mortal>
+  <mortal name="Kirk Townsend" nature="Competitor" demeanor="Judge" motivation="Power" association="Directors of Chaos" title="OverLord" willpower="3" humanity="3" conscience="3" selfcontrol="3" courage="5" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="4/3/2003 1:04:42 PM" narrator="Brandon Wallace" npc="yes" lastmodified="7/27/2003 7:59:18 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive" val="7"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="7"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive" val="7"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="3"/>
+      <trait name="Brawl" val="4"/>
+      <trait name="Computer" val="4"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Repair" val="3"/>
+      <trait name="Sleight of Hand" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Media" val="2"/>
+      <trait name="Police" val="5"/>
+      <trait name="Street" val="6"/>
+      <trait name="Underworld" val="5"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="3"/>
+      <trait name="Contacts" val="4"/>
+      <trait name="Destiny" val="5"/>
+      <trait name="Rank" val="6"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Honorable" val="2"/>
+      <trait name="Liberal" val="2"/>
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Bioenhancements: Video Eyes"/>
+      <trait name="Disciplines: Celerity: Alacrity" val="3" note="basic"/>
+      <trait name="Disciplines: Celerity: Swiftness" val="3" note="basic"/>
+      <trait name="Disciplines: Potence: Prowess" val="3" note="basic"/>
+      <trait name="Disciplines: Potence: Might" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Learn Other Disciplines" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Overconfident" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Independent Ghoul Hunter recived implants from a Malkavian whom he later destroyed 
+Unless a character has obfuscate 8 he automatically percives anyone in Obfuscate]]>
+    </notes>
+  </mortal>
+  <mortal name="Kodi Babineux" nature="Loner" demeanor="Judge" motivation="Revenge" association="WARD" willpower="3" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="2/1/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+      <trait name="Quick"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Charming"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive" val="2"/>
+      <trait name="Seductive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Calm"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Intuitive"/>
+      <trait name="Observant" val="2"/>
+      <trait name="Vigilant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="3" note="Gymnastics"/>
+      <trait name="Brawl" val="4" note="Jeet Kun Do"/>
+      <trait name="Computer"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Intimidation"/>
+      <trait name="Lore: Vampire" val="2"/>
+      <trait name="Meditation" val="3"/>
+      <trait name="Mentatics" val="2"/>
+      <trait name="Occult" val="4"/>
+      <trait name="Performance" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arcane" val="2"/>
+      <trait name="Mana-Pool" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Chivalrous"/>
+      <trait name="Humane"/>
+      <trait name="Liberal"/>
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Conjuration I: Conjure the Complex Form"/>
+      <trait name="Conjuration I: Conjure the Living Form"/>
+      <trait name="Conjuration I: Conjure the Simple Form"/>
+      <trait name="Conjuration I: Levitate Object"/>
+      <trait name="Conjuration I: Manipulate Object"/>
+      <trait name="Conjuration I: Teleport Object"/>
+      <trait name="Conjuration I: The Conjurer's Grasp"/>
+      <trait name="Conjuration I: The Conjurer's Touch"/>
+      <trait name="Healing I: Minor Healing"/>
+      <trait name="Healing I: Restoration"/>
+      <trait name="Healing I: Soothing Touch"/>
+      <trait name="Hellfire: Engulf"/>
+      <trait name="Hellfire: Firestorm"/>
+      <trait name="Hellfire: Firewall"/>
+      <trait name="Hellfire: Flamebolt"/>
+      <trait name="Hellfire: Spark"/>
+      <trait name="Illusion: Facade"/>
+      <trait name="Illusion: Greater Veil"/>
+      <trait name="Illusion: Lesser Veil"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Iron Will" val="3-5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Amulet which grants extra speed at swiftness. 
+
+ Amulet which allows teleportation through the Arcane
+Benality *5]]>
+    </notes>
+  </mortal>
+  <mortal name="Lieutenant Schneider" nature="Conniver" demeanor="Soldier" motivation="Hatred" association="Hunter" willpower="3" humanity="2" conscience="2" selfcontrol="4" courage="4" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="3/26/2003 9:24:28 PM" narrator="John Snyder" npc="yes" lastmodified="3/27/2003 10:16:25 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="3"/>
+      <trait name="Dexterous" val="3"/>
+      <trait name="Tough" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring" val="4"/>
+      <trait name="Charming" val="4"/>
+      <trait name="Commanding"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Clever" val="2"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Dedicated" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Cowardly"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Shortsighted"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="2"/>
+      <trait name="Acting" val="4" note="Alternate Identities"/>
+      <trait name="Athletics" val="2"/>
+      <trait name="Awareness" val="2"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Computer" val="4" note="Hacking"/>
+      <trait name="Demolitions"/>
+      <trait name="Disguise" val="4" note="Latex Work"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Drive"/>
+      <trait name="Empathy"/>
+      <trait name="Etiquette"/>
+      <trait name="Firearms" val="3" note="Sub-Machine Guns"/>
+      <trait name="Haven Scouting"/>
+      <trait name="Investigation"/>
+      <trait name="Leadership" val="3"/>
+      <trait name="Linguistics" note="German"/>
+      <trait name="Lore: Vampire"/>
+      <trait name="Melee" val="5" note="Fencing"/>
+      <trait name="Science" val="2"/>
+      <trait name="Security" val="4" note="Lockpicking"/>
+      <trait name="Sleight of Hand" val="4" note="Hand Off"/>
+      <trait name="Sniping"/>
+      <trait name="Stealth"/>
+      <trait name="Streetwise"/>
+      <trait name="Subterfuge" val="4" note="Bold Face Lies"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Legal"/>
+      <trait name="Media"/>
+      <trait name="Police"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="4"/>
+      <trait name="Contacts" val="4"/>
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Subterfuge"/>
+      <trait name="Danger Sense" val="2"/>
+      <trait name="Enchanting Voice" val="2"/>
+      <trait name="Friendly Face"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Hatred" val="1-4" note="Jews, Black, Gays"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Malafaxus (WEAK)" nature="Fanatic" demeanor="Fanatic" motivation="Insanity" association="Fomori" willpower="5" humanity="2" conscience="0" selfcontrol="0" courage="0" blood="5" truefaith="0" physicalmax="19" status="Active" startdate="3/4/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="3"/>
+      <trait name="Brutal" val="3"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Ferocious" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Resilient" val="7"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="2"/>
+      <trait name="Intimidating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive" val="2"/>
+      <trait name="Clever" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Insightful"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Repugnant"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="5"/>
+      <trait name="Dodge" val="5"/>
+      <trait name="Intimidation" val="2"/>
+      <trait name="Occult" val="5"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Obsession"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Incite Frenzy"/>
+      <trait name="Portal" note="see notes"/>
+      <trait name="Posoin Sacks"/>
+      <trait name="Fomori Powers: Claws and Fangs" val="5"/>
+      <trait name="Fomori Powers: Immunity to the Delerium"/>
+      <trait name="Fomori Powers: Infectious Touch"/>
+      <trait name="Fomori Powers: Umbral Passage"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Portal: 
+For two Gnosis points per scene, the Wyrm-Walker
+can open a portal within itself. The opening connects Malfeas to
+this world. The portal is strictly one-way and allows any Bane with
+the Possession Charm to enter the real world at will, with no cost
+to itself. The Banes must begin the process of Possessing a target
+within three turns of entering the material world or return to the
+Umbra. Malafaxus has no control over these Banes; it simply
+knows that releasing them into the world is what the Wyrm desires.
+These Banes come through the Portal at a rate of one every two
+turns.]]>
+    </other>
+    <notes>
+      <![CDATA[Image: The Wyrm-Walker is a short, stocky man with long
+black hair. He looks like the security guard who accompanied
+Waltheford in his truck, but now he's in very rough shape. A large
+scar on the former-guard's chest pulses with his heartbeat. Burn marks, from long exposure to the powerful fetishes that bound the Wyrm-Walker, cover his body. Things move under the Wyrm-Walker's leathery hide, writhing and hissing with the host's every move.]]>
+    </notes>
+  </mortal>
+  <mortal name="Men In Black" nature="Deviant" demeanor="Predator" motivation="Insanity" association="Men In Black" willpower="5" humanity="2" conscience="2" selfcontrol="5" courage="5" blood="6" truefaith="0" physicalmax="11" status="Active" startdate="7/7/2003 11:15:24 PM" narrator="Zoe Mora" npc="yes" lastmodified="7/7/2003 11:23:18 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="2"/>
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="4"/>
+      <trait name="Commanding" val="6"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever" val="3"/>
+      <trait name="Creative" val="3"/>
+      <trait name="Cunning" val="4"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="3"/>
+      <trait name="Awareness" val="5"/>
+      <trait name="Blindfighting"/>
+      <trait name="Disguise"/>
+      <trait name="Empathy" val="3"/>
+      <trait name="Enigmas"/>
+      <trait name="Haven Scouting" val="3"/>
+      <trait name="Linguistics"/>
+      <trait name="Metaphysics"/>
+      <trait name="Occult" val="5"/>
+      <trait name="Security" val="2"/>
+      <trait name="Stealth" val="5"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arcane" val="5"/>
+      <trait name="Library" val="3"/>
+      <trait name="Resources" val="4"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Ideology Fanatic" val="2"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Dementation: Passion" val="3" note="basic"/>
+      <trait name="Disciplines: Dementation: The Haunting" val="3" note="basic"/>
+      <trait name="Disciplines: Dementation: Eyes of Chaos" val="6" note="int."/>
+      <trait name="Disciplines: Dementation: Voice of Madness" val="6" note="int."/>
+      <trait name="Sorcery: Shadowcasting: Apprentice Level" val="3"/>
+      <trait name="Sorcery: Shadowcasting: Initiate Level" val="3"/>
+      <trait name="Sorcery: Shadowcasting: Adept Level" val="6"/>
+      <trait name="Sorcery: Shadowcasting: Disciple Level" val="6"/>
+      <trait name="Sorcery: Shadowcasting: Apprentice Spell" val="3"/>
+      <trait name="Sorcery: Shadowcasting: Apprentice Ritual" val="2"/>
+      <trait name="Sorcery: Shadowcasting: Initiate Spell" val="3"/>
+      <trait name="Sorcery: Shadowcasting: Initiate Ritual" val="2"/>
+      <trait name="Sorcery: Shadowcasting: Adept Spell" val="6"/>
+      <trait name="Sorcery: Shadowcasting: Adept Ritual" val="4"/>
+      <trait name="Sorcery: Shadowcasting: Disciple Spell" val="6"/>
+      <trait name="Sorcery: Shadowcasting: Disciple Ritual" val="4"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Coldly Logical"/>
+      <trait name="Concentration"/>
+      <trait name="Ghoul" val="0"/>
+      <trait name="Increased Pain Tolerance" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Addicted to Vampiric Vitae" val="3"/>
+      <trait name="Bound" val="5"/>
+      <trait name="Clan Weakness" val="3" note="malkavian"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+      <trait name="Cell Phone" note="+1, Fragile"/>
+      <trait name="Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Scope"/>
+      <trait name="Sound Suppressor"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Minerva Strange" nature="Sadist" demeanor="Reveler" motivation="Fun" willpower="2" humanity="2" conscience="1" selfcontrol="5" courage="5" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="8/9/2003 10:34:40 AM" narrator="Zoe Mora" npc="yes" lastmodified="9/12/2003 12:24:01 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive"/>
+      <trait name="Athletic"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Energetic"/>
+      <trait name="Ferocious" val="2"/>
+      <trait name="Steady"/>
+      <trait name="Tenacious"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Gorgeous" val="3"/>
+      <trait name="Magnetic"/>
+      <trait name="Manipulative" val="3"/>
+      <trait name="Seductive"/>
+      <trait name="Threatening"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Astute"/>
+      <trait name="Creative" val="4"/>
+      <trait name="Dedicated"/>
+      <trait name="Depraved"/>
+      <trait name="Determined" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+      <trait name="Warped"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Cosmology"/>
+      <trait name="Disguise"/>
+      <trait name="Medicine" val="4" note="Anatomy"/>
+      <trait name="Performance: Freakshow" val="5"/>
+      <trait name="Sleight of Hand" val="2"/>
+      <trait name="Subterfuge" val="4"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="High Society"/>
+      <trait name="Legal" val="2"/>
+      <trait name="Police"/>
+      <trait name="Street"/>
+      <trait name="Transportation"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="2"/>
+      <trait name="Fame" val="2"/>
+      <trait name="Resources" val="3"/>
+      <trait name="Retainer: Retainer" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Pale Aura" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Derangement: Sadism" val="2"/>
+      <trait name="Disfigured" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Miss Chelsey" nature="Conniver" demeanor="Architect" association="Kinfolk" willpower="2" humanity="4" conscience="4" selfcontrol="4" courage="2" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="2/28/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:20 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly"/>
+      <trait name="Genial"/>
+      <trait name="Gorgeous" val="2"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Clever"/>
+      <trait name="Dedicated"/>
+      <trait name="Disciplined"/>
+      <trait name="Insightful"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+      <trait name="Shortsighted"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Bureaucracy" val="2"/>
+      <trait name="Computer" val="3"/>
+      <trait name="Finance" val="2" note="free"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Law" val="3"/>
+      <trait name="Medicine"/>
+      <trait name="Melee"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Bureaucracy" val="3"/>
+      <trait name="Finance"/>
+      <trait name="High Society"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Pure Breed" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Benevolent"/>
+      <trait name="Giving"/>
+      <trait name="Gracious"/>
+      <trait name="Helpful"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Homid: Staredown"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Kinfolk" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Intolerance" note="Garou(1"/>
+      <trait name="Isolated Upbringing"/>
+      <trait name="Low Self-Image" val="2"/>
+      <trait name="Potent Blood" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Cane with silver blade hidden within
+Top of the line laptop computer 
+cell phone
+body armor light
+Chronicle Points    6     Traits               5
+Free Traits             7     Abilities           8
+Negative Traits      5    Merits              3
+Flaws                     7    Backgrounds  3
+                                    Gifts                6
+Total                  25
+                                    Total               25]]>
+    </notes>
+  </mortal>
+  <mortal name="Miss Parker" nature="Survivor" demeanor="Visionary" motivation="Power" association="Arcanum (Former now independant)" willpower="3" humanity="4" conscience="3" selfcontrol="4" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" id="Pending" startdate="1/4/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:20 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Lithe"/>
+      <trait name="Resilient"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charming" val="2"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Expressive"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Disciplined"/>
+      <trait name="Insightful"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Lame" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Untrustworthy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Firearms"/>
+      <trait name="Investigation"/>
+      <trait name="Linguistics" val="3" note="Ancient Egyptian, Ancient Greek, Demon"/>
+      <trait name="Lore: Fae" val="3"/>
+      <trait name="Lore: Ghost"/>
+      <trait name="Lore: Vampire" val="3"/>
+      <trait name="Lore: Werewolf" val="3"/>
+      <trait name="Melee"/>
+      <trait name="Occult" note="Free"/>
+      <trait name="Scrounge"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Finance" val="3"/>
+      <trait name="High Society" val="2"/>
+      <trait name="Occult" val="5" note="First Free"/>
+      <trait name="Underworld" val="4"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Contacts"/>
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Fair"/>
+      <trait name="Honorable"/>
+      <trait name="Kind"/>
+      <trait name="Merciful"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Danger Sense" val="2"/>
+      <trait name="Eidetic Memory" val="2 or 5"/>
+      <trait name="Luck" val="3-4"/>
+      <trait name="Occult Library" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Lame" val="3"/>
+      <trait name="Notoriety" val="2-3"/>
+      <trait name="Secret Friendship" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+9mm with Silver Bullets
+Medalion (Ward vs Kindred)
+Cold Iron Dagger
+Sharpened Ebony Wood Cane With Solid Silver Head
+Hair Pin ward vs Ghosts
+Points        30       Abilitiies           16
+Free Traits   7      Traits                  7
+Flaws           7      Influences        13
+Neg Traits   5       Merits               10
+                            Willpower           3
+Total          49
+                             Total               49]]>
+    </notes>
+  </mortal>
+  <mortal name="Mr Rhaines" nature="Explorer" demeanor="Visionary" willpower="2" humanity="4" conscience="3" selfcontrol="4" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="2/28/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:20 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Lithe"/>
+      <trait name="Resilient"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Charming" val="2"/>
+      <trait name="Diplomatic"/>
+      <trait name="Friendly"/>
+      <trait name="Persuasive" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Disciplined"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+      <trait name="Sickly"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Dull"/>
+      <trait name="Shy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="2"/>
+      <trait name="Computer"/>
+      <trait name="Dodge"/>
+      <trait name="Enigmas" val="3"/>
+      <trait name="Firearms"/>
+      <trait name="Investigation" val="3"/>
+      <trait name="Linguistics" val="2"/>
+      <trait name="Medicine"/>
+      <trait name="Metaphysics" val="3"/>
+      <trait name="Occult" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Occult" val="5"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arcane"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Humane"/>
+      <trait name="Kind"/>
+      <trait name="Loyal"/>
+      <trait name="Warm"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Psychometry: Emotional Connection" val="3"/>
+      <trait name="Psychometry: Flashback" val="3"/>
+      <trait name="Psychometry: The Hidden Menagerie" val="6"/>
+      <trait name="Psychometry: Time and Place" val="6"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Eidetic Memory" val="2"/>
+      <trait name="Speaker with the Dead" val="5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Compulsion" val="1-4" note="not touching flesh (1"/>
+      <trait name="Enemy" val="1-5" note="Giovoni (3"/>
+      <trait name="Isolated Upbringing" note="Romani (1"/>
+      <trait name="Nightmares"/>
+      <trait name="Phobia, Mild" note="Spiders (1"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+9 mm Pistol
+pair of black gloves
+cell phone
+body armor light
+Chronicle Points  30     Traits               7
+Free Traits             7     Abilities         16
+Negative Traits      5    Merits              7
+Flaws                     7    Backgrounds  1
+                                    Powers          18
+Total                  49
+                                    Total               49]]>
+    </notes>
+  </mortal>
+  <mortal name="Mr. Lyle" nature="Bully" demeanor="Survivor" association="Ghoul" willpower="2" humanity="4" conscience="3" selfcontrol="4" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="2/28/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:20 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Nimble" val="2"/>
+      <trait name="Quick"/>
+      <trait name="Resilient" val="2"/>
+      <trait name="Rugged"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Disciplined"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+      <trait name="Untrustworthy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Intimidation"/>
+      <trait name="Melee" val="2"/>
+      <trait name="Security" val="3"/>
+      <trait name="Stealth"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Military" val="3"/>
+      <trait name="Underworld"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arsenal" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Honorable"/>
+      <trait name="Humane"/>
+      <trait name="Loyal"/>
+      <trait name="Sympathetic"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Sadism"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Fortitude: Endurance"/>
+      <trait name="Fortitude: Mettle"/>
+      <trait name="Potence: Might"/>
+      <trait name="Potence: Prowess"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ghoul" val="5"/>
+      <trait name="Learn Other Disciplines" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Addicted to Vampiric Vitae" val="3"/>
+      <trait name="Blackmailed" val="1-2" note="Parker knows about the addiction (2"/>
+      <trait name="Offensive to Animals"/>
+      <trait name="Overconfident"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+2 9mm Pistols + 4 additiona clips
+small canteen full of vitae
+body armor heavy
+cell phone
+Chronicle Points  30     Traits               6
+Free Traits             7     Abilities          10
+Negative Traits      3    Merits               8
+Flaws                     7    Backgrounds   1
+Derangements       2    Discaplines     24
+
+Total                  49      Total               49]]>
+    </notes>
+  </mortal>
+  <mortal name="Mr. Young" nature="Survivor" demeanor="Sage" association="Kinain" willpower="2" humanity="4" conscience="3" selfcontrol="4" courage="3" blood="1" truefaith="0" physicalmax="11" status="Active" startdate="2/28/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:20 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Graceful"/>
+      <trait name="Quick"/>
+      <trait name="Resilient" val="2"/>
+      <trait name="Tough" val="3" note="First 2 free"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Demolition"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Intimidation"/>
+      <trait name="Meditation"/>
+      <trait name="Psychology" val="2"/>
+      <trait name="Repair" val="2"/>
+      <trait name="Scrounge"/>
+      <trait name="Security" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Media" val="2"/>
+      <trait name="Police" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Honorable"/>
+      <trait name="Innocent"/>
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Masochism"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Actor: True friend" val="4"/>
+      <trait name="Glamour 3" val="6"/>
+      <trait name="Ledgerdomain: Hopscotch" val="6"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Faerie Blood" val="2"/>
+      <trait name="Huge Size" val="4"/>
+      <trait name="Kinain" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Compulsion" val="1-4" note="sharpening weapons(1"/>
+      <trait name="Dangerous Secret" note="Murdered kith for money (2"/>
+      <trait name="Intolerance" note="Predjudice (1"/>
+      <trait name="Phobia, Severe" note="Flying (3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Heavy machine gun plus 8 banana clips in military fashion
+
+heavy armor
+cell phone
+Chronicle Points  30     Traits                6
+Free Traits             7     Abilities           18
+Negative Traits      3    Merits               9
+Flaws                     7    Glamour           6
+Derangments         2    Arts + Realms 10
+
+Total               49        Total               49]]>
+    </notes>
+  </mortal>
+  <mortal name="Native Ghoul" nature="Supplicant" demeanor="Traditionalist" association="Ghoul" willpower="3" humanity="4" conscience="5" selfcontrol="3" courage="2" blood="10" tempblood="12" truefaith="0" physicalmax="11" status="Active" startdate="4/5/2003 12:46:08 AM" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:47:16 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile" val="2"/>
+      <trait name="Resilient"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Charismatic" val="2"/>
+      <trait name="Compassionate"/>
+      <trait name="Dignified"/>
+      <trait name="Eloquent"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Patient"/>
+      <trait name="Rational"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics"/>
+      <trait name="Computer"/>
+      <trait name="Drive"/>
+      <trait name="Finance"/>
+      <trait name="Linguistics" val="2" note="Navajo &amp; Spanish"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Bureaucracy"/>
+      <trait name="Finance" val="2"/>
+      <trait name="High Society"/>
+      <trait name="Industry"/>
+      <trait name="Politics"/>
+      <trait name="Tribal"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Contacts" val="3" note="Natives"/>
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Helpful"/>
+      <trait name="Kind"/>
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Disciplines: Celerity: Alacrity" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ghoul" val="5"/>
+      <trait name="Independant Income" val="3"/>
+      <trait name="Sugar Daddy"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Bound" val="0" note="Kyle Fallentree"/>
+      <trait name="Common Visage"/>
+      <trait name="Hemophiliac" val="4"/>
+      <trait name="Vitae Sink" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Sony Vaio"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Bound to Kyle Fallentree]]>
+    </other>
+    <notes>
+      <![CDATA[not started yet]]>
+    </notes>
+  </mortal>
+  <mortal name="Paladin Security Guards" nature="Conformist" demeanor="Traditionalist" motivation="Duty" association="Local Police" willpower="7" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="3/2/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:31:45 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Dexterous"/>
+      <trait name="Quick"/>
+      <trait name="Tireless"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Charismatic"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Dignified"/>
+      <trait name="Friendly"/>
+      <trait name="Ingratiating"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive"/>
+      <trait name="Cunning"/>
+      <trait name="Disciplined"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Drive"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Intimidation"/>
+      <trait name="Investigation"/>
+      <trait name="Law"/>
+      <trait name="Melee"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="5"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+.357 Magnum, baton, flak vest, really cool mirror shades. The "really cool" shades are actually fetishes (Level 1,
+Gnosis 3). Guards wearing these shades are immune to the
+Delirium. If the glasses are knocked off, guards are vulnerable to
+the Delirium.
+]]>
+    </notes>
+  </mortal>
+  <mortal name="Patric Malloy" nature="Survivor" demeanor="Traditionalist" motivation="Duty" association="Ghoul" willpower="2" humanity="3" conscience="3" selfcontrol="3" courage="4" blood="10" truefaith="0" physicalmax="11" status="Active" startdate="7/6/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:14 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Athletic"/>
+      <trait name="Ferocious"/>
+      <trait name="Graceful"/>
+      <trait name="Quick"/>
+      <trait name="Resilient" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="2"/>
+      <trait name="Intimidating" val="3"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Observant" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Untrustworthy" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Shortsighted"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Intimidation" val="3"/>
+      <trait name="Melee" val="2"/>
+      <trait name="Security" val="3" note="Second Story Artist"/>
+      <trait name="Stealth" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Honorable"/>
+      <trait name="Loyal" val="3"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Auspex: Aura Perception" val="3"/>
+      <trait name="Auspex: Heightened Senses" val="3"/>
+      <trait name="Celerity: Alacrity" val="3"/>
+      <trait name="Fortitude: Mettle" val="3"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Bound" val="3" note="- George Demopolus"/>
+      <trait name="Mistaken Identity" note="(Do I Know You"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+9mm Glock 17 Pistol, wire-cutters, glass cutters, ski mask pump-action shotgun, 1986 Buick Electra 225 lockpick kit.
+Patric was a runner for the irish bookies in the 1980's when George knew him. He was just a kid then but was "inherited" by a mafioso who muscled out the irish and put in his own operation. There Patric thrived doing special robbery/burglerly jobs for the mob. George went looking for him after his embrace, and together they helped push Patric's former boss, Joey "the Bull" Graviano out of the picture and into the arms of the FBI. Because of that ( and perhaps drinking George's Malkavian-tinted blood) Patric is ultra paranoid of other mafioso men.]]>
+    </notes>
+  </mortal>
+  <mortal name="Police Patrolman (NPC)" nature="Judge" demeanor="Bravo" motivation="Duty" association="Local Police" willpower="1" humanity="2" conscience="3" selfcontrol="3" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="11/23/2000" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:14 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="2"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Tough" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="3"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Dedicated" val="3"/>
+      <trait name="Determined" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Area Knowledge" val="2" note="Juris Diction"/>
+      <trait name="Awareness"/>
+      <trait name="Brawl"/>
+      <trait name="Drive"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Investigation"/>
+      <trait name="Melee" val="2"/>
+      <trait name="Security"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Police"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Contacts"/>
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+40 Caliber Glock 22 (+2 traits)
+Ballistic Vest (+2 Health Levels)
+Radio to Dispatch Automatically
+(unless surprised)
+]]>
+    </notes>
+  </mortal>
+  <mortal name="Private Rumpf" nature="Follower" demeanor="Soldier" motivation="Hatred" association="Hunter" willpower="2" humanity="2" conscience="2" selfcontrol="5" courage="3" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="3/26/2003 9:35:57 PM" narrator="John Snyder" npc="yes" lastmodified="3/27/2003 10:15:24 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="2"/>
+      <trait name="Dexterous" val="4"/>
+      <trait name="Resilient" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Eloquent"/>
+      <trait name="Expressive"/>
+      <trait name="Gorgeous" val="2"/>
+      <trait name="Manipulative" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="4"/>
+      <trait name="Cunning"/>
+      <trait name="Dedicated" val="3"/>
+      <trait name="Insightful"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Oblivious" val="2"/>
+      <trait name="Shortsighted" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="2"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Demolitions" val="4" note="Grenades"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Drive" val="4" note="Demolition Derby"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Haven Scouting"/>
+      <trait name="Intimidation"/>
+      <trait name="Investigation"/>
+      <trait name="Linguistics"/>
+      <trait name="Melee" val="3"/>
+      <trait name="Security"/>
+      <trait name="Sniping"/>
+      <trait name="Stealth"/>
+      <trait name="Streetwise" val="3"/>
+      <trait name="Subterfuge"/>
+      <trait name="Survival" val="3"/>
+      <trait name="Throwing" val="4" note="Grenades"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Police" val="2"/>
+      <trait name="Transportation" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Driving"/>
+      <trait name="Daredevil" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Hatred" val="1-4" note="Jews, Blacks, Gays"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Rael" nature="Caregiver" demeanor="Child" motivation="Compassion" association="WARD" willpower="3" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="4" truefaith="0" physicalmax="11" status="Active" startdate="2/1/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble" val="2"/>
+      <trait name="Steady"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tireless" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Compassionate" val="2"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Gorgeous" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever" val="3"/>
+      <trait name="Cunning" val="3"/>
+      <trait name="Discerning"/>
+      <trait name="Reflective"/>
+      <trait name="Shrewd"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="3"/>
+      <trait name="Computer"/>
+      <trait name="Empathy"/>
+      <trait name="Finance" val="3"/>
+      <trait name="Investigation"/>
+      <trait name="Lore: Vampire" val="3"/>
+      <trait name="Meditation" val="2"/>
+      <trait name="Mentatics" val="4"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Giving"/>
+      <trait name="Helpful"/>
+      <trait name="Humane"/>
+      <trait name="Sympathetic"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Delusional Identity" note="Bravo/Bravo"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Telepathy: Emotional Contact"/>
+      <trait name="Telepathy: Mind Probe"/>
+      <trait name="Telepathy: Psychic Link"/>
+      <trait name="Telepathy: Secrets Revealed"/>
+      <trait name="Telepathy: The Unspoken Heart"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Arcane Heritage"/>
+      <trait name="Kinain" val="3" note="(Eshu)"/>
+      <trait name="Resemble Vampire" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Secret Friendship" val="2" note="Janelle Thompson"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Benality Traits - 5]]>
+    </notes>
+  </mortal>
+  <mortal name="Security Guard" nature="Follower" demeanor="Bully" motivation="Duty" willpower="2" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="4/25/2003 5:12:51 PM" narrator="Anna Blumstein" npc="yes" lastmodified="8/15/2003 4:18:47 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive"/>
+      <trait name="Beefy"/>
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Stalwart"/>
+      <trait name="Steady"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Alertness"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge"/>
+      <trait name="Firearms"/>
+      <trait name="Intimidation"/>
+      <trait name="Law"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Club" note="+2, 1 Bashing, Clumsy"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Created by Casey Loufek]]>
+    </notes>
+  </mortal>
+  <mortal name="Sergeant Schultz" nature="Drunk Uncle" demeanor="Soldier" motivation="Hatred" association="Hunter" willpower="4" humanity="2" conscience="1" selfcontrol="4" courage="5" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="3/26/2003 9:30:20 PM" narrator="John Snyder" npc="yes" lastmodified="3/27/2003 10:16:14 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="5"/>
+      <trait name="Dexterous"/>
+      <trait name="Tough" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Gorgeous" val="2"/>
+      <trait name="Intimidating" val="4"/>
+      <trait name="Persuasive" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Dedicated" val="4"/>
+      <trait name="Determined" val="4"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent" val="3"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="4" note="Running"/>
+      <trait name="Awareness"/>
+      <trait name="Blindfighting" val="2"/>
+      <trait name="Brawl" val="5" note="Grappling"/>
+      <trait name="Demolitions" val="2"/>
+      <trait name="Dodge" val="4" note="Grappling"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Firearms" val="4" note="Shotguns"/>
+      <trait name="Haven Scouting"/>
+      <trait name="Intimidation" val="3"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Linguistics" note="German"/>
+      <trait name="Melee" val="4" note="Improvised Weapons"/>
+      <trait name="Psychology" val="2"/>
+      <trait name="Sniping"/>
+      <trait name="Streetwise" val="4"/>
+      <trait name="Throwing" val="4" note="Knives"/>
+      <trait name="Torture" val="4" note="Interrogation"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Street" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Bruiser"/>
+      <trait name="Huge Size" val="3-4"/>
+      <trait name="Increased Pain Tolerance" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Hatred" val="1-4" note="Jews, Blacks, Gays"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mortal name="Victor Giovanni" nature="Deviant" demeanor="Caregiver" association="Ghoul" willpower="1" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="4" truefaith="0" physicalmax="11" status="Active" startdate="5/1/2003 8:40:32 PM" narrator="Andy Knudsen" npc="yes" lastmodified="6/18/2003 8:47:24 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Calm"/>
+      <trait name="Creative"/>
+      <trait name="Discerning"/>
+      <trait name="Disciplined"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Patient"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Flabby" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Firearms"/>
+      <trait name="Leadership"/>
+      <trait name="Medicine" val="4"/>
+      <trait name="Melee" val="3" note="Trocar"/>
+      <trait name="Occult"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1">
+      <trait name="Gracious"/>
+      <trait name="Honorable"/>
+      <trait name="Loyal" val="2"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Necrophilia"/>
+    </traitlist>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Fortitude: Endurance"/>
+      <trait name="Potence: Prowess"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Huge Size" val="3-4"/>
+      <trait name="Medium" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Compulsion" val="1-4" note="Cleanliness"/>
+      <trait name="Haunted" val="1-3"/>
+      <trait name="Intolerance" note="Ignorance"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Attached to mansion, Janus Morrigan, Worked in Italy]]>
+    </notes>
+  </mortal>
+  <mortal name="Warve" nature="Explorer" demeanor="Scholar" motivation="Curiosity" association="Orphan" willpower="4" humanity="3" conscience="3" selfcontrol="2" courage="2" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="3/11/2003" narrator="Anna Blumstein" npc="yes" lastmodified="9/10/2003 11:51:24 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Enduring"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Steady"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charming"/>
+      <trait name="Friendly"/>
+      <trait name="Magnetic"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Creative" val="3"/>
+      <trait name="Insightful"/>
+      <trait name="Intuitive" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics" val="2"/>
+      <trait name="Alchemy" val="2"/>
+      <trait name="Fortune Telling"/>
+      <trait name="Kenning" val="2"/>
+      <trait name="Metaphysics"/>
+      <trait name="Mythlore"/>
+      <trait name="Occult" val="4"/>
+      <trait name="Runes" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Occult" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Dross" note="Occult Tomes"/>
+      <trait name="Mana" val="3" note="as Glamour to Changelings"/>
+      <trait name="Resources" note="Bookstore Clerk"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5">
+      <trait name="Sorcery: Alchemy: Apprentice Level" val="3"/>
+      <trait name="Sorcery: Alchemy: Initiate Level" val="3"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Iron Will" val="3"/>
+      <trait name="Occult Library" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Dross" note="Grimore"/>
+      <trait name="Lionheart Elixer"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[Warve is a college student working in a local occult shop. He has been studying Alchemy and he occult since intermediate school and over time has become quite competant. He is also a very potent Dreamer and attracted the attention of the Eshu Jake who showed him the Fae world. He does not fully understand the Fae and low as it is his Banality clouds his memories. Still he has learned to use Kenning, while he is enchanted and his plans to continue his studies of these magical races living disguised as humans.]]>
+    </biography>
+    <notes>
+      <![CDATA[Banality 5
+
+Created by Casey Loufek.]]>
+    </notes>
+  </mortal>
+</grapevine>

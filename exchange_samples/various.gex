@@ -1,0 +1,1713 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <various name="Astral Spirit" nature="Bully" demeanor="Sadist" class="Spirit" plane="Astral Plane" physicalmax="11" status="Active" startdate="7/7/2003 10:59:52 PM" narrator="Zoe Mora" npc="yes" lastmodified="7/7/2003 11:03:04 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Willpower" val="6"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Cunning" val="3"/>
+      <trait name="Dedicated" val="3"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Focused" val="5"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="5" note="Astral Combat"/>
+      <trait name="Intimidation" val="2"/>
+      <trait name="Leadership" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Bane (Scout)" nature="Predator" demeanor="Predator" class="Spirit" subclass="Gaffling" affinity="Wyld" plane="Penumbra" physicalmax="11" status="Active" startdate="7/11/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Quick" val="3"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+      <trait name="Repugnant"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Investigation"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1"/>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Bane (Warrior)" nature="Predator" demeanor="Predator" class="Spirit" subclass="Jaggling" affinity="Wyld" plane="Penumbra" physicalmax="12" status="Active" startdate="7/12/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="4"/>
+      <trait name="Quick" val="4"/>
+      <trait name="Tough" val="4"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="3"/>
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Vigilant" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous" val="2"/>
+      <trait name="Condescending" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1"/>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Affinity Attack" val="2" note="Bale Fire Cost 2/attack p194 LotW"/>
+      <trait name="Spirit Charms: Blighted Touch" val="2" note="Cost 2 p233 LotW"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Boryn" nature="Child" demeanor="Pet" class="Chimera (Triceratops)" subclass="Companion" plane="Dreaming" physicalmax="11" status="Active" startdate="3/4/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/14/2003 3:19:17 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="5"/>
+      <trait name="Willpower"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Enduring"/>
+      <trait name="Resilient"/>
+      <trait name="Robust"/>
+      <trait name="Rugged"/>
+      <trait name="Stalwart" val="2"/>
+      <trait name="Steady"/>
+      <trait name="Tireless"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly"/>
+      <trait name="Ingratiating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Clever"/>
+      <trait name="Cunning"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Shortsighted"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="4"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Armor" note="Crest, 1 Trait"/>
+      <trait name="Redes: Hide" note="Can Hide Others"/>
+      <trait name="Redes: Weaponry" note="Horns, 3 Traits"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[A bright green young triceratops from the Near Dreaming. Companion of Peter Rocktunder.]]>
+    </biography>
+    <notes>
+      <![CDATA[Created by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Creeping Fear" nature="Predator" demeanor="Predator" class="Chimera" subclass="Nocnitsa" affinity="Spider" plane="Dreaming" physicalmax="13" status="Active" startdate="6/28/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/12/2003 3:38:42 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="8"/>
+      <trait name="Willpower" val="3"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile" val="2"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring" val="2"/>
+      <trait name="Ferocious"/>
+      <trait name="Lithe"/>
+      <trait name="Nimble"/>
+      <trait name="Stalwart"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Cunning"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+      <trait name="Repugnant"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="5"/>
+      <trait name="Awareness" val="4"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Dodge" val="4"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Spider Silk"/>
+      <trait name="Redes: Venom"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[Nightmare Spider]]>
+    </biography>
+    <notes>
+      <![CDATA[Venom
+Does one extra health level of damage per Glamour Spent
+Static Physical Challenge (Difficulty 8) or be paralyzed for one minute per Glamour spent
+
+Spider Silk
+Costs 2 Glamour and ensares on a sucessful hit. Escaping is a Difficulty 8 Physical Challenge.
+
+THESE THINGS ARE FREAKING SCARY!
+
+Apated from Changeling: the Dreaming 1st ed. by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Drake" nature="Seelie: Arcadian" demeanor="Unseelie: Rake" class="Chimera (Dragon)" subclass="Monster" affinity="Dragon" plane="Near Dreaming" physicalmax="20" status="Active" startdate="10/13/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/10/2003 11:52:18 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="8"/>
+      <trait name="Willpower" val="2"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile" val="2"/>
+      <trait name="Athletic" val="3"/>
+      <trait name="Brutal" val="3"/>
+      <trait name="Ferocious" val="3"/>
+      <trait name="Graceful" val="2"/>
+      <trait name="Lithe" val="3"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Vigorous" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Commanding"/>
+      <trait name="Elegant"/>
+      <trait name="Friendly"/>
+      <trait name="Magnetic" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Clever"/>
+      <trait name="Cunning"/>
+      <trait name="Intuitive"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+      <trait name="Feral" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Ignorant"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="3"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Enigmas"/>
+      <trait name="Gremayre" val="2"/>
+      <trait name="Kenning" val="3"/>
+      <trait name="Metaphysics"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="4"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Wyld Mind"/>
+      <trait name="Redes: Breath" note="Cone of Firery Breath"/>
+      <trait name="Redes: Flight"/>
+      <trait name="Redes: Weaponry" note="Firery Breath, 2 aggravted"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Tilden Park"/>
+    </traitlist>
+    <other>
+      <![CDATA[Wayfare: Hopscotch
+Wayfare: Quicksilver
+Chicanery: Fuddle
+Chicanery: Veiled Eyes
+Legerdemain: Gimmix
+Legerdemain: Mooch
+Legerdemain: Effigy
+Legerdemain: Ensnare
+Fae: Heary Commoner
+Fae: Lofty Noble
+Fae: Manifold Chimera
+Fae: Ellusive Gallain
+Fae: Dweomer of Glamour]]>
+    </other>
+    <notes>
+      <![CDATA[Can understand Kithain and mortal language but cannot speak, they rely on Fae who know Willow-Whisper or Fae who understand their intricate language of screeches and roars when comminucating.
+
+Intelligent but interested in their own pursuits and not able to relate to the Kithain except when it comes to protecting the Dreaming.
+
+Created by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Endbringer" nature="Unseelie: Shade" demeanor="Seelie: Wayfarer" class="Chimera" subclass="Nervosa" plane="Dreaming" physicalmax="13" status="Active" startdate="12/7/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/10/2003 11:53:02 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Banality" val="2"/>
+      <trait name="Glamour" val="4"/>
+      <trait name="Willpower" val="5"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Athletic"/>
+      <trait name="Brawny"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Ferocious" val="2"/>
+      <trait name="Lithe"/>
+      <trait name="Rugged"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intimidating" val="4"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive"/>
+      <trait name="Clever"/>
+      <trait name="Cunning" val="3"/>
+      <trait name="Dedicated" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Shrewd"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+      <trait name="Feral"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl" val="5"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Kenning" val="2"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="4"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Weaponry" note="Jaws: 3 traits"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Steal Glamour: The chimera must first win a Mental challenge against the target. Make a Simple test: on a win the chimera steals a number of temporary Glamour traits equal to its permanent Willpower score; on a tie, the chimera gains only one Glamour. On a loss, of course, it gets none. Use of this Rede costs 1 Willpower.]]>
+    </other>
+    <biography>
+      <![CDATA[Spawed by Terry Wood, when he was comatose in the mental hospital]]>
+    </biography>
+    <notes>
+      <![CDATA[Massive white wolf that is followed by a freezing wind. It's eyes glow ice blue.
+
+Can speak: Will predict the death of all glamour and the coming of winter.
+
+Created by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Endragora" nature="Bon Vivant" demeanor="Bravo" class="Other" subclass="Demon" affinity="Infernal" plane="Earth" physicalmax="20" status="Active" startdate="9/12/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Damnation Pool" val="30"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="5"/>
+      <trait name="Ferocious" val="5"/>
+      <trait name="Graceful" val="5"/>
+      <trait name="Rugged" val="5"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Gorgeous" val="5"/>
+      <trait name="Intimidating" val="5"/>
+      <trait name="Persuasive" val="5"/>
+      <trait name="Seductive" val="5"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="4"/>
+      <trait name="Cunning" val="5"/>
+      <trait name="Determined" val="4"/>
+      <trait name="Wily" val="4"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Blindfighting" val="6"/>
+      <trait name="Brawl" val="9" note="Inflicting Pain"/>
+      <trait name="Investigation" val="4"/>
+      <trait name="Leadership" val="6"/>
+      <trait name="Melee" val="8" note="Sickle-chain"/>
+      <trait name="Occult" val="8" note="Infernal"/>
+      <trait name="Subterfuge" val="9" note="Seduction"/>
+      <trait name="Torture" val="8" note="Prolonging Agony"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Investments:  
+Cause Vertigo:  Requires a Mental Challenge; target must make a Static Physical Challenge (vs. 5 Traits just to stand, 7 to take any actions) or collapse, balance shot.
+
+Hell-Skinned:  Immune to all natural flames and heat (including dragonsbreath rounds and flamethrowers).  Does not protect against magical flame.
+
+Kiss of Hades:  Spend 1 Blood; cause two aggravated wounds with a kiss.
+
+Psychic Tracker:  May track a given target through clairaudience (hears them over distance).  1 Blood per hour used.
+
+Razor Fingers:  Spend 1 Blood; may cause 2 aggravated wounds in hand-to-hand combat.
+
+Smell Fear:  Spend 1 Blood; may sense fear in a target within 100 feet.
+
+Teleportation:  Spend 1 Blood; may teleport anywhere within 100 feet.
+
+Walk the Walls:  May walk or crawl on any surface capable of supporting her weight.]]>
+    </other>
+    <notes>
+      <![CDATA[Disciplines: 
+ Auspex:  Heightened Senses, Aura Perception, Spirit's Touch, Telepathy, Psychic Projection, Soul Scan
+Celerity:  Alacrity, Swiftness, Rapidity, Fleetness, Quickness
+Dominate:  Command, Forgetful Mind, Mesmerism, Conditioning, Possession, Obedience
+Fortitude:  Endurance, Mettle, Resilience, Aegis, Imperviousness
+Obtenebration:  Shadow Play, Shroud of Night, Arms of the Abyss, Shadow Body
+Potence:  Prowess, Might, Vigor, Puissance, Virility
+Presence:  Dread Gaze, Entrancement, Summon, Majesty, Love]]>
+    </notes>
+  </various>
+  <various name="Excalmation Point" nature="Explorer" demeanor="Showoff" class="Chimera" subclass="Companion" plane="Dreaming" physicalmax="11" status="Active" startdate="5/17/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/15/2003 9:42:07 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="5"/>
+      <trait name="Willpower" val="2"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous"/>
+      <trait name="Graceful"/>
+      <trait name="Nimble"/>
+      <trait name="Quick"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly"/>
+      <trait name="Ingratiating"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Clever"/>
+      <trait name="Insightful"/>
+      <trait name="Observant"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Computer" val="2"/>
+      <trait name="Enigmas"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Security" val="2"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Destroyed"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Curiosity"/>
+      <trait name="Spirit Charms: Possess Tech" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Primal: Willow-Wisper
+Prop: Ornate Garb
+Prop: Crafted Tool
+Prop: Mechanical Device
+Prop: Complex Machine
+Prop: Arcane Artifact
+Nature: Raw Material
+Nature: Verdant Forest
+Nature: Feral Animal]]>
+    </other>
+    <biography>
+      <![CDATA[Mecanical hacker monkey created by Andrel as a spy. 
+Liberated by Apostrophe
+Doesn't throw poo]]>
+    </biography>
+    <notes>
+      <![CDATA[Code of Honor:
+Won't harm innocents
+Won't harm monkeys or machines
+Won't lie or suppress information
+Always seeks information
+
+Created by Casey Loufek, Anna Blumstein  and Andrew Lowe]]>
+    </notes>
+  </various>
+  <various name="Ferret: Michael" class="Animal" subclass="Familiar" physicalmax="11" status="Active" startdate="10/10/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Ferocious"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Celerity: Alacrity"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Instinct: 5]]>
+    </notes>
+  </various>
+  <various name="Glade Child-Tree Spirit" nature="Caregiver" demeanor="Caregiver" class="Spirit" subclass="Gaffling" affinity="Earth" plane="Penumbra" physicalmax="11" status="Active" startdate="7/10/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Ferocious" val="3"/>
+      <trait name="Tough" val="7"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="4"/>
+      <trait name="Friendly" val="4"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Calm" val="4"/>
+      <trait name="Observant" val="4"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1"/>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Affinity Attack" val="2"/>
+      <trait name="Spirit Charms: Cleanse the Blight" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Guardian Angel" nature="Judge" demeanor="Caregiver" class="Spirit" subclass="Angel" affinity="Fire" plane="Umbra" physicalmax="11" status="Active" startdate="9/5/1999" narrator="Andy Knudsen" npc="yes" lastmodified="12/18/1999 5:01:26 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Violent" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="3"/>
+      <trait name="Metaphysics" val="4"/>
+      <trait name="Occult" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Dissipated"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Affinity Attack" val="2" note="attack: 1 Health Level"/>
+      <trait name="Spirit Charms: Affinity Defense" note="use"/>
+      <trait name="Spirit Charms: Appear" val="2"/>
+      <trait name="Spirit Charms: Cleanse the Blight" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[GNOSIS: 8]]>
+    </other>
+    <notes>
+      <![CDATA[Power: 20,  
+True Faith 3.  
+Guardian Angel of Khrystiana Marovich. 
+ Affinity: Fire.]]>
+    </notes>
+  </various>
+  <various name="Hit-Mark" nature="Conformist" demeanor="Fanatic" class="Hit-Mark" affinity="Technocracy" physicalmax="12" status="Active" startdate="7/13/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="5"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tough" val="5"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Expressive"/>
+      <trait name="Gorgeous" val="4"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Dedicated" val="2"/>
+      <trait name="Knowledgeable" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="9"/>
+      <trait name="Bruised"/>
+      <trait name="Mortally Wounded"/>
+      <trait name="Destroyed"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Chain Gun" note="LoA 201"/>
+      <trait name="IR Vision"/>
+      <trait name="Primium Armor" val="2" note="Points"/>
+      <trait name="Fomori Powers: Claws" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Kit" nature="Guardian" demeanor="Caregiver" class="Chimera" subclass="Companion" plane="Dreaming" physicalmax="11" status="Active" startdate="2/10/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/14/2003 3:30:39 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="6"/>
+      <trait name="Willpower" val="2"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Athletic" val="2"/>
+      <trait name="Energetic"/>
+      <trait name="Ferocious"/>
+      <trait name="Stalwart" val="2"/>
+      <trait name="Tenacious"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Dignified"/>
+      <trait name="Gorgeous"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Clever"/>
+      <trait name="Cunning"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Shortsighted"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="2"/>
+      <trait name="Awareness"/>
+      <trait name="Brawl"/>
+      <trait name="Dodge"/>
+      <trait name="Kenning"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Flight"/>
+      <trait name="Redes: Weaponry" val="3" note="Traits Beak and Claws"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Riot Act Books"/>
+    </traitlist>
+    <other>
+      <![CDATA[Wayfare: Hopscotch
+Wayfare: Quicksilver
+Skycraft: Thunderclap
+Fae: Hearty Commoner
+Fae: Lofty Noble
+Fae: Manifold Chimera
+Nature: Raw Material
+Nature: Verdant Forest]]>
+    </other>
+    <biography>
+      <![CDATA[Gryphon. Companion of Tenay.]]>
+    </biography>
+    <notes>
+      <![CDATA[Created by Casey Loufek and Anna Blumstein.]]>
+    </notes>
+  </various>
+  <various name="Little Confused" nature="Seelie: Explorer" demeanor="Unseelie: Craven" class="Chimera" subclass="Companion" physicalmax="11" status="Active" startdate="4/27/2003 11:40:37 AM" narrator="Anna Blumstein" npc="yes" lastmodified="9/14/2003 3:32:38 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="3"/>
+      <trait name="Willpower"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Nimble" val="2"/>
+      <trait name="Quick"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Cute"/>
+      <trait name="Friendly"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Clever"/>
+      <trait name="Insightful"/>
+      <trait name="Observant" val="2"/>
+      <trait name="Vigilant" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Alertness" val="2"/>
+      <trait name="Athletics"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Investigation"/>
+      <trait name="Stealth" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Heightened Senses"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Riot Act Books"/>
+    </traitlist>
+    <biography>
+      <![CDATA[Spawned by Terry Wood to explore the Autumn World to see if it is worth emerging in to.
+
+Appears as something vaguely resemling a bushbaby but with a short fluffy tail, large drooping ears and lidless eyes.]]>
+    </biography>
+    <notes>
+      <![CDATA[Created by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Nathan's Salamander" nature="Seelie: Comrade" demeanor="Unseelie: Fiend" class="Chimera" subclass="Nocnitsa" affinity="Fire" plane="Dreaming" physicalmax="14" status="Active" startdate="12/28/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/10/2003 11:55:08 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="4"/>
+      <trait name="Willpower" val="5"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Enduring" val="2"/>
+      <trait name="Energetic" val="3"/>
+      <trait name="Ferocious"/>
+      <trait name="Lithe" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tenacious" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Commanding"/>
+      <trait name="Compassionate"/>
+      <trait name="Friendly"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Dedicated" val="2"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Patient" val="3"/>
+      <trait name="Vigilant"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Awareness"/>
+      <trait name="Brawl"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Gremayre"/>
+      <trait name="Intimidation" val="2"/>
+      <trait name="Investigation"/>
+      <trait name="Kenning"/>
+      <trait name="Psychology" val="2"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised" val="2"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Dreamform"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Pyretics: Prometheus' Fist
+Pyretics: Star Body
+Pyretics: Will O'Wisp
+Fae: Hearty Commoner
+Fae: Lofty Noble
+Fae: Manifold Chimera
+Nature: Raw Material
+Prop: Ornate Garb]]>
+    </other>
+    <biography>
+      <![CDATA[Orginally spawned as a nightmare by the deceased Nathan, it currently roams freely througout the area. Now that it can no longer live to play with Nathan it seeks a new purpose, perhaps a new target...]]>
+    </biography>
+    <notes>
+      <![CDATA[Created by Casey Loufek and Anna Blumstien.]]>
+    </notes>
+  </various>
+  <various name="Neverlander" nature="Seelie: Prankster" demeanor="Unseelie: Craven" class="Chimera" subclass="Sprite" plane="Dreaming" physicalmax="11" status="Active" startdate="6/28/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/12/2003 3:39:24 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="9"/>
+      <trait name="Willpower" val="3"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous"/>
+      <trait name="Graceful"/>
+      <trait name="Nimble" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Genial"/>
+      <trait name="Gorgeous" val="2"/>
+      <trait name="Ingratiating"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Intuitive"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Obnoxious"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Alertness" val="3"/>
+      <trait name="Athletics" val="3"/>
+      <trait name="Dodge" val="4"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Enchantment"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Neverlanders can enchant targets using a dust they constantly shed from their wings
+
+Adapped  from Changling the Dreaming 1st ed. by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Psycomachiae" nature="Predator" demeanor="Predator" class="Spirit" subclass="Gaffling" affinity="Wyrm" plane="Penumbra" physicalmax="11" status="Active" startdate="7/13/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="3"/>
+      <trait name="Ferocious" val="2"/>
+      <trait name="Quick" val="3"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intimidating" val="5"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Cunning" val="5"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Repugnant" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1"/>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Airt Sense" val="2"/>
+      <trait name="Spirit Charms: Materialize" val="2"/>
+      <trait name="Spirit Charms: Possession" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Restrainer" nature="Unseelie: Beast" demeanor="Seelie: Pishogue" class="Chimera" subclass="Nervosa" plane="Dreaming" physicalmax="15" status="Active" startdate="12/7/2002" narrator="Anna Blumstein" npc="yes" lastmodified="6/5/2003 12:21:18 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="6"/>
+      <trait name="Willpower" val="5"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="2"/>
+      <trait name="Brutal"/>
+      <trait name="Enduring" val="2"/>
+      <trait name="Energetic"/>
+      <trait name="Resilient" val="2"/>
+      <trait name="Robust"/>
+      <trait name="Rugged"/>
+      <trait name="Stalwart" val="3"/>
+      <trait name="Tenacious" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="3"/>
+      <trait name="Intimidating" val="2"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Dedicated"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Disciplined"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+      <trait name="Dull"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics"/>
+      <trait name="Brawl" val="4"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Psychology"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="4"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Sleep"/>
+      <trait name="Redes: Ensnare"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Sleep : The chimera can cause a victim to fall asleep with a successful Phys challenge. This works only on fae and the enchanted unless the chimera also uses the Wyrd rede. Use of this Rede costs 1 Glamour for every 10 minutes of sleep to be induced.
+
+Ensnare: Use of the Rede of costs 1 Glamour to cover a human sized object or creature.]]>
+    </other>
+    <biography>
+      <![CDATA[Spawed by Terry Wood, when he was comatose in the mental hospital]]>
+    </biography>
+    <notes>
+      <![CDATA[Mass of ropes, straps, and chains. There appears to be no central body structure though it uses the lower restraints as legs. There are also several appendages which have syringes full of variously colored liquids on them.]]>
+    </notes>
+  </various>
+  <various name="Sea Serpent" nature="Predator" demeanor="Predator" class="Chimera" subclass="Monster" affinity="Water" plane="Dreaming" physicalmax="16" status="Active" startdate="3/11/2003" narrator="Anna Blumstein" npc="yes" lastmodified="9/10/2003 11:56:03 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="6"/>
+      <trait name="Willpower"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="3"/>
+      <trait name="Ferocious" val="4"/>
+      <trait name="Lithe" val="4"/>
+      <trait name="Serpentine" val="5"/>
+      <trait name="Tenacious" val="4"/>
+      <trait name="Vigorous" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Fearsome" val="4"/>
+      <trait name="Intimidating" val="5"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever" val="2"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Wily" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="4"/>
+      <trait name="Gremayre" val="2"/>
+      <trait name="Stealth" val="3"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="4"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Skycraft: Thunderclap
+Skycraft: Compass Winds
+Skycraft: Stormcraft
+Merfae: Myraid Seafolk
+Merfae: Lurker-in-the-Depths
+Merfae: Manifold Chimera
+Nature: Raw Material
+Nature: Verdant Forest
+Nature: Feral Animal
+Scene: Bathroom
+Scene: Closet
+Scene: Guest Room]]>
+    </other>
+    <notes>
+      <![CDATA[Created by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Spider Drones" nature="Explorer" demeanor="Explorer" class="Chimera" subclass="Crafted" physicalmax="11" status="Active" startdate="7/28/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/14/2003 3:40:15 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="4"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Graceful"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charming"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Discerning"/>
+      <trait name="Observant" val="2"/>
+      <trait name="Patient"/>
+      <trait name="Vigilant" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Shortsighted"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Alertness" val="3"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Stealth" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Hide"/>
+      <trait name="Redes: Call for Aid"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <biography>
+      <![CDATA[Created by Andrel.]]>
+    </biography>
+    <notes>
+      <![CDATA[Small mechanical observer drones, will occasionally give garbled or inaccurate information.
+
+Created by Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Squirrel Spirit" nature="Showoff" demeanor="Daredevil" class="Spirit" subclass="Jaggling" affinity="Wisdom" plane="Penumbra" physicalmax="11" status="Active" startdate="7/11/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Ferocious" val="2"/>
+      <trait name="Quick" val="4"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly" val="2"/>
+      <trait name="Witty" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Determined"/>
+      <trait name="Observant"/>
+      <trait name="Patient"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Scrounge"/>
+      <trait name="Stealth" val="2"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1"/>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Airt Sense" val="2"/>
+      <trait name="Spirit Charms: Informational Link" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Standard Zombie" physicalmax="11" status="Active" startdate="6/19/2003 9:17:48 AM" narrator="Andy Knudsen" npc="yes" lastmodified="6/19/2003 9:34:48 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Blood"/>
+      <trait name="Pathos"/>
+      <trait name="Willpower" val="4"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Enduring" val="2"/>
+      <trait name="Fierce"/>
+      <trait name="Resilient"/>
+      <trait name="Robust"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl"/>
+      <trait name="Intimidation" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Destroyed"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Damage" note="1 Lethal"/>
+      <trait name="Fortitude" note="Endurance"/>
+      <trait name="Fortitude" note="Mettle"/>
+      <trait name="Fortitude" note="Resilience"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+    </traitlist>
+    <other>
+      <![CDATA[Immune to Dementation, Dominate and Presence, as well as Serpentis: Eyes of the Serpent, and Auspex: Telepathy.]]>
+    </other>
+    <notes>
+      <![CDATA[Built per Clanbook Giovanni, Revised edition, page 56. for  Zombies animated through use of Necromancy: Path of Bone: Shambling Hordes.
+"Most shamblers are unaffected by mental Disciplines - or, indeed, any mental coercion - at all." ... "Immune to Dementation, Dominate and Presence, as well as Serpentis: Eyes of the Serpent, and Auspex: Telepathy. Shamblers have a normal health level track but do not suffer any penalties due to wounds." ...Clanbook Giovanni p.56
+
+Guards the Giovanni Haven.  In the Basement.  Paris sleeps with them around him.]]>
+    </notes>
+  </various>
+  <various name="Summoned Bane" nature="Fanatic" demeanor="Fanatic" class="Fomori" subclass="Gaffling" affinity="Wyrm" plane="Umbra" physicalmax="11" status="Active" startdate="7/25/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:13 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Rage" val="3"/>
+      <trait name="Willpower" val="3"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Dexterous"/>
+      <trait name="Enduring"/>
+      <trait name="Ferocious"/>
+      <trait name="Lithe"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Cunning" val="5"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="10"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Fomori Powers: Chameleon Coloration" val="4"/>
+      <trait name="Fomori Powers: Claws" val="3"/>
+      <trait name="Fomori Taints: Brainwashed" val="3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Summoner Bane" nature="Architect" demeanor="Judge" class="Fomori" subclass="Jaggling" affinity="Wyrm" plane="Umbra" physicalmax="11" status="Active" startdate="7/25/2002" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:13 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Rage" val="5"/>
+      <trait name="Willpower" val="7"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="2"/>
+      <trait name="Energetic"/>
+      <trait name="Ferocious"/>
+      <trait name="Graceful"/>
+      <trait name="Quick"/>
+      <trait name="Steady"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tireless" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Clever"/>
+      <trait name="Cunning"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Repugnant" val="5"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Blindfighting" val="2"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Subterfuge" val="2"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="20"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Steal Gnosis/Rage/Willpower/Mana"/>
+      <trait name="Summon Gaffelings"/>
+      <trait name="Fomori Powers: Aggravated Damage"/>
+      <trait name="Fomori Powers: Regeneration" val="5"/>
+      <trait name="Spirit Charms: Airt Sense" val="2"/>
+      <trait name="Spirit Charms: Reform" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Szlachta Zombie" physicalmax="11" status="Active" startdate="6/19/2003 9:17:48 AM" narrator="Andy Knudsen" npc="yes" lastmodified="6/19/2003 9:34:30 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Blood"/>
+      <trait name="Pathos"/>
+      <trait name="Willpower" val="4"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Enduring" val="2"/>
+      <trait name="Fierce"/>
+      <trait name="Resilient"/>
+      <trait name="Robust"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl"/>
+      <trait name="Intimidation" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Destroyed"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Fortitude" note="Endurance"/>
+      <trait name="Fortitude" note="Mettle"/>
+      <trait name="Fortitude" note="Resilience"/>
+      <trait name="Damage" note="3 lethal"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="Giovanni Castle"/>
+    </traitlist>
+    <other>
+      <![CDATA[Immune to Dementation, Dominate and Presence, as well as Serpentis: Eyes of the Serpent, and Auspex: Telepathy.]]>
+    </other>
+    <notes>
+      <![CDATA[Built per Clanbook Giovanni, Revised edition, page 56. for  Zombies animated through use of Necromancy: Path of Bone: Shambling Hordes.
+"Most shamblers are unaffected by mental Disciplines - or, indeed, any mental coercion - at all." ... "Immune to Dementation, Dominate and Presence, as well as Serpentis: Eyes of the Serpent, and Auspex: Telepathy. Shamblers have a normal health level track but do not suffer any penalties due to wounds." ...Clanbook Giovanni p.56
+Szlachta Modifications: 3 total modification levels, per. LOTN Sabbat Guide, pp. 177-179.
+- 2 levels of "Organic Weapons" = Serrated Bone Spikes, inflicts a total of 3 levels of lethal damage per strike.
+- 1 level of "Enhanced Speed" = Zombies may take two extra steps during combat movement..
+
+Guards the Giovanni Haven.  In the Basement.  Paris sleeps with them around him.]]>
+    </notes>
+  </various>
+  <various name="Template: Dog Ghoul" class="Animal" subclass="Familiar" plane="Earth" physicalmax="11" status="Active" startdate="9/5/1999" narrator="Andy Knudsen" npc="yes" lastmodified="5/1/2003 8:44:17 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Willpower"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Ferocious"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Friendly"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Instincts" val="5"/>
+      <trait name="Sniping"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="The Roc" nature="Seelie: Paladin" demeanor="Unseelie: Fiend" class="Chimera" subclass="Dreamed" plane="Dreaming" physicalmax="11" status="Active" startdate="8/13/2002" narrator="Anna Blumstein" npc="yes" lastmodified="9/14/2003 3:45:31 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Glamour" val="6"/>
+      <trait name="Willpower" val="4"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile" val="2"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Energetic"/>
+      <trait name="Ferocious" val="2"/>
+      <trait name="Tenacious" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="2"/>
+      <trait name="Dignified"/>
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive" val="2"/>
+      <trait name="Cunning"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Intuitive"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+      <trait name="Predictable"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="2"/>
+      <trait name="Blindfighting"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Dodge"/>
+      <trait name="Flight" val="2"/>
+      <trait name="Gremayre"/>
+      <trait name="Kenning" val="2"/>
+      <trait name="Scrounge"/>
+      <trait name="Security" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised" val="2"/>
+      <trait name="Wounded" val="3"/>
+      <trait name="Incapacitated"/>
+      <trait name="Destroyed"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Enchantment"/>
+      <trait name="Redes: Flight"/>
+      <trait name="Redes: Sense Banality"/>
+      <trait name="Spirit Charms: Healing" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Berserk Growth:  After one round of combat, the 'Roc' suddenly swells in size, growing to three times it's previous dimensions.  This doubles it's physical traits.]]>
+    </other>
+    <biography>
+      <![CDATA[Huge four winged bird. Inceases in size dramatically when it's nest is threatened.]]>
+    </biography>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Teeth, claws, beak, feathers, egg
+
+Created by Ben Gratch and Casey Loufek]]>
+    </notes>
+  </various>
+  <various name="Thunderwyrm" class="Spirit" physicalmax="13" status="Active" startdate="6/1/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Enduring" val="3"/>
+      <trait name="Lithe" val="3"/>
+      <trait name="Tireless" val="2"/>
+      <trait name="Tough" val="5"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Intuitive"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="5"/>
+      <trait name="Brawl" val="5"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="5"/>
+      <trait name="Bruised" val="6"/>
+      <trait name="Wounded" val="4"/>
+      <trait name="Destroyed"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Redes: Armor" note="x4"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <various name="Totem Spirit (Bear Materialized)" nature="Visionary" demeanor="Caregiver" class="Spirit" subclass="Totem Spirit" affinity="Bear" physicalmax="20" status="Active" startdate="7/13/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="10"/>
+      <trait name="Quick" val="3"/>
+      <trait name="Tough" val="7"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="3"/>
+      <trait name="Compassionate"/>
+      <trait name="Friendly"/>
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Patient" val="2"/>
+      <trait name="Wise" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="6"/>
+      <trait name="Medicine" val="6"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="6"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Dissipated"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Call for Aid" val="2" note="PC:5  LotW196"/>
+      <trait name="Spirit Charms: Cleanse the Blight" val="2" note="PC:10  LotW196"/>
+      <trait name="Spirit Charms: Local Sense" val="2" note="PC:10  LotW197"/>
+      <trait name="Spirit Charms: Materialize" val="2" note="PC:Various  LotW197"/>
+      <trait name="Spirit Charms: Mindspeak" val="2" note="PC:1/scene  LotW197"/>
+      <trait name="Spirit Charms: Open Moon Bridge" val="2" note="PC:5  LotW198"/>
+      <trait name="Spirit Charms: Shapeshift" val="2" note="PC:5  LotW198"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Claws & Bite Do Agg.
+Stand 15 Feet Tall]]>
+    </other>
+  </various>
+  <various name="Totem Spirit (Bear)" nature="Visionary" demeanor="Caregiver" class="Spirit" subclass="Totem Spirit" affinity="Bear" plane="Penumbra" physicalmax="11" status="Active" startdate="7/12/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Ferocious" val="3"/>
+      <trait name="Tough" val="7"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Compassionate" val="2"/>
+      <trait name="Friendly"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Cunning"/>
+      <trait name="Knowledgeable" val="4"/>
+      <trait name="Patient"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Lethargic"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Animal Ken"/>
+      <trait name="Awareness" val="3"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Leadership"/>
+      <trait name="Medicine" val="2"/>
+      <trait name="Primal Urge" val="2"/>
+      <trait name="Survival" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1"/>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Spirit Charms: Call for Aid" val="2" note="PC:5  LotW196"/>
+      <trait name="Spirit Charms: Cleanse the Blight" val="2" note="PC:10  LotW196"/>
+      <trait name="Spirit Charms: Healing" val="2" note="PC:1/1 Bashing or Lethal 2/1 Agg.  LotW196"/>
+      <trait name="Spirit Charms: Local Sense" val="2" note="PC:10  LotW197"/>
+      <trait name="Spirit Charms: Materialize" val="2" note="PC:Varible   35    LotW198"/>
+      <trait name="Spirit Charms: Mindspeak" val="2" note="PC:1/Scene  LotW197"/>
+      <trait name="Spirit Charms: Open Moon Bridge" val="2" note="PC:5  LotW198"/>
+      <trait name="Spirit Charms: Shapeshift" val="2" note="PC:5  LotW198"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+</grapevine>

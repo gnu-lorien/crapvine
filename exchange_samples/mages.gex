@@ -1,0 +1,1012 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <mage name="Arthur Morrison" nature="Crusader" demeanor="Manager" essence="Pattern" tradition="Syndicate" willpower="7" arete="4" quintessence="1" paradox="0" physicalmax="11" status="Active" startdate="1/28/2003" narrator="Shawn Neilsen" npc="yes" lastmodified="1/28/2003 10:08:17 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+      <trait name="Brawny"/>
+      <trait name="Brutal"/>
+      <trait name="Quick"/>
+      <trait name="Tenacious"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Dignified" val="2"/>
+      <trait name="Elegant"/>
+      <trait name="Expressive"/>
+      <trait name="Friendly"/>
+      <trait name="Manipulative" val="3"/>
+      <trait name="Persuasive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Clever"/>
+      <trait name="Insightful"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Patient"/>
+      <trait name="Rational"/>
+      <trait name="Shrewd"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Cowardly"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Empathy"/>
+      <trait name="Expression"/>
+      <trait name="Finance"/>
+      <trait name="Occult"/>
+      <trait name="Politics"/>
+      <trait name="RD Data: Convention: Syndicate" val="3"/>
+      <trait name="Subterfuge" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Finance" val="3"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="3"/>
+      <trait name="Contacts" val="2"/>
+      <trait name="Influence" val="3"/>
+      <trait name="Resources" val="6"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Static"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Dimensional Science: Initiate" val="3" note="basic"/>
+      <trait name="Entropy: Apprentice" val="3" note="basic"/>
+      <trait name="Mind: Adept" val="6" note="int."/>
+      <trait name="Prime: Apprentice" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5">
+      <trait name="Cracks in the Conscience" note="Lv. 2"/>
+      <trait name="Decrypt Thoughts" note="Lv. 3"/>
+      <trait name="Influence Emotions" note="Lv. 2"/>
+      <trait name="Locate Disorder and Weakness" note="Lv. 1"/>
+      <trait name="Manipulate Memory" note="Lv. 4"/>
+      <trait name="Mind Empowerment" note="Lv. 1"/>
+      <trait name="Mirror Shades" note="Lv. 1"/>
+      <trait name="Quantum Interference" note="Lv. 2"/>
+      <trait name="Sense Lies" note="Lv. 2"/>
+      <trait name="Watch the Weaving" note="Lv. 1"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <foci>
+      <![CDATA[Wristwatch]]>
+    </foci>
+  </mage>
+  <mage name="Dominck Cross" nature="Loner" demeanor="True Believer" essence="Primordial" tradition="Order of Hermes" faction="House Fortunae" willpower="5" arete="3" quintessence="3" paradox="0" physicalmax="11" status="Active" startdate="7/10/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="12/19/2002 12:18:08 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Clever" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Knowledgeable" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Delicate"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Untrustworthy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl"/>
+      <trait name="High Ritual"/>
+      <trait name="Linguistics"/>
+      <trait name="Melee"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arcane" val="4"/>
+      <trait name="Avatar" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Entropic" note="Death"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Correspondence: Initiate" val="2" note="basic"/>
+      <trait name="Entropy: Initiate" val="3" note="basic"/>
+      <trait name="Forces: Disciple" val="3" note="int."/>
+      <trait name="Prime: Initiate" val="2" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mage name="Enforcers" nature="Fanatic" demeanor="Follower" essence="Pattern" tradition="Syndicate" rank="Disciple" willpower="5" arete="3" quintessence="2" paradox="0" physicalmax="11" status="Active" startdate="11/10/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="1/28/2003 1:34:21 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="3"/>
+      <trait name="Quick" val="4"/>
+      <trait name="Tough" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding" val="2"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Dull" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Gullible"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Finance" val="2"/>
+      <trait name="Firearms" val="4"/>
+      <trait name="Technology"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="3"/>
+      <trait name="Wonder" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Entropic"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1">
+      <trait name="Accepted"/>
+    </traitlist>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Dimensional Science: Initiate" val="3" note="basic"/>
+      <trait name="Entropy: Initiate" val="3" note="basic"/>
+      <trait name="Forces: Disciple" val="3" note="int."/>
+      <trait name="Life: Initiate" val="2" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5">
+      <trait name="Beginner's Luck" note="Lv. 2"/>
+      <trait name="Electrical Chaos" note="Lv. 2"/>
+      <trait name="Encrypt Thoughts" note="Lv. 2"/>
+      <trait name="Heal Self" note="Lv. 2"/>
+      <trait name="Life Scan" note="Lv. 1"/>
+      <trait name="Mirror Shades" note="Lv. 1"/>
+      <trait name="Quantify Energy" note="Lv. 1"/>
+      <trait name="Quantum Interference" note="Lv. 2"/>
+      <trait name="Ring of Truth" note="Lv. 1"/>
+      <trait name="Turn Invisible [Forces]" note="Lv. 2"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Officially Dead" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mage name="Ericka Kramer" nature="Caregiver" demeanor="Visionary" essence="Questing" willpower="6" arete="5" quintessence="2" paradox="0" physicalmax="11" status="Active" id="02" startdate="7/14/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:26:10 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Quick" val="2"/>
+      <trait name="Resilient"/>
+      <trait name="Tireless" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Charismatic"/>
+      <trait name="Charming" val="2"/>
+      <trait name="Magnetic" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="3"/>
+      <trait name="Attentive" val="2"/>
+      <trait name="Discerning"/>
+      <trait name="Knowledgeable" val="3"/>
+      <trait name="Rational"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="2"/>
+      <trait name="Brawl"/>
+      <trait name="Computer"/>
+      <trait name="Culture"/>
+      <trait name="Dodge"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Etiquette"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Instruction"/>
+      <trait name="Investigation"/>
+      <trait name="Lore: Mage" val="3"/>
+      <trait name="Medicine" val="3"/>
+      <trait name="Meditation"/>
+      <trait name="Occult"/>
+      <trait name="Research"/>
+      <trait name="Technology"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arcane" val="3"/>
+      <trait name="Avatar" val="2"/>
+      <trait name="Destiny"/>
+      <trait name="Resources" val="2"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Dynamic" val="2"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Correspondence: Initiate" val="2" note="basic"/>
+      <trait name="Entropy: Initiate" val="2" note="basic"/>
+      <trait name="Forces: Initiate" val="2" note="basic"/>
+      <trait name="Life: Disciple" val="3" note="int."/>
+      <trait name="Mind: Initiate" val="2" note="basic"/>
+      <trait name="Prime: Apprentice" note="basic"/>
+      <trait name="Spirit: Adept" val="6" note="int."/>
+      <trait name="Time: Apprentice" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Code of Honor" val="1-2"/>
+      <trait name="Luck" val="3-4"/>
+      <trait name="Stormwarden" val="3 or 5" note="Self"/>
+      <trait name="True Love" val="1 or 4"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Bard's Tongue"/>
+      <trait name="Intolerance" note="prejudice"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <foci>
+      <![CDATA[Beaded Necklace for:
+correspondence,
+entropy,
+mind,
+prime, 
+and time.
+
+Fire for:
+spirit
+
+My blood to hurt, herbs to heal for:
+life
+
+Chanting:
+forces]]>
+    </foci>
+  </mage>
+  <mage name="Jamie Peterson" nature="Deviant" demeanor="Director" essence="Pattern" tradition="New World Order" cabal="Technocracy" rank="Initiate" faction="Operatives" willpower="4" arete="2" quintessence="1" paradox="0" physicalmax="12" status="Active" startdate="12/10/2002" narrator="Shuniqua Rodriguez" npc="yes" lastmodified="8/7/2003 1:35:48 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal" val="2"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Tough"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating" val="3"/>
+      <trait name="Persuasive"/>
+      <trait name="Seductive" val="3"/>
+      <trait name="Witty"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Attentive"/>
+      <trait name="Clever" val="2"/>
+      <trait name="Cunning"/>
+      <trait name="Discerning"/>
+      <trait name="Insightful"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Obnoxious" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Computer" val="5" note="Hacking"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Technology" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Media" val="2"/>
+      <trait name="University" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Avatar"/>
+      <trait name="Contacts"/>
+      <trait name="Influence" val="4"/>
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1"/>
+    <traitlist name="Reputation" abc="yes" display="1">
+      <trait name="Accepted"/>
+      <trait name="Devoted"/>
+    </traitlist>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Entropy: Apprentice" val="5" note="basic"/>
+      <trait name="Entropy: Initiate" val="5" note="basic"/>
+      <trait name="Forces: Apprentice" val="5" note="basic"/>
+      <trait name="Forces: Initiate" val="5" note="basic"/>
+      <trait name="Life: Apprentice" val="5" note="basic"/>
+      <trait name="Life: Initiate" val="5" note="basic"/>
+      <trait name="Mind: Apprentice" val="5" note="basic"/>
+      <trait name="Mind: Initiate" val="5" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="no" atomic="yes" display="5">
+      <trait name="Ring of Truth" note="(Lv. 1)"/>
+      <trait name="Beginner's Luck" note="(Lv. 2)"/>
+      <trait name="Quantify Energy" note="(Lv. 1)"/>
+      <trait name="Energy Shield" note="(Lv. 2)"/>
+      <trait name="Life Scan" note="(Lv. 1)"/>
+      <trait name="Improve Senses" note="(Lv. 2)"/>
+      <trait name="Mind Empowerment" note="(Lv. 1)"/>
+      <trait name="Psychic Attack" note="(Lv. 2)"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude"/>
+      <trait name="Natural Linguist" val="2"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Bad Sight" val="2"/>
+      <trait name="Bard's Tongue"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Laser Pistol" note="+2, 2 Aggravated, Clumsy, Loud"/>
+      <trait name="Silksteel Suit" note="+0, 1 Armor Levels"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mage name="John Larsen  Apoc. Version" nature="Conformist" demeanor="Gallant" essence="Dynamic" willpower="5" arete="3" quintessence="0" paradox="0" physicalmax="11" status="Active" id="Apoc #67" startdate="3/1/1995" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:41:04 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Nimble"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Commanding"/>
+      <trait name="Friendly"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Obnoxious"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Unstable"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Computer" val="2"/>
+      <trait name="Cosmology"/>
+      <trait name="Etiquette"/>
+      <trait name="Firearms" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Avatar" val="2"/>
+      <trait name="Destiny" val="4"/>
+      <trait name="Node"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Dynamic" val="2"/>
+      <trait name="Entropic"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Correspondence: Apprentice" note="basic"/>
+      <trait name="Life: Disciple" val="3" note="int."/>
+      <trait name="Mind: Disciple" val="3" note="int."/>
+      <trait name="Prime: Initiate" val="2" note="basic"/>
+      <trait name="Spirit: Disciple" val="3" note="int."/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Computers"/>
+      <trait name="Iron Will"/>
+      <trait name="Luck"/>
+      <trait name="Medium"/>
+      <trait name="Storm Warden" note="self-only"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Hatred" note="Malakai"/>
+      <trait name="Nightmares"/>
+      <trait name="Overconfident"/>
+      <trait name="Phobia, Mild" note="Heights"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <foci>
+      <![CDATA[Music
+Meditation
+Food
+Amulets]]>
+    </foci>
+  </mage>
+  <mage name="John Larsen  SHFPD" nature="Conformist" demeanor="Gallant" essence="Dynamic" willpower="5" arete="5" quintessence="2" paradox="0" physicalmax="11" status="Active" id="Apoc #67" startdate="3/1/1995" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:45:37 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Dexterous" val="2"/>
+      <trait name="Nimble"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Commanding"/>
+      <trait name="Friendly"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Condescending"/>
+      <trait name="Obnoxious"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Unstable"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Computer" val="2"/>
+      <trait name="Cosmology"/>
+      <trait name="Etiquette"/>
+      <trait name="Firearms" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Avatar" val="2"/>
+      <trait name="Destiny" val="4"/>
+      <trait name="Node"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1"/>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Correspondence: Adept" val="6" note="int."/>
+      <trait name="Forces: Initiate" val="3" note="basic"/>
+      <trait name="Life: Initiate" val="3" note="basic"/>
+      <trait name="Matter: Disciple" val="6" note="int."/>
+      <trait name="Prime: Disciple" val="6" note="int."/>
+      <trait name="Spirit: Disciple" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude" note="Computers"/>
+      <trait name="Iron Will" val="3-5"/>
+      <trait name="Medium" val="2"/>
+      <trait name="Medium"/>
+      <trait name="Stormwarden" val="3 or 5"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Curiosity" val="2"/>
+      <trait name="Independent Shaman" val="1-2"/>
+      <trait name="Nightmares"/>
+      <trait name="Overconfident"/>
+      <trait name="Phobia, Mild" note="Heights"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mage name="Maggie" nature="Caregiver" demeanor="Celebrant" essence="Dynamic" willpower="5" arete="4" quintessence="0" paradox="0" physicalmax="11" status="Active" startdate="7/12/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:24:33 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Energetic"/>
+      <trait name="Graceful"/>
+      <trait name="Lithe"/>
+      <trait name="Quick"/>
+      <trait name="Tireless"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic"/>
+      <trait name="Dignified"/>
+      <trait name="Diplomatic" val="2"/>
+      <trait name="Elegant"/>
+      <trait name="Empathetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Calm"/>
+      <trait name="Dedicated"/>
+      <trait name="Knowledgeable"/>
+      <trait name="Observant"/>
+      <trait name="Patient" val="2"/>
+      <trait name="Reflective"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness" val="2"/>
+      <trait name="Crafts"/>
+      <trait name="Dodge"/>
+      <trait name="Expression"/>
+      <trait name="Intuition"/>
+      <trait name="Lore: Faerie" val="3"/>
+      <trait name="Lore: Garou" val="3"/>
+      <trait name="Medicine" val="2"/>
+      <trait name="Meditation"/>
+      <trait name="Stealth"/>
+      <trait name="Survival" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Avatar" val="3"/>
+      <trait name="Contacts" val="2"/>
+      <trait name="Destiny"/>
+      <trait name="Resources" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Dynamic"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Correspondence: Disciple" val="3" note="int."/>
+      <trait name="Forces: Disciple" val="3" note="int."/>
+      <trait name="Life: Disciple" val="3" note="int."/>
+      <trait name="Mind: Disciple" val="3" note="int."/>
+      <trait name="Spirit: Initiate" val="2" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Code of Honor" val="1-2"/>
+      <trait name="Common Sense"/>
+      <trait name="Faerie Blood"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Soft-Hearted" val="1-2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <foci>
+      <![CDATA[Chanting for Forces, Life, Spirit
+Meditation for Correspondence, Mind]]>
+    </foci>
+  </mage>
+  <mage name="Man In Black" nature="Conformist" demeanor="Fanatic" essence="Pattern" tradition="New World Order" willpower="8" arete="3" quintessence="0" paradox="0" physicalmax="12" status="Active" startdate="7/13/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="1/28/2003 1:14:08 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="2"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Dignified"/>
+      <trait name="Intimidating"/>
+      <trait name="Persuasive" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="5"/>
+      <trait name="Cunning"/>
+      <trait name="Knowledgeable" val="3"/>
+      <trait name="Rational" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Alertness" val="3"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Drive"/>
+      <trait name="Firearms" val="3"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Melee" val="2"/>
+      <trait name="Occult"/>
+      <trait name="Stealth" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="3"/>
+      <trait name="Arcane" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="3"/>
+      <trait name="Bruised"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Vaporized"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Static"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Forces: Initiate" val="2" note="basic"/>
+      <trait name="Mind: Initiate" val="2" note="basic"/>
+      <trait name="Prime: Initiate" val="2" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mage name="Mason Waterton" nature="Visionary" demeanor="Bon Vivant" essence="Primordial" willpower="5" arete="3" quintessence="0" paradox="0" physicalmax="11" status="Active" id="01" startdate="7/13/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:24:18 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brutal"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Friendly"/>
+      <trait name="Ingratiating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Flexible"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant" val="2"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Computer"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Repair"/>
+      <trait name="Science" val="2" note="Physics"/>
+      <trait name="Technology" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Avatar"/>
+      <trait name="Destiny" val="2"/>
+      <trait name="Wonder" val="7"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Static"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Forces: Disciple" val="3" note="int."/>
+      <trait name="Life: Apprentice" note="basic"/>
+      <trait name="Matter: Disciple" val="3" note="int."/>
+      <trait name="Time: Initiate" val="2" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Oracular Ability" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Curiosity" val="2"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <foci>
+      <![CDATA[Refurbished Game Boy
+Gun]]>
+    </foci>
+  </mage>
+  <mage name="Noah Marshall" nature="Elitist" demeanor="Soldier" essence="Pattern" tradition="New World Order" cabal="Technocracy" rank="Initiate" willpower="6" arete="2" quintessence="1" paradox="0" physicalmax="11" status="Active" startdate="7/31/2003 8:19:10 AM" narrator="Shuniqua Rodriguez" npc="yes" lastmodified="8/6/2003 6:48:21 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Brutal"/>
+      <trait name="Deadly"/>
+      <trait name="Dexterous"/>
+      <trait name="Resilient"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intense"/>
+      <trait name="Intimidating"/>
+      <trait name="Manipulative"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Focused"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Melee"/>
+      <trait name="Politics" val="2"/>
+      <trait name="RD Data: Mage"/>
+      <trait name="Strategy"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Avatar" note="Genius"/>
+      <trait name="Construct" val="2"/>
+      <trait name="Contacts"/>
+      <trait name="Mentor" note="Patron"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Static" val="2" note="Cold, Sterile"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Correspondence: Apprentice" val="5" note="basic"/>
+      <trait name="Entropy: Apprentice" val="5" note="basic"/>
+      <trait name="Forces: Apprentice" val="5" note="basic"/>
+      <trait name="Mind: Apprentice" val="5" note="basic"/>
+      <trait name="Mind: Initiate" val="5" note="basic"/>
+      <trait name="Prime: Apprentice" val="5" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="no" atomic="yes" display="5">
+      <trait name="Whereami?" note="Lv. 1"/>
+      <trait name="Locate Disorder and Weakness" note="Lv. 1"/>
+      <trait name="Quantify Energy" note="Lv. 1"/>
+      <trait name="Heart's Blood" note="Lv. 1"/>
+      <trait name="No-Mind" note="Lv. 1"/>
+      <trait name="Psychic Impression" note="Lv. 2"/>
+      <trait name="Find Reality Flaws" note="Lv. 1"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <foci>
+      <![CDATA[ID badge, black suit, authoritive behavior]]>
+    </foci>
+  </mage>
+  <mage name="Shea O'Neil" essence="Primordial" willpower="5" arete="3" quintessence="0" paradox="0" physicalmax="11" status="Active" startdate="1/11/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="11/29/2002 11:27:06 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Dexterous"/>
+      <trait name="Quick"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Friendly" val="2"/>
+      <trait name="Gorgeous"/>
+      <trait name="Magnetic"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Knowledgeable" val="3"/>
+      <trait name="Observant"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Medicine" val="4"/>
+      <trait name="Occult"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="5"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1">
+      <trait name="Entropic"/>
+    </traitlist>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Entropy: Initiate" val="2" note="basic"/>
+      <trait name="Life: Disciple" val="3" note="int."/>
+      <trait name="Matter: Initiate" val="2" note="basic"/>
+      <trait name="Prime: Initiate" val="2" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mage name="Steven Mathers" nature="Elitist" demeanor="Soldier" essence="Dynamic" tradition="New World Order" cabal="Technocracy" rank="Disciple" faction="Operatives" willpower="6" arete="3" quintessence="2" paradox="0" physicalmax="11" status="Active" startdate="7/31/2003 8:19:10 AM" narrator="Shuniqua Rodriguez" npc="yes" lastmodified="8/6/2003 6:56:41 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Brutal"/>
+      <trait name="Deadly"/>
+      <trait name="Dexterous"/>
+      <trait name="Resilient"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intense"/>
+      <trait name="Intimidating"/>
+      <trait name="Manipulative"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Analytical"/>
+      <trait name="Disciplined" val="2"/>
+      <trait name="Focused"/>
+      <trait name="Vigilant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Firearms" val="2"/>
+      <trait name="Melee"/>
+      <trait name="Politics" val="2"/>
+      <trait name="RD Data: Mage"/>
+      <trait name="Strategy"/>
+      <trait name="Subterfuge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Avatar" val="2" note="Genius"/>
+      <trait name="Construct" val="2"/>
+      <trait name="Contacts"/>
+      <trait name="Mentor" note="Patron"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1"/>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5">
+      <trait name="Entropy: Apprentice" val="5" note="basic"/>
+      <trait name="Mind: Apprentice" val="5" note="basic"/>
+      <trait name="Mind: Initiate" val="5" note="basic"/>
+      <trait name="Mind: Disciple" val="10" note="int."/>
+      <trait name="Prime: Apprentice" val="5" note="basic"/>
+      <trait name="Prime: Initiate" val="5" note="basic"/>
+      <trait name="Spirit: Apprentice" val="5" note="basic"/>
+    </traitlist>
+    <traitlist name="Rotes" abc="no" atomic="yes" display="5">
+      <trait name="Heart's Blood" note="Lv. 1"/>
+      <trait name="True Form" note="Lv. 1"/>
+      <trait name="No-Mind" note="Lv. 1"/>
+      <trait name="Cool Glamor" note="Lv. 2"/>
+      <trait name="Knock Out" note="Lv. 3"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Ballistic Vest" note="+0, 2 Armor Levels, Heavy"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+</grapevine>

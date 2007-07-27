@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <various name="Caer Various" nature="Au Courant" demeanor="Evangelist" class="Hit-Mark" subclass="Minister of Hell" affinity="Dream" plane="Digital Web" brood="Coyote" physicalmax="11" status="Withering" id="hehehe" startdate="7/26/2007 9:45:45 PM" npc="yes" lastmodified="7/26/2007 9:47:33 PM">
+    <experience unspent="-13" earned="0">
+      <entry date="7/26/2007" change="13" type="3" reason="Purchased (Fetishes and Talens), Finance x2, Fomori Taints: Brainwashed, High Society x2, Industry x2, Lame, Totem Powers: Mental Pack Communication." earned="0" unspent="-13"/>
+      <entry date="7/26/2007 9:45:45 PM" change="0" type="6" reason="Created 7/7/6 with 5 Abilities and 8 Backgrounds, using 3 Negative and 5 Free Traits" earned="0" unspent="-13"/>
+    </experience>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Essence"/>
+      <trait name="Gnosis"/>
+      <trait name="Rage"/>
+      <trait name="Willpower"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Fierce"/>
+      <trait name="Robust" val="3"/>
+      <trait name="Rugged" val="2"/>
+      <trait name="Vicious"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Eloquent"/>
+      <trait name="Fearsome"/>
+      <trait name="Intense" val="2"/>
+      <trait name="Manipulative" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Calm"/>
+      <trait name="Flexible"/>
+      <trait name="Inhumane"/>
+      <trait name="Intuitive"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Lame"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Haggard"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Shortsighted" val="2"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Bureaucracy" val="2"/>
+      <trait name="Empathy"/>
+      <trait name="Leadership"/>
+      <trait name="Streetwise"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Finance" val="2"/>
+      <trait name="High Society" val="2"/>
+      <trait name="Industry" val="2"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Contacts" val="3"/>
+      <trait name="Mentor" val="2"/>
+      <trait name="Retainers" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5">
+      <trait name="Fomori Taints: Brainwashed" val="3"/>
+      <trait name="Totem Powers: Mental Pack Communication" val="4"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="(Fetishes and Talens)"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <other>
+      <![CDATA[Other text]]>
+    </other>
+    <biography>
+      <![CDATA[oauoaeuoaeu]]>
+    </biography>
+    <notes>
+      <![CDATA[oauaouaoeu]]>
+    </notes>
+  </various>
+</grapevine>

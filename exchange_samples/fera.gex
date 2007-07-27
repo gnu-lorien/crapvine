@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <fera name="Brute Squad Gallard" nature="Traditionalist" demeanor="Follower" fera="Mokole" breed="Suchid" auspice="Nam Hsia" rank="Athro" rage="5" gnosis="6" willpower="4" honor="0" temphonor="0" glory="0" tempglory="0" wisdom="0" tempwisdom="0" physicalmax="12" status="Active" startdate="11/9/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Brutal" val="3"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tenacious" val="2"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Commanding" val="3"/>
+      <trait name="Elegant"/>
+      <trait name="Empathetic"/>
+      <trait name="Friendly"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Persuasive" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Calm" val="2"/>
+      <trait name="Insightful"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Reflective"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Docile"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Investigation" val="2"/>
+      <trait name="Occult"/>
+      <trait name="Primal Urge"/>
+      <trait name="Rituals"/>
+      <trait name="Survival"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Fetish" val="4"/>
+      <trait name="Mnesis"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5">
+      <trait name="Lupus: Scent of the True Form"/>
+      <trait name="Mokole: Dragon's Breath"/>
+      <trait name="Mokole: Talk"/>
+      <trait name="Mokole: Walking Between Worlds"/>
+      <trait name="Philodox: Truth of Gaia"/>
+      <trait name="Theurge: Mother's Touch"/>
+      <trait name="Wind Benath My wings" val="170" note="CB 2"/>
+      <trait name="Mokole: General: Sense Dissolver" val="3" note="Sense Wyrm"/>
+    </traitlist>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5">
+      <trait name="Garou: Rite of Talisman Dedication"/>
+    </traitlist>
+    <traitlist name="Honor" abc="yes" display="1"/>
+    <traitlist name="Glory" abc="yes" display="1"/>
+    <traitlist name="Wisdom" abc="yes" display="1"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Man Shape"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Fear of Iron"/>
+      <trait name="Fertile Essence" val="1 or 4"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Location" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[Terrible Claws (3 traits on Attack and additonal agg level)
+Fiery Pearl 143
+Fly 144
+Feathers 143
+Dragon Masque 143]]>
+    </notes>
+  </fera>
+  <fera name="Brute Squard Ahroun Kahn" nature="Survivor" demeanor="Lone Wolf" fera="Bastet: Khan" breed="Feline" auspice="Night" rank="Tilau" rage="3" gnosis="4" willpower="1" honor="0" temphonor="0" glory="0" tempglory="0" wisdom="0" tempwisdom="0" physicalmax="11" status="Active" startdate="11/9/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Agile"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Honor" abc="yes" display="1"/>
+    <traitlist name="Glory" abc="yes" display="1"/>
+    <traitlist name="Wisdom" abc="yes" display="1"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Location" abc="yes" atomic="yes" display="5"/>
+  </fera>
+  <fera name="Dumenkara" nature="Conniver" demeanor="Critic" fera="Mokole" breed="Homid" auspice="Strike" rank="Hatchling" rage="3" gnosis="2" willpower="4" honor="0" temphonor="0" glory="0" tempglory="0" wisdom="0" tempwisdom="0" physicalmax="11" status="Active" startdate="6/5/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="10/11/2002">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny" val="2"/>
+      <trait name="Brutal" val="2"/>
+      <trait name="Robust"/>
+      <trait name="Stalwart"/>
+      <trait name="Wiry"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Intimidating" val="3"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Cunning"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined" val="2"/>
+      <trait name="Shrewd"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Condescending"/>
+      <trait name="Obnoxious"/>
+      <trait name="Repugnant"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Violent"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge" val="2"/>
+      <trait name="Melee"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Mnesis"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5">
+      <trait name="Mokole: Razor Claws"/>
+      <trait name="Mokole: Zhong Lung: Chi'ih Ming" val="3" note="pg. 162"/>
+    </traitlist>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Honor" abc="yes" display="1"/>
+    <traitlist name="Glory" abc="yes" display="1"/>
+    <traitlist name="Wisdom" abc="yes" display="1"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Veiled to Garou" val="7"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Molt" val="-1"/>
+      <trait name="Monstrous" val="-3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Location" abc="yes" atomic="yes" display="5"/>
+    <notes>
+      <![CDATA[2.3 Equipment:
+Archid Form:
+Air Sacs makes 1 step lower on Delirium Chart)
+Huge Size (adds Phys. Trait "Tough" add another "Healthy"wound level add Neg Phys Trait "Lethargic")
+]]>
+    </notes>
+  </fera>
+  <fera name="Logan" nature="Explorer" demeanor="Gallant" fera="Bastet: Bagheera" breed="Homid" auspice="Twilight" rank="Tilau" rage="2" gnosis="3" willpower="4" honor="0" temphonor="0" glory="0" tempglory="0" wisdom="0" tempwisdom="0" physicalmax="11" status="Active" startdate="11/9/2001" narrator="Shawn Neilsen" npc="yes" lastmodified="10/10/2002 8:29:10 AM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Dexterous" val="3"/>
+      <trait name="Ferocious"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Tenacious"/>
+      <trait name="Tough" val="2"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Commanding" val="2"/>
+      <trait name="Friendly" val="3"/>
+      <trait name="Ingratiating" val="2"/>
+      <trait name="Intimidating"/>
+      <trait name="Seductive"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Attentive"/>
+      <trait name="Clever"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Observant"/>
+      <trait name="Wily"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Awareness"/>
+      <trait name="Brawl" val="3"/>
+      <trait name="Leadership"/>
+      <trait name="Occult"/>
+      <trait name="Performance" val="2"/>
+      <trait name="Primal Urge"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Resources" val="2"/>
+      <trait name="Trinket" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5">
+      <trait name="Bastet: Bagheera: Lawgivers' Legacy" val="3" note="basic"/>
+      <trait name="Bastet: General: Sense Magic" val="3" note="basic"/>
+      <trait name="Bastet: General: Touch the Mind" val="3" note="basic"/>
+      <trait name="Bastet: General: Righteous Gaze" val="6" note="int."/>
+      <trait name="Bastet: Homid: Sweet Hunter's Smile" val="3" note="basic"/>
+      <trait name="Bastet: Homid: Babel's Cure" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Honor" abc="yes" display="1"/>
+    <traitlist name="Glory" abc="yes" display="1"/>
+    <traitlist name="Wisdom" abc="yes" display="1"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Gift of Seline" val="4" note="Traits"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Mark of the Predator" val="2" note="Traits"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Location" abc="yes" atomic="yes" display="5"/>
+  </fera>
+  <fera name="Uncle Traveling Matt" nature="Caregiver" demeanor="Jester" fera="Nuwisha" breed="Latrani" auspice="Ragabash" rank="Father" pack="Puck &amp; Ptah" totem="Ptah" rage="0" gnosis="7" willpower="6" honor="7" temphonor="0" glory="5" tempglory="0" wisdom="7" tempwisdom="0" physicalmax="14" status="Active" startdate="6/5/2002" narrator="Shawn Neilsen" npc="yes" lastmodified="2/7/2003 4:27:00 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Brawny"/>
+      <trait name="Energetic"/>
+      <trait name="Graceful"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Robust" val="2"/>
+      <trait name="Rugged"/>
+      <trait name="Tough"/>
+      <trait name="Wiry" val="3"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Beguiling"/>
+      <trait name="Charismatic" val="2"/>
+      <trait name="Charming" val="2"/>
+      <trait name="Eloquent"/>
+      <trait name="Empathetic"/>
+      <trait name="Friendly" val="3"/>
+      <trait name="Genial"/>
+      <trait name="Ingratiating"/>
+      <trait name="Witty" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert" val="2"/>
+      <trait name="Attentive"/>
+      <trait name="Calm" val="2"/>
+      <trait name="Cunning" val="2"/>
+      <trait name="Dedicated"/>
+      <trait name="Disciplined"/>
+      <trait name="Intuitive"/>
+      <trait name="Knowledgeable" val="2"/>
+      <trait name="Vigilant"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Puny"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Tactless" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Forgetful"/>
+      <trait name="Impatient"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Animal Ken"/>
+      <trait name="Athletics"/>
+      <trait name="Brawl" val="2"/>
+      <trait name="Dodge" val="3"/>
+      <trait name="Drive" val="2"/>
+      <trait name="Lore: Bete" val="3"/>
+      <trait name="Lore: Faerie"/>
+      <trait name="Lore: Garou"/>
+      <trait name="Meditation"/>
+      <trait name="Melee"/>
+      <trait name="Occult" val="3"/>
+      <trait name="Subterfuge" val="3"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Rites" val="4"/>
+      <trait name="Totem" val="5"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5">
+      <trait name="Nuwisha: Latrani: Heightened Senses" val="3" note="basic"/>
+      <trait name="Nuwisha: Latrani: Catfeet" val="6" note="int."/>
+      <trait name="Nuwisha: Ragabash: Blur of the Milky Eye" val="3" note="basic"/>
+      <trait name="Nuwisha: Ragabash: Open the Moon Bridge" val="6" note="int."/>
+      <trait name="Nuwisha: Bad Joke" val="3" note="basic"/>
+      <trait name="Nuwisha: New Face" val="3" note="basic"/>
+      <trait name="Nuwisha: Umbral Map" val="3" note="basic"/>
+      <trait name="Nuwisha: Push" val="6" note="int."/>
+      <trait name="Nuwisha: Shadow Walk" val="6" note="int."/>
+      <trait name="Nuwisha: Sheep's Clothing" val="6" note="int."/>
+    </traitlist>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5">
+      <trait name="Garou: Rite of Talisman Dedication"/>
+      <trait name="Garou: Rite of the Totem"/>
+      <trait name="Nuwisha: Rite of Dansing" val="2" note="basic mystical"/>
+      <trait name="Nuwisha: Rite of the Dream Danse" val="4" note="int. mystical"/>
+    </traitlist>
+    <traitlist name="Honor" abc="yes" display="1">
+      <trait name="Amusing"/>
+      <trait name="Devious"/>
+      <trait name="Innovative"/>
+      <trait name="Open-Minded"/>
+      <trait name="Playful"/>
+      <trait name="Resourceful"/>
+      <trait name="Sly"/>
+    </traitlist>
+    <traitlist name="Glory" abc="yes" display="1">
+      <trait name="Courageous"/>
+      <trait name="Daring"/>
+      <trait name="Exalted"/>
+      <trait name="Glorious"/>
+      <trait name="Impressive"/>
+    </traitlist>
+    <traitlist name="Wisdom" abc="yes" display="1">
+      <trait name="Clever"/>
+      <trait name="Inventive"/>
+      <trait name="Profound"/>
+      <trait name="Respected"/>
+      <trait name="Scholarly"/>
+      <trait name="Spiritual"/>
+      <trait name="Wise"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Metamorph" val="6"/>
+      <trait name="Umbral Affinity" val="3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Overconfident" val="-1"/>
+      <trait name="Overly Curious" val="-3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Location" abc="yes" atomic="yes" display="5"/>
+  </fera>
+</grapevine>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <hunter name="Eric Mathers" creed="Avenger" nature="Alpha" demeanor="Eye of the Storm" camp="Aggressive" handle="EMone" conviction="5" willpower="9" mercy="1" vision="0" zeal="6" physicalmax="11" status="Active" startdate="7/18/2003 12:37:46 PM" narrator="Shawn Neilsen" npc="yes" lastmodified="7/18/2003 12:45:12 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic"/>
+      <trait name="Brawny" val="2"/>
+      <trait name="Dexterous"/>
+      <trait name="Quick" val="2"/>
+      <trait name="Resilient"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Commanding"/>
+      <trait name="Intimidating" val="2"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+      <trait name="Dedicated"/>
+      <trait name="Determined"/>
+      <trait name="Disciplined"/>
+      <trait name="Observant"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Callous"/>
+      <trait name="Obnoxious"/>
+      <trait name="Untrustworthy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Predictable"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Edges" abc="no" atomic="yes" display="5">
+      <trait name="Redemption: Bluster" val="0" note="touched"/>
+      <trait name="Vengeance: Cleave" val="0" note="touched"/>
+      <trait name="Vengeance: Trail" val="0" note="gifted"/>
+      <trait name="Vengeance: Smolder" val="0" note="devoted"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="Assault Rifle" note="+3, 2 Lethal, Loud"/>
+      <trait name="Heavy Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Katana" note="+3, 3 Lethal"/>
+      <trait name="Leather Armor" note="+0, 1 Armor Levels"/>
+      <trait name="Pistol" note="+2, 2 Lethal, Loud"/>
+      <trait name="Reinforced Vest" note="+0, 3 Armor Levels, Clumsy, Heavy"/>
+      <trait name="Riot Suit" note="+0, 3 Armor Levels, Clumsy, Heavy"/>
+      <trait name="Shortsword" note="+2, 1 Lethal, Short"/>
+      <trait name="Shotgun" note="+3, 2 Lethal"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </hunter>
+</grapevine>
