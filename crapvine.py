@@ -5,6 +5,7 @@ from menu import *
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
 from traitlist_box import TraitlistBox
+from text_box import TextBox
 from menu_navigator import MenuNavigator
 from vampire import VampireLoader
 
@@ -73,6 +74,16 @@ class CharacterWindow:
 			if my_win:
 				my_vbox = TraitlistBox(tlname, tlname, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
+
+		notes = self.xml.get_widget('notes')
+		if notes:
+			my_vbox = TextBox('notes', self.overlord, self.character)
+			notes.add(my_vbox.get_vbox())
+
+		biography = self.xml.get_widget('biography')
+		if biography:
+			my_vbox = TextBox('biography', self.overlord, self.character)
+			biography.add(my_vbox.get_vbox())
 		
 		window = self.xml.get_widget('winCharacter')
 		window.set_title(character.name)
