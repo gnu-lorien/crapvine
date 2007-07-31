@@ -9,11 +9,11 @@ class TraitlistBox:
 		COLUMN_VALUE,
 		COLUMN_NOTE
 	) = range(3)
-	__traitbox_xml_file  = '/home/lorien/tmp/crapvine/interface/TraitBox.glade'
+	__traitlist_box_xml_file  = '/home/lorien/tmp/crapvine/interface/TraitlistBox.glade'
 	def __init__(self, trait_menu_name, trait_display_name, overlord, traitlist_source):
-		self.xml = gtk.glade.XML(self.__traitbox_xml_file, 'traitbox')
+		self.xml = gtk.glade.XML(self.__traitlist_box_xml_file, 'traitbox')
 		self.vbox = self.xml.get_widget('traitbox')
-		self.title = self.xml.get_widget('lblTraitBoxTitle')
+		self.title = self.xml.get_widget('lblTraitlistBoxTitle')
 		self.tree = self.xml.get_widget('treeTraits')
 		self.trait_menu_name = trait_menu_name
 		self.trait_display_name = trait_display_name
