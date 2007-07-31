@@ -19,6 +19,7 @@ class SingleTraitBox:
 		self.trait_display_name = trait_display_name
 		self.overlord = overlord
 		self.traitlist_source = traitlist_source
+		self.trait_value_sum = 0
 
 		model = self.__create_available_traits_model()
 		tl = None
@@ -31,6 +32,11 @@ class SingleTraitBox:
 		print tl
 		if tl:
 			for trait in tl.traits:
+				try:
+					self.trait_value_sum += int(trait.val)
+				except ValueError, e:
+					print e
+					pass
 				iter = model.append()
 				model.set(iter, 0, trait.name)
 				model.set(iter, 1, trait.val)
@@ -54,7 +60,7 @@ class SingleTraitBox:
 
 		self.tree.connect('cursor-changed', self.set_traitbox_focus)
 
-		self.title.set_label(self.trait_display_name)
+		self.title.set_label('%d %s' % (self.trait_value_sum, self.trait_display_name))
 
 		self.xml.signal_autoconnect({
 			'on_add_to_trait': self.on_add_to_trait,
