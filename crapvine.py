@@ -58,24 +58,12 @@ class CharacterWindow:
 		parser.setContentHandler(self.overlord.menu_loader)
 		parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
 
-		vpane = self.xml.get_widget('physicalsPaned')
-		my_vbox = SingleTraitBox('Physical', 'Physicals', self.overlord, self.character)
-		vpane.pack1(my_vbox.get_vbox(), True, True)
-		my_vbox = SingleTraitBox('Physical, Negative', 'Negative Physicals', self.overlord, self.character, 'Negative Physical')
-		vpane.pack2(my_vbox.get_vbox(), True, True)
-
-		vpane = self.xml.get_widget('socialsPaned')
-		my_vbox = SingleTraitBox('Social', 'Socials', self.overlord, self.character)
-		vpane.pack1(my_vbox.get_vbox(), True, True)
-		my_vbox = SingleTraitBox('Social, Negative', 'Negative Socials', self.overlord, self.character, 'Negative Social')
-		vpane.pack2(my_vbox.get_vbox(), True, True)
-
-		vpane = self.xml.get_widget('mentalsPaned')
-		my_vbox = SingleTraitBox('Mental', 'Mentals', self.overlord, self.character)
-		vpane.pack1(my_vbox.get_vbox(), True, True)
-		my_vbox = SingleTraitBox('Mental, Negative', 'Negative Mentals', self.overlord, self.character, 'Negative Mental')
-		vpane.pack2(my_vbox.get_vbox(), True, True)
-
+		for tlname in [tl.name for tl in self.character.traitlists]:
+			my_win = self.xml.get_widget(tlname)
+			if my_win:
+				my_vbox = SingleTraitBox(tlname, tlname, self.overlord, self.character)
+				my_win.add(my_vbox.get_vbox())
+		
 		window = self.xml.get_widget('winCharacter')
 		window.set_title(character.name)
 		window.show()
