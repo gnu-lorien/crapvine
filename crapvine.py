@@ -4,7 +4,7 @@ import gtk.glade
 from menu import *
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
-from single_trait_box import SingleTraitBox
+from single_trait_box import TraitlistBox
 from menu_navigator import MenuNavigator
 from vampire import VampireLoader
 
@@ -61,7 +61,7 @@ class CharacterWindow:
 		for tlname in [tl.name for tl in self.character.traitlists]:
 			my_win = self.xml.get_widget(tlname)
 			if my_win:
-				my_vbox = SingleTraitBox(tlname, tlname, self.overlord, self.character)
+				my_vbox = TraitlistBox(tlname, tlname, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
 		
 		window = self.xml.get_widget('winCharacter')

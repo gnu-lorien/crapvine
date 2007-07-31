@@ -2,7 +2,7 @@ import gtk
 import gtk.glade
 import gobject
 
-class SingleTraitBox:
+class TraitlistBox:
 	# Trait columns
 	(
 		COLUMN_NAME,
