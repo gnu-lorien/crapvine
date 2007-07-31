@@ -59,6 +59,8 @@ class Attributed(object):
 		except AttributeError, e:
 			if name in self.required_attrs:
 				raise
+			if self.defaults.has_key(name):
+				return self.defaults[name]
 			if name in self.text_attrs:
 				return '' 
 			if name in self.number_as_text_attrs:

@@ -10,7 +10,7 @@ class SingleTraitBox:
 		COLUMN_NOTE
 	) = range(3)
 	__traitbox_xml_file  = '/home/lorien/tmp/crapvine/interface/TraitBox.glade'
-	def __init__(self, trait_menu_name, trait_display_name, overlord):
+	def __init__(self, trait_menu_name, trait_display_name, overlord, traitlist_source):
 		self.xml = gtk.glade.XML(self.__traitbox_xml_file, 'traitbox')
 		self.vbox = self.xml.get_widget('traitbox')
 		self.title = self.xml.get_widget('lblTraitBoxTitle')
@@ -18,8 +18,23 @@ class SingleTraitBox:
 		self.trait_menu_name = trait_menu_name
 		self.trait_display_name = trait_display_name
 		self.overlord = overlord
+		self.traitlist_source = traitlist_source
 
 		model = self.__create_available_traits_model()
+		tl = None
+		print 'Hunting for %s' % (trait_menu_name)
+		for traitlist in traitlist_source.traitlists:
+			if traitlist.name == trait_menu_name:
+				tl = traitlist
+				break
+			#tl = traitlist if traitlist.name == trait_menu_name else None
+		print tl
+		if tl:
+			for trait in tl.traits:
+				iter = model.append()
+				model.set(iter, 0, trait.name)
+				model.set(iter, 1, trait.val)
+				model.set(iter, 2, trait.note)
 		self.tree.set_model(model)
 
 		renderer = gtk.CellRendererText()

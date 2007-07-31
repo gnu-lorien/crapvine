@@ -59,6 +59,7 @@ class TraitList(Attributed):
 	number_as_text_attrs = ['display']
 	date_attrs = []
 	bool_attrs = ['abc', 'atomic']
+	defaults = { }
 
 	def __init__(self):
 		self.traits = []
@@ -80,6 +81,7 @@ class Trait(Attributed):
 	number_as_text_attrs = ['val']
 	date_attrs = []
 	bool_attrs = []
+	defaults = { 'val' : '1' }
 
 	def __str__(self):
 		return '<trait name="%s" val="%s" note="%s" />' % (self.name, self.val, self.note)
@@ -90,6 +92,7 @@ class Vampire(Attributed):
 	number_as_text_attrs = ['generation', 'blood', 'willpower', 'conscience', 'selfcontrol', 'courage', 'pathtraits', 'physicalmax']
 	date_attrs = ['startdate', 'lastmodified']
 	bool_attrs = ['npc']
+	defaults = { }
 
 	def __init__(self):
 		self.traitlists = []
@@ -105,13 +108,3 @@ class Vampire(Attributed):
 		ret += "\n".join([str(traitlist) for traitlist in self.traitlists])
 		ret += "\n</vampire>"
 		return ret
-
-parser = make_parser()
-parser.setFeature(feature_namespaces, 0)
-loader = VampireLoader()
-parser.setContentHandler(loader)
-parser.parse('/home/lorien/tmp/crapvine/exchange_samples/vampires_sabbat.gex')
-
-vamp = loader.vampires['Pack-Dasher']
-
-print vamp
