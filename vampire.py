@@ -13,6 +13,10 @@ class VampireLoader(ContentHandler):
 		self.vampires = {}
 		self.current_vampire = None
 		self.current_traitlist = None
+		self.reading_biography = False
+		self.current_biography = ''
+		self.reading_notes = False
+		self.current_notes = ''
 
 	def add_vampire(self, vamp):
 		self.vampires[vamp.name] = vamp
@@ -31,7 +35,13 @@ class VampireLoader(ContentHandler):
 		if name == 'experience':
 			pass
 
-		if name == 'traitlist':
+		elif name == 'biography':
+			self.reading_biography = True
+
+		elif name == 'notes':
+			self.reading_notes = True
+
+		elif name == 'traitlist':
 			if self.current_traitlist:
 				raise 'TraitList encountered while still reading traitlist'
 			tl = TraitList()
@@ -39,7 +49,7 @@ class VampireLoader(ContentHandler):
 			self.current_traitlist = tl
 			self.current_vampire.add_traitlist(tl)
 
-		if name == 'trait':
+		elif name == 'trait':
 			if not self.current_traitlist:
 				raise 'Trait without bounding traitlist'
 			t = Trait()
@@ -50,8 +60,27 @@ class VampireLoader(ContentHandler):
 		if name == 'vampire':
 			self.add_vampire(self.current_vampire)
 			self.current_vampire = None
+
 		elif name == 'traitlist':
 			self.current_traitlist = None
+
+		elif name == 'biography':
+			self.reading_biography = False
+			self.current_vampire.set_biography(self.current_biography)
+			print self.current_biography
+			self.current_biography = ''
+
+		elif name == 'notes':
+			self.reading_notes = False
+			self.current_vampire.set_notes(self.current_notes)
+			print self.current_notes
+			self.current_notes = ''
+
+	def characters(self, ch):
+		if self.reading_biography:
+			self.current_biography += ch
+		elif self.reading_notes:
+			self.current_notes += ch
 
 class TraitList(Attributed):
 	required_attrs = ['name']
@@ -96,9 +125,17 @@ class Vampire(Attributed):
 
 	def __init__(self):
 		self.traitlists = []
+		self.notes = ''
+		self.biography = ''
 
 	def add_traitlist(self, traitlist):
 		self.traitlists.append(traitlist)
+
+	def set_notes(self, in_notes):
+		self.notes = in_notes
+
+	def set_biography(self, in_bio):
+		self.biography = in_bio
 
 	def ballz(self):
 		print self.__dict__
