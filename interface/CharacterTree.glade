@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Tue Jul 31 01:00:34 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Tue Jul 31 01:39:35 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="characterTreeWindow">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+    <signal name="delete_event" handler="gtk_main_quit"/>
     <child>
       <widget class="GtkScrolledWindow" id="scrolledwindow1">
         <property name="visible">True</property>

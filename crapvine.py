@@ -37,55 +37,57 @@ class CharacterTree:
 		window.show()
 
 		self.xml.signal_autoconnect({
-			'on_treeCharacters_row_activated' : self.on_row_activated
+			'on_treeCharacters_row_activated' : self.on_row_activated,
+			'gtk_main_quit' : lambda *w: gtk.main_quit()
 		})
 
 	def on_row_activated(self, treeview, path, view_column):
-		pass
+		iter = treeview.get_model().get_iter(path)
+		character_name = treeview.get_model().get_value(iter, 0)
+		vamp = self.loader.vampires[character_name]
+		cw = CharacterWindow(vamp)
 
-		
+class CharacterWindow:
+	def __init__(self, character):
+		self.character = character
+		self.xml = gtk.glade.XML(grapevine_xml_file)
+		self.overlord = MenuNavigator(self.xml)
 
-xml = gtk.glade.XML(grapevine_xml_file)
-overlord = MenuNavigator(xml)
+		parser = make_parser()
+		parser.setFeature(feature_namespaces, 0)
+		parser.setContentHandler(self.overlord.menu_loader)
+		parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
 
-parser = make_parser()
-parser.setFeature(feature_namespaces, 0)
-parser.setContentHandler(overlord.menu_loader)
-parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
+		vpane = self.xml.get_widget('physicalsPaned')
+		my_vbox = SingleTraitBox('Physical', 'Physicals', self.overlord, self.character)
+		vpane.pack1(my_vbox.get_vbox(), True, True)
+		my_vbox = SingleTraitBox('Physical, Negative', 'Negative Physicals', self.overlord, self.character)
+		vpane.pack2(my_vbox.get_vbox(), True, True)
 
-ct = CharacterTree()
-vamp = ct.loader.vampires['Pack-Dasher']
+		vpane = self.xml.get_widget('socialsPaned')
+		my_vbox = SingleTraitBox('Social', 'Socials', self.overlord, self.character)
+		vpane.pack1(my_vbox.get_vbox(), True, True)
+		my_vbox = SingleTraitBox('Social, Negative', 'Negative Socials', self.overlord, self.character)
+		vpane.pack2(my_vbox.get_vbox(), True, True)
 
-vpane = xml.get_widget('physicalsPaned')
-my_vbox = SingleTraitBox('Physical', 'Physicals', overlord, vamp)
-vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox('Physical, Negative', 'Negative Physicals', overlord, vamp)
-vpane.pack2(my_vbox.get_vbox(), True, True)
+		vpane = self.xml.get_widget('mentalsPaned')
+		my_vbox = SingleTraitBox('Mental', 'Mentals', self.overlord, self.character)
+		vpane.pack1(my_vbox.get_vbox(), True, True)
+		my_vbox = SingleTraitBox('Mental, Negative', 'Negative Mentals', self.overlord, self.character)
+		vpane.pack2(my_vbox.get_vbox(), True, True)
 
-vpane = xml.get_widget('socialsPaned')
-my_vbox = SingleTraitBox('Social', 'Socials', overlord, vamp)
-vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox('Social, Negative', 'Negative Socials', overlord, vamp)
-vpane.pack2(my_vbox.get_vbox(), True, True)
+		window = self.xml.get_widget('winCharacter')
+		window.show()
 
-vpane = xml.get_widget('mentalsPaned')
-my_vbox = SingleTraitBox('Mental', 'Mentals', overlord, vamp)
-vpane.pack1(my_vbox.get_vbox(), True, True)
-my_vbox = SingleTraitBox('Mental, Negative', 'Negative Mentals', overlord, vamp)
-vpane.pack2(my_vbox.get_vbox(), True, True)
-
-window = xml.get_widget('winCharacter')
-window.show()
-
-xml.signal_autoconnect({ 
-	'on_btnAddTrait_clicked' : overlord.on_btnAddTrait_clicked,
-	'on_btnRemoveTrait_clicked' : overlord.on_btnRemoveTrait_clicked,
-	'on_treeMenu_row_activated' : overlord.on_treeMenu_row_activated,
-	'gtk_main_quit' : lambda *w: gtk.main_quit()
-	}
-)
+		self.xml.signal_autoconnect({ 
+			'on_btnAddTrait_clicked' : self.overlord.on_btnAddTrait_clicked,
+			'on_btnRemoveTrait_clicked' : self.overlord.on_btnRemoveTrait_clicked,
+			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated
+			}
+		)
 
 print "Muahaha"
 
+ct = CharacterTree()
 
 gtk.main()
