@@ -61,22 +61,23 @@ class CharacterWindow:
 		vpane = self.xml.get_widget('physicalsPaned')
 		my_vbox = SingleTraitBox('Physical', 'Physicals', self.overlord, self.character)
 		vpane.pack1(my_vbox.get_vbox(), True, True)
-		my_vbox = SingleTraitBox('Physical, Negative', 'Negative Physicals', self.overlord, self.character)
+		my_vbox = SingleTraitBox('Physical, Negative', 'Negative Physicals', self.overlord, self.character, 'Negative Physical')
 		vpane.pack2(my_vbox.get_vbox(), True, True)
 
 		vpane = self.xml.get_widget('socialsPaned')
 		my_vbox = SingleTraitBox('Social', 'Socials', self.overlord, self.character)
 		vpane.pack1(my_vbox.get_vbox(), True, True)
-		my_vbox = SingleTraitBox('Social, Negative', 'Negative Socials', self.overlord, self.character)
+		my_vbox = SingleTraitBox('Social, Negative', 'Negative Socials', self.overlord, self.character, 'Negative Social')
 		vpane.pack2(my_vbox.get_vbox(), True, True)
 
 		vpane = self.xml.get_widget('mentalsPaned')
 		my_vbox = SingleTraitBox('Mental', 'Mentals', self.overlord, self.character)
 		vpane.pack1(my_vbox.get_vbox(), True, True)
-		my_vbox = SingleTraitBox('Mental, Negative', 'Negative Mentals', self.overlord, self.character)
+		my_vbox = SingleTraitBox('Mental, Negative', 'Negative Mentals', self.overlord, self.character, 'Negative Mental')
 		vpane.pack2(my_vbox.get_vbox(), True, True)
 
 		window = self.xml.get_widget('winCharacter')
+		window.set_title(character.name)
 		window.show()
 
 		self.xml.signal_autoconnect({ 
