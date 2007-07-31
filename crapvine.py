@@ -13,6 +13,8 @@ character_xml_file = '/home/lorien/tmp/crapvine/interface/CharacterTree.glade'
 vampire_xml_file = '/home/lorien/tmp/crapvine/exchange_samples/vampires_sabbat.gex'
 
 class CharacterTree:
+	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
+	column_attrs  = [ 'name', 'sect', 'clan', 'npc' , 'status' ]
 	def __init__(self):
 		self.xml = gtk.glade.XML(character_xml_file)
 		parser = make_parser()
@@ -22,15 +24,23 @@ class CharacterTree:
 		parser.parse(vampire_xml_file)
 
 		self.treeCharacters = self.xml.get_widget('treeCharacters')
-		renderer = gtk.CellRendererText()
-		renderer.set_data("column", 0)
-		column = gtk.TreeViewColumn("Character Name", renderer, text=0)
-		self.treeCharacters.append_column(column)
+		for i in range(len(self.column_labels)):
+			renderer = gtk.CellRendererText()
+			renderer.set_data("column", i)
+			column = gtk.TreeViewColumn(self.column_labels[i], renderer, text=i)
+			self.treeCharacters.append_column(column)
 
-		model = gtk.ListStore(gobject.TYPE_STRING)
-		for name in self.loader.vampires.keys():
+		model = gtk.ListStore(
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING,
+			gobject.TYPE_BOOLEAN,
+			gobject.TYPE_STRING)
+
+		for vamp in self.loader.vampires.values():
 			iter = model.append()
-			model.set(iter, 0, name)
+			for i in range(len(self.column_attrs)):
+				model.set(iter, i, vamp[self.column_attrs[i]])
 		self.treeCharacters.set_model(model)
 
 		window = self.xml.get_widget('characterTreeWindow')

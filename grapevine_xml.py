@@ -53,9 +53,12 @@ class Attributed(object):
 		for attr in self.bool_attrs:
 			self.__setattr__(attr, r.b(attr))
 
-	def __getattr__(self, name):
+	def __getitem__(self, name):
+		return self.__getattribute__(name)
+
+	def __getattribute__(self, name):
 		try:
-			return object.__getattr__(self, name)
+			return object.__getattribute__(self, name)
 		except AttributeError, e:
 			if name in self.required_attrs:
 				raise
