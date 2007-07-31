@@ -4,7 +4,7 @@ import gtk.glade
 from menu import *
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
-from single_trait_box import TraitlistBox
+from traitlist_box import TraitlistBox
 from menu_navigator import MenuNavigator
 from vampire import VampireLoader
 
