@@ -1,4 +1,23 @@
+##  This file is part of Crapvine.
+##  
+##  Copyright (C) 2007 Andrew Sayman <lorien420@myrealbox.com>
+##
+##  Crapvine is free software; you can redistribute it and/or modify
+##  it under the terms of the GNU General Public License as published by
+##  the Free Software Foundation; either version 3 of the License, or
+##  (at your option) any later version.
+##
+##  Crapvine is distributed in the hope that it will be useful,
+##  but WITHOUT ANY WARRANTY; without even the implied warranty of
+##  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+##  GNU General Public License for more details.
+##
+##  You should have received a copy of the GNU General Public License
+##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 from xml.sax import ContentHandler
+import gtk
+import gobject
 import string
 from grapevine_xml import AttributeReader, Attributed
 from xml.sax import make_parser
@@ -82,7 +101,7 @@ class VampireLoader(ContentHandler):
 		elif self.reading_notes:
 			self.current_notes += ch
 
-class TraitList(Attributed):
+class TraitList(Attributed, gtk.GenericTreeModel):
 	required_attrs = ['name']
 	text_attrs = []
 	number_as_text_attrs = ['display']
@@ -92,6 +111,7 @@ class TraitList(Attributed):
 
 	def __init__(self):
 		self.traits = []
+		gtk.GenericTreeModel.__init__(self)
 
 	def add_trait(self, trait):
 		self.traits.append(trait)
@@ -103,6 +123,63 @@ class TraitList(Attributed):
 		if len(self.traits) > 0:
 			ret += '</traitlist>'
 		return ret
+
+	def print_entry(f):
+		print 'Cock spork!' 
+		return f
+
+	def get_item(self, index):
+		return self.traits[index]
+	def get_item_from_path(self, path):
+		return self.traits[path[0]]
+	def on_get_flags(self):
+		return gtk.TREE_MODEL_LIST_ONLY|gtk.TREE_MODEL_ITERS_PERSIST
+	def on_get_n_columns(self):
+		return 3
+	def on_get_column_type(self, index):
+		return gobject.TYPE_STRING
+	def on_get_path(self, iter):
+		return (iter, )
+	def on_get_iter(self, path):
+		return path[0]
+
+	@print_entry
+	def on_get_value(self, index, column):
+		assert column >= 0
+		assert column <= 2
+		if len(self.traits) == 0:
+			return None
+		trait = self.traits[index]
+		if column == 0:
+			return trait.name
+		elif column == 1:
+			return trait.val
+		elif column == 2:
+			return trait.note
+	def on_iter_next(self, index):
+		if index >= (len(self.traits) - 1):
+			return None
+		return index + 1
+	def on_iter_children(self, node):
+		return None
+	def on_iter_has_child(self, node):
+		return False
+	def on_iter_n_children(self, iter):
+		if iter:
+			return 0
+		return len(self.traits)
+	def on_iter_nth_child(self, parent, n):
+		if parent:
+			return None
+		try:
+			self.traits[n]
+		except IndexError:
+			return None
+		else:
+			return n
+	def on_iter_parent(self, node):
+		return None
+
 
 class Trait(Attributed):
 	required_attrs = ['name']

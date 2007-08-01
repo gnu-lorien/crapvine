@@ -1,3 +1,20 @@
+##  This file is part of Crapvine.
+##  
+##  Copyright (C) 2007 Andrew Sayman <lorien420@myrealbox.com>
+##
+##  Crapvine is free software; you can redistribute it and/or modify
+##  it under the terms of the GNU General Public License as published by
+##  the Free Software Foundation; either version 3 of the License, or
+##  (at your option) any later version.
+##
+##  Crapvine is distributed in the hope that it will be useful,
+##  but WITHOUT ANY WARRANTY; without even the implied warranty of
+##  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+##  GNU General Public License for more details.
+##
+##  You should have received a copy of the GNU General Public License
+##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import gobject
 import gtk
 import gtk.glade
@@ -69,12 +86,13 @@ class CharacterWindow:
 		parser.setContentHandler(self.overlord.menu_loader)
 		parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
 
+		print 'On traitlists'
 		for tlname in [tl.name for tl in self.character.traitlists]:
 			my_win = self.xml.get_widget(tlname)
 			if my_win:
 				my_vbox = TraitlistBox(tlname, tlname, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
-
+		print 'Out traitlists'
 		notes = self.xml.get_widget('notes')
 		if notes:
 			my_vbox = TextBox('notes', self.overlord, self.character)

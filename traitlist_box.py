@@ -1,3 +1,20 @@
+##  This file is part of Crapvine.
+##  
+##  Copyright (C) 2007 Andrew Sayman <lorien420@myrealbox.com>
+##
+##  Crapvine is free software; you can redistribute it and/or modify
+##  it under the terms of the GNU General Public License as published by
+##  the Free Software Foundation; either version 3 of the License, or
+##  (at your option) any later version.
+##
+##  Crapvine is distributed in the hope that it will be useful,
+##  but WITHOUT ANY WARRANTY; without even the implied warranty of
+##  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+##  GNU General Public License for more details.
+##
+##  You should have received a copy of the GNU General Public License
+##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import gtk
 import gtk.glade
 import gobject
@@ -23,25 +40,15 @@ class TraitlistBox:
 
 		model = self.__create_available_traits_model()
 		tl = None
-		print 'Hunting for %s' % (trait_menu_name)
+		#print 'Hunting for %s' % (trait_menu_name)
 		for traitlist in traitlist_source.traitlists:
 			if traitlist.name == self.trait_display_name:
 				tl = traitlist
 				break
 			#tl = traitlist if traitlist.name == trait_menu_name else None
-		print tl
-		if tl:
-			for trait in tl.traits:
-				try:
-					self.trait_value_sum += int(trait.val)
-				except ValueError, e:
-					print e
-					pass
-				iter = model.append()
-				model.set(iter, 0, trait.name)
-				model.set(iter, 1, trait.val)
-				model.set(iter, 2, trait.note)
-		self.tree.set_model(model)
+		#print tl
+		self.tree.set_model(tl)
+
 
 		renderer = gtk.CellRendererText()
 		renderer.set_data("column", self.COLUMN_NAME)
