@@ -94,6 +94,7 @@ class TraitlistBox:
 		target_trait = model.get_item(path[0])
 		model.decrement_trait(target_trait.name)
 		self.__update_title()
+		self.tree.get_selection().select_path(path)
 		print "Subtracting trait from %s" % self.trait_menu_name
 
 	def set_focus_child(self, unused, unused_as_well):
