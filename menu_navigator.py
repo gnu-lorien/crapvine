@@ -16,6 +16,7 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import gtk
+import copy
 from menu import MenuLoader, MenuModel, MenuReference
 
 class MenuNavigator:
@@ -63,7 +64,9 @@ class MenuNavigator:
 		model = self.target_traitbox.tree.get_model()
 		(mainModel, selIter) = self.treeMenu.get_selection().get_selected()
 		path = mainModel.get_path(selIter)
-		trait = mainModel.get_item(path[0])
+		trait = copy.copy(mainModel.get_item(path[0]))
+		if not mainModel.menu.autonote:
+			trait.note = ''	
 		model.add_menu_item(trait)
 
 	def on_btnAddTrait_clicked(self, widget):
