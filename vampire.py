@@ -19,6 +19,8 @@ from xml.sax import ContentHandler
 import gtk
 import gobject
 import string
+import copy
+import pdb
 from grapevine_xml import AttributeReader, Attributed
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
@@ -113,8 +115,80 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 		self.traits = []
 		gtk.GenericTreeModel.__init__(self)
 
+	def add_menu_item(self, menu_item):
+		t = Trait()
+		t.name = copy.copy(menu_item.name)
+		t.note = copy.copy(menu_item.note)
+		t.val  = copy.copy(menu_item.cost)
+		self.add_trait(t)
+
 	def add_trait(self, trait):
-		self.traits.append(trait)
+		if self.atomic:
+			self.traits.append(trait)
+			path = (len(self.traits) - 1, )
+			self.emit('row-inserted', path, self.get_iter(path))
+		else:
+			if trait.name in [t.name for t in self.traits]:
+				for en in enumerate(self.traits):
+					t = en[1]
+					if trait.name == t.name:
+						idx = en[0]
+						try:
+							t.val = str(int(t.val) + int(trait.val))
+						except ValueError:
+							t.val = '2'
+						path = (idx, )
+						self.emit('row-changed', path, self.get_iter(path))
+			else:
+				self.traits.append(trait)
+				path = (len(self.traits) - 1, )
+				self.emit('row-inserted', path, self.get_iter(path))
+
+	def increment_trait(self, trait_name):
+		if trait_name in [t.name for t in self.traits]:
+			for en in enumerate(self.traits):
+				t = en[1]
+				if trait_name == t.name:
+					idx = en[0]
+					try:
+						t.val = str(int(t.val) + 1)
+					except ValueError:
+						t.val = '1'
+					path = (idx, )
+					self.emit('row-changed', path, self.get_iter(path))
+		else:
+			raise 'Unknown trait'
+
+	def decrement_trait(self, trait_name):
+		if trait_name in [t.name for t in self.traits]:
+			for en in enumerate(self.traits):
+				t = en[1]
+				if trait_name == t.name:
+					idx = en[0]
+					if t.val == '1':
+						del self.traits[idx]
+						path = (idx, )
+						self.emit('row-deleted', path)
+					else:
+						try:
+							t.val = str(int(t.val) - 1)
+						except ValueError:
+							t.val = '1'
+						path = (idx, )
+						self.emit('row-changed', path, self.get_iter(path))
+		else:
+			raise 'Unknown trait'
+
+	def get_total_value(self):
+		sum = 0
+		for t in self.traits:
+			try:
+				sum += int(t.val)
+			except ValueError:
+				sum += 1
+		return sum
+	def get_num_entries(self):
+		return len(self.traits)
 
 	def __str__(self):
 		end_tag = ">\n" if len(self.traits) > 0 else "/>"
@@ -129,7 +203,7 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 	def get_item_from_path(self, path):
 		return self.traits[path[0]]
 	def on_get_flags(self):
-		return gtk.TREE_MODEL_LIST_ONLY|gtk.TREE_MODEL_ITERS_PERSIST
+		return gtk.TREE_MODEL_LIST_ONLY
 	def on_get_n_columns(self):
 		return 3
 	def on_get_column_type(self, index):

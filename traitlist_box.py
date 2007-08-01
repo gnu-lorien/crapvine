@@ -66,7 +66,7 @@ class TraitlistBox:
 
 		self.tree.connect('cursor-changed', self.set_traitbox_focus)
 
-		self.title.set_label('%d %s' % (self.trait_value_sum, self.trait_display_name))
+		self.title.set_label('%d %s' % (tl.get_total_value(), self.trait_display_name))
 
 		self.xml.signal_autoconnect({
 			'on_add_to_trait': self.on_add_to_trait,
@@ -78,9 +78,17 @@ class TraitlistBox:
 		})
 
 	def on_add_to_trait(self, widget):
+		(model, iter) = self.tree.get_selection().get_selected()
+		path = model.get_path(iter)
+		target_trait = model.get_item(path[0])
+		model.increment_trait(target_trait.name)
 		print "Adding trait on %s" % self.trait_menu_name
 
 	def on_subtract_from_trait(self, widget):
+		(model, iter) = self.tree.get_selection().get_selected()
+		path = model.get_path(iter)
+		target_trait = model.get_item(path[0])
+		model.decrement_trait(target_trait.name)
 		print "Subtracting trait from %s" % self.trait_menu_name
 
 	def set_focus_child(self, unused, unused_as_well):

@@ -61,13 +61,10 @@ class MenuNavigator:
 		if self.target_traitbox is None:
 			return
 		model = self.target_traitbox.tree.get_model()
-		iter = model.append()
 		(mainModel, selIter) = self.treeMenu.get_selection().get_selected()
 		path = mainModel.get_path(selIter)
 		trait = mainModel.get_item(path[0])
-		model.set(iter, 0, trait.name)
-		model.set(iter, 1, trait.cost)
-		model.set(iter, 2, trait.note)
+		model.add_menu_item(trait)
 
 	def on_btnAddTrait_clicked(self, widget):
 		self.__add_trait_to_current_traitbox()
