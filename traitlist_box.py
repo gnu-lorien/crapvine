@@ -48,6 +48,9 @@ class TraitlistBox:
 		#print tl
 		self.tree.set_model(tl)
 
+		tl.connect('row-changed', self.tree_model_changed)
+		tl.connect('row-deleted', self.tree_model_changed)
+		tl.connect('row-inserted', self.tree_model_changed)
 
 		renderer = gtk.CellRendererText()
 		renderer.set_data("column", self.COLUMN_NAME)
@@ -82,6 +85,7 @@ class TraitlistBox:
 		path = model.get_path(iter)
 		target_trait = model.get_item(path[0])
 		model.increment_trait(target_trait.name)
+		self.__update_title()
 		print "Adding trait on %s" % self.trait_menu_name
 
 	def on_subtract_from_trait(self, widget):
@@ -89,6 +93,7 @@ class TraitlistBox:
 		path = model.get_path(iter)
 		target_trait = model.get_item(path[0])
 		model.decrement_trait(target_trait.name)
+		self.__update_title()
 		print "Subtracting trait from %s" % self.trait_menu_name
 
 	def set_focus_child(self, unused, unused_as_well):
@@ -109,10 +114,8 @@ class TraitlistBox:
 		print row_num
 		print view_column
 
-	def __create_available_traits_model(self):
-		model = gtk.ListStore(
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING
-		)
-		return model
+	def __update_title(self):
+		self.title.set_label('%d %s' % (self.tree.get_model().get_total_value(), self.trait_display_name))
+
+	def tree_model_changed(self, treemodel=None, path=None, iter=None):
+		self.__update_title()
