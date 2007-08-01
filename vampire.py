@@ -137,6 +137,8 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 							t.val = str(int(t.val) + int(trait.val))
 						except ValueError:
 							t.val = '2'
+						if t.note == '':
+							t.note = trait.note
 						path = (idx, )
 						self.emit('row-changed', path, self.get_iter(path))
 			else:
