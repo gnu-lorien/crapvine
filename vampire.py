@@ -124,10 +124,6 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 			ret += '</traitlist>'
 		return ret
 
-	def print_entry(f):
-		print 'Cock spork!' 
-		return f
-
 	def get_item(self, index):
 		return self.traits[index]
 	def get_item_from_path(self, path):
@@ -142,8 +138,6 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 		return (iter, )
 	def on_get_iter(self, path):
 		return path[0]
-
-	@print_entry
 	def on_get_value(self, index, column):
 		assert column >= 0
 		assert column <= 2

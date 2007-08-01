@@ -86,13 +86,11 @@ class CharacterWindow:
 		parser.setContentHandler(self.overlord.menu_loader)
 		parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
 
-		print 'On traitlists'
 		for tlname in [tl.name for tl in self.character.traitlists]:
 			my_win = self.xml.get_widget(tlname)
 			if my_win:
 				my_vbox = TraitlistBox(tlname, tlname, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
-		print 'Out traitlists'
 		notes = self.xml.get_widget('notes')
 		if notes:
 			my_vbox = TextBox('notes', self.overlord, self.character)
