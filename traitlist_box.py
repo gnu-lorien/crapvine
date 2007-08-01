@@ -38,7 +38,6 @@ class TraitlistBox:
 		self.traitlist_source = traitlist_source
 		self.trait_value_sum = 0
 
-		model = self.__create_available_traits_model()
 		tl = None
 		#print 'Hunting for %s' % (trait_menu_name)
 		for traitlist in traitlist_source.traitlists:

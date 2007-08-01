@@ -89,3 +89,4 @@ class Attributed(object):
 				return ''
 			if name in self.bool_attrs:
 				return 'no'
+			raise
