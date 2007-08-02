@@ -300,6 +300,15 @@ class Vampire(Attributed):
 		ret = '%s<vampire %s>%s' % (indent, self.get_attrs_xml(), "\n")
 		local_indent = '%s   ' % (indent)
 		ret += "\n".join([traitlist.get_xml(local_indent) for traitlist in self.traitlists])
+		if self.notes != '':
+			ret += "\n"
+			note_lines = ['<notes>', '   <![CDATA[%s]]>' % (self.notes), '</notes>']
+			ret += "\n".join(['%s%s' % (local_indent, inny) for inny in note_lines])
+		if self.biography != '':
+			bio_lines = ['<biography>', '   <![CDATA[%s]]>' % (self.biography), '</biography>']
+			ret += "\n"
+			ret += "\n".join(['%s%s' % (local_indent, inny) for inny in bio_lines])
+
 		ret += '%s%s</vampire>' % ("\n", indent)
 		return ret
 	def __str__(self):
