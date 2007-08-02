@@ -49,11 +49,8 @@ class VampireLoader(ContentHandler):
 			v = Vampire()
 			v.read_attributes(attrs)
 			self.current_vampire = v
-		else:
-			if not self.current_vampire:
-				return
 
-		if name == 'experience':
+		elif name == 'experience':
 			pass
 
 		elif name == 'biography':
@@ -68,7 +65,8 @@ class VampireLoader(ContentHandler):
 			tl = TraitList()
 			tl.read_attributes(attrs)
 			self.current_traitlist = tl
-			self.current_vampire.add_traitlist(tl)
+			if self.current_vampire:
+				self.current_vampire.add_traitlist(tl)
 
 		elif name == 'trait':
 			if not self.current_traitlist:
@@ -79,22 +77,28 @@ class VampireLoader(ContentHandler):
 
 	def endElement(self, name):
 		if name == 'vampire':
+			assert self.current_vampire
 			self.add_vampire(self.current_vampire)
 			self.current_vampire = None
 
 		elif name == 'traitlist':
+			assert self.current_traitlist
 			self.current_traitlist = None
 
 		elif name == 'biography':
+			assert self.reading_biography
 			self.reading_biography = False
-			self.current_vampire['biography'] = self.current_biography
-			print self.current_biography
+			if self.current_vampire:
+				self.current_vampire['biography'] = self.current_biography
+				print self.current_biography
 			self.current_biography = ''
 
 		elif name == 'notes':
+			assert self.reading_notes
 			self.reading_notes = False
-			self.current_vampire['notes'] = self.current_notes
-			print self.current_notes
+			if self.current_vampire:
+				self.current_vampire['notes'] = self.current_notes
+				print self.current_notes
 			self.current_notes = ''
 
 	def characters(self, ch):
