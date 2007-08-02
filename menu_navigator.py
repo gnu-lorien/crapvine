@@ -21,7 +21,7 @@ from menu import MenuLoader, MenuModel, MenuReference
 
 class MenuNavigator:
 	def __init__(self, xml):
-		self.target_traitbox = None
+		self.target = None
 		self.menu_loader = MenuLoader()
 		self.menu_path = []
 		self.xml = xml
@@ -59,15 +59,14 @@ class MenuNavigator:
 		menu_path.append(old_menu_name)
 
 	def __add_trait_to_current_traitbox(self):
-		if self.target_traitbox is None:
+		if self.target is None:
 			return
-		model = self.target_traitbox.tree.get_model()
 		(mainModel, selIter) = self.treeMenu.get_selection().get_selected()
 		path = mainModel.get_path(selIter)
 		trait = copy.copy(mainModel.get_item(path[0]))
 		if not mainModel.menu.autonote:
 			trait.note = ''	
-		model.add_menu_item(trait)
+		self.target.add_menu_item(trait)
 
 	def on_btnAddTrait_clicked(self, widget):
 		self.__add_trait_to_current_traitbox()

@@ -25,6 +25,7 @@ from traitlist_box import TraitlistBox
 from text_box import TextBox
 from menu_navigator import MenuNavigator
 from vampire import VampireLoader
+from text_attribute_box import TextAttributeBox
 
 grapevine_xml_file = '/home/lorien/tmp/crapvine/interface/Grapevine.glade'
 character_xml_file = '/home/lorien/tmp/crapvine/interface/CharacterTree.glade'
@@ -100,6 +101,12 @@ class CharacterWindow:
 		if biography:
 			my_vbox = TextBox('biography', self.overlord, self.character)
 			biography.add(my_vbox.get_vbox())
+
+		for text_attr_name in self.character.text_attrs:
+			my_win = self.xml.get_widget('text_attr_%s' % (text_attr_name))
+			if my_win:
+				my_vbox = TextAttributeBox(text_attr_name, text_attr_name, self.overlord, self.character)
+				my_win.add(my_vbox.get_vbox())
 		
 		window = self.xml.get_widget('winCharacter')
 		window.set_title(character.name)

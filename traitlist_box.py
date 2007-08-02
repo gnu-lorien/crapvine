@@ -18,6 +18,7 @@
 import gtk
 import gtk.glade
 import gobject
+import configuration
 
 class TraitlistBox:
 	# Trait columns
@@ -26,10 +27,10 @@ class TraitlistBox:
 		COLUMN_VALUE,
 		COLUMN_NOTE
 	) = range(3)
-	__traitlist_box_xml_file  = '/home/lorien/tmp/crapvine/interface/TraitlistBox.glade'
+	__traitlist_box_xml_file  = configuration.get_traitlist_box_xml_file_path()
 	def __init__(self, trait_menu_name, trait_display_name, overlord, traitlist_source):
-		self.xml = gtk.glade.XML(self.__traitlist_box_xml_file, 'traitbox')
-		self.vbox = self.xml.get_widget('traitbox')
+		self.xml = gtk.glade.XML(self.__traitlist_box_xml_file, 'traitlist')
+		self.vbox = self.xml.get_widget('traitlist')
 		self.title = self.xml.get_widget('lblTraitlistBoxTitle')
 		self.tree = self.xml.get_widget('treeTraits')
 		self.trait_menu_name = trait_menu_name
@@ -102,8 +103,11 @@ class TraitlistBox:
 
 	def set_traitbox_focus(self, unused):
 		print "Setting traitbox focus"
-		self.overlord.target_traitbox = self
+		self.overlord.target = self
 		self.overlord.show_menu(self.trait_menu_name)
+
+	def add_menu_item(self, menu_item):
+		self.tree.get_model().add_menu_item(menu_item)
 
 	def get_vbox(self):
 		return self.vbox

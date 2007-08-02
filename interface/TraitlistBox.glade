@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Tue Jul 31 02:20:23 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Wed Aug  1 19:52:36 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="winTraitlistBox">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
     <child>
-      <widget class="GtkVBox" id="traitbox">
+      <widget class="GtkVBox" id="traitlist">
         <property name="visible">True</property>
         <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
         <child>
