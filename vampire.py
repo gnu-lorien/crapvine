@@ -33,11 +33,16 @@ class VampireLoader(ContentHandler):
 	def __init__(self):
 		self.vampires = {}
 		self.current_vampire = None
+
 		self.current_traitlist = None
+
 		self.reading_biography = False
 		self.current_biography = ''
+
 		self.reading_notes = False
 		self.current_notes = ''
+
+		self.current_experience = None
 
 	def add_vampire(self, vamp):
 		self.vampires[vamp.name] = vamp
@@ -51,6 +56,22 @@ class VampireLoader(ContentHandler):
 			self.current_vampire = v
 
 		elif name == 'experience':
+			if self.current_experience:
+				raise 'Experience encountered while still reading traitlist'
+			exp = Experience()
+			exp.read_attributes(attrs)
+			self.current_experience = exp
+			if self.current_vampire:
+				self.current_vampire.add_experience(exp)
+
+		elif name == 'entry':
+			if not self.current_experience:
+				raise 'Entry without bounding Experience'
+			ent = ExperienceEntry()
+			ent.read_attributes(attrs)
+			self.current_experience.add_entry(ent)
+
+		elif name == 'entry':
 			pass
 
 		elif name == 'biography':
@@ -80,6 +101,10 @@ class VampireLoader(ContentHandler):
 			assert self.current_vampire
 			self.add_vampire(self.current_vampire)
 			self.current_vampire = None
+
+		elif name == 'experience':
+			assert self.current_experience
+			self.current_experience = None
 
 		elif name == 'traitlist':
 			assert self.current_traitlist
@@ -117,6 +142,45 @@ class VampireLoader(ContentHandler):
 		print 'Warning'
 		raise exception
 
+class Experience(Attributed):
+	required_attrs = []
+	text_attrs = []
+	number_as_text_attrs = ['unspent', 'earned']
+	date_attrs = []
+	bool_attrs = []
+	defaults = {}
+	text_children = []
+
+	def __init__(self):
+		self.entries = []
+
+	def add_entry(self, entry):
+		self.entries.append(entry)
+
+	def get_xml(self, indent=''):
+		end_tag = ">\n" if len(self.entries) > 0 else "/>"
+		ret = '%s<experience %s%s' % (indent, self.get_attrs_xml(), end_tag)
+		local_indent = '%s   ' % (indent)
+		ret += "\n".join([entry.get_xml(local_indent) for entry in self.entries])
+		if len(self.entries) > 0:
+			ret += '%s%s</experience>' % ("\n", indent)
+		return ret
+	def __str__(self):
+		return self.get_xml()
+
+class ExperienceEntry(Attributed):
+	required_attrs = []
+	text_attrs = ['reason']
+	number_as_text_attrs = ['change', 'type', 'earned', 'unspent']
+	date_attrs = ['date']
+	bool_attrs = []
+	defaults = {}
+	text_children = []
+
+	def get_xml(self, indent=''):
+		return '%s<entry %s/>' % (indent, self.get_attrs_xml())
+	def __str__(self):
+		return self.get_xml()
 
 class TraitList(Attributed, gtk.GenericTreeModel):
 	required_attrs = ['name']
@@ -209,7 +273,7 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 	def get_num_entries(self):
 		return len(self.traits)
 
-	def get_xml(self, indent):
+	def get_xml(self, indent=''):
 		end_tag = ">\n" if len(self.traits) > 0 else "/>"
 		ret = '%s<traitlist %s%s' % (indent, self.get_attrs_xml(), end_tag)
 		local_indent = '%s   ' % (indent)
@@ -302,11 +366,13 @@ class Vampire(Attributed):
 
 	def __init__(self):
 		self.traitlists = []
-		self.notes = ''
-		self.biography = ''
+		self.experience = None
 
 	def add_traitlist(self, traitlist):
 		self.traitlists.append(traitlist)
+
+	def add_experience(self, exp):
+		self.experience = exp
 
 	def ballz(self):
 		print self.__dict__
@@ -314,7 +380,11 @@ class Vampire(Attributed):
 	def get_xml(self, indent = ''):
 		ret = '%s<vampire %s>%s' % (indent, self.get_attrs_xml(), "\n")
 		local_indent = '%s   ' % (indent)
+		if self.experience:
+			ret += self.experience.get_xml(local_indent)
+			ret += "\n"
 		ret += "\n".join([traitlist.get_xml(local_indent) for traitlist in self.traitlists])
+
 		for child_name in self.text_children:
 			if self[child_name] != '':
 				ret += "\n"
