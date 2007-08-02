@@ -23,11 +23,7 @@ import gtk.glade
 from menu import *
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
-from traitlist_box import TraitlistBox
-from text_box import TextBox
-from menu_navigator import MenuNavigator
 from vampire import VampireLoader
-from text_attribute_box import TextAttributeBox
 from character_window import CharacterWindow
 import sys, traceback
 

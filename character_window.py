@@ -17,6 +17,16 @@
 
 from __future__ import with_statement
 
+import gtk
+from xml.sax import make_parser
+from xml.sax.handler import feature_namespaces
+
+import configuration
+from traitlist_box import TraitlistBox
+from text_box import TextBox
+from text_attribute_box import TextAttributeBox
+from menu_navigator import MenuNavigator
+
 class CharacterWindow:
 	def __init__(self, character):
 		self.character = character
