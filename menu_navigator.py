@@ -58,7 +58,7 @@ class MenuNavigator:
 		swap_menu(trait_category)
 		menu_path.append(old_menu_name)
 
-	def __add_trait_to_current_traitbox(self):
+	def __add_trait_to_target(self):
 		if self.target is None:
 			return
 		(mainModel, selIter) = self.treeMenu.get_selection().get_selected()
@@ -69,7 +69,7 @@ class MenuNavigator:
 		self.target.add_menu_item(trait)
 
 	def on_btnAddTrait_clicked(self, widget):
-		self.__add_trait_to_current_traitbox()
+		self.__add_trait_to_target()
 
 	def on_btnRemoveTrait_clicked(self, widget):
 		print "Removing a trait"
@@ -82,4 +82,4 @@ class MenuNavigator:
 			else:
 				self.__add_to_menu_path(menu_item.reference)
 		else:
-			self.__add_trait_to_current_traitbox()
+			self.__add_trait_to_target()
