@@ -1,0 +1,869 @@
+<?xml version="1.0"?>
+<grapevine version="3" chronicle="Title-De-Chroniclititit" website="www.nowhereintheworld.org" email="fuck_you_buddy@nowhereintheworld.org" phone="404-404-4040" usualtime="7:00 PM" stcommentstart="[cockinmouf]" stcommentend="[/cockinmouf]" linktraitmax="no" randomtraits="7,5,3,5,5,5,5" menupath="Grapevine Menus.gvm" size="70">
+  <usualplace>
+    <![CDATA[Just under the stairs]]>
+  </usualplace>
+  <description>
+    <![CDATA[This is a blow-by-blow game of doom, gloom, and subsume]]>
+  </description>
+  <calendar lastmodified="8/2/2007 6:41:12 PM">
+    <game date="8/7/2007" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+    </game>
+    <game date="8/22/2007" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+      <notes>
+        <![CDATA[io io io error!]]>
+      </notes>
+    </game>
+    <game date="8/27/2007" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+    </game>
+    <game date="8/31/2007" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+    </game>
+    <game date="2/6/2008" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+    </game>
+    <game date="2/7/2008" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+      <notes>
+        <![CDATA[Suck it, it's late]]>
+      </notes>
+    </game>
+    <game date="2/27/2008" time="7:00 PM">
+      <place>
+        <![CDATA[Just under the stairs]]>
+      </place>
+    </game>
+  </calendar>
+  <award use="XP" name="Attendance" type="0" change="1" reason="Attendance"/>
+  <award use="XP" name="Costuming" type="0" change="1" reason="Costuming"/>
+  <award use="XP" name="Downtime Activities" type="0" change="1" reason="Downtime Activities"/>
+  <award use="XP" name="First Night" type="0" change="1" reason="First Night"/>
+  <award use="XP" name="Good Roleplaying" type="0" change="1" reason="Good Roleplaying"/>
+  <award use="XP" name="Leadership" type="0" change="1" reason="Leadership"/>
+  <award use="PP" name="Storytelling" type="0" change="1" reason="Storytelling"/>
+  <award use="PP" name="Bookkeeping" type="0" change="1" reason="Bookkeeping"/>
+  <award use="PP" name="Narrating" type="0" change="1" reason="Narrating"/>
+  <award use="PP" name="Setup/Cleanup" type="0" change="1" reason="Setup/Cleanup"/>
+  <template name="Action and Rumor Report" text="Templates\Text\Action and Rumor Report.txt" rtf="Templates\RTF\Action and Rumor Report.rtf" html="Templates\HTML\Action and Rumor Report.html"/>
+  <template name="Changeling Character Sheet" sheet="yes" text="Templates\Text\Changeling.txt" rtf="Templates\RTF\Changeling.rtf" html="Templates\HTML\Changeling.html"/>
+  <template name="Character Equipment" text="Templates\Text\Character Equipment.txt" rtf="Templates\RTF\Character Equipment.rtf" html="Templates\HTML\Character Equipment.html"/>
+  <template name="Character Roster" text="Templates\Text\Character Roster.txt" rtf="Templates\RTF\Character Roster.rtf" html="Templates\HTML\Character Roster.html"/>
+  <template name="Demon Character Sheet" sheet="yes" text="Templates\Text\Demon.txt" rtf="Templates\RTF\Demon.rtf" html="Templates\HTML\Demon.html"/>
+  <template name="Experience History" text="Templates\Text\Experience History.txt" rtf="Templates\RTF\Experience History.rtf" html="Templates\HTML\Experience History.html"/>
+  <template name="Fera Character Sheet" sheet="yes" text="Templates\Text\Fera.txt" rtf="Templates\RTF\Fera.rtf" html="Templates\HTML\Fera.html"/>
+  <template name="Game Calendar" text="Templates\Text\Game Calendar.txt" rtf="Templates\RTF\Game Calendar.rtf" html="Templates\HTML\Game Calendar.html"/>
+  <template name="Hunter Character Sheet" sheet="yes" text="Templates\Text\Hunter.txt" rtf="Templates\RTF\Hunter.rtf" html="Templates\HTML\Hunter.html"/>
+  <template name="Influence Report" text="Templates\Text\Influence Report.txt" rtf="Templates\RTF\Influence Report.rtf" html="Templates\HTML\Influence Report.html"/>
+  <template name="Item Cards" text="Templates\Text\Item Cards.txt" rtf="Templates\RTF\Item Cards.rtf" html="Templates\HTML\Item Cards.html"/>
+  <template name="Kuei-Jin Character Sheet" sheet="yes" text="Templates\Text\Kuei-Jin.txt" rtf="Templates\RTF\Kuei-Jin.rtf" html="Templates\HTML\Kuei-Jin.html"/>
+  <template name="Location Cards" text="Templates\Text\Location Cards.txt" rtf="Templates\RTF\Location Cards.rtf" html="Templates\HTML\Location Cards.html"/>
+  <template name="Mage Character Sheet" sheet="yes" text="Templates\Text\Mage.txt" rtf="Templates\RTF\Mage.rtf" html="Templates\HTML\Mage.html"/>
+  <template name="Master Action Report" text="Templates\Text\Master Action Report.txt" rtf="Templates\RTF\Master Action Report.rtf" html="Templates\HTML\Master Action Report.html"/>
+  <template name="Master Rumor Report" text="Templates\Text\Master Rumor Report.txt" rtf="Templates\RTF\Master Rumor Report.rtf" html="Templates\HTML\Master Rumor Report.html"/>
+  <template name="Merits and Flaws Report" text="Templates\Text\Merits and Flaws Report.txt" rtf="Templates\RTF\Merits and Flaws Report.rtf" html="Templates\HTML\Merits and Flaws Report.html"/>
+  <template name="Mortal Character Sheet" sheet="yes" text="Templates\Text\Mortal.txt" rtf="Templates\RTF\Mortal.rtf" html="Templates\HTML\Mortal.html"/>
+  <template name="Mummy Character Sheet" sheet="yes" text="Templates\Text\Mummy.txt" rtf="Templates\RTF\Mummy.rtf" html="Templates\HTML\Mummy.html"/>
+  <template name="Player Point History" text="Templates\Text\Player Point History.txt" rtf="Templates\RTF\Player Point History.rtf" html="Templates\HTML\Player Point History.html"/>
+  <template name="Player Roster" text="Templates\Text\Player Roster.txt" rtf="Templates\RTF\Player Roster.rtf" html="Templates\HTML\Player Roster.html"/>
+  <template name="Plot Report" text="Templates\Text\Plot Report.txt" rtf="Templates\RTF\Plot Report.rtf" html="Templates\HTML\Plot Report.html"/>
+  <template name="Rote Cards" text="Templates\Text\Rote Cards.txt" rtf="Templates\RTF\Rote Cards.rtf" html="Templates\HTML\Rote Cards.html"/>
+  <template name="Search Report" text="Templates\Text\Search Report.txt" rtf="Templates\RTF\Search Report.rtf" html="Templates\HTML\Search Report.html"/>
+  <template name="Sign-In Sheet" text="Templates\Text\Sign-In Sheet.txt" rtf="Templates\RTF\Sign-In Sheet.rtf" html="Templates\HTML\Sign-In Sheet.html"/>
+  <template name="Statistics Report" text="Templates\Text\Statistics Report.txt" rtf="Templates\RTF\Statistics Report.rtf" html="Templates\HTML\Statistics Report.html"/>
+  <template name="Vampire Character Sheet" sheet="yes" text="Templates\Text\Vampire.txt" rtf="Templates\RTF\Vampire.rtf" html="Templates\HTML\Vampire.html"/>
+  <template name="Vampire Status Report" text="Templates\Text\Vampire Status Report.txt" rtf="Templates\RTF\Vampire Status Report.rtf" html="Templates\HTML\Vampire Status Report.html"/>
+  <template name="Various Character Sheet" sheet="yes" text="Templates\Text\Various.txt" rtf="Templates\RTF\Various.rtf" html="Templates\HTML\Various.html"/>
+  <template name="Werewolf Character Sheet" sheet="yes" text="Templates\Text\Werewolf.txt" rtf="Templates\RTF\Werewolf.rtf" html="Templates\HTML\Werewolf.html"/>
+  <template name="Wraith Character Sheet" sheet="yes" text="Templates\Text\Wraith.txt" rtf="Templates\RTF\Wraith.rtf" html="Templates\HTML\Wraith.html"/>
+  <aprsettings personalactions="6" addcommon="yes" carryunused="yes" publicrumors="yes" personalrumors="yes" racerumors="yes" grouprumors="yes" subgrouprumors="yes" influencerumors="yes" previousrumors="yes" copyprevious="yes">
+    <traitlist name="Actions" abc="no" display="0">
+      <trait name="1" val="6"/>
+      <trait name="2" val="4"/>
+      <trait name="3" val="6"/>
+      <trait name="4" val="8"/>
+      <trait name="5" val="10"/>
+      <trait name="6" val="12"/>
+      <trait name="7" val="14"/>
+      <trait name="8" val="16"/>
+      <trait name="9" val="18"/>
+      <trait name="10" val="20"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="no" display="0">
+      <trait name="Contacts"/>
+      <trait name="Resources"/>
+      <trait name="SuckFest"/>
+    </traitlist>
+  </aprsettings>
+  <player name="Carlos Sanchez" id="8787778" email="lorien420@sanchez.com" phone="404-404-4040" position="Player" status="Active" lastmodified="8/2/2007 6:38:45 PM">
+    <experience unspent="2" earned="2">
+      <entry date="8/2/2007" change="1" type="0" reason="Storytelling" earned="1" unspent="1"/>
+      <entry date="8/2/2007" change="1" type="0" reason="Setup/Cleanup" earned="2" unspent="2"/>
+    </experience>
+    <address>
+      <![CDATA[666 Sanchez Ville]]>
+    </address>
+    <notes>
+      <![CDATA[Are you Sanchez?]]>
+    </notes>
+  </player>
+  <player name="My Narrator" position="Narrator" status="Active" lastmodified="8/2/2007 6:39:42 PM">
+    <experience unspent="0" earned="0"/>
+  </player>
+  <player name="This Other Guy" position="Player" status="Active" lastmodified="12:00:00 AM">
+    <experience unspent="0" earned="0"/>
+  </player>
+  <vampire name="Each Experience Type" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" player="Carlos Sanchez" status="Active" startdate="8/2/2007 6:35:42 PM" narrator="My Narrator" lastmodified="8/2/2007 6:40:37 PM">
+    <experience unspent="1" earned="1">
+      <entry date="8/2/2007" change="1" type="3" reason="Spend 1" earned="0" unspent="-1"/>
+      <entry date="8/2/2007" change="1" type="0" reason="Earn 1" earned="1" unspent="0"/>
+      <entry date="8/2/2007" change="1" type="4" reason="Unspend 1" earned="1" unspent="1"/>
+      <entry date="8/2/2007" change="1" type="1" reason="Lose 1" earned="0" unspent="0"/>
+      <entry date="8/2/2007" change="1" type="2" reason="Set Earned to 1" earned="1" unspent="0"/>
+      <entry date="8/2/2007" change="1" type="5" reason="Set Unspent to 1" earned="1" unspent="1"/>
+      <entry date="8/2/2007" change="1" type="6" reason="Comment" earned="1" unspent="1"/>
+      <entry date="8/2/2007 6:35:43 PM" change="0" type="6" reason="Created 8/3/7 with 9 Abilities and 5 Backgrounds, using 2 Negative and 5 Free Traits" earned="1" unspent="1"/>
+    </experience>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Stalwart" val="2"/>
+      <trait name="Steady" val="2"/>
+      <trait name="Wiry" val="4"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Cruel" val="2"/>
+      <trait name="Manipulative"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Clever" val="2"/>
+      <trait name="Flexible" val="2"/>
+      <trait name="Insightful"/>
+      <trait name="Rational" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Frail"/>
+      <trait name="Lethargic"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Athletics" val="2"/>
+      <trait name="Blindfighting"/>
+      <trait name="Bureaucracy"/>
+      <trait name="Dodge"/>
+      <trait name="Larceny"/>
+      <trait name="Melee"/>
+      <trait name="Security" val="2"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+      <trait name="Fame" val="3"/>
+      <trait name="Retainers"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Torpor"/>
+    </traitlist>
+    <traitlist name="Bonds" abc="yes" display="1"/>
+    <traitlist name="Miscellaneous" abc="no" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rituals" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </vampire>
+  <query name="Active Characters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="playstatus" comp="==" find="active"/>
+  </query>
+  <query name="Active Players" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="playstatus" comp="==" find="Active"/>
+  </query>
+  <query name="All Characters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM"/>
+  <query name="All Players" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM"/>
+  <query name="Changelings" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="changeling"/>
+  </query>
+  <query name="Demons" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="demon"/>
+  </query>
+  <query name="Fera" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="fera"/>
+  </query>
+  <query name="Hunters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="hunter"/>
+  </query>
+  <query name="Kuei-Jin" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="kuei-jin"/>
+  </query>
+  <query name="Mages" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="mage"/>
+  </query>
+  <query name="Mortals" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="mortal"/>
+  </query>
+  <query name="Mummies" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="mummy"/>
+  </query>
+  <query name="NPCs" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="npc" comp="=T"/>
+  </query>
+  <query name="Staff" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="position" comp="!==" find="player"/>
+  </query>
+  <query name="Vampires" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="vampire"/>
+  </query>
+  <query name="Various" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="various"/>
+  </query>
+  <query name="Werewolves" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="werewolf"/>
+  </query>
+  <query name="Wraiths" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+    <clause field="race" comp="==" find="wraith"/>
+  </query>
+  <item name="(Artifacts and Devices)" type="Artifact" subtype="User Information" level="0" bonus="0" amount="0" lastmodified="12/2/2002 1:46:53 PM">
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Click the &quot;Details&quot; Tab!"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1"/>
+    <powers>
+      <![CDATA[Follow these instructions to load Artifacts and Devices into your game!]]>
+    </powers>
+    <appearance>
+      <![CDATA[1. Click "Data Exchange" under the File menu.
+
+2. Click the "Load Data" button.
+
+3. Navigate to your Grapevine folder.  Select the file "Artifacts and Devices.gex" and click OK.
+
+4. Click OK to confirm the list of loaded Artifacts and Devices and click Close to exit the Exchange Data window.
+
+5. Done!  Enjoy the new items!]]>
+    </appearance>
+    <notes>
+      <![CDATA[White Wolf's copyright forbids me from redistributing the rules for each Artifact and Device.  "Artifacts and Devices.gex" provides book and page references instead. Fill out the item cards in detail as you need them, or colloborate with other STs to amass a complete collection.]]>
+    </notes>
+  </item>
+  <item name="(Fetishes and Talens)" type="Fetish" subtype="User Information" level="0" bonus="0" amount="0" lastmodified="10/30/2002 2:33:27 PM">
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Click the &quot;Details&quot; Tab!"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1"/>
+    <powers>
+      <![CDATA[Follow these instructions to load Fetishes and Talens into your game!]]>
+    </powers>
+    <appearance>
+      <![CDATA[1. Click "Data Exchange" under the File menu.
+
+2. Click the "Load Data" button.
+
+3. Navigate to your Grapevine folder.  Select the file "Fetishes and Talens.gex" and click OK.
+
+4. Click OK to confirm the list of loaded Fetishes and Talens and click Close to exit the Exchange Data window.
+
+5. Done!  Enjoy the new items!]]>
+    </appearance>
+    <notes>
+      <![CDATA[White Wolf's copyright forbids me from redistributing the rules for each Fetish and Talen.  "Fetishes and Talens.gex" provides book and page references instead. Fill out the item cards in detail as you need them, or colloborate with other STs to amass a complete collection.]]>
+    </notes>
+  </item>
+  <item name="Armor-Piercing Ammo [Clip of 10]" type="Equipment" subtype="Ammunition" level="0" bonus="0" amount="0" lastmodified="11/5/2002 11:24:01 AM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Armor-Piercing"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Assault Rifle" type="Equipment" subtype="Ranged Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="None" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Fully Automatic"/>
+      <trait name="Spray"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Underworld" val="5"/>
+    </traitlist>
+  </item>
+  <item name="Ax" type="Equipment" subtype="Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Destroy Shield" note="3 blows"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Ballistic Vest" type="Equipment" subtype="Armor" level="0" bonus="0" damage="Armor Levels" amount="2" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Broadsword" type="Equipment" subtype="Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Broken Bottle" type="Equipment" subtype="Weapon" level="0" bonus="1" damage="Lethal" amount="1" conceal="Jacket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Fragile"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Cane" type="Equipment" subtype="Weapon" level="0" bonus="1" damage="Bashing" amount="1" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Chain Gun" type="Equipment" subtype="Ranged Weapon" level="0" bonus="5" damage="Lethal" amount="3" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Fully Automatic"/>
+      <trait name="Spray" note="5 targets, 10 ft."/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Military" val="5"/>
+      <trait name="Technocracy"/>
+    </traitlist>
+  </item>
+  <item name="Chain Mail" type="Equipment" subtype="Armor" level="0" bonus="0" damage="Armor Levels" amount="2" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="$500+"/>
+    </traitlist>
+  </item>
+  <item name="Club" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Bashing" amount="1" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Combat Shotgun" type="Equipment" subtype="Ranged Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="None" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Fully Automatic"/>
+      <trait name="Mass-Trauma"/>
+      <trait name="Spray"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="7"/>
+      <trait name="Underworld" val="7"/>
+    </traitlist>
+  </item>
+  <item name="Compound Bow" type="Equipment" subtype="Ranged Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="None" lastmodified="11/5/2002 11:23:13 AM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Armor-Piercing"/>
+      <trait name="Destroy Shield"/>
+      <trait name="Staking"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Fragile"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Crossbow" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Armor-Piercing"/>
+      <trait name="Destroy Shield"/>
+      <trait name="Staking"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Heavy"/>
+      <trait name="Slow"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Dagger" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Lethal" amount="1" conceal="Pocket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Speed"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Short"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Derringer" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Pocket" lastmodified="1/3/2004 4:23:39 PM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Single-Shot"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1"/>
+  </item>
+  <item name="Fencing Blade" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Lethal" amount="1" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Speed"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Fragile"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Flame Thrower" type="Equipment" subtype="Ranged Weapon" level="0" bonus="0" damage="Aggravated" amount="2" conceal="None" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Incendiary"/>
+      <trait name="Spray"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Heavy"/>
+      <trait name="Hot"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Underworld" val="5"/>
+    </traitlist>
+  </item>
+  <item name="Gatling Cannon" type="Equipment" subtype="Ranged Weapon" level="0" bonus="5" damage="Lethal" amount="3" conceal="None" lastmodified="1/3/2004 4:25:30 PM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Mass-Trauma"/>
+      <trait name="Spray"/>
+      <trait name="Tripod"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy" val="3" note="without tripod"/>
+      <trait name="Heavy"/>
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1"/>
+  </item>
+  <item name="Greatsword" type="Equipment" subtype="Weapon" level="0" bonus="5" damage="Lethal" amount="3" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+      <trait name="Slow"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Heavy Pistol" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Jacket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="High-Caliber"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="if registered"/>
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Incendiary Ammo [Clip of 10]" type="Equipment" subtype="Ammunition" level="0" bonus="0" amount="0" lastmodified="11/5/2002 11:24:07 AM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Incendiary"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="5"/>
+      <trait name="Underworld" val="4"/>
+    </traitlist>
+  </item>
+  <item name="Katana" type="Equipment" subtype="Weapon" level="0" bonus="3" damage="Lethal" amount="3" conceal="Trenchcoat" lastmodified="10/31/2002 12:44:28 PM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Rare"/>
+    </traitlist>
+  </item>
+  <item name="Knife" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Lethal" amount="1" conceal="Pocket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Speed"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Short"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Leather Armor" type="Equipment" subtype="Armor" level="0" bonus="0" damage="Armor Levels" amount="1" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Longbow" type="Equipment" subtype="Ranged Weapon" level="0" bonus="6" damage="Lethal" amount="2" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Armor-Piercing" note="chain armor"/>
+      <trait name="Destroy Shield" note="1 shot"/>
+      <trait name="Staking"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Fragile"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Longsword" type="Equipment" subtype="Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Molotov Cocktail" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Aggravated" amount="1" conceal="Jacket (until lit!)" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Incendiary"/>
+      <trait name="Spray"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Fragile"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Nunchaku" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Lethal" amount="1" conceal="Jacket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Speed"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Short"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Pistol" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Pocket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="if registered"/>
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="3"/>
+      <trait name="Underworld" val="2"/>
+    </traitlist>
+  </item>
+  <item name="Plate Mail" type="Equipment" subtype="Armor" level="0" bonus="0" damage="Armor Levels" amount="3" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="$3000+"/>
+    </traitlist>
+  </item>
+  <item name="Polearm" type="Equipment" subtype="Weapon" level="0" bonus="4" damage="Lethal" amount="2" conceal="None" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Reinforced Vest" type="Equipment" subtype="Armor" level="0" bonus="0" damage="Armor Levels" amount="3" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="5"/>
+      <trait name="Underworld" val="4"/>
+    </traitlist>
+  </item>
+  <item name="Rifle" type="Equipment" subtype="Ranged Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="if registered"/>
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Riot Suit" type="Equipment" subtype="Armor" level="0" bonus="0" damage="Armor Levels" amount="3" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="4"/>
+      <trait name="Underworld" val="5"/>
+    </traitlist>
+  </item>
+  <item name="Scope" type="Equipment" subtype="Add-on" level="0" bonus="0" amount="0" lastmodified="11/5/2002 11:24:11 AM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Scope"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Scythe" type="Equipment" subtype="Weapon" level="0" bonus="4" damage="Lethal" amount="2" conceal="None" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Shortbow" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Trenchcoat" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Armor-Piercing"/>
+      <trait name="Staking"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Fragile"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Shortsword" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Lethal" amount="1" conceal="Trenchcoat" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Short"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Shotgun" type="Equipment" subtype="Ranged Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Mass-Trauma"/>
+      <trait name="Spray" note="3 targets, 20 ft"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="if registered"/>
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Shuriken" type="Equipment" subtype="Ranged Weapon" level="0" bonus="1" damage="Lethal" amount="1" conceal="Pocket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Spray" note="3 targets, 20 ft."/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Sniper Rifle" type="Equipment" subtype="Ranged Weapon" level="0" bonus="3" damage="Lethal" amount="2" conceal="None" lastmodified="10/21/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="High-Caliber"/>
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+      <trait name="Police" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Sound Suppressor" type="Equipment" subtype="Add-on" level="0" bonus="0" amount="0" lastmodified="11/5/2002 11:24:15 AM">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Sound Suppression"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Spear" type="Equipment" subtype="Weapon" level="0" bonus="3" damage="Lethal" amount="3" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+      <trait name="Heavy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Staff" type="Equipment" subtype="Weapon" level="0" bonus="3" damage="Bashing" amount="2" conceal="None" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Two-Hand Requirement"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+  <item name="Submachine Gun" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Jacket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Fully Automatic"/>
+      <trait name="Spray" note="5 targets, 10 ft."/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Loud"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any" note="if registered and non-automatic"/>
+      <trait name="Police" val="4"/>
+      <trait name="Street" val="4"/>
+      <trait name="Underworld" val="3"/>
+    </traitlist>
+  </item>
+  <item name="Wooden Stake" type="Equipment" subtype="Weapon" level="0" bonus="2" damage="Lethal" amount="1" conceal="Jacket" lastmodified="10/17/2002">
+    <traitlist name="Tempers" abc="yes" display="2"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Staking"/>
+    </traitlist>
+    <traitlist name="Negatives" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Availability" abc="yes" display="1">
+      <trait name="Any"/>
+    </traitlist>
+  </item>
+</grapevine>
