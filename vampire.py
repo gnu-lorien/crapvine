@@ -24,6 +24,7 @@ import pdb
 from grapevine_xml import AttributeReader, Attributed
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
+from xml.sax.saxutils import unescape, escape
 
 def normalize_whitespace(text):
     "Remove redundant whitespace from a string"
@@ -114,7 +115,7 @@ class VampireLoader(ContentHandler):
 			assert self.reading_biography
 			self.reading_biography = False
 			if self.current_vampire:
-				self.current_vampire['biography'] = self.current_biography
+				self.current_vampire['biography'] = unescape(self.current_biography)
 				print self.current_biography
 			self.current_biography = ''
 
@@ -122,7 +123,7 @@ class VampireLoader(ContentHandler):
 			assert self.reading_notes
 			self.reading_notes = False
 			if self.current_vampire:
-				self.current_vampire['notes'] = self.current_notes
+				self.current_vampire['notes'] = unescape(self.current_notes)
 				print self.current_notes
 			self.current_notes = ''
 
@@ -388,7 +389,7 @@ class Vampire(Attributed):
 		for child_name in self.text_children:
 			if self[child_name] != '':
 				ret += "\n"
-				lines = ['<%s>' % (child_name), '   <![CDATA[%s]]>' % (self[child_name]), '</%s>' % (child_name)]
+				lines = ['<%s>' % (child_name), '   <![CDATA[%s]]>' % (escape(self[child_name])), '</%s>' % (child_name)]
 				ret += "\n".join(['%s%s' % (local_indent, inny) for inny in lines])
 		ret += '%s%s</vampire>' % ("\n", indent)
 		return ret

@@ -15,6 +15,8 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from xml.sax.saxutils import quoteattr, unescape
+
 class AttributeReader:
 	def __init__(self, attrs):
 		self.attrs = attrs
@@ -57,16 +59,16 @@ class Attributed(object):
 		# Actually make these required...
 		for attr in self.required_attrs:
 			if attrs.has_key(attr):
-				self.__setattr__(attr, attrs.get(attr))
+				self.__setattr__(attr, unescape(attrs.get(attr)))
 		for attr in self.text_attrs:
 			if attrs.has_key(attr):
-				self.__setattr__(attr, attrs.get(attr))
+				self.__setattr__(attr, unescape(attrs.get(attr)))
 		for attr in self.number_as_text_attrs:
 			if attrs.has_key(attr):
-				self.__setattr__(attr, attrs.get(attr))
+				self.__setattr__(attr, unescape(attrs.get(attr)))
 		for attr in self.date_attrs:
 			if attrs.has_key(attr):
-				self.__setattr__(attr, attrs.get(attr))
+				self.__setattr__(attr, unescape(attrs.get(attr)))
 		for attr in self.bool_attrs:
 			self.__setattr__(attr, r.b(attr))
 
@@ -79,10 +81,10 @@ class Attributed(object):
 		return False
 	def get_attrs_xml(self):
 		attrs_strs = []
-		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.required_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.number_as_text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.date_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.required_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.number_as_text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.date_attrs if not self.__attr_default(name)])
 		for bool_attr in self.bool_attrs:
 			if not self.__attr_default(bool_attr):
 				my_bool = 'yes' if self[bool_attr] else 'no'
