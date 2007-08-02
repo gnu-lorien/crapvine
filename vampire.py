@@ -211,8 +211,12 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 	def on_get_column_type(self, index):
 		return gobject.TYPE_STRING
 	def on_get_path(self, iter):
+		if len(self.traits) == 0:
+			return None
 		return (iter, )
 	def on_get_iter(self, path):
+		if len(self.traits) == 0:
+			return None
 		return path[0]
 	def on_get_value(self, index, column):
 		assert column >= 0
