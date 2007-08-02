@@ -16,6 +16,7 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import with_statement
+import configuration
 import gobject
 import gtk
 import gtk.glade
@@ -28,21 +29,34 @@ from menu_navigator import MenuNavigator
 from vampire import VampireLoader
 from text_attribute_box import TextAttributeBox
 
-grapevine_xml_file = '/home/lorien/tmp/crapvine/interface/Grapevine.glade'
-character_xml_file = '/home/lorien/tmp/crapvine/interface/CharacterTree.glade'
 vampire_xml_file = '/home/lorien/tmp/crapvine/exchange_samples/vampires_sabbat.gex'
 
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
 	column_attrs  = [ 'name', 'sect', 'clan', 'npc' , 'status' ]
 	def __init__(self):
-		self.xml = gtk.glade.XML(character_xml_file)
+		self.xml = gtk.glade.XML(configuration.get_character_tree_xml_file_path())
+		self.loader = None
+		self.treeCharacters = None
+
+		window = self.xml.get_widget('characterTreeWindow')
+		window.show()
+
+		self.xml.signal_autoconnect({
+			'on_treeCharacters_row_activated' : self.on_row_activated,
+			'on_save_as' : self.on_save_as,
+			'on_open' : self.on_open,
+			'gtk_main_quit' : lambda *w: gtk.main_quit()
+		})
+
+	def __load_file(self, filename):
 		parser = make_parser()
 		parser.setFeature(feature_namespaces, 0)
 		self.loader = VampireLoader()
 		parser.setContentHandler(self.loader)
-		parser.parse(vampire_xml_file)
+		parser.parse(filename)
 
+	def __reload_tree(self):
 		self.treeCharacters = self.xml.get_widget('treeCharacters')
 		for i in range(len(self.column_labels)):
 			renderer = gtk.CellRendererText()
@@ -63,14 +77,13 @@ class CharacterTree:
 				model.set(iter, i, vamp[self.column_attrs[i]])
 		self.treeCharacters.set_model(model)
 
-		window = self.xml.get_widget('characterTreeWindow')
-		window.show()
-
-		self.xml.signal_autoconnect({
-			'on_treeCharacters_row_activated' : self.on_row_activated,
-			'on_save_as' : self.on_save_as,
-			'gtk_main_quit' : lambda *w: gtk.main_quit()
-		})
+	def on_open(self, menuitem):
+		file_chooser = gtk.FileChooserDialog('Choose Where to Save All Characters', None, gtk.FILE_CHOOSER_ACTION_OPEN, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+		response = file_chooser.run()
+		file_chooser.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			self.__load_file(file_chooser.get_filename())
+			self.__reload_tree()
 
 	def on_row_activated(self, treeview, path, view_column):
 		iter = treeview.get_model().get_iter(path)
@@ -94,13 +107,13 @@ class CharacterTree:
 class CharacterWindow:
 	def __init__(self, character):
 		self.character = character
-		self.xml = gtk.glade.XML(grapevine_xml_file)
+		self.xml = gtk.glade.XML(configuration.get_grapevine_xml_file_path())
 		self.overlord = MenuNavigator(self.xml)
 
 		parser = make_parser()
 		parser.setFeature(feature_namespaces, 0)
 		parser.setContentHandler(self.overlord.menu_loader)
-		parser.parse('/home/lorien/tmp/crapvine/interface/menus.gvm')
+		parser.parse(configuration.get_menu_file_path())
 
 		for tlname in [tl.name for tl in self.character.traitlists]:
 			my_win = self.xml.get_widget(tlname)
