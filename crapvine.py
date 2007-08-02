@@ -15,6 +15,7 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from __future__ import with_statement
 import gobject
 import gtk
 import gtk.glade
@@ -115,9 +116,22 @@ class CharacterWindow:
 		self.xml.signal_autoconnect({ 
 			'on_btnAddTrait_clicked' : self.overlord.on_btnAddTrait_clicked,
 			'on_btnRemoveTrait_clicked' : self.overlord.on_btnRemoveTrait_clicked,
-			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated
+			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated,
+			'on_save_as' : self.on_save_as
 			}
 		)
+
+	def on_save_as(self, menuitem):
+		file_chooser = gtk.FileChooserDialog('Choose Where to Save %s' % (self.character.name), None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+		response = file_chooser.run()
+		file_chooser.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			out = ['<?xml version="1.0"?>',
+				'<grapevine version="3">',
+				self.character.get_xml('   '),
+				'</grapevine>']
+			with file(file_chooser.get_filename(), 'w') as f:
+				f.write("\n".join(out))
 
 print "Muahaha"
 
