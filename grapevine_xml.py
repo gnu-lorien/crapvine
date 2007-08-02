@@ -70,6 +70,8 @@ class Attributed(object):
 		for attr in self.bool_attrs:
 			self.__setattr__(attr, r.b(attr))
 
+	def __setitem__(self, name, value):
+		return self.__setattr__(name, value)
 	def __getitem__(self, name):
 		return self.__getattribute__(name)
 
@@ -90,3 +92,22 @@ class Attributed(object):
 			if name in self.bool_attrs:
 				return 'no'
 			raise
+
+	def __setattr__(self, name, value):
+		if name in self.number_as_text_attrs:
+			try:
+				int(value)
+			except ValueError:
+				can_use = False
+				for separator_str in ['-', ' or ']:
+					for innerval in value.split(separator_str):
+						try:
+							int(innerval)
+							can_use = True
+						except ValueError:
+							pass
+				if not can_use:
+					raise ValueError('Cannot set attribute %s to value %s, no valid numbers' % (name, value))
+		# Check date_attrs
+		# Check bool_attrs
+		object.__setattr__(self, name, value)
