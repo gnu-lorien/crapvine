@@ -44,10 +44,25 @@ class MenuLoader(ContentHandler):
 			else:
 				new_menu.add_item(copy.copy(item))
 
+	def __find_real_menu_name(self, menu_name):
+		if self.menus.has_key(menu_name):
+			return menu_name
+		if menu_name.capitalize() in ['Nature', 'Demeanor']:
+			return 'Archetypes'
+		if self.menus.has_key(menu_name.capitalize()):
+			return menu_name.capitalize()
+		split_str = menu_name.split(' ')
+		if split_str[0] == 'Negative':
+			test_out = '%s, %s' % (split_str[1], split_str[0])
+			if self.menus.has_key(test_out):
+				return test_out
+		return None
+
 	def get_expanded_menu(self, menu_name):
-		if not self.menus.has_key(menu_name):
+		real_menu_name = self.__find_real_menu_name(menu_name)
+		if not real_menu_name:
 			return None
-		core_menu = self.menus[menu_name]
+		core_menu = self.menus[real_menu_name]
 		new_menu = Menu(core_menu.name, core_menu.category, core_menu.alphabetical, core_menu.required, core_menu.display, core_menu.negative, core_menu.autonote)
 		self.__recursive_item_append(core_menu, new_menu)
 		if new_menu.alphabetical:
