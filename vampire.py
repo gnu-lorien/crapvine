@@ -108,8 +108,8 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 	text_attrs = []
 	number_as_text_attrs = ['display']
 	date_attrs = []
-	bool_attrs = ['abc', 'atomic']
-	defaults = { }
+	bool_attrs = ['abc', 'atomic', 'negative']
+	defaults = { 'atomic' : False, 'negative' : False }
 
 	def __init__(self):
 		self.traits = []
@@ -194,7 +194,7 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 
 	def get_xml(self, indent):
 		end_tag = ">\n" if len(self.traits) > 0 else "/>"
-		ret = '%s<traitlist name="%s" abc="%s" atomic="%s" display="%s" %s' % (indent, self.name, self.abc, self.atomic, self.display, end_tag)
+		ret = '%s<traitlist %s%s' % (indent, self.get_attrs_xml(), end_tag)
 		local_indent = '%s   ' % (indent)
 		ret += "\n".join([trait.get_xml(local_indent) for trait in self.traits])
 		if len(self.traits) > 0:
@@ -267,7 +267,7 @@ class Trait(Attributed):
 	defaults = { 'val' : '1' }
 	
 	def get_xml(self, indent=''):
-		return '%s<trait name="%s" val="%s" note="%s" />' % (indent, self.name, self.val, self.note)
+		return '%s<trait %s/>' % (indent, self.get_attrs_xml())
 	def __str__(self):
 		return self.get_xml()
 
@@ -277,7 +277,7 @@ class Vampire(Attributed):
 	number_as_text_attrs = ['generation', 'blood', 'willpower', 'conscience', 'selfcontrol', 'courage', 'pathtraits', 'physicalmax']
 	date_attrs = ['startdate', 'lastmodified']
 	bool_attrs = ['npc']
-	defaults = { }
+	defaults = { 'npc' : False }
 
 	def __init__(self):
 		self.traitlists = []
@@ -297,7 +297,7 @@ class Vampire(Attributed):
 		print self.__dict__
 
 	def get_xml(self, indent = ''):
-		ret = '%s<vampire name="%s" nature="%s" demeanor="%s" clan="%s" sect="%s" generation="%s" blood="%s" willpower="%s" conscience="%s" selfcontrol="%s" courage="%s" path="%s" pathtraits="%s" physicalmax="%s" status="%s" startdate="%s" narrator="%s" npc="%s" lastmodified="%s">%s' % (indent, self.name, self.nature, self.demeanor, self.clan, self.sect, self.generation, self.blood, self.willpower, self.conscience, self.selfcontrol, self.courage, self.path, self.pathtraits, self.physicalmax, self.status, self.startdate, self.narrator, self.npc, self.lastmodified, "\n")
+		ret = '%s<vampire %s>%s' % (indent, self.get_attrs_xml(), "\n")
 		local_indent = '%s   ' % (indent)
 		ret += "\n".join([traitlist.get_xml(local_indent) for traitlist in self.traitlists])
 		ret += '%s%s</vampire>' % ("\n", indent)

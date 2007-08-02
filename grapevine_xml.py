@@ -70,6 +70,25 @@ class Attributed(object):
 		for attr in self.bool_attrs:
 			self.__setattr__(attr, r.b(attr))
 
+	def __attr_default(self, name):
+		if self[name] == '':
+			return True
+		if self.defaults.has_key(name):
+			if self[name] == self.defaults[name]:
+				return True
+		return False
+	def get_attrs_xml(self):
+		attrs_strs = []
+		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.required_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.number_as_text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s="%s"' % (name, self[name]) for name in self.date_attrs if not self.__attr_default(name)])
+		for bool_attr in self.bool_attrs:
+			if not self.__attr_default(bool_attr):
+				my_bool = 'yes' if self[bool_attr] else 'no'
+				attrs_strs.append('%s="%s"' % (bool_attr, my_bool))
+		return ' '.join(attrs_strs)
+
 	def __setitem__(self, name, value):
 		return self.__setattr__(name, value)
 	def __getitem__(self, name):
