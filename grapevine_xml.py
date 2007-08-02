@@ -110,6 +110,8 @@ class Attributed(object):
 				return ''
 			if name in self.bool_attrs:
 				return 'no'
+			if name in self.text_children:
+				return ''
 			raise
 
 	def __setattr__(self, name, value):

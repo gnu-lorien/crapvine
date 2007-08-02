@@ -87,13 +87,13 @@ class VampireLoader(ContentHandler):
 
 		elif name == 'biography':
 			self.reading_biography = False
-			self.current_vampire.set_biography(self.current_biography)
+			self.current_vampire['biography'] = self.current_biography
 			print self.current_biography
 			self.current_biography = ''
 
 		elif name == 'notes':
 			self.reading_notes = False
-			self.current_vampire.set_notes(self.current_notes)
+			self.current_vampire['notes'] = self.current_notes
 			print self.current_notes
 			self.current_notes = ''
 
@@ -103,6 +103,17 @@ class VampireLoader(ContentHandler):
 		elif self.reading_notes:
 			self.current_notes += ch
 
+	def error(self, exception):
+		print 'Error'
+		raise exception
+	def fatalError(self, exception):
+		print 'Fatal Error'
+		raise exception
+	def warning(self, exception):
+		print 'Warning'
+		raise exception
+
+
 class TraitList(Attributed, gtk.GenericTreeModel):
 	required_attrs = ['name']
 	text_attrs = []
@@ -110,6 +121,8 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 	date_attrs = []
 	bool_attrs = ['abc', 'atomic', 'negative']
 	defaults = { 'atomic' : False, 'negative' : False }
+
+	text_children = []
 
 	def __init__(self):
 		self.traits = []
@@ -265,6 +278,8 @@ class Trait(Attributed):
 	date_attrs = []
 	bool_attrs = []
 	defaults = { 'val' : '1' }
+
+	text_children = []
 	
 	def get_xml(self, indent=''):
 		return '%s<trait %s/>' % (indent, self.get_attrs_xml())
@@ -279,6 +294,8 @@ class Vampire(Attributed):
 	bool_attrs = ['npc']
 	defaults = { 'npc' : False }
 
+	text_children = ['notes', 'biography']
+
 	def __init__(self):
 		self.traitlists = []
 		self.notes = ''
@@ -287,12 +304,6 @@ class Vampire(Attributed):
 	def add_traitlist(self, traitlist):
 		self.traitlists.append(traitlist)
 
-	def set_notes(self, in_notes):
-		self.notes = in_notes
-
-	def set_biography(self, in_bio):
-		self.biography = in_bio
-
 	def ballz(self):
 		print self.__dict__
 
@@ -300,15 +311,11 @@ class Vampire(Attributed):
 		ret = '%s<vampire %s>%s' % (indent, self.get_attrs_xml(), "\n")
 		local_indent = '%s   ' % (indent)
 		ret += "\n".join([traitlist.get_xml(local_indent) for traitlist in self.traitlists])
-		if self.notes != '':
-			ret += "\n"
-			note_lines = ['<notes>', '   <![CDATA[%s]]>' % (self.notes), '</notes>']
-			ret += "\n".join(['%s%s' % (local_indent, inny) for inny in note_lines])
-		if self.biography != '':
-			bio_lines = ['<biography>', '   <![CDATA[%s]]>' % (self.biography), '</biography>']
-			ret += "\n"
-			ret += "\n".join(['%s%s' % (local_indent, inny) for inny in bio_lines])
-
+		for child_name in self.text_children:
+			if self[child_name] != '':
+				ret += "\n"
+				lines = ['<%s>' % (child_name), '   <![CDATA[%s]]>' % (self[child_name]), '</%s>' % (child_name)]
+				ret += "\n".join(['%s%s' % (local_indent, inny) for inny in lines])
 		ret += '%s%s</vampire>' % ("\n", indent)
 		return ret
 	def __str__(self):
