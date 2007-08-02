@@ -28,6 +28,7 @@ from text_box import TextBox
 from menu_navigator import MenuNavigator
 from vampire import VampireLoader
 from text_attribute_box import TextAttributeBox
+import sys, traceback
 
 vampire_xml_file = '/home/lorien/tmp/crapvine/exchange_samples/vampires_sabbat.gex'
 
@@ -54,7 +55,13 @@ class CharacterTree:
 		parser.setFeature(feature_namespaces, 0)
 		self.loader = VampireLoader()
 		parser.setContentHandler(self.loader)
-		parser.parse(filename)
+		#parser.setErrorHandler(self.loader)
+		try:
+			parser.parse(filename)
+		except:
+			dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, traceback.format_exc())
+			dlg.run()
+			dlg.hide()
 
 	def __reload_tree(self):
 		self.treeCharacters = self.xml.get_widget('treeCharacters')
