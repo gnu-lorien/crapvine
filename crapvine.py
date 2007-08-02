@@ -68,6 +68,7 @@ class CharacterTree:
 
 		self.xml.signal_autoconnect({
 			'on_treeCharacters_row_activated' : self.on_row_activated,
+			'on_save_as' : self.on_save_as,
 			'gtk_main_quit' : lambda *w: gtk.main_quit()
 		})
 
@@ -76,6 +77,19 @@ class CharacterTree:
 		character_name = treeview.get_model().get_value(iter, 0)
 		vamp = self.loader.vampires[character_name]
 		cw = CharacterWindow(vamp)
+
+	def on_save_as(self, menuitem):
+		file_chooser = gtk.FileChooserDialog('Choose Where to Save All Characters', None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
+		response = file_chooser.run()
+		file_chooser.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			all_character_xml = [c.get_xml('   ') for c in self.loader.vampires.values()]
+			out = ['<?xml version="1.0"?>',
+				'<grapevine version="3">']
+			out.extend(all_character_xml)
+			out.append('</grapevine>')
+			with file(file_chooser.get_filename(), 'w') as f:
+				f.write("\n".join(out))
 
 class CharacterWindow:
 	def __init__(self, character):
