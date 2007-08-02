@@ -395,7 +395,7 @@
     </traitlist>
     <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
     <notes>
-      <![CDATA[You are a brujah, part William Wallace part street thug. With the powers of strength, speed and the ability to manipulate emotion you are the perfect warrior poet. Phoenix has been under attack and a call to arms has been issued. With clan before sect the brujah came running. Seek out Samuel Krieg who will lead you against the Sabbat a depraved sect of vampires seeking to enslave human kind. Whether you destroy the newborn vampires or lead them against their brothers remains unseen…]]>
+      <![CDATA[You are a brujah, part William Wallace part street thug. With the powers of strength, speed and the ability to manipulate emotion you are the perfect warrior poet. Phoenix has been under attack and a call to arms has been issued. With clan before sect the brujah came running. Seek out Samuel Krieg who will lead you against the Sabbat a depraved sect of vampires seeking to enslave human kind. Whether you destroy the newborn vampires or lead them against their brothers remains unseen]]>
     </notes>
   </vampire>
   <vampire name="Camarilla Gangrel" nature="Survivor" demeanor="Deviant" clan="Gangrel" sect="Camarilla" generation="11" blood="13" willpower="4" conscience="3" selfcontrol="4" courage="3" path="Humanity" pathtraits="3" physicalmax="11" status="Active" startdate="5/16/2003 12:25:56 PM" narrator="Zoe Mora" npc="yes" lastmodified="5/16/2003 12:28:56 PM">
@@ -610,7 +610,7 @@
     </traitlist>
     <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
     <notes>
-      <![CDATA[The Lady Akemi has balled the more martial members of the Rose to phoenix. You are a toreador who's art form lies in battle, strategy or martial arts. Phoenix is at war with the Sabbat, a vile sect of vampire bent on enslaving and destroying humanity. Seek out the Prince, Paul Marchetti who is also of the toreador and ensure his safety. Will you destroy the new members of the Sabbat, or train them to go against their dark masters…]]>
+      <![CDATA[The Lady Akemi has balled the more martial members of the Rose to phoenix. You are a toreador who's art form lies in battle, strategy or martial arts. Phoenix is at war with the Sabbat, a vile sect of vampire bent on enslaving and destroying humanity. Seek out the Prince, Paul Marchetti who is also of the toreador and ensure his safety. Will you destroy the new members of the Sabbat, or train them to go against their dark masters]]>
     </notes>
   </vampire>
   <vampire name="Chad Feliciano (NPC)" nature="Hedonist" demeanor="Gallant" clan="Gangrel" sect="Camarilla" generation="13" blood="10" willpower="2" conscience="3" selfcontrol="5" courage="2" path="Humanity" pathtraits="3" physicalmax="11" status="Active" startdate="11/23/2000" narrator="Zoe Mora" npc="yes" lastmodified="12/23/2002 11:13:14 AM">
