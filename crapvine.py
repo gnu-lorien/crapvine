@@ -30,8 +30,6 @@ from vampire import VampireLoader
 from text_attribute_box import TextAttributeBox
 import sys, traceback
 
-vampire_xml_file = '/home/lorien/tmp/crapvine/exchange_samples/vampires_sabbat.gex'
-
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
 	column_attrs  = [ 'name', 'sect', 'clan', 'npc' , 'status' ]
