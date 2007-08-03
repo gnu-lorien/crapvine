@@ -9,6 +9,9 @@ def get_traitlist_box_xml_file_path():
 def get_text_attribute_box_xml_file_path():
 	return path.join(get_base_file_path(), 'interface', 'TextAttributeBox.glade')
 
+def get_number_as_text_attribute_box_xml_file_path():
+	return path.join(get_base_file_path(), 'interface', 'NumberAsTextAttributeBox.glade')
+
 def get_menu_file_path():
 	return path.join(get_base_file_path(), 'interface', 'menus.gvm')
 

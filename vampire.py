@@ -357,8 +357,8 @@ class Trait(Attributed):
 
 class Vampire(Attributed):
 	required_attrs = ['name']
-	text_attrs = ['nature', 'demeanor', 'clan', 'sect', 'path', 'status', 'narrator']
-	number_as_text_attrs = ['generation', 'blood', 'willpower', 'conscience', 'selfcontrol', 'courage', 'pathtraits', 'physicalmax']
+	text_attrs = ['nature', 'demeanor', 'clan', 'sect', 'coterie', 'sire', 'title', 'path', 'aura', 'status', 'narrator', 'player', 'id' ]
+	number_as_text_attrs = ['generation', 'blood', 'tempblood', 'willpower', 'tempwillpower', 'conscience', 'selfcontrol', 'courage', 'pathtraits', 'physicalmax']
 	date_attrs = ['startdate', 'lastmodified']
 	bool_attrs = ['npc']
 	defaults = { 'npc' : False }
