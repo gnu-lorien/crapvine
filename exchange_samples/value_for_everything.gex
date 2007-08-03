@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <vampire name="ValueForEverything" nature="Avant-Garde" demeanor="Arbitrator" clan="Malkavian" sect="Nihilist" coterie="Herro Go" sire="oeauoaeu" generation="11" title="Don" blood="12" tempblood="9" willpower="4" tempwillpower="7" conscience="3" selfcontrol="3" courage="4" path="Path of Evil Revelation" pathtraits="3" aura="+2" physicalmax="11" player="MoufPlayer" status="Withering" id="88878Then" startdate="8/2/2007 8:20:11 PM" npc="yes" lastmodified="8/2/2007 8:22:57 PM">
+    <experience unspent="-131" earned="0">
+      <entry date="8/2/2007" change="131" type="3" reason="Purchased (Fetishes and Talens), Acknowledged, Admired, Adored, Advocate, Ambidextrous, Amnesia, Angelism, Animal Friendship, Antisocial Disorder, Archaic, Assault Rifle, Avenger, Avoidant, Aware of False Love, Bad Sight, Bard's Tongue, Battle-Scarred, Beast Traits: Control: Blood Smell, Beast Traits: Control: Hunger, Beast Traits: Control: Lust, Believer, Berserk, Berserker, Bipolar Disorder, Blackmail Material, Blessed, Blood x2, Blood Addict, Blood Sweats, Blooded, Bond Girl, Brave, Chain Mail, Clan Status: Assamites x3, Clan Status: Nosferatu x3, Conscience /Conviction x2, Courage x3, Fortitude: Aegis, Fortitude: Endurance, Fortitude: Mettle, Fortitude: Resilience, Fortitude: Resistance, Frail x2, Ignorant, Industry x2, Joes Bitch, Legal, Media, Military, Morality Traits x2, Necromancy: Ash Path: Dead Hand, Necromancy: Ash Path: Ex Nihilo, Necromancy: Ash Path: Lifeless Tongues, Necromancy: Ash Path: Shroud Mastery, Necromancy: Ash Path: Shroudsight, Negative Status: Casualty, Negative Status: Cherry, Negative Status: Cocky, Occult, Political Impulse: Constructionist, Political Impulse: Hardliner, Sabbat: Auctoritas: Binding, Sabbat: Auctoritas: Blood Bath, Sabbat: Auctoritas: Blood Feast, Sabbat: Auctoritas: Creation Rites, Sabbat: Auctoritas: Festivo dello Estinto, Sabbat: Auctoritas: Fire Dancing x2, Self-Control /Instinct x2, Submissive, The Cock Spot, Willpower x2." earned="0" unspent="-131"/>
+      <entry date="8/2/2007 8:20:11 PM" change="0" type="6" reason="Created 7/5/6 with 6 Abilities and 10 Backgrounds, using 4 Negative and 5 Free Traits" earned="0" unspent="-131"/>
+    </experience>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive" val="2"/>
+      <trait name="Resilient" val="3"/>
+      <trait name="Savage"/>
+      <trait name="Stalwart"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Charismatic" val="2"/>
+      <trait name="Elegant"/>
+      <trait name="Gorgeous"/>
+      <trait name="Intimidating"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Astute"/>
+      <trait name="Cunning" val="5"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Frail" val="2"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Ghastly" val="3"/>
+      <trait name="Tactless"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Ignorant"/>
+      <trait name="Submissive"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Acknowledged"/>
+      <trait name="Admired"/>
+      <trait name="Adored"/>
+      <trait name="Advocate"/>
+      <trait name="Avenger"/>
+      <trait name="Battle-Scarred"/>
+      <trait name="Believer"/>
+      <trait name="Blessed"/>
+      <trait name="Blooded"/>
+      <trait name="Bond Girl"/>
+      <trait name="Brave"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Black Hand Knowledge" val="3"/>
+      <trait name="Fire Dancing"/>
+      <trait name="Herbalism"/>
+      <trait name="Security"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Industry" val="2"/>
+      <trait name="Legal"/>
+      <trait name="Media"/>
+      <trait name="Military"/>
+      <trait name="Occult"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies" val="2"/>
+      <trait name="Generation"/>
+      <trait name="Insight"/>
+      <trait name="Mentor" val="2"/>
+      <trait name="Resources"/>
+      <trait name="Retainers" val="3"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Torpor"/>
+    </traitlist>
+    <traitlist name="Bonds" abc="yes" display="1">
+      <trait name="Joes Bitch" val="5"/>
+    </traitlist>
+    <traitlist name="Miscellaneous" abc="no" display="1">
+      <trait name="Clan Status: Nosferatu" val="3"/>
+      <trait name="Clan Status: Assamites" val="3"/>
+      <trait name="Beast Traits: Control: Hunger" note="subhuman"/>
+      <trait name="Beast Traits: Control: Lust" note="subhuman"/>
+      <trait name="Beast Traits: Control: Blood Smell" note="monstrous"/>
+      <trait name="Political Impulse: Constructionist"/>
+      <trait name="Political Impulse: Hardliner"/>
+      <trait name="Negative Status: Casualty"/>
+      <trait name="Negative Status: Cherry"/>
+      <trait name="Negative Status: Cocky"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Angelism" val="2"/>
+      <trait name="Antisocial Disorder" val="2"/>
+      <trait name="Avoidant" val="2"/>
+      <trait name="Berserk" val="2"/>
+      <trait name="Bipolar Disorder" val="2"/>
+      <trait name="Blood Addict" val="2"/>
+      <trait name="Blood Sweats" val="2"/>
+    </traitlist>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="5">
+      <trait name="Fortitude: Endurance" val="3" note="basic"/>
+      <trait name="Fortitude: Mettle" val="3" note="basic"/>
+      <trait name="Fortitude: Resilience" val="6" note="int."/>
+      <trait name="Fortitude: Resistance" val="6" note="int."/>
+      <trait name="Fortitude: Aegis" val="9" note="adv."/>
+      <trait name="Necromancy: Ash Path: Shroudsight" val="3" note="basic"/>
+      <trait name="Necromancy: Ash Path: Lifeless Tongues" val="3" note="basic"/>
+      <trait name="Necromancy: Ash Path: Dead Hand" val="6" note="int."/>
+      <trait name="Necromancy: Ash Path: Ex Nihilo" val="6" note="int."/>
+      <trait name="Necromancy: Ash Path: Shroud Mastery" val="9" note="adv."/>
+    </traitlist>
+    <traitlist name="Rituals" abc="no" atomic="yes" display="5">
+      <trait name="Sabbat: Auctoritas: Binding" val="2"/>
+      <trait name="Sabbat: Auctoritas: Blood Bath" val="2"/>
+      <trait name="Sabbat: Auctoritas: Blood Feast" val="2"/>
+      <trait name="Sabbat: Auctoritas: Creation Rites" val="2"/>
+      <trait name="Sabbat: Auctoritas: Festivo dello Estinto" val="2"/>
+      <trait name="Sabbat: Auctoritas: Fire Dancing" val="2"/>
+      <trait name="Sabbat: Auctoritas: Fire Dancing" val="2"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ambidextrous"/>
+      <trait name="Animal Friendship" val="2"/>
+      <trait name="Aware of False Love" val="2"/>
+      <trait name="Berserker" val="2-3"/>
+      <trait name="Blackmail Material" val="1-3"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Amnesia" val="2 or 4"/>
+      <trait name="Archaic" val="2"/>
+      <trait name="Bad Sight" val="1-3"/>
+      <trait name="Bard's Tongue"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1">
+      <trait name="(Fetishes and Talens)"/>
+      <trait name="Assault Rifle" note="+3, 2 Lethal, Loud"/>
+      <trait name="Chain Mail" note="+0, 2 Armor Levels, Heavy"/>
+    </traitlist>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5">
+      <trait name="The Cock Spot" note="not really"/>
+    </traitlist>
+    <biography>
+      <![CDATA[I was born.]]>
+    </biography>
+    <notes>
+      <![CDATA[I need some stuff.]]>
+    </notes>
+  </vampire>
+</grapevine>
