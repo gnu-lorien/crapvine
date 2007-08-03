@@ -35,7 +35,7 @@ class TextBox:
 		buffer.insert(iter, character[trait_display_name])
 		buffer.connect('changed', self.on_text_changed)
 
-		self.title.set_label(self.trait_display_name)
+		self.title.set_label(self.trait_display_name.capitalize())
 
 	def on_text_changed(self, textbuffer):
 		self.character[self.trait_display_name] = textbuffer.get_text(textbuffer.get_start_iter(), textbuffer.get_end_iter(), False)

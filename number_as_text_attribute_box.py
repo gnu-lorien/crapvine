@@ -32,7 +32,7 @@ class NumberAsTextAttributeBox:
 		self.overlord = overlord
 		self.character = character
 
-		self.label.set_label(self.display_name)
+		self.label.set_label(self.display_name.capitalize())
 		self.entry.set_text(self.character[self.display_name])
 
 		self.xml.signal_autoconnect({
