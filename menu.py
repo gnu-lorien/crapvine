@@ -47,8 +47,6 @@ class MenuLoader(ContentHandler):
 	def __find_real_menu_name(self, menu_name):
 		if self.menus.has_key(menu_name):
 			return menu_name
-		if menu_name.capitalize() in ['Nature', 'Demeanor']:
-			return 'Archetypes'
 		if self.menus.has_key(menu_name.capitalize()):
 			return menu_name.capitalize()
 		split_str = menu_name.split(' ')
