@@ -46,7 +46,10 @@ class TextAttributeBox:
 	def demand_menu(self, unused=None, unused2=None, unused3=None):
 		print 'Demanding menu for text %s' % (self.menu_name)
 		self.overlord.target = self
-		self.overlord.show_menu(self.menu_name)
+		translated_menu_name = self.menu_name
+		if self.menu_name in self.character.attr_menu_map.keys():
+			translated_menu_name = self.character.attr_menu_map[self.menu_name]
+		self.overlord.show_menu(translated_menu_name)
 
 	def add_menu_item(self, menu_item):
 		self.entry.set_text(menu_item.name)

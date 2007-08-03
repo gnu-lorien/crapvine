@@ -365,6 +365,8 @@ class Vampire(Attributed):
 
 	text_children = ['notes', 'biography']
 
+	attr_menu_map = {'nature' : 'Archetypes', 'demeanor' : 'Archetypes', 'title' : 'Title, Vampire', 'status' : 'Status, Character' }
+
 	def __init__(self):
 		self.traitlists = []
 		self.experience = None
