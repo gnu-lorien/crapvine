@@ -15,6 +15,7 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import gtk
 from xml.sax.saxutils import quoteattr, unescape
 
 class AttributeReader:
@@ -134,3 +135,55 @@ class Attributed(object):
 		# Check date_attrs
 		# Check bool_attrs
 		object.__setattr__(self, name, value)
+
+class AttributedListModel(Attributed, gtk.GenericTreeModel):
+	def __init__(self):
+		Attributed.__init__(self)
+		gtk.GenericTreeModel.__init__(self)
+	def get_item(self, index):
+		return self.list[index]
+	def get_item_from_path(self, path):
+		return self.list[path[0]]
+	def on_get_flags(self):
+		return gtk.TREE_MODEL_LIST_ONLY
+	def on_get_n_columns(self):
+		return len(self.column_attrs)
+	def on_get_column_type(self, index):
+		return self.column_attr_types[index]
+	def on_get_path(self, iter):
+		if len(self.list) == 0:
+			return None
+		return (iter, )
+	def on_get_iter(self, path):
+		if len(self.list) == 0:
+			return None
+		return path[0]
+	def on_get_value(self, index, column):
+		if len(self.list) == 0:
+			return None
+		list = self.list[index]
+		return list[self.column_attrs[column]]
+	def on_iter_next(self, index):
+		if index >= (len(self.list) - 1):
+			return None
+		return index + 1
+	def on_iter_children(self, node):
+		return None
+	def on_iter_has_child(self, node):
+		return False
+	def on_iter_n_children(self, iter):
+		if iter:
+			return 0
+		return len(self.list)
+	def on_iter_nth_child(self, parent, n):
+		if parent:
+			return None
+		try:
+			self.list[n]
+		except IndexError:
+			return None
+		else:
+			return n
+	def on_iter_parent(self, node):
+		return None
+

@@ -18,6 +18,7 @@
 from __future__ import with_statement
 
 import gtk
+import gobject
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
 
@@ -65,6 +66,8 @@ class CharacterWindow:
 			if my_win:
 				my_vbox = NumberAsTextAttributeBox(nat_name, nat_name, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
+
+		self.__create_experience_tree(self.character.experience)
 		
 		window = self.xml.get_widget('winCharacter')
 		window.set_title(character.name)
@@ -90,3 +93,32 @@ class CharacterWindow:
 			with file(file_chooser.get_filename(), 'w') as f:
 				f.write("\n".join(out))
 
+	def __create_experience_tree(self, experience):
+		self.tree_experience = self.xml.get_widget('treeExperience')
+		for en in enumerate(experience.column_attrs):
+			title = en[1].capitalize()
+			idx = en[0]
+			print title
+			print idx
+			renderer = gtk.CellRendererText()
+			renderer.set_data("column", idx)
+			column = gtk.TreeViewColumn(title, renderer, text=idx)
+			self.tree_experience.append_column(column)
+
+		model = gtk.ListStore(
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING,
+			gobject.TYPE_STRING)
+
+		for entry in experience.entries:
+			iter = model.append()
+			for i in range(len(experience.column_attrs)):
+				model.set(iter, i, entry[experience.column_attrs[i]])
+		self.tree_experience.set_model(self.character.experience)
+
+
+		for entry in experience.entries:
+			print entry

@@ -21,7 +21,7 @@ import gobject
 import string
 import copy
 import pdb
-from grapevine_xml import AttributeReader, Attributed
+from grapevine_xml import AttributeReader, Attributed, AttributedListModel
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
 from xml.sax.saxutils import unescape, escape
@@ -143,7 +143,7 @@ class VampireLoader(ContentHandler):
 		print 'Warning'
 		raise exception
 
-class Experience(Attributed):
+class Experience(AttributedListModel):
 	required_attrs = []
 	text_attrs = []
 	number_as_text_attrs = ['unspent', 'earned']
@@ -151,9 +151,13 @@ class Experience(Attributed):
 	bool_attrs = []
 	defaults = {}
 	text_children = []
+	column_attrs = ['date', 'change', 'type', 'reason', 'unspent', 'earned']
+	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
 	def __init__(self):
-		self.entries = []
+		AttributedListModel.__init__(self)
+		self.list = []
+		self.entries = self.list
 
 	def add_entry(self, entry):
 		self.entries.append(entry)
@@ -183,19 +187,22 @@ class ExperienceEntry(Attributed):
 	def __str__(self):
 		return self.get_xml()
 
-class TraitList(Attributed, gtk.GenericTreeModel):
+class TraitList(AttributedListModel):
 	required_attrs = ['name']
 	text_attrs = []
 	number_as_text_attrs = ['display']
 	date_attrs = []
 	bool_attrs = ['abc', 'atomic', 'negative']
 	defaults = { 'atomic' : False, 'negative' : False }
+	column_attrs = [ 'name', 'val', 'note' ]
+	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
 	text_children = []
 
 	def __init__(self):
-		self.traits = []
-		gtk.GenericTreeModel.__init__(self)
+		AttributedListModel.__init__(self)
+		self.list = []
+		self.traits = self.list
 
 	def add_menu_item(self, menu_item):
 		t = Trait()
@@ -284,61 +291,6 @@ class TraitList(Attributed, gtk.GenericTreeModel):
 		return ret
 	def __str__(self):
 		return self.get_xml()
-
-	def get_item(self, index):
-		return self.traits[index]
-	def get_item_from_path(self, path):
-		return self.traits[path[0]]
-	def on_get_flags(self):
-		return gtk.TREE_MODEL_LIST_ONLY
-	def on_get_n_columns(self):
-		return 3
-	def on_get_column_type(self, index):
-		return gobject.TYPE_STRING
-	def on_get_path(self, iter):
-		if len(self.traits) == 0:
-			return None
-		return (iter, )
-	def on_get_iter(self, path):
-		if len(self.traits) == 0:
-			return None
-		return path[0]
-	def on_get_value(self, index, column):
-		assert column >= 0
-		assert column <= 2
-		if len(self.traits) == 0:
-			return None
-		trait = self.traits[index]
-		if column == 0:
-			return trait.name
-		elif column == 1:
-			return trait.val
-		elif column == 2:
-			return trait.note
-	def on_iter_next(self, index):
-		if index >= (len(self.traits) - 1):
-			return None
-		return index + 1
-	def on_iter_children(self, node):
-		return None
-	def on_iter_has_child(self, node):
-		return False
-	def on_iter_n_children(self, iter):
-		if iter:
-			return 0
-		return len(self.traits)
-	def on_iter_nth_child(self, parent, n):
-		if parent:
-			return None
-		try:
-			self.traits[n]
-		except IndexError:
-			return None
-		else:
-			return n
-	def on_iter_parent(self, node):
-		return None
-
 
 class Trait(Attributed):
 	required_attrs = ['name']
