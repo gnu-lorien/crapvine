@@ -27,15 +27,16 @@ from vampire import VampireLoader
 from character_window import CharacterWindow
 import sys, traceback
 from optparse import OptionParser
+import grapevine_xml
 
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
 	column_attrs  = [ 'name', 'sect', 'clan', 'npc' , 'status' ]
 	def __init__(self, filename=None):
 		self.xml = gtk.glade.XML(configuration.get_character_tree_xml_file_path())
-		self.loader = None
 		self.treeCharacters = None
 
+		self.loader = grapevine_xml.Loader()
 		if filename:
 			self.__load_file(filename)
 			self.__reload_tree()
@@ -51,13 +52,8 @@ class CharacterTree:
 		})
 
 	def __load_file(self, filename):
-		parser = make_parser()
-		parser.setFeature(feature_namespaces, 0)
-		self.loader = VampireLoader()
-		parser.setContentHandler(self.loader)
-		#parser.setErrorHandler(self.loader)
 		try:
-			parser.parse(filename)
+			self.loader.load_file(filename)
 		except:
 			dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, traceback.format_exc())
 			dlg.run()
@@ -78,7 +74,7 @@ class CharacterTree:
 			gobject.TYPE_BOOLEAN,
 			gobject.TYPE_STRING)
 
-		for vamp in self.loader.vampires.values():
+		for vamp in self.loader.vampire_loader.vampires.values():
 			iter = model.append()
 			for i in range(len(self.column_attrs)):
 				model.set(iter, i, vamp[self.column_attrs[i]])
@@ -95,7 +91,7 @@ class CharacterTree:
 	def on_row_activated(self, treeview, path, view_column):
 		iter = treeview.get_model().get_iter(path)
 		character_name = treeview.get_model().get_value(iter, 0)
-		vamp = self.loader.vampires[character_name]
+		vamp = self.loader.vampire_loader.vampires[character_name]
 		cw = CharacterWindow(vamp)
 
 	def on_save_as(self, menuitem):
@@ -103,7 +99,7 @@ class CharacterTree:
 		response = file_chooser.run()
 		file_chooser.hide()
 		if response == gtk.RESPONSE_ACCEPT:
-			all_character_xml = [c.get_xml('   ') for c in self.loader.vampires.values()]
+			all_character_xml = [c.get_xml('   ') for c in self.loader.vampire_loader.vampires.values()]
 			out = ['<?xml version="1.0"?>',
 				'<grapevine version="3">']
 			out.extend(all_character_xml)
@@ -125,6 +121,6 @@ if not options.no_chronicle:
 	ct = CharacterTree(options.filename)
 
 if options.filename and options.character_name:
-	CharacterWindow(ct.loader.vampires[options.character_name])
+	CharacterWindow(ct.loader.vampire_loader.vampires[options.character_name])
 
 gtk.main()

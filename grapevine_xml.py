@@ -17,6 +17,8 @@
 
 import gtk
 from xml.sax.saxutils import quoteattr, unescape
+from xml.sax import make_parser
+from xml.sax.handler import feature_namespaces
 
 class AttributeReader:
 	def __init__(self, attrs):
@@ -187,3 +189,17 @@ class AttributedListModel(Attributed, gtk.GenericTreeModel):
 	def on_iter_parent(self, node):
 		return None
 
+class Loader(object):
+	def __init__(self):
+		self.filename = None
+		self.vampire_loader = None
+
+	def load_file(self, filename):
+		from vampire import VampireLoader
+		self.filename = filename
+		self.vampire_loader = VampireLoader()
+		
+		parser = make_parser()
+		parser.setFeature(feature_namespaces, 0)
+		parser.setContentHandler(self.vampire_loader)
+		parser.parse(self.filename)
