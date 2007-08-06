@@ -26,14 +26,19 @@ from xml.sax.handler import feature_namespaces
 from vampire import VampireLoader
 from character_window import CharacterWindow
 import sys, traceback
+from optparse import OptionParser
 
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
 	column_attrs  = [ 'name', 'sect', 'clan', 'npc' , 'status' ]
-	def __init__(self):
+	def __init__(self, filename=None):
 		self.xml = gtk.glade.XML(configuration.get_character_tree_xml_file_path())
 		self.loader = None
 		self.treeCharacters = None
+
+		if filename:
+			self.__load_file(filename)
+			self.__reload_tree()
 
 		window = self.xml.get_widget('characterTreeWindow')
 		window.show()
@@ -108,6 +113,18 @@ class CharacterTree:
 
 print "Muahaha"
 
-ct = CharacterTree()
+parser = OptionParser()
+parser.add_option("-f", "--file", dest="filename", help="Chronicle or individual XML gex file to load initially", metavar="FILEPATH")
+parser.add_option("-n", "--no-chronicle", action="store_true", dest="no_chronicle", default=False, help="Don't show the whole chronicle")
+parser.add_option("-s", "--show-character", dest="character_name", help="Show character on startup", metavar="CHARACTER_NAME")
+(options, args) = parser.parse_args()
+
+ct = None
+
+if not options.no_chronicle:
+	ct = CharacterTree(options.filename)
+
+if options.filename and options.character_name:
+	CharacterWindow(ct.loader.vampires[options.character_name])
 
 gtk.main()
