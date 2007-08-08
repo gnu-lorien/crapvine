@@ -123,13 +123,13 @@ class Attributed(object):
 	def __setattr__(self, name, value):
 		if name in self.number_as_text_attrs:
 			try:
-				int(value)
+				float(value)
 			except ValueError:
 				can_use = False
 				for separator_str in ['-', ' or ']:
 					for innerval in value.split(separator_str):
 						try:
-							int(innerval)
+							float(innerval)
 							can_use = True
 						except ValueError:
 							pass

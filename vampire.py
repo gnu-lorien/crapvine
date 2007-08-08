@@ -223,7 +223,7 @@ class TraitList(AttributedListModel):
 					if trait.name == t.name:
 						idx = en[0]
 						try:
-							t.val = str(int(t.val) + int(trait.val))
+							t.val = str(float(t.val) + float(trait.val))
 						except ValueError:
 							t.val = '2'
 						if t.note == '':
@@ -242,7 +242,7 @@ class TraitList(AttributedListModel):
 				if trait_name == t.name:
 					idx = en[0]
 					try:
-						t.val = str(int(t.val) + 1)
+						t.val = str(float(t.val) + 1)
 					except ValueError:
 						t.val = '1'
 					path = (idx, )
@@ -262,7 +262,7 @@ class TraitList(AttributedListModel):
 						self.emit('row-deleted', path)
 					else:
 						try:
-							t.val = str(int(t.val) - 1)
+							t.val = str(float(t.val) - 1)
 						except ValueError:
 							t.val = '1'
 						path = (idx, )
@@ -274,7 +274,7 @@ class TraitList(AttributedListModel):
 		sum = 0
 		for t in self.traits:
 			try:
-				sum += int(t.val)
+				sum += float(t.val)
 			except ValueError:
 				sum += 1
 		return sum
