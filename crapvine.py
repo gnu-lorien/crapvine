@@ -36,7 +36,7 @@ class CharacterTree:
 		self.xml = gtk.glade.XML(configuration.get_character_tree_xml_file_path())
 		self.treeCharacters = None
 
-		self.loader = grapevine_xml.Loader()
+		self.loader = grapevine_xml.GEX()
 		if filename:
 			self.__load_file(filename)
 			self.__reload_tree()
@@ -53,7 +53,7 @@ class CharacterTree:
 
 	def __load_file(self, filename):
 		try:
-			self.loader.load_file(filename)
+			self.loader.load_from_file(filename)
 		except:
 			dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, traceback.format_exc())
 			dlg.run()
@@ -99,13 +99,7 @@ class CharacterTree:
 		response = file_chooser.run()
 		file_chooser.hide()
 		if response == gtk.RESPONSE_ACCEPT:
-			all_character_xml = [c.get_xml('   ') for c in self.loader.vampire_loader.vampires.values()]
-			out = ['<?xml version="1.0"?>',
-				'<grapevine version="3">']
-			out.extend(all_character_xml)
-			out.append('</grapevine>')
-			with file(file_chooser.get_filename(), 'w') as f:
-				f.write("\n".join(out))
+			self.loader.save_contents_to_file(file_chooser.get_filename())
 
 print "Muahaha"
 

@@ -15,6 +15,7 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from __future__ import with_statement
 import gtk
 from xml.sax.saxutils import quoteattr, unescape
 from xml.sax import make_parser
@@ -189,12 +190,12 @@ class AttributedListModel(Attributed, gtk.GenericTreeModel):
 	def on_iter_parent(self, node):
 		return None
 
-class Loader(object):
+class GEX(object):
 	def __init__(self):
 		self.filename = None
 		self.vampire_loader = None
 
-	def load_file(self, filename):
+	def load_from_file(self, filename):
 		from vampire import VampireLoader
 		self.filename = filename
 		self.vampire_loader = VampireLoader()
@@ -203,3 +204,12 @@ class Loader(object):
 		parser.setFeature(feature_namespaces, 0)
 		parser.setContentHandler(self.vampire_loader)
 		parser.parse(self.filename)
+
+	def save_contents_to_file(self, filename):
+		all_character_xml = [c.get_xml('   ') for c in self.loader.vampire_loader.vampires.values()]
+		out = ['<?xml version="1.0"?>',
+			'<grapevine version="3">']
+		out.extend(all_character_xml)
+		out.append('</grapevine>')
+		with file(filename, 'w') as f:
+			f.write("\n".join(out))
