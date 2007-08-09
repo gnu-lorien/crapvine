@@ -14,6 +14,10 @@ def get_text_attribute_box_xml_file_path():
 def get_number_as_text_attribute_box_xml_file_path():
 	return path.join(get_base_interface_path(), 'NumberAsTextAttributeBox.glade')
 
+def get_number_as_text_with_temporary_attribute_box_xml_file_path():
+	return path.join(get_base_interface_path(), 'NumberAsTextWithTemporaryAttributeBox.glade')
+
+
 def get_menu_file_path():
 	return path.join(get_base_interface_path(), 'menus.gvm')
 

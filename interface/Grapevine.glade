@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Sat Aug  4 06:15:53 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Wed Aug  8 20:32:07 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="winCharacter">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -1161,7 +1161,7 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <widget class="GtkHBox" id="number_as_text_attr_willpower">
+                                  <widget class="GtkHBox" id="number_as_text_with_temporary_attr_willpower_tempwillpower">
                                     <property name="visible">True</property>
                                     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
                                     <child>

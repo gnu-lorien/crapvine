@@ -27,7 +27,10 @@ from traitlist_box import TraitlistBox
 from text_box import TextBox
 from text_attribute_box import TextAttributeBox
 from number_as_text_attribute_box import NumberAsTextAttributeBox
+from number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporaryAttributeBox
 from menu_navigator import MenuNavigator
+
+import pdb
 
 class CharacterWindow:
 	def __init__(self, character):
@@ -64,8 +67,15 @@ class CharacterWindow:
 		for nat_name in self.character.number_as_text_attrs:
 			my_win = self.xml.get_widget('number_as_text_attr_%s' % (nat_name))
 			if my_win:
-				my_vbox = NumberAsTextAttributeBox(nat_name, nat_name, self.overlord, self.character)
+				my_vbox = NumberAsTextWithTemporaryAttributeBox(nat_name, nat_name, nat_name, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
+
+		for my_win in self.xml.get_widget_prefix('number_as_text_with_temporary_attr_'):
+			pieces = my_win.get_name().split('_')
+			primary_attr = pieces[6]
+			tmp_attr     = pieces[7]
+			my_vbox_generator = NumberAsTextWithTemporaryAttributeBox(primary_attr, primary_attr, tmp_attr, self.overlord, self.character)
+			my_win.add(my_vbox_generator.get_vbox())
 
 		self.__create_experience_tree(self.character.experience)
 		
