@@ -106,9 +106,7 @@ class CharacterWindow:
 			t['val'] =  unicode(dlg_xml.get_widget('val').get_value())
 			t['note'] = dlg_xml.get_widget('note').get_text()
 			print t
-			target = self.overlord.target
-			if target:
-				target.tree.get_model().add_trait(t)
+			self.overlord.add_trait_to_target(t)
 
 	def on_save_as(self, menuitem):
 		file_chooser = gtk.FileChooserDialog('Choose Where to Save %s' % (self.character.name), None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))

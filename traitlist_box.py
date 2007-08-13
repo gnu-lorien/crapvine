@@ -108,6 +108,8 @@ class TraitlistBox:
 
 	def add_menu_item(self, menu_item):
 		self.tree.get_model().add_menu_item(menu_item)
+	def add_trait(self, trait):
+		self.tree.get_model().add_trait(trait)
 
 	def get_vbox(self):
 		return self.vbox
