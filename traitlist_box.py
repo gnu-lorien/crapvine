@@ -73,15 +73,15 @@ class TraitlistBox:
 		self.title.set_label('%d %s' % (tl.get_total_value(), self.trait_display_name))
 
 		self.xml.signal_autoconnect({
-			'on_add_to_trait': self.on_add_to_trait,
-			'on_subtract_from_trait': self.on_subtract_from_trait,
+			'on_add_to_trait': self.__on_add_to_trait,
+			'on_subtract_from_trait': self.__on_subtract_from_trait,
 			'set_traitbox_focus': self.set_traitbox_focus,
 			'on_scrolledwindow3_set_focus_child': self.set_focus_child,
 			'on_treeTraits_set_focus_child': self.set_focus_child,
-			'on_row_activated': self.on_row_activated
+			'on_row_activated': self.__on_row_activated
 		})
 
-	def on_add_to_trait(self, widget):
+	def __on_add_to_trait(self, widget):
 		(model, iter) = self.tree.get_selection().get_selected()
 		path = model.get_path(iter)
 		target_trait = model.get_item(path[0])
@@ -89,7 +89,7 @@ class TraitlistBox:
 		self.__update_title()
 		print "Adding trait on %s" % self.trait_menu_name
 
-	def on_subtract_from_trait(self, widget):
+	def __on_subtract_from_trait(self, widget):
 		(model, iter) = self.tree.get_selection().get_selected()
 		path = model.get_path(iter)
 		target_trait = model.get_item(path[0])
@@ -97,6 +97,11 @@ class TraitlistBox:
 		self.__update_title()
 		self.tree.get_selection().select_path(path)
 		print "Subtracting trait from %s" % self.trait_menu_name
+
+	def get_selected_trait(self):
+		(model, iter) = self.tree.get_selection().get_selected()
+		path = model.get_path(iter)
+		return model.get_item(path[0])
 
 	def set_focus_child(self, unused, unused_as_well):
 		self.set_traitbox_focus(None)
@@ -114,7 +119,7 @@ class TraitlistBox:
 	def get_vbox(self):
 		return self.vbox
 
-	def on_row_activated(self, treeview, path, view_column):
+	def __on_row_activated(self, treeview, path, view_column):
 		print "Row activated"
 		print path
 		row_num = path[0]
