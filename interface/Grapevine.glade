@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Wed Aug  8 20:32:07 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Mon Aug 13 04:12:03 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="winCharacter">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -284,6 +284,7 @@
                         <property name="label" translatable="yes">_Custom Entry</property>
                         <property name="use_underline">True</property>
                         <property name="response_id">0</property>
+                        <signal name="clicked" handler="add_custom_entry"/>
                       </widget>
                       <packing>
                         <property name="expand">False</property>

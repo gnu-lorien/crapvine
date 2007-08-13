@@ -83,11 +83,16 @@ class Attributed(object):
 			if self[name] == self.defaults[name]:
 				return True
 		return False
+	def __simplify_float_str(self, value):
+		if float(value) == round(float(value)):
+			return unicode(int(round(float(value))))
+		else:
+			return value
 	def get_attrs_xml(self):
 		attrs_strs = []
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.required_attrs if not self.__attr_default(name)])
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.number_as_text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self.__simplify_float_str(self[name]))) for name in self.number_as_text_attrs if not self.__attr_default(name)])
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.date_attrs if not self.__attr_default(name)])
 		for bool_attr in self.bool_attrs:
 			if not self.__attr_default(bool_attr):

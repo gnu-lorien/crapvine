@@ -30,6 +30,8 @@ from number_as_text_attribute_box import NumberAsTextAttributeBox
 from number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporaryAttributeBox
 from menu_navigator import MenuNavigator
 
+from vampire import Trait
+
 import pdb
 
 class CharacterWindow:
@@ -87,9 +89,26 @@ class CharacterWindow:
 			'on_btnAddTrait_clicked' : self.overlord.on_btnAddTrait_clicked,
 			'on_btnRemoveTrait_clicked' : self.overlord.on_btnRemoveTrait_clicked,
 			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated,
-			'on_save_as' : self.on_save_as
+			'on_save_as' : self.on_save_as,
+			'add_custom_entry' : self.add_custom_entry
 			}
 		)
+
+	def add_custom_entry(self, widget=None):
+		dlg_xml = gtk.glade.XML(configuration.get_add_custom_entry_xml_file_path())
+		dlg = dlg_xml.get_widget('custom_entry_dialog')
+		response = dlg.run()
+		dlg.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			print 'Accepted'
+			t = Trait()
+			t['name'] = dlg_xml.get_widget('name').get_text()
+			t['val'] =  unicode(dlg_xml.get_widget('val').get_value())
+			t['note'] = dlg_xml.get_widget('note').get_text()
+			print t
+			target = self.overlord.target
+			if target:
+				target.tree.get_model().add_trait(t)
 
 	def on_save_as(self, menuitem):
 		file_chooser = gtk.FileChooserDialog('Choose Where to Save %s' % (self.character.name), None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
