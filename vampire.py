@@ -312,9 +312,28 @@ class Trait(Attributed):
 			return float(self.val)
 		except ValueError:
 			return 0
-	def display_str(self, display="1"):
-		show_note = True if self.note else False
-		show_val  = True if self.__val_as_float else False
+	def __show_note(self):
+		return True if self.note else False
+	def __show_val(self):
+		return True if self.val else False
+	def __tally_val(self):
+		return True if self.__val_as_float else False
+
+	def tally_str(self, dot="O"):
+		if not self.__tally_val():
+			return ''
+		else:
+			num_dots = int(round(self.__val_as_float()))
+			ret = ""
+			for i in range(num_dots):
+				ret += "%s" % (dot)
+			return ret
+
+	def display_str(self, display="1", dot="O"):
+		show_note = self.__show_note()
+		show_val  = self.__show_val()
+		tally_val = self.__tally_val()
+		
 		if display == "0":
 			return "%s" % (self.name)
 		elif display == "1":
@@ -323,18 +342,14 @@ class Trait(Attributed):
 			return "%s%s%s" % (self.name, vstr, nstr)
 		elif display == "2":
 			if show_val:
-				fval = self.__val_as_float()
-				vstr = (" x%s " % (self.val))
-				for i in range(int(round(fval))):
-					vstr += "O"
+				vstr = (" x%s" % (self.val))
+			if tally_val:
+				vstr += " %s" % (self.tally_str(dot))
 			nstr = (" (%s)" % (self.note)) if show_note else ''
 			return "%s%s%s" % (self.name, vstr, nstr)
 		elif display == "3":
-			if show_val:
-				fval = self.__val_as_float()
-				vstr = " " 
-				for i in range(int(round(fval))):
-					vstr += "O"
+			if tally_val:
+				vstr = " %s" % (self.tally_str(dot))
 			nstr = (" (%s)" % (self.note)) if show_note else ''
 			return "%s%s%s" % (self.name, vstr, nstr)
 		elif display == "4":
@@ -345,7 +360,6 @@ class Trait(Attributed):
 				paren_str = " (%s)" % (self.note)
 			elif show_val and not show_note:
 				paren_str = " (%s)" % (self.val)
-
 			return "%s%s" % (self.name, paren_str)
 		elif display == "5":
 			paren_str = ""
@@ -363,15 +377,9 @@ class Trait(Attributed):
 			its = []
 			for i in range(int(round(self.__val_as_float()))):
 				its.append(dstr)
-			return "O".join(its)
+			return ("%s" % (dot)).join(its)
 		elif display == "8":
-			if show_val:
-				s = ''
-				for i in range(int(round(self.__val_as_float()))):
-					s += 'O'
-				return s
-			else:
-				return ''
+			return self.tally_str(dot)
 		elif display == "9":
 			if show_val:
 				return "%s" % (self.val)

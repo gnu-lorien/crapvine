@@ -116,6 +116,10 @@ class CharacterWindow:
 			return
 		dlg_xml.get_widget('display').set_label(trait.display_str())
 		dlg_xml.get_widget('note').set_text(trait.note)
+
+		for i in range(11):
+			print trait.display_str(str(i))
+
 		response = dlg.run()
 		dlg.hide()
 		if response == gtk.RESPONSE_ACCEPT:
