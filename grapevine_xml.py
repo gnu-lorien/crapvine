@@ -113,6 +113,8 @@ class Attributed(object):
 				raise
 			if self.defaults.has_key(name):
 				return self.defaults[name]
+			if self.linked_defaults.has_key(name):
+				return self.__getattribute__(self.linked_defaults[name])
 			if name in self.text_attrs:
 				return '' 
 			if name in self.number_as_text_attrs:

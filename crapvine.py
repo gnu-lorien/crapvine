@@ -114,7 +114,106 @@ ct = None
 if not options.no_chronicle:
 	ct = CharacterTree(options.filename)
 
+c = None
 if options.filename and options.character_name:
-	CharacterWindow(ct.loader.vampire_loader.vampires[options.character_name])
+	c = ct.loader.vampire_loader.vampires[options.character_name]
+	CharacterWindow(c)
+
+in_str = ''
+with open("Vampire.txt") as f:
+	in_str = f.read()
+
+out_str = "%s" % (in_str)
+
+class Keyword(object):
+	def __init__(self):
+		object.__init__(self)
+		text = ''
+		begin = 0
+		end = 0
+
+def get_keywords(out_str):
+	keywords = []
+	cur_key = None
+	for i in range(len(out_str)):
+		if cur_key:
+			if out_str[i] == ']':
+				cur_key.end = i
+				cur_key.text = "%s" % (out_str[cur_key.begin + 1:cur_key.end])
+				print cur_key.text
+				keywords.append(cur_key)
+				cur_key = None
+		if out_str[i] == '[':
+			if cur_key:
+				raise 'Syntax error'
+			cur_key = Keyword()
+			cur_key.begin = i
+	return keywords
+
+keywords = get_keywords(out_str)
+keywords.reverse()
+for keyword in keywords:
+	tokens = keyword.text.split(' ')
+	try:
+		rep_str = c[tokens[0].lower()]
+		out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
+	except AttributeError:
+		# It's either incorrect or a language keyword
+		pass
+
+
+
+# Parse tally keyword
+dot = 'O'
+emptydot = '/'
+tempdot = '+'
+keywords = get_keywords(out_str)
+keywords.reverse()
+for keyword in keywords:
+	tokens = keyword.text.split(' ')
+	if tokens[0].lower() == 'tally':
+		if len(tokens) == 2:
+			try:
+				print "%s" % (tokens[1].lower())
+				tally_val = c[tokens[1].lower()]
+				rep_str = "%s" % (dot * int(round(float(tally_val))))
+				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
+			except AttributeError:
+				pass
+		elif len(tokens) == 3:
+			try:
+				prm_val = int(round(float(c[tokens[1].lower()])))
+				tmp_val = int(round(float(c[tokens[2].lower()])))
+				rep_str = ''
+				if prm_val == tmp_val:
+					rep_str = "%s" % (dot * prm_val)
+				elif prm_val > tmp_val:
+					tmp_dots = prm_val - tmp_val
+					prm_dots = prm_val - tmp_dots
+					rep_str = "%s%s" % (dot * prm_dots, emptydot * tmp_dots)
+				elif prm_val < tmp_val:
+					tmp_dots = tmp_val - prm_val
+					rep_str = "%s%s" % (dot * prm_val, tempdot * tmp_dots)
+				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
+			except AttributeError:
+				pass
+
+# Parse col keyword
+keywords = get_keywords(out_str)
+keywords.reverse()
+for keyword in keywords:#keywords[len(keywords) - 5:]:
+	tokens = keyword.text.split(' ')
+	if tokens[0].lower() == 'col':
+		width = int(tokens[1])
+		#print width
+		newline_index = out_str.rfind("\n", 0, keyword.begin)
+		#print newline_index
+		#print out_str[keyword.end+1:keyword.end+30]
+		justified_str = out_str[newline_index+1:keyword.begin].rstrip().ljust(width, ' ')
+		#print "Len: %d\n|%s|" % (len(justified_str), justified_str)
+		out_str = "%s%s%s" % (out_str[:newline_index+1], justified_str, out_str[keyword.end+1:])
+
+with open('output.txt', 'w') as f:
+	f.write(out_str)
 
 gtk.main()

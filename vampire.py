@@ -150,6 +150,7 @@ class Experience(AttributedListModel):
 	date_attrs = []
 	bool_attrs = []
 	defaults = {}
+	linked_defaults = {}
 	text_children = []
 	column_attrs = ['date', 'change', 'type', 'reason', 'unspent', 'earned']
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
@@ -180,6 +181,7 @@ class ExperienceEntry(Attributed):
 	date_attrs = ['date']
 	bool_attrs = []
 	defaults = {}
+	linked_defaults = {}
 	text_children = []
 
 	def get_xml(self, indent=''):
@@ -194,6 +196,7 @@ class TraitList(AttributedListModel):
 	date_attrs = []
 	bool_attrs = ['abc', 'atomic', 'negative']
 	defaults = { 'atomic' : False, 'negative' : False }
+	linked_defaults = {}
 	column_attrs = [ 'name', 'val', 'note' ]
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
@@ -299,6 +302,7 @@ class Trait(Attributed):
 	date_attrs = []
 	bool_attrs = []
 	defaults = { 'val' : '1' }
+	linked_defaults = {}
 
 	text_children = []
 	
@@ -396,11 +400,12 @@ class Trait(Attributed):
 
 class Vampire(Attributed):
 	required_attrs = ['name']
-	text_attrs = ['nature', 'demeanor', 'clan', 'sect', 'coterie', 'sire', 'title', 'path', 'aura', 'status', 'narrator', 'player', 'id' ]
-	number_as_text_attrs = ['generation', 'blood', 'tempblood', 'willpower', 'tempwillpower', 'conscience', 'selfcontrol', 'courage', 'pathtraits', 'physicalmax']
+	text_attrs = ['nature', 'demeanor', 'clan', 'sect', 'coterie', 'sire', 'title', 'path', 'aura', 'aurabonus', 'status', 'narrator', 'player', 'id' ]
+	number_as_text_attrs = ['generation', 'blood', 'tempblood', 'willpower', 'tempwillpower', 'conscience', 'tempconscience', 'selfcontrol', 'tempselfcontrol', 'courage', 'tempcourage', 'pathtraits', 'temppathtraits', 'physicalmax']
 	date_attrs = ['startdate', 'lastmodified']
 	bool_attrs = ['npc']
 	defaults = { 'npc' : False }
+	linked_defaults = { 'tempconscience' : 'conscience', 'tempselfcontrol' : 'selfcontrol', 'tempwillpower' : 'willpower', 'tempblood': 'blood', 'tempcourage': 'courage', 'temppathtraits' : 'pathtraits' }
 
 	text_children = ['notes', 'biography']
 

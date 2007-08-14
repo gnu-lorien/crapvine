@@ -1,0 +1,127 @@
+[template character]======================================================================
+[Name]                            [col 35] Character Sheet [dateformat mm/dd/yy][PrintDate]
+----------------------------------------------------------------------
+Vampire [?NPC True]NPC[/?]        [col 35] Character ID: [ID]
+Player: [Player]                  [col 35] XP Unspent:   [XPUnspent]
+Status: [PlayStatus]              [col 35] XP Earned:    [XPEarned]
+----------------------------------------------------------------------
+Clan: [Clan]                      [col 35] Nature: [Nature]
+Sect: [Sect]                      [col 35] Demeanor: [Demeanor]
+Title: [Title]                    [col 35] Generation: [Generation]
+Coterie/Pack: [Coterie]           [col 35] Sire: [Sire]
+----------------------------------------------------------------------
+
+Blood:     [Blood] [Tally Blood TempBlood]
+Willpower:  [Willpower] [Tally Willpower TempWillpower]
+
+Morality Path:   [Path]                                        
+Morality Traits: [PathTraits] [Tally PathTraits TempPathTraits] [col 35] Conscience/Conviction: [Conscience] [Tally Conscience TempConscience]
+Aura:            [Aura] [AuraBonus]                             [col 35] Self-Control/Instinct: [SelfControl] [Tally SelfControl TempSelfControl]
+                                                                [col 35] Courage:         [Courage] [Tally Courage TempCourage]
+
+[repeat][Physical 8][tab][Physical][col 35][+Physical 8][tab][Physical]
+[/repeat]
+
+[#Physical] Physical Traits:      [col 35] [#PhysicalNeg] Negative Physical Traits:
+-------------------               [col 35] ---------------------------[repeat]
+[Physical]                        [col 35] [PhysicalNeg][/repeat]
+
+[#Social] Social Traits:          [col 35] [#SocialNeg] Negative Social Traits:
+-------------------               [col 35] ---------------------------[repeat]
+[Social]                          [col 35] [SocialNeg][/repeat]
+
+[#Mental] Mental Traits:          [col 35] [#MentalNeg] Negative Mental Traits:
+-------------------               [col 35] ---------------------------[repeat]
+[Mental]                          [col 35] [MentalNeg][/repeat]
+
+[#Abilities] Abilities:           [col 35] [#Backgrounds] Backgrounds:
+------------                      [col 35] --------------[repeat]
+[Abilities]                       [col 35] [Backgrounds][/repeat]
+
+[#Influences] Influences:         [col 35] [#Status] Status:
+--------------                    [col 35] ---------[repeat]
+[Influences]                      [col 35] [Status][/repeat]
+
+Derangements:                     [col 35] Miscellaneous:
+-------------                     [col 35] --------------[repeat]
+[Derangements]                    [col 35] [Miscellaneous][/repeat]
+
+Blood Bonds:                      [col 35] Health Levels:
+------------                      [col 35] --------------[repeat]
+[Bonds]                           [col 35] [HealthLevels][/repeat]
+
+Boons:
+------[repeat]
+[Boons][/repeat]
+
+Merits:                           [col 35] Flaws:
+-------                           [col 35] ------[repeat]
+[Merits]                          [col 35] [Flaws][/repeat]
+
+Disciplines:
+------------[repeat]
+[Disciplines][/repeat]
+
+Rituals:
+--------[repeat]
+[Rituals][/repeat]
+
+Equipment:
+----------[repeat]
+[Equipment][/repeat]
+
+
+
+[option notes]
+Notes:
+------[wrap 70]
+[Notes][wrap 0]
+[/option][option history][dateformat mm/dd/yy]
+Experience History: [DateRange]
+-Date-----Change------Reason------------------------------------------[repeat]
+[Date]   [col 11][ChangeText][col 22] [Reason][/repeat]
+----------------------------------------------------------------------
+[/option][wrap 72][dateformat mmmm d, yyyy][option items]
+----------------------------------------------------------------------
+[Name]
+[Type] [Tally Level]              [col 35] [Subtype][repeat]
+[Tempers]                         [col 35] [+Tempers][/repeat]
+[!Bonus 0]+[Bonus] Traits[/!]     [col 35] [!DamageType][DamageAmount] [DamageType][/!][repeat]
+[Abilities]                       [col 35] [Negatives][/repeat]
+Conceal: [Conceal]
+Appearance: [Appearance]
+Powers: [Powers]
+----------------------------------------------------------------------
+[/option][option locations]
+----------------------------------------------------------------------
+[Name]
+[Type] [Tally Level]              [col 35] Owner: [Owner]
+
+Access: [Access]
+Where: [Where]
+Appearance: [Appearance]
+
+Security Traits: [SecurityTraits] [col 35] Security Retests: [SecurityRetests]
+Security: [Security]
+
+Affinity: [Affinity]		  [col 35] Totem: [Totem]
+Gauntlet/Shroud: [Gauntlet]
+Umbra/Shadowlands/Dreaming: [Umbra]
+Moon Bridges/Trods: [repeat][col 21][Links]
+[/repeat]----------------------------------------------------------------------
+[/option][option actions][repeat]
+----------------------------------------------------------------------
+[Type] Action                     [col 50] [Date]
+[col 9] Level [Level]  [col 20] Unused [Unused]  [col 32] Total [Total]  [col 43] Growth [Growth]
+---Action:
+[Action]
+---Result:
+[Result]
+[/repeat]
+----------------------------------------------------------------------
+[/option][option rumors]
+----------------------------------------------------------------------
+[!Level]Level [Level] [/!][Title] Rumors [col 50] [Date]
+
+[Rumor][/option]
+======================================================================
