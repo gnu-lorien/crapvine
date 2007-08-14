@@ -109,13 +109,12 @@ class CharacterWindow:
 			print t
 			self.overlord.add_trait_to_target(t)
 	def add_note_to_entry(self, widget=None):
-		pdb.set_trace()
 		dlg_xml = gtk.glade.XML(configuration.get_add_note_to_entry_xml_file_path())
 		dlg = dlg_xml.get_widget('add_note_to_entry')
 		trait = self.overlord.get_selected_trait_from_target()
 		if not trait:
 			return
-		dlg_xml.get_widget('display').set_label(trait.name)
+		dlg_xml.get_widget('display').set_label(trait.display_str())
 		dlg_xml.get_widget('note').set_text(trait.note)
 		response = dlg.run()
 		dlg.hide()

@@ -306,6 +306,85 @@ class Trait(Attributed):
 		return '%s<trait %s/>' % (indent, self.get_attrs_xml())
 	def __str__(self):
 		return self.get_xml()
+	
+	def __val_as_float(self):
+		try:
+			return float(self.val)
+		except ValueError:
+			return 0
+	def display_str(self, display="1"):
+		show_note = True if self.note else False
+		show_val  = True if self.__val_as_float else False
+		if display == "0":
+			return "%s" % (self.name)
+		elif display == "1":
+			vstr = (" x%s" % (self.val)) if show_val else ''
+			nstr = (" (%s)" % (self.note)) if show_note else ''
+			return "%s%s%s" % (self.name, vstr, nstr)
+		elif display == "2":
+			if show_val:
+				fval = self.__val_as_float()
+				vstr = (" x%s " % (self.val))
+				for i in range(int(round(fval))):
+					vstr += "O"
+			nstr = (" (%s)" % (self.note)) if show_note else ''
+			return "%s%s%s" % (self.name, vstr, nstr)
+		elif display == "3":
+			if show_val:
+				fval = self.__val_as_float()
+				vstr = " " 
+				for i in range(int(round(fval))):
+					vstr += "O"
+			nstr = (" (%s)" % (self.note)) if show_note else ''
+			return "%s%s%s" % (self.name, vstr, nstr)
+		elif display == "4":
+			paren_str = ""
+			if show_note and show_val:
+				paren_str = " (%s, %s)" % (self.val, self.note)
+			elif show_note and not show_val:
+				paren_str = " (%s)" % (self.note)
+			elif show_val and not show_note:
+				paren_str = " (%s)" % (self.val)
+
+			return "%s%s" % (self.name, paren_str)
+		elif display == "5":
+			paren_str = ""
+			if show_note:
+				paren_str = " (%s)" % (self.note)
+			return "%s%s" % (self.name, paren_str)
+		elif display == "6":
+			paren_str = ""
+			if show_val:
+				paren_str = " (%s)" % (self.val)
+			return "%s%s" % (self.name, paren_str)
+		elif display == "7":
+			paren_str = (" (%s)" % (self.note)) if show_note else ''
+			dstr = "%s%s" % (self.name, paren_str)
+			its = []
+			for i in range(int(round(self.__val_as_float()))):
+				its.append(dstr)
+			return "O".join(its)
+		elif display == "8":
+			if show_val:
+				s = ''
+				for i in range(int(round(self.__val_as_float()))):
+					s += 'O'
+				return s
+			else:
+				return ''
+		elif display == "9":
+			if show_val:
+				return "%s" % (self.val)
+			else:
+				return ''
+		elif display == "10":
+			if show_note:
+				return "%s" % (self.note)
+			else:
+				return ''
+		elif display == "Default":
+			return self.display_str()
+			
 
 class Vampire(Attributed):
 	required_attrs = ['name']

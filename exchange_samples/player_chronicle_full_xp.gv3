@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<grapevine version="3" chronicle="Title-De-Chroniclititit" website="www.nowhereintheworld.org" email="fuck_you_buddy@nowhereintheworld.org" phone="404-404-4040" usualtime="7:00 PM" stcommentstart="[cockinmouf]" stcommentend="[/cockinmouf]" linktraitmax="no" randomtraits="7,5,3,5,5,5,5" menupath="Grapevine Menus.gvm" size="70">
+<grapevine version="3" chronicle="Title-De-Chroniclititit" website="www.nowhereintheworld.org" email="fuck_you_buddy@nowhereintheworld.org" phone="404-404-4040" usualtime="7:00 PM" stcommentstart="[cockinmouf]" stcommentend="[/cockinmouf]" linktraitmax="no" randomtraits="7,5,3,5,5,5,5" menupath="Grapevine Menus.gvm" size="71">
   <usualplace>
     <![CDATA[Just under the stairs]]>
   </usualplace>
   <description>
     <![CDATA[This is a blow-by-blow game of doom, gloom, and subsume]]>
   </description>
-  <calendar lastmodified="8/2/2007 6:41:12 PM">
+  <calendar lastmodified="8/2/2007 6:41:12 AM">
     <game date="8/7/2007" time="7:00 PM">
       <place>
         <![CDATA[Just under the stairs]]>
@@ -50,15 +50,15 @@
     </game>
   </calendar>
   <award use="XP" name="Attendance" type="0" change="1" reason="Attendance"/>
+  <award use="PP" name="Bookkeeping" type="0" change="1" reason="Bookkeeping"/>
   <award use="XP" name="Costuming" type="0" change="1" reason="Costuming"/>
   <award use="XP" name="Downtime Activities" type="0" change="1" reason="Downtime Activities"/>
   <award use="XP" name="First Night" type="0" change="1" reason="First Night"/>
   <award use="XP" name="Good Roleplaying" type="0" change="1" reason="Good Roleplaying"/>
   <award use="XP" name="Leadership" type="0" change="1" reason="Leadership"/>
-  <award use="PP" name="Storytelling" type="0" change="1" reason="Storytelling"/>
-  <award use="PP" name="Bookkeeping" type="0" change="1" reason="Bookkeeping"/>
   <award use="PP" name="Narrating" type="0" change="1" reason="Narrating"/>
   <award use="PP" name="Setup/Cleanup" type="0" change="1" reason="Setup/Cleanup"/>
+  <award use="PP" name="Storytelling" type="0" change="1" reason="Storytelling"/>
   <template name="Action and Rumor Report" text="Templates\Text\Action and Rumor Report.txt" rtf="Templates\RTF\Action and Rumor Report.rtf" html="Templates\HTML\Action and Rumor Report.html"/>
   <template name="Changeling Character Sheet" sheet="yes" text="Templates\Text\Changeling.txt" rtf="Templates\RTF\Changeling.rtf" html="Templates\HTML\Changeling.html"/>
   <template name="Character Equipment" text="Templates\Text\Character Equipment.txt" rtf="Templates\RTF\Character Equipment.rtf" html="Templates\HTML\Character Equipment.html"/>
@@ -109,7 +109,7 @@
       <trait name="SuckFest"/>
     </traitlist>
   </aprsettings>
-  <player name="Carlos Sanchez" id="8787778" email="lorien420@sanchez.com" phone="404-404-4040" position="Player" status="Active" lastmodified="8/2/2007 6:38:45 PM">
+  <player name="Carlos Sanchez" id="8787778" email="lorien420@sanchez.com" phone="404-404-4040" position="Player" status="Active" lastmodified="8/2/2007 6:38:45 AM">
     <experience unspent="2" earned="2">
       <entry date="8/2/2007" change="1" type="0" reason="Storytelling" earned="1" unspent="1"/>
       <entry date="8/2/2007" change="1" type="0" reason="Setup/Cleanup" earned="2" unspent="2"/>
@@ -121,13 +121,13 @@
       <![CDATA[Are you Sanchez?]]>
     </notes>
   </player>
-  <player name="My Narrator" position="Narrator" status="Active" lastmodified="8/2/2007 6:39:42 PM">
+  <player name="My Narrator" position="Narrator" status="Active" lastmodified="8/2/2007 6:39:42 AM">
     <experience unspent="0" earned="0"/>
   </player>
   <player name="This Other Guy" position="Player" status="Active" lastmodified="12:00:00 AM">
     <experience unspent="0" earned="0"/>
   </player>
-  <vampire name="Each Experience Type" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" player="Carlos Sanchez" status="Active" startdate="8/2/2007 6:35:42 PM" narrator="My Narrator" lastmodified="8/2/2007 6:40:37 PM">
+  <vampire name="Each Experience Type" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" player="Carlos Sanchez" status="Active" startdate="8/2/2007 6:35:42 AM" narrator="My Narrator" lastmodified="8/14/2007 2:31:09 AM">
     <experience unspent="1" earned="1">
       <entry date="8/2/2007" change="1" type="3" reason="Spend 1" earned="0" unspent="-1"/>
       <entry date="8/2/2007" change="1" type="0" reason="Earn 1" earned="1" unspent="0"/>
@@ -136,7 +136,7 @@
       <entry date="8/2/2007" change="1" type="2" reason="Set Earned to 1" earned="1" unspent="0"/>
       <entry date="8/2/2007" change="1" type="5" reason="Set Unspent to 1" earned="1" unspent="1"/>
       <entry date="8/2/2007" change="1" type="6" reason="Comment" earned="1" unspent="1"/>
-      <entry date="8/2/2007 6:35:43 PM" change="0" type="6" reason="Created 8/3/7 with 9 Abilities and 5 Backgrounds, using 2 Negative and 5 Free Traits" earned="1" unspent="1"/>
+      <entry date="8/2/2007 6:35:43 AM" change="0" type="6" reason="Created 8/3/7 with 9 Abilities and 5 Backgrounds, using 2 Negative and 5 Free Traits" earned="1" unspent="1"/>
     </experience>
     <traitlist name="Physical" abc="yes" display="1">
       <trait name="Stalwart" val="2"/>
@@ -185,64 +185,126 @@
     <traitlist name="Bonds" abc="yes" display="1"/>
     <traitlist name="Miscellaneous" abc="no" display="1"/>
     <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
-    <traitlist name="Disciplines" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="6">
+      <trait name="Fortitude: Imperviousness" val="12"/>
+      <trait name="Fortitude: Cock-Stain" val="3"/>
+    </traitlist>
     <traitlist name="Rituals" abc="no" atomic="yes" display="5"/>
-    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Blackmail Material" val="1-3"/>
+    </traitlist>
     <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
     <traitlist name="Equipment" abc="yes" display="1"/>
     <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
   </vampire>
-  <query name="Active Characters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <mortal name="oaeuaoeu" willpower="2" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="8/14/2007 2:34:12 AM" lastmodified="8/14/2007 2:34:44 AM">
+    <experience unspent="0" earned="0">
+      <entry date="8/14/2007 2:34:12 AM" change="0" type="6" reason="Created 4/6/7 with 5 Abilities and 9 Backgrounds, using 1 Negative and 5 Free Traits" earned="0" unspent="0"/>
+    </experience>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Athletic" val="3" note="dex"/>
+      <trait name="Dexterous"/>
+      <trait name="Lithe"/>
+      <trait name="Vicious" val="3" note="Bang, blow"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+      <trait name="Charismatic"/>
+      <trait name="Charming"/>
+      <trait name="Elegant"/>
+      <trait name="Eloquent"/>
+      <trait name="Genial"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Calm"/>
+      <trait name="Discerning"/>
+      <trait name="Reflective" val="2"/>
+      <trait name="Vigilant" val="3"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Untrustworthy"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Animal Ken" val="2"/>
+      <trait name="Enigmas" val="2"/>
+      <trait name="Stealth"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Arsenal"/>
+      <trait name="Artifact"/>
+      <trait name="Equipment" val="2"/>
+      <trait name="Mana"/>
+      <trait name="Mentor" val="4"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <query name="Active Characters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="playstatus" comp="==" find="active"/>
   </query>
-  <query name="Active Players" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Active Players" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="playstatus" comp="==" find="Active"/>
   </query>
-  <query name="All Characters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM"/>
-  <query name="All Players" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM"/>
-  <query name="Changelings" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="All Characters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM"/>
+  <query name="All Players" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM"/>
+  <query name="Changelings" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="changeling"/>
   </query>
-  <query name="Demons" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Demons" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="demon"/>
   </query>
-  <query name="Fera" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Fera" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="fera"/>
   </query>
-  <query name="Hunters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Hunters" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="hunter"/>
   </query>
-  <query name="Kuei-Jin" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Kuei-Jin" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="kuei-jin"/>
   </query>
-  <query name="Mages" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Mages" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="mage"/>
   </query>
-  <query name="Mortals" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Mortals" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="mortal"/>
   </query>
-  <query name="Mummies" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Mummies" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="mummy"/>
   </query>
-  <query name="NPCs" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="NPCs" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="npc" comp="=T"/>
   </query>
-  <query name="Staff" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Staff" table="players" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="position" comp="!==" find="player"/>
   </query>
-  <query name="Vampires" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Vampires" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="vampire"/>
   </query>
-  <query name="Various" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Various" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="various"/>
   </query>
-  <query name="Werewolves" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Werewolves" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="werewolf"/>
   </query>
-  <query name="Wraiths" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 PM">
+  <query name="Wraiths" table="chars" match="any" sort="name" lastmodified="8/2/2007 6:35:54 AM">
     <clause field="race" comp="==" find="wraith"/>
   </query>
-  <item name="(Artifacts and Devices)" type="Artifact" subtype="User Information" level="0" bonus="0" amount="0" lastmodified="12/2/2002 1:46:53 PM">
+  <item name="(Artifacts and Devices)" type="Artifact" subtype="User Information" level="0" bonus="0" amount="0" lastmodified="12/2/2002 1:46:53 AM">
     <traitlist name="Tempers" abc="yes" display="2">
       <trait name="Click the &quot;Details&quot; Tab!"/>
     </traitlist>
@@ -267,7 +329,7 @@
       <![CDATA[White Wolf's copyright forbids me from redistributing the rules for each Artifact and Device.  "Artifacts and Devices.gex" provides book and page references instead. Fill out the item cards in detail as you need them, or colloborate with other STs to amass a complete collection.]]>
     </notes>
   </item>
-  <item name="(Fetishes and Talens)" type="Fetish" subtype="User Information" level="0" bonus="0" amount="0" lastmodified="10/30/2002 2:33:27 PM">
+  <item name="(Fetishes and Talens)" type="Fetish" subtype="User Information" level="0" bonus="0" amount="0" lastmodified="10/30/2002 2:33:27 AM">
     <traitlist name="Tempers" abc="yes" display="2">
       <trait name="Click the &quot;Details&quot; Tab!"/>
     </traitlist>
@@ -465,7 +527,7 @@
       <trait name="Any"/>
     </traitlist>
   </item>
-  <item name="Derringer" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Pocket" lastmodified="1/3/2004 4:23:39 PM">
+  <item name="Derringer" type="Equipment" subtype="Ranged Weapon" level="0" bonus="2" damage="Lethal" amount="2" conceal="Pocket" lastmodified="1/3/2004 4:23:39 AM">
     <traitlist name="Tempers" abc="yes" display="2"/>
     <traitlist name="Abilities" abc="yes" display="1">
       <trait name="Single-Shot"/>
@@ -502,7 +564,7 @@
       <trait name="Underworld" val="5"/>
     </traitlist>
   </item>
-  <item name="Gatling Cannon" type="Equipment" subtype="Ranged Weapon" level="0" bonus="5" damage="Lethal" amount="3" conceal="None" lastmodified="1/3/2004 4:25:30 PM">
+  <item name="Gatling Cannon" type="Equipment" subtype="Ranged Weapon" level="0" bonus="5" damage="Lethal" amount="3" conceal="None" lastmodified="1/3/2004 4:25:30 AM">
     <traitlist name="Tempers" abc="yes" display="2"/>
     <traitlist name="Abilities" abc="yes" display="1">
       <trait name="Mass-Trauma"/>
