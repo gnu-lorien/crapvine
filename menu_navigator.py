@@ -72,6 +72,10 @@ class MenuNavigator:
 		if not self.target:
 			return
 		self.target.add_trait(trait)
+	def get_selected_trait_from_target(self):
+		if not self.target:
+			return None
+		return self.target.get_selected_trait()
 
 	def on_btnAddTrait_clicked(self, widget):
 		self.__add_menu_item_to_target()

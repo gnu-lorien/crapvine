@@ -20,6 +20,9 @@ def get_number_as_text_with_temporary_attribute_box_xml_file_path():
 def get_add_custom_entry_xml_file_path():
 	return path.join(get_base_interface_path(), 'AddCustomEntry.glade')
 
+def get_add_note_to_entry_xml_file_path():
+	return path.join(get_base_interface_path(), 'AddNoteToEntry.glade')
+
 
 def get_menu_file_path():
 	return path.join(get_base_interface_path(), 'menus.gvm')

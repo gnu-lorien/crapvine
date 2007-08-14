@@ -90,7 +90,8 @@ class CharacterWindow:
 			'on_btnRemoveTrait_clicked' : self.overlord.on_btnRemoveTrait_clicked,
 			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated,
 			'on_save_as' : self.on_save_as,
-			'add_custom_entry' : self.add_custom_entry
+			'add_custom_entry' : self.add_custom_entry,
+			'add_note_to_entry' : self.add_note_to_entry
 			}
 		)
 
@@ -107,6 +108,20 @@ class CharacterWindow:
 			t['note'] = dlg_xml.get_widget('note').get_text()
 			print t
 			self.overlord.add_trait_to_target(t)
+	def add_note_to_entry(self, widget=None):
+		pdb.set_trace()
+		dlg_xml = gtk.glade.XML(configuration.get_add_note_to_entry_xml_file_path())
+		dlg = dlg_xml.get_widget('add_note_to_entry')
+		trait = self.overlord.get_selected_trait_from_target()
+		if not trait:
+			return
+		dlg_xml.get_widget('display').set_label(trait.name)
+		dlg_xml.get_widget('note').set_text(trait.note)
+		response = dlg.run()
+		dlg.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			print 'Accepted'
+			trait['note'] = dlg_xml.get_widget('note').get_text()
 
 	def on_save_as(self, menuitem):
 		file_chooser = gtk.FileChooserDialog('Choose Where to Save %s' % (self.character.name), None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
