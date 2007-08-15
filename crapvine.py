@@ -28,6 +28,7 @@ from character_window import CharacterWindow
 import sys, traceback
 from optparse import OptionParser
 import grapevine_xml
+import pdb
 
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
@@ -140,28 +141,160 @@ def get_keywords(out_str):
 			if out_str[i] == ']':
 				cur_key.end = i
 				cur_key.text = "%s" % (out_str[cur_key.begin + 1:cur_key.end])
-				print cur_key.text
 				keywords.append(cur_key)
 				cur_key = None
 		if out_str[i] == '[':
 			if cur_key:
-				raise 'Syntax error'
+				print 'Syntax error'
+				return keywords
 			cur_key = Keyword()
 			cur_key.begin = i
 	return keywords
 
+
+
+# Parse repeat keyword
+keywords = get_keywords(out_str)
+keywords.reverse()
+repeat_blocks = []
+cur_repeat = None
+for i in range(len(keywords)):
+	if keywords[i].text == '/repeat':
+		assert cur_repeat == None
+		print 'Found repeat'
+		cur_repeat = Keyword()
+		cur_repeat.end = keywords[i].end
+	elif keywords[i].text == 'repeat':
+		assert cur_repeat != None
+		print 'End repeat'
+		cur_repeat.begin = keywords[i].begin
+		cur_repeat.text = "%s" % (out_str[cur_repeat.begin+8:cur_repeat.end-8])
+		repeat_blocks.append(cur_repeat)
+		cur_repeat = None
+
+# Map of output name to traitlist name
+iterable_map = { 
+	'physicalneg'  : 'negative physical',
+	'socialneg'    : 'negative social',
+	'mentalneg'    : 'negative mental',
+	'healthlevels' : 'health levels'
+	}
+
+def translate_iterable_name(name):
+	if iterable_map.has_key(name):
+		return iterable_map[name]
+	return name
+
+# Map of output name to attribute name
+attribute_map = {
+	'playstatus'   : 'status'
+	}
+
+def translate_attribute_name(name):
+	if attribute_map.has_key(name):
+		return attribute_map[name]
+	return name
+
+def gimme_da_traitlist(traitlist_name):
+	for tl in c.traitlists:
+		if tl.name.lower() == traitlist_name:
+			return tl
+	return None
+	
+def expandinate_repeat_block(repeat_block, out_str):
+	pre_string = out_str[:repeat_block.begin]
+	post_string = out_str[repeat_block.end+1:]
+	# Find all of the trait categories we need
+	traitlist_iters = {}
+	traitlists = {}
+	keywords = get_keywords(repeat_block.text)
+	for k in keywords:
+		tl = gimme_da_traitlist(translate_iterable_name(k.text.lower()))
+		if tl:
+			print tl.name.lower()
+			traitlists[tl.name.lower()] = tl
+			traitlist_iters[tl.name.lower()] = tl.get_iter_first()
+
+	if len(traitlists) == 0:
+		return "%s%s" % (pre_string, post_string)
+
+	# Begin replacination von fuquon
+	imprints = []
+	keep_going = True
+	while keep_going:
+		l_str = "%s" % (repeat_block.text)
+		#print "l_str at start\n%s" % (l_str)
+		keywords = get_keywords(l_str)
+		keywords.reverse()
+		to_increment = {}
+		for k in keywords:
+			tokens = k.text.lower().split(' ')
+			mod = ''
+			tl_name = tokens[0]
+			if tokens[0].find('+') == 0:
+				mod = '+'
+				tl_name = tokens[0][1:]
+				print tl_name
+			tl_name = translate_iterable_name(tl_name)
+			if traitlist_iters.has_key(tl_name):
+				tl = traitlists[tl_name]
+				if len(tokens) > 1:
+					display = tokens[1]
+				else:
+					display = tl.display
+				iter = traitlist_iters[tl_name]
+				if iter:
+					trait = tl.get_item_from_path(tl.get_path(iter))
+					rep_str = "%s" % (trait.display_str(display))
+					l_str = "%s%s%s" % (l_str[:k.begin], rep_str, l_str[k.end+1:])
+					#print "l_str on keyword %s with %s\n%s" % (k.text.lower(), rep_str, l_str)
+					to_increment[tl_name] = True
+				else:
+					l_str = "%s%s" % (l_str[:k.begin], l_str[k.end+1:])
+		num_none = 0
+		for n in to_increment.keys():
+			iter = traitlist_iters[n]
+			tl = traitlists[n]
+			if iter:
+				traitlist_iters[n] = tl.iter_next(iter)
+			else:
+				++num_none
+		print "Num none: %d | to_increment: %d" % (num_none, len(to_increment))
+		if num_none == len(to_increment):
+			keep_going = False
+		else:
+			imprints.append(l_str)
+	imprint_str = ''.join(imprints)
+	return "%s%s%s" % (pre_string, imprint_str, post_string)
+
+
+for repeat_block in repeat_blocks:
+	out_str = expandinate_repeat_block(repeat_block, out_str)
+
+# Parse attributes
 keywords = get_keywords(out_str)
 keywords.reverse()
 for keyword in keywords:
 	tokens = keyword.text.split(' ')
 	try:
-		rep_str = c[tokens[0].lower()]
+		rep_str = c[translate_attribute_name(tokens[0].lower())]
 		out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 	except AttributeError:
 		# It's either incorrect or a language keyword
 		pass
 
-
+# Parse iterable counts
+keywords = get_keywords(out_str)
+keywords.reverse()
+for keyword in keywords:
+	tokens = keyword.text.lower().split(' ')
+	if tokens[0].find('#') == 0:
+		tl_name = translate_iterable_name(tokens[0][1:])
+		tl = gimme_da_traitlist(tl_name)
+		rep_str = ''
+		if tl:
+			rep_str = "%d" % (tl.get_display_total())
+		out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 
 # Parse tally keyword
 dot = 'O'
@@ -197,6 +330,15 @@ for keyword in keywords:
 				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 			except AttributeError:
 				pass
+
+# Parse tab keyword
+keywords = get_keywords(out_str)
+keywords.reverse()
+for keyword in keywords:
+	tokens = keyword.text.split(' ')
+	if tokens[0].lower() == 'tab':
+		rep_str = "\t"
+		out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 
 # Parse col keyword
 keywords = get_keywords(out_str)

@@ -284,6 +284,12 @@ class TraitList(AttributedListModel):
 	def get_num_entries(self):
 		return len(self.traits)
 
+	def get_display_total(self):
+		if self.atomic:
+			return self.get_num_entries()
+		else:
+			return self.get_total_value()
+
 	def get_xml(self, indent=''):
 		end_tag = ">\n" if len(self.traits) > 0 else "/>"
 		ret = '%s<traitlist %s%s' % (indent, self.get_attrs_xml(), end_tag)
