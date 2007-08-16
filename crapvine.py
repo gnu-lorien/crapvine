@@ -161,12 +161,12 @@ cur_repeat = None
 for i in range(len(keywords)):
 	if keywords[i].text == '/repeat':
 		assert cur_repeat == None
-		print 'Found repeat'
+		#print 'Found repeat'
 		cur_repeat = Keyword()
 		cur_repeat.end = keywords[i].end
 	elif keywords[i].text == 'repeat':
 		assert cur_repeat != None
-		print 'End repeat'
+		#print 'End repeat'
 		cur_repeat.begin = keywords[i].begin
 		cur_repeat.text = "%s" % (out_str[cur_repeat.begin+8:cur_repeat.end-8])
 		repeat_blocks.append(cur_repeat)
@@ -211,7 +211,7 @@ def expandinate_repeat_block(repeat_block, out_str):
 	for k in keywords:
 		tl = gimme_da_traitlist(translate_iterable_name(k.text.lower()))
 		if tl:
-			print tl.name.lower()
+			#print tl.name.lower()
 			traitlists[tl.name.lower()] = tl
 			traitlist_iters[tl.name.lower()] = tl.get_iter_first()
 
@@ -225,8 +225,8 @@ def expandinate_repeat_block(repeat_block, out_str):
 		l_str = "%s" % (repeat_block.text)
 		#print "l_str at start\n%s" % (l_str)
 		keywords = get_keywords(l_str)
-		keywords.reverse()
 		to_increment = {}
+		replaces = []
 		for k in keywords:
 			tokens = k.text.lower().split(' ')
 			mod = ''
@@ -234,7 +234,7 @@ def expandinate_repeat_block(repeat_block, out_str):
 			if tokens[0].find('+') == 0:
 				mod = '+'
 				tl_name = tokens[0][1:]
-				print tl_name
+				#print tl_name
 			tl_name = translate_iterable_name(tl_name)
 			if traitlist_iters.has_key(tl_name):
 				tl = traitlists[tl_name]
@@ -243,14 +243,22 @@ def expandinate_repeat_block(repeat_block, out_str):
 				else:
 					display = tl.display
 				iter = traitlist_iters[tl_name]
+				if mod == '+' and iter:
+					iter = tl.iter_next(iter)
+					traitlist_iters[tl_name] = iter
 				if iter:
 					trait = tl.get_item_from_path(tl.get_path(iter))
 					rep_str = "%s" % (trait.display_str(display))
-					l_str = "%s%s%s" % (l_str[:k.begin], rep_str, l_str[k.end+1:])
+					replaces.append((k.begin, rep_str, k.end+1))
+					#l_str = "%s%s%s" % (l_str[:k.begin], rep_str, l_str[k.end+1:])
 					#print "l_str on keyword %s with %s\n%s" % (k.text.lower(), rep_str, l_str)
 					to_increment[tl_name] = True
 				else:
-					l_str = "%s%s" % (l_str[:k.begin], l_str[k.end+1:])
+					replaces.append((k.begin, '', k.end+1))
+					#l_str = "%s%s" % (l_str[:k.begin], l_str[k.end+1:])
+		replaces.reverse()
+		for rep in replaces:
+			l_str = "%s%s%s" % (l_str[:rep[0]], rep[1], l_str[rep[2]:])
 		num_none = 0
 		for n in to_increment.keys():
 			iter = traitlist_iters[n]
@@ -259,7 +267,7 @@ def expandinate_repeat_block(repeat_block, out_str):
 				traitlist_iters[n] = tl.iter_next(iter)
 			else:
 				++num_none
-		print "Num none: %d | to_increment: %d" % (num_none, len(to_increment))
+		#print "Num none: %d | to_increment: %d" % (num_none, len(to_increment))
 		if num_none == len(to_increment):
 			keep_going = False
 		else:
@@ -307,7 +315,7 @@ for keyword in keywords:
 	if tokens[0].lower() == 'tally':
 		if len(tokens) == 2:
 			try:
-				print "%s" % (tokens[1].lower())
+				#print "%s" % (tokens[1].lower())
 				tally_val = c[tokens[1].lower()]
 				rep_str = "%s" % (dot * int(round(float(tally_val))))
 				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
@@ -341,19 +349,40 @@ for keyword in keywords:
 		out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 
 # Parse col keyword
-keywords = get_keywords(out_str)
-keywords.reverse()
-for keyword in keywords:#keywords[len(keywords) - 5:]:
-	tokens = keyword.text.split(' ')
-	if tokens[0].lower() == 'col':
-		width = int(tokens[1])
-		#print width
-		newline_index = out_str.rfind("\n", 0, keyword.begin)
-		#print newline_index
-		#print out_str[keyword.end+1:keyword.end+30]
-		justified_str = out_str[newline_index+1:keyword.begin].rstrip().ljust(width, ' ')
-		#print "Len: %d\n|%s|" % (len(justified_str), justified_str)
-		out_str = "%s%s%s" % (out_str[:newline_index+1], justified_str, out_str[keyword.end+1:])
+lines = out_str.split("\n")
+out_lines = []
+for line in lines:
+	keywords = get_keywords(line)
+	replaces = []
+	gathered_offset = 0
+	#print line
+	for keyword in keywords:
+		tokens = keyword.text.split(' ')
+		if tokens[0].lower() == 'col':
+			width = int(tokens[1])
+			#print width
+			#newline_index = out_str.rfind("\n", 0, keyword.begin)
+			#print newline_index
+			#print out_str[keyword.end+1:keyword.end+30]
+			#justified_str = line[:keyword.begin].rstrip().ljust(width, ' ')
+			#print "Len: %d\n|%s|" % (len(justified_str), justified_str)
+			line = "%s%s" % (line[:keyword.begin - gathered_offset], line[keyword.end+1 - gathered_offset:])
+			replaces.append((width, keyword.begin - gathered_offset))
+			gathered_offset += len(keyword.text) + 2
+	#if len(replaces) > 0:
+		#print "Beginning replace for:\n%s" % (line)
+	gathered_offset = 0
+	for rep in replaces:
+		width = rep[0]
+		begin = rep[1] + gathered_offset
+		#print "Chunk: |%s|" % (line[:begin])
+		old_len = len(line[:begin])
+		justified_str = line[:begin].rstrip().ljust(width, ' ')
+		gathered_offset += len(justified_str) - old_len
+		line = "%s%s" % (justified_str, line[begin:])
+	out_lines.append(line)
+	#print line
+out_str = "\n".join(out_lines)
 
 with open('output.txt', 'w') as f:
 	f.write(out_str)

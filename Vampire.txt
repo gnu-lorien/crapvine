@@ -19,7 +19,7 @@ Morality Traits: [PathTraits] [Tally PathTraits TempPathTraits] [col 35] Conscie
 Aura:            [Aura] [AuraBonus]                             [col 35] Self-Control/Instinct: [SelfControl] [Tally SelfControl TempSelfControl]
                                                                 [col 35] Courage:         [Courage] [Tally Courage TempCourage]
 
-[repeat][Physical 8][tab][Physical][col 35][+Physical 8][tab][Physical]
+[repeat][Physical 8][col 5][Physical][col 35][+Physical 8][col 40][Physical]
 [/repeat]
 
 [#Physical] Physical Traits:      [col 35] [#PhysicalNeg] Negative Physical Traits:
