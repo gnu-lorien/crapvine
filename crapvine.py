@@ -34,14 +34,11 @@ from template import Template
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]
 	column_attrs  = [ 'name', 'sect', 'clan', 'npc' , 'status' ]
-	def __init__(self, filename=None):
+	def __init__(self):
 		self.xml = gtk.glade.XML(configuration.get_character_tree_xml_file_path())
 		self.treeCharacters = None
 
 		self.loader = grapevine_xml.GEX()
-		if filename:
-			self.__load_file(filename)
-			self.__reload_tree()
 
 		window = self.xml.get_widget('characterTreeWindow')
 		window.show()
@@ -53,6 +50,9 @@ class CharacterTree:
 			'gtk_main_quit' : lambda *w: gtk.main_quit()
 		})
 
+	def load_file(self, filename):
+		self.__load_file(filename)
+		self.__reload_tree()
 	def __load_file(self, filename):
 		try:
 			self.loader.load_from_file(filename)
@@ -60,7 +60,6 @@ class CharacterTree:
 			dlg = gtk.MessageDialog(None, 0, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, traceback.format_exc())
 			dlg.run()
 			dlg.hide()
-
 	def __reload_tree(self):
 		self.treeCharacters = self.xml.get_widget('treeCharacters')
 		for i in range(len(self.column_labels)):
@@ -106,22 +105,48 @@ class CharacterTree:
 print "Muahaha"
 
 parser = OptionParser()
-parser.add_option("-f", "--file", dest="filename", help="Chronicle or individual XML gex file to load initially", metavar="FILEPATH")
+parser.add_option("-f", "--gex-file", dest="filename", help="Chronicle or individual XML gex file to load initially", metavar="FILEPATH")
 parser.add_option("-n", "--no-chronicle", action="store_true", dest="no_chronicle", default=False, help="Don't show the whole chronicle")
-parser.add_option("-s", "--show-character", dest="character_name", help="Show character on startup", metavar="CHARACTER_NAME")
+parser.add_option("-s", "--show-character", action="store_true", dest="show_character", help="Show character on startup")
+parser.add_option("-c", "--character", dest="character_name", help="Default character name", metavar="CHARACTER_NAME")
+parser.add_option("-t", "--template", dest="template_filename", help="Default template file for output processing", metavar="TEMPLATE_FILEPATH")
+parser.add_option("-o", "--output-file", dest="output_filename", help="File for processing output", metavar="OUTPUT_FILEPATH")
+parser.add_option("-p", "--process-template", action="store_true", dest="process_template", help="Process the template file into output file and quit")
 (options, args) = parser.parse_args()
 
-ct = None
+# Detect errors in command line usage
+if options.process_template:
+	if not options.filename:
+		parser.error("Must specify a GEX file to open for processing")
+	if not (options.template_filename and options.output_filename and options.character_name):
+		parser.error("Cannot process a template without specifying the template filepath and output pfilepath")
+if options.show_character:
+	if not options.filename:
+		parser.error("You must specify a GEX file to show a character initially")
+	if not options.character_name:
+		parser.error("You must specificy a character to show using the --character option")
 
-if not options.no_chronicle:
-	ct = CharacterTree(options.filename)
+character_tree = None
+character = None
+top_loader = grapevine_xml.GEX()
 
-c = None
-if options.filename and options.character_name:
-	c = ct.loader.vampire_loader.vampires[options.character_name]
-	CharacterWindow(c)
+if options.process_template:
+	top_loader.load_from_file(options.filename)
+	t = Template(
+		options.template_filename,
+		top_loader.vampire_loader.vampires[options.character_name],
+		options.output_filename)
+	t.save()
+else:
+	if not options.no_chronicle:
+		character_tree = CharacterTree()
+		if options.filename:
+			character_tree.load_file(options.filename)
+	if options.show_character:
+		if character_tree:
+			character = character_tree.loader.vampire_loader.vampires[options.character_name]
+		else:
+			character = top_loader.vampire_loader.vampires[options.character_name]
+		CharacterWindow(character)
 
-t = Template('Vampire.txt', c, 'output.txt')
-t.save()
-
-gtk.main()
+	gtk.main()
