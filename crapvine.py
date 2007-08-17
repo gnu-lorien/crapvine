@@ -135,7 +135,8 @@ if options.process_template:
 	t = Template(
 		options.template_filename,
 		top_loader.vampire_loader.vampires[options.character_name],
-		options.output_filename)
+		options.output_filename
+		)
 	t.save()
 else:
 	if not options.no_chronicle:

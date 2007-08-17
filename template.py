@@ -25,10 +25,11 @@ class Keyword(object):
 		end = 0
 
 class Template(object):
-	def __init__(self, template_filepath, character, output_filepath):
+	def __init__(self, template_filepath, character, output_filepath, progress = None):
 		self.character = character
 		self.template_filepath = template_filepath
 		self.output_filepath = output_filepath
+		self.__progress = progress
 
 	def get_keywords(self, out_str):
 			keywords = []
@@ -77,10 +78,34 @@ class Template(object):
 				return tl
 		return None
 
-	def save(self):
+	def __start_progress(self, total_passes, text=None):
+		if self.__progress:
+			self.__progress.set_pulse_step(100.0 / float(total_passes) / 100.0)
+			self.__progress.show_now()
+		else:
+			my_out = ''
+			if text:
+				my_out = ". %s" % (text)
+			print "Processing %s%s" % (self.character.name, my_out)
+			self.__total_passes = total_passes
+			self.__current_pass = 0
+	def __increment_progress(self, text=None):
+		if self.__progress:
+			if text:
+				self.__progress.set_text(text)
+			self.__progress.pulse()
+		else:
+			self.__current_pass += 1
+			my_out = ''
+			if text:
+				my_out = ". %s" % (text)
+			print "%d%% complete%s" % ((100.0 / self.__total_passes) * self.__current_pass, my_out)
+	def save(self, progress=None):
+		self.__start_progress(8, "Reading file %s" % (self.template_filepath))
 		in_str = ''
 		with open(self.template_filepath) as f:
 			in_str = f.read()
+		self.__increment_progress('Processing repeats')
 
 		out_str = "%s" % (in_str)
 
@@ -105,6 +130,7 @@ class Template(object):
 
 		for repeat_block in repeat_blocks:
 			out_str = self.__expandinate_repeat_block(repeat_block, out_str)
+		self.__increment_progress('Processing attributes')
 
 		# Parse attributes
 		keywords = self.get_keywords(out_str)
@@ -117,6 +143,7 @@ class Template(object):
 			except AttributeError:
 				# It's either incorrect or a language keyword
 				pass
+		self.__increment_progress('Processing traitlist counts')
 
 		# Parse iterable counts
 		keywords = self.get_keywords(out_str)
@@ -130,6 +157,7 @@ class Template(object):
 				if tl:
 					rep_str = "%d" % (tl.get_display_total())
 				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
+		self.__increment_progress('Processing tallies')
 
 		# Parse tally keyword
 		dot = 'O'
@@ -165,6 +193,7 @@ class Template(object):
 						out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 					except AttributeError:
 						pass
+		self.__increment_progress('Processing tabs')
 
 		# Parse tab keyword
 		keywords = self.get_keywords(out_str)
@@ -174,6 +203,7 @@ class Template(object):
 			if tokens[0].lower() == 'tab':
 				rep_str = "\t"
 				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
+		self.__increment_progress('Formatting columns')
 
 		# Parse col keyword
 		lines = out_str.split("\n")
@@ -210,9 +240,11 @@ class Template(object):
 			out_lines.append(line)
 			#print line
 		out_str = "\n".join(out_lines)
+		self.__increment_progress("Writing file %s" % (self.output_filepath))
 
 		with open(self.output_filepath, 'w') as f:
 			f.write(out_str)
+		self.__increment_progress()
 
 	def __expandinate_repeat_block(self, repeat_block, out_str):
 		pre_string = out_str[:repeat_block.begin]
