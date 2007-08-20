@@ -26,9 +26,7 @@ class NumberAsTextWithTemporaryAttributeBox:
 	def __init__(self, menu_name, display_name, tmp_name, overlord, character):
 		self.xml = gtk.glade.XML(self.__glade_xml_file, 'numberastextwithtemporaryattribute')
 		self.vbox = self.xml.get_widget('numberastextwithtemporaryattribute')
-		self.current_value = self.xml.get_widget('current_value')
 		self.display = self.xml.get_widget('display')
-		self.temporary_value = self.xml.get_widget('temporary_value')
 		self.label = self.xml.get_widget('lblNumberAsTextWithTemporaryAttributeName')
 		self.permanent = self.xml.get_widget('permanent')
 		self.temporary = self.xml.get_widget('temporary')
@@ -39,17 +37,13 @@ class NumberAsTextWithTemporaryAttributeBox:
 		self.character = character
 
 		self.label.set_label(self.display_name.capitalize())
-		self.current_value.set_label(self.character[self.display_name])
-		self.temporary_value.set_label(self.character[self.temporary_name])
-
 		self.permanent.set_value(float(self.character[self.display_name]))
 		self.temporary.set_value(float(self.character[self.temporary_name]))
+		self.__update_special_display()
 
 		self.xml.signal_autoconnect({
 			'on_permanent_value_changed' : self.on_permanent_value_changed,
-			'on_temporary_value_changed' : self.on_temporary_value_changed,
-			'on_increment' : self.on_increment,
-			'on_decrement' : self.on_decrement
+			'on_temporary_value_changed' : self.on_temporary_value_changed
 		})
 
 	def add_menu_item(self, menu_item):
@@ -63,19 +57,10 @@ class NumberAsTextWithTemporaryAttributeBox:
 		self.__update_special_display()
 
 	def __update_special_display(self):
-		self.current_value.set_label(self.character[self.display_name])
-		self.temporary_value.set_label(self.character[self.temporary_name])
 		prm_val = int(round(float(self.character[self.display_name])))
 		tmp_val = int(round(float(self.character[self.temporary_name])))
 		rep_str = Template.temporary_tally_str(prm_val, tmp_val, wrap=10)
 		self.display.set_label(rep_str)
-
-	def on_increment(self, widget=None):
-		print 'with temp incr'
-		self.current_value.set_label(unicode(float(self.current_value.get_label()) + 1))
-	def on_decrement(self, widget=None):
-		print 'with temp decr'
-		self.current_value.set_label(unicode(float(self.current_value.get_label()) - 1))
 
 	def get_vbox(self):
 		return self.vbox
