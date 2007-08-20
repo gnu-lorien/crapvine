@@ -67,7 +67,7 @@ class NumberAsTextWithTemporaryAttributeBox:
 		self.temporary_value.set_label(self.character[self.temporary_name])
 		prm_val = int(round(float(self.character[self.display_name])))
 		tmp_val = int(round(float(self.character[self.temporary_name])))
-		rep_str = Template.temporary_tally_str(prm_val, tmp_val)
+		rep_str = Template.temporary_tally_str(prm_val, tmp_val, wrap=10)
 		self.display.set_label(rep_str)
 
 	def on_increment(self, widget=None):

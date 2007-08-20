@@ -321,15 +321,36 @@ class Template(object):
 		return "%s%s%s" % (pre_string, imprint_str, post_string)
 
 	@classmethod
-	def temporary_tally_str(cls, prm_val, tmp_val, dot='O', emptydot='/', tempdot='+'):
+	def temporary_tally_str(cls, prm_val, tmp_val, dot='o', emptydot='/', tempdot='+', wrap=0, doubledot='8', doubleemptydot='X', doubletempdot='#'):
 		if prm_val == tmp_val:
-			return "%s" % (dot * prm_val)
+			if wrap == 0 or prm_val < wrap:
+				return "%s" % (dot * prm_val)
+			else:
+				num_doubles = prm_val / 2
+				num_singles = prm_val % 2
+				return "%s%s" % (doubledot * num_doubles, dot * num_singles)
 		elif prm_val > tmp_val:
 			tmp_dots = prm_val - tmp_val
 			prm_dots = prm_val - tmp_dots
-			return "%s%s" % (dot * prm_dots, emptydot * tmp_dots)
+			if wrap == 0 or prm_val < wrap:
+				return "%s%s" % (dot * prm_dots, emptydot * tmp_dots)
+			else:
+				return "%s%s%s%s" % (
+					doubledot * (prm_dots / 2),
+					doubledot * (prm_dots % 2),
+					doubleemptydot * (tmp_dots / 2),
+					doubleemptydot * (tmp_dots % 2)
+				)
 		elif prm_val < tmp_val:
 			tmp_dots = tmp_val - prm_val
-			return "%s%s" % (dot * prm_val, tempdot * tmp_dots)
+			if wrap == 0 or (prm_val + tmp_dots) < wrap:
+				return "%s%s" % (dot * prm_val, tempdot * tmp_dots)
+			else:
+				return "%s%s%s%s" % (
+					doubledot * (prm_val / 2),
+					doubledot * (prm_val % 2),
+					doubletempdot * (tmp_dots / 2),
+					doubletempdot * (tmp_dots % 2)
+				)
 		return ''
 
