@@ -338,7 +338,6 @@ class Trait(Attributed):
 			for i in range(num_dots):
 				ret += "%s" % (dot)
 			return ret
-
 	def display_str(self, display="1", dot="O"):
 		show_note = self.__show_note()
 		show_val  = self.__show_val()

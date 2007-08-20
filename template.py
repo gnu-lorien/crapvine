@@ -319,3 +319,17 @@ class Template(object):
 				imprints.append(l_str)
 		imprint_str = ''.join(imprints)
 		return "%s%s%s" % (pre_string, imprint_str, post_string)
+
+	@classmethod
+	def temporary_tally_str(cls, prm_val, tmp_val, dot='O', emptydot='/', tempdot='+'):
+		if prm_val == tmp_val:
+			return "%s" % (dot * prm_val)
+		elif prm_val > tmp_val:
+			tmp_dots = prm_val - tmp_val
+			prm_dots = prm_val - tmp_dots
+			return "%s%s" % (dot * prm_dots, emptydot * tmp_dots)
+		elif prm_val < tmp_val:
+			tmp_dots = tmp_val - prm_val
+			return "%s%s" % (dot * prm_val, tempdot * tmp_dots)
+		return ''
+

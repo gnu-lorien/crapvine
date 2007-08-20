@@ -19,6 +19,7 @@ import gtk
 import gtk.glade
 import gobject
 import configuration
+from template import Template
 
 class NumberAsTextWithTemporaryAttributeBox:
 	__glade_xml_file = configuration.get_number_as_text_with_temporary_attribute_box_xml_file_path()
@@ -29,6 +30,8 @@ class NumberAsTextWithTemporaryAttributeBox:
 		self.display = self.xml.get_widget('display')
 		self.temporary_value = self.xml.get_widget('temporary_value')
 		self.label = self.xml.get_widget('lblNumberAsTextWithTemporaryAttributeName')
+		self.permanent = self.xml.get_widget('permanent')
+		self.temporary = self.xml.get_widget('temporary')
 		self.menu_name = menu_name
 		self.display_name = display_name
 		self.temporary_name = tmp_name
@@ -39,13 +42,33 @@ class NumberAsTextWithTemporaryAttributeBox:
 		self.current_value.set_label(self.character[self.display_name])
 		self.temporary_value.set_label(self.character[self.temporary_name])
 
+		self.permanent.set_value(float(self.character[self.display_name]))
+		self.temporary.set_value(float(self.character[self.temporary_name]))
+
 		self.xml.signal_autoconnect({
+			'on_permanent_value_changed' : self.on_permanent_value_changed,
+			'on_temporary_value_changed' : self.on_temporary_value_changed,
 			'on_increment' : self.on_increment,
 			'on_decrement' : self.on_decrement
 		})
 
 	def add_menu_item(self, menu_item):
 		self.entry.set_text(menu_item.name)
+
+	def on_permanent_value_changed(self, entry):
+		self.character[self.display_name] = entry.get_text()
+		self.__update_special_display()
+	def on_temporary_value_changed(self, entry):
+		self.character[self.temporary_name] = entry.get_text()
+		self.__update_special_display()
+
+	def __update_special_display(self):
+		self.current_value.set_label(self.character[self.display_name])
+		self.temporary_value.set_label(self.character[self.temporary_name])
+		prm_val = int(round(float(self.character[self.display_name])))
+		tmp_val = int(round(float(self.character[self.temporary_name])))
+		rep_str = Template.temporary_tally_str(prm_val, tmp_val)
+		self.display.set_label(rep_str)
 
 	def on_increment(self, widget=None):
 		print 'with temp incr'
