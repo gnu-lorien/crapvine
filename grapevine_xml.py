@@ -83,10 +83,32 @@ class Attributed(object):
 			if self[name] == self.defaults[name]:
 				return True
 		return False
+	def __is_valid_grapevine_float(self, value):
+		"""Grapevine can store an integer value, a float value, a range specified by
+		by a '-', and two option values. Any number style string needs to be checked
+		for all of these options.
+
+		returns True if value should be accepted by as a grapevine numeric"""
+		try:
+			float(value)
+			return True
+		except ValueError:
+			can_use = False
+			for separator_str in ['-', ' or ']:
+				for innerval in value.split(separator_str):
+					try:
+						float(innerval)
+						can_use = True
+					except ValueError:
+						pass
+			return can_use
 	def __simplify_float_str(self, value):
-		if float(value) == round(float(value)):
-			return unicode(int(round(float(value))))
-		else:
+		try:
+			if float(value) == round(float(value)):
+				return unicode(int(round(float(value))))
+			else:
+				return value
+		except ValueError:
 			return value
 	def get_attrs_xml(self):
 		attrs_strs = []
@@ -129,19 +151,8 @@ class Attributed(object):
 
 	def __setattr__(self, name, value):
 		if name in self.number_as_text_attrs:
-			try:
-				float(value)
-			except ValueError:
-				can_use = False
-				for separator_str in ['-', ' or ']:
-					for innerval in value.split(separator_str):
-						try:
-							float(innerval)
-							can_use = True
-						except ValueError:
-							pass
-				if not can_use:
-					raise ValueError('Cannot set attribute %s to value %s, no valid numbers' % (name, value))
+			if not self.__is_valid_grapevine_float(value):
+				raise ValueError('Cannot set attribute %s to value %s, no valid numbers' % (name, value))
 		# Check date_attrs
 		# Check bool_attrs
 		object.__setattr__(self, name, value)

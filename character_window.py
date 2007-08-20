@@ -69,7 +69,7 @@ class CharacterWindow:
 		for nat_name in self.character.number_as_text_attrs:
 			my_win = self.xml.get_widget('number_as_text_attr_%s' % (nat_name))
 			if my_win:
-				my_vbox = NumberAsTextWithTemporaryAttributeBox(nat_name, nat_name, nat_name, self.overlord, self.character)
+				my_vbox = NumberAsTextAttributeBox(nat_name, nat_name, self.overlord, self.character)
 				my_win.add(my_vbox.get_vbox())
 
 		for my_win in self.xml.get_widget_prefix('number_as_text_with_temporary_attr_'):

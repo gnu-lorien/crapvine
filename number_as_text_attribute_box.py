@@ -33,10 +33,10 @@ class NumberAsTextAttributeBox:
 		self.character = character
 
 		self.label.set_label(self.display_name.capitalize())
-		self.entry.set_text(self.character[self.display_name])
+		self.entry.set_value(float(self.character[self.display_name]))
 
 		self.xml.signal_autoconnect({
-			'on_text_changed': self.on_text_changed,
+			'on_value_changed': self.on_text_changed,
 			'demand_menu'  : self.demand_menu,
 			'on_increment' : self.on_increment,
 			'on_decrement' : self.on_decrement
