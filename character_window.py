@@ -30,7 +30,8 @@ from number_as_text_attribute_box import NumberAsTextAttributeBox
 from number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporaryAttributeBox
 from menu_navigator import MenuNavigator
 
-from vampire import Trait
+from vampire import Trait, ExperienceEntry
+from time import strptime
 
 import pdb
 
@@ -91,7 +92,8 @@ class CharacterWindow:
 			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated,
 			'on_save_as' : self.on_save_as,
 			'add_custom_entry' : self.add_custom_entry,
-			'add_note_to_entry' : self.add_note_to_entry
+			'add_note_to_entry' : self.add_note_to_entry,
+			'add_experience' : self.add_experience
 			}
 		)
 
@@ -125,6 +127,39 @@ class CharacterWindow:
 		if response == gtk.RESPONSE_ACCEPT:
 			print 'Accepted'
 			trait['note'] = dlg_xml.get_widget('note').get_text()
+	def add_experience(self, widget=None):
+		dlg_xml = gtk.glade.XML(configuration.get_add_experience_xml_file_path())
+		dlg = dlg_xml.get_widget('add_experience_entry')
+		dlg_xml.get_widget('type').set_active(0)
+		response = dlg.run()
+		print response
+		dlg.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			print 'Accepted'
+			e = ExperienceEntry()
+			buffer = dlg_xml.get_widget('reason').get_buffer()
+			e.reason = buffer.get_text(
+				buffer.get_start_iter(),
+				buffer.get_end_iter(),
+				False)
+			e.change = dlg_xml.get_widget('change').get_value()
+			e.type = dlg_xml.get_widget('type').get_active()
+			try:
+				e.date = dlg_xml.get_widget('date_combo').get_active_text()
+				strptime(e.date)
+			except ValueError, exc:
+				dlg = gtk.MessageDialog(
+					None,
+					0,
+					gtk.MESSAGE_ERROR,
+					gtk.BUTTONS_OK,
+					str(exc)
+				)
+				dlg.run()
+				dlg.hide()
+				
+			print e
+
 
 	def on_save_as(self, menuitem):
 		file_chooser = gtk.FileChooserDialog('Choose Where to Save %s' % (self.character.name), None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))

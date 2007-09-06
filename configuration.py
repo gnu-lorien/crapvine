@@ -24,6 +24,9 @@ def get_add_custom_entry_xml_file_path():
 def get_add_note_to_entry_xml_file_path():
 	return path.join(get_base_interface_path(), 'AddNoteToEntry.glade')
 
+def get_add_experience_xml_file_path():
+	return path.join(get_base_interface_path(), 'AddExperienceEntry.glade')
+
 
 def get_menu_file_path():
 	return path.join(get_base_interface_path(), 'menus.gvm')
