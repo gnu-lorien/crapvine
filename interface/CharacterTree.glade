@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Thu Aug  2 17:40:42 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Thu Sep  6 06:45:04 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="characterTreeWindow">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -185,7 +185,7 @@
                 <property name="headers_clickable">True</property>
                 <property name="reorderable">True</property>
                 <property name="enable_grid_lines">GTK_TREE_VIEW_GRID_LINES_BOTH</property>
-                <signal name="row_activated" handler="on_treeCharacters_row_activated"/>
+                <signal name="row_activated" handler="on_tree_characters_row_activated"/>
               </widget>
             </child>
           </widget>
