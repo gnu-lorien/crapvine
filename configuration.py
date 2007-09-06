@@ -1,7 +1,8 @@
 from os import path
+from os.path import dirname
 
 def get_base_file_path():
-	return '/home/lorien/tmp/crapvine'
+	return dirname(__file__)
 def get_base_interface_path():
 	return path.join(get_base_file_path(), 'interface')
 
