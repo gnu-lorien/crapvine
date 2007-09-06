@@ -1,0 +1,5 @@
+recursive-include exchange_samples *.gex *.gv3 README *.py
+recursive-include interface *.glade *.gvm
+include *.py
+include MANIFEST.in
+include COPYING
