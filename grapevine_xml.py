@@ -115,7 +115,7 @@ class Attributed(object):
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.required_attrs if not self.__attr_default(name)])
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.text_attrs if not self.__attr_default(name)])
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self.__simplify_float_str(self[name]))) for name in self.number_as_text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.date_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in self.date_attrs if not self.__attr_default(name)])
 		for bool_attr in self.bool_attrs:
 			if not self.__attr_default(bool_attr):
 				my_bool = 'yes' if self[bool_attr] else 'no'

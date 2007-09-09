@@ -31,7 +31,7 @@ from number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporar
 from menu_navigator import MenuNavigator
 
 from vampire import Trait, ExperienceEntry
-from time import strptime
+from dateutil.parser import parse
 
 import pdb
 
@@ -144,20 +144,7 @@ class CharacterWindow:
 				False)
 			e.change = dlg_xml.get_widget('change').get_value()
 			e.type = dlg_xml.get_widget('type').get_active()
-			try:
-				e.date = dlg_xml.get_widget('date_combo').get_active_text()
-				strptime(e.date)
-			except ValueError, exc:
-				dlg = gtk.MessageDialog(
-					None,
-					0,
-					gtk.MESSAGE_ERROR,
-					gtk.BUTTONS_OK,
-					str(exc)
-				)
-				dlg.run()
-				dlg.hide()
-				
+			e.date = parse(dlg_xml.get_widget('date_combo').get_active_text())
 			print e
 
 
