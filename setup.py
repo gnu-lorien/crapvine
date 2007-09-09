@@ -9,5 +9,6 @@ setup (name='crapvine',
       license='GPLv3',
       packages=['crapvine'],
       package_dir={'crapvine': '.'},
-      package_data={'crapvine': ['exchange_samples/*', 'interface/*']}
+      package_data={'crapvine': ['exchange_samples/*', 'interface/*'],
+      requires=['dateutil']}
 )
