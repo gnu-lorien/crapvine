@@ -20,6 +20,7 @@ import gtk
 from xml.sax.saxutils import quoteattr, unescape
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
+from dateutil.parser import parse
 
 class AttributeReader:
 	def __init__(self, attrs):
@@ -142,7 +143,7 @@ class Attributed(object):
 			if name in self.number_as_text_attrs:
 				return '0' 
 			if name in self.date_attrs:
-				return ''
+				return DateTime()
 			if name in self.bool_attrs:
 				return 'no'
 			if name in self.text_children:
@@ -154,6 +155,9 @@ class Attributed(object):
 			if not self.__is_valid_grapevine_float(value):
 				raise ValueError('Cannot set attribute %s to value %s, no valid numbers' % (name, value))
 		# Check date_attrs
+		if name in self.date_attrs:
+			object.__setattr__(self, name, parse(value))
+			return
 		# Check bool_attrs
 		object.__setattr__(self, name, value)
 
