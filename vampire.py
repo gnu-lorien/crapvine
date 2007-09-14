@@ -15,17 +15,8 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from xml.sax import ContentHandler
-import gtk
-import gobject
-import string
-import copy
 import pdb
-from grapevine_xml import AttributeReader, Attributed, AttributedListModel
-from xml.sax import make_parser
-from xml.sax.handler import feature_namespaces
-from xml.sax.saxutils import unescape, escape
-import operator
+from grapevine_xml import Attributed, AttributedListModel
 
 class Vampire(Attributed):
 	required_attrs = ['name']
