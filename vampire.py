@@ -319,7 +319,7 @@ class TraitList(AttributedListModel):
 		if self.atomic:
 			self.traits.append(trait)
 			path = (len(self.traits) - 1, )
-			self.emit('row-inserted', path, self.get_iter(path))
+			self.row_inserted(path, self.get_iter(path))
 		else:
 			if trait.name in [t.name for t in self.traits]:
 				for en in enumerate(self.traits):
@@ -333,11 +333,11 @@ class TraitList(AttributedListModel):
 						if t.note == '':
 							t.note = trait.note
 						path = (idx, )
-						self.emit('row-changed', path, self.get_iter(path))
+						self.row_changed(path, self.get_iter(path))
 			else:
 				self.traits.append(trait)
 				path = (len(self.traits) - 1, )
-				self.emit('row-inserted', path, self.get_iter(path))
+				self.row_inserted(path, self.get_iter(path))
 
 	def increment_trait(self, trait_name):
 		if trait_name in [t.name for t in self.traits]:
@@ -350,7 +350,7 @@ class TraitList(AttributedListModel):
 					except ValueError:
 						t.val = '1'
 					path = (idx, )
-					self.emit('row-changed', path, self.get_iter(path))
+					self.row_changed(path, self.get_iter(path))
 		else:
 			raise 'Unknown trait'
 
@@ -363,14 +363,14 @@ class TraitList(AttributedListModel):
 					if t.val == '1':
 						del self.traits[idx]
 						path = (idx, )
-						self.emit('row-deleted', path)
+						self.row_deleted(path)
 					else:
 						try:
 							t.val = str(float(t.val) - 1)
 						except ValueError:
 							t.val = '1'
 						path = (idx, )
-						self.emit('row-changed', path, self.get_iter(path))
+						self.row_changed(path, self.get_iter(path))
 		else:
 			raise 'Unknown trait'
 
