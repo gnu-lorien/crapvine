@@ -144,8 +144,9 @@ class CharacterWindow:
 				False)
 			e.change = dlg_xml.get_widget('change').get_value()
 			e.type = dlg_xml.get_widget('type').get_active()
-			e.date = parse(dlg_xml.get_widget('date_combo').get_active_text())
+			e.date = dlg_xml.get_widget('date_combo').get_active_text()
 			print e
+			self.character.experience.prepend_entry(e)
 
 
 	def on_save_as(self, menuitem):

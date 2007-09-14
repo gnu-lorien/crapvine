@@ -21,6 +21,7 @@ from xml.sax.saxutils import quoteattr, unescape
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
 from dateutil.parser import parse
+from datetime import datetime
 
 class AttributeReader:
 	def __init__(self, attrs):
@@ -143,7 +144,7 @@ class Attributed(object):
 			if name in self.number_as_text_attrs:
 				return '0' 
 			if name in self.date_attrs:
-				return DateTime()
+				return datetime.now()
 			if name in self.bool_attrs:
 				return 'no'
 			if name in self.text_children:

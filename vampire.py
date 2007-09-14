@@ -70,7 +70,7 @@ class VampireLoader(ContentHandler):
 				raise 'Entry without bounding Experience'
 			ent = ExperienceEntry()
 			ent.read_attributes(attrs)
-			self.current_experience.add_entry(ent)
+			self.current_experience.append_entry(ent, False)
 
 		elif name == 'entry':
 			pass
@@ -160,8 +160,23 @@ class Experience(AttributedListModel):
 		self.list = []
 		self.entries = self.list
 
-	def add_entry(self, entry):
+	def prepend_entry(self, entry, calculate_expenditures = True):
+		pdb.set_trace()
+		if calculate_expenditures:
+			entry.calculate_expenditures_from(self.list[0])
+		self.list = [ ]
+		self.list.append(entry)
+		self.list.extend(self.entries)
+		self.entries = self.list
+		path = (0,)
+		self.emit('row-inserted', path, self.get_iter(path))
+	def append_entry(self, entry, calculate_expenditures = True):
+		""" Don't support calculating yet because cascading up is hard """
 		self.entries.append(entry)
+		path = (len(self.list) - 1, )
+		self.emit('row-inserted', path, self.get_iter(path))
+	def add_entry_with_date_sort(self, entry, calculate_expenditures = True):
+		raise AttributeError('Not implemented')
 
 	def get_xml(self, indent=''):
 		end_tag = ">\n" if len(self.entries) > 0 else "/>"
@@ -188,6 +203,37 @@ class ExperienceEntry(Attributed):
 		return '%s<entry %s/>' % (indent, self.get_attrs_xml())
 	def __str__(self):
 		return self.get_xml()
+
+	def calculate_expenditures_from(self, next_entry):
+		t = int(self.type)
+		ne_u = float(next_entry.unspent)
+		ne_e = float(next_entry.earned)
+		s_c  = float(self.change)
+		s_u  = float(self.unspent)
+		s_e  = float(self.earned)
+		if self.type == 3:   # Spend
+			self.unspent = str(ne_u - s_c)
+			self.earned = "%s" % next_entry.earned
+		elif self.type == 0: # Earn
+			self.unspent = str(ne_u + s_c)
+			self.earned  = str(ne_e + s_c)
+		elif self.type == 4: # Unspend
+			self.unspent = str(ne_u + s_c)
+			self.earned  = "%s" % next_entry.earned
+		elif self.type == 1: # Lose
+			self.unspent = "%s" % next_entry.earned
+			self.earned  = str(ne_e - s_c)
+		elif self.type == 2: # Set Earned To
+			self.unspent = "%s" % next_entry.unspent
+			self.earned  = "%s" % self.change
+		elif self.type == 5: # Set Unspent To
+			self.unspent = "%s" % self.change
+			self.earned  = "%s" % next_entry.earned
+		elif self.type == 6: # Comment
+			self.unspent = "%s" % next_entry.unspent
+			self.earned  = "%s" % next_entry.earned
+		else:
+			raise ValueError("Type must be an integer between 0 and 6")
 
 class TraitList(AttributedListModel):
 	required_attrs = ['name']
