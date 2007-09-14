@@ -189,6 +189,17 @@ class Experience(AttributedListModel):
 	def __str__(self):
 		return self.get_xml()
 
+	def on_get_value(self, index, column):
+		"""Override display value for type in the tree view"""
+		if self.column_attrs[column] == 'type':
+			if index > len(self.list):
+				return None
+			targ = self.list[index]
+			return ExperienceEntry.map_type_to_str(targ['type'])
+		else:
+			return super(Experience, self).on_get_value(index, column)
+
+
 class ExperienceEntry(Attributed):
 	required_attrs = []
 	text_attrs = ['reason']
@@ -234,6 +245,25 @@ class ExperienceEntry(Attributed):
 			self.earned  = "%s" % next_entry.earned
 		else:
 			raise ValueError("Type must be an integer between 0 and 6")
+
+	@staticmethod
+	def map_type_to_str(type):
+		if type == '0':
+			return 'Earn'
+		elif type == '1':
+			return 'Lose'
+		elif type == '2':
+			return 'Set Earned To'
+		elif type == '3':
+			return 'Spend'
+		elif type == '4':
+			return 'Unspend'
+		elif type == '5':
+			return 'Set Unspent To'
+		elif type == '6':
+			return 'Comment'
+		else:
+			return type
 
 class TraitList(AttributedListModel):
 	required_attrs = ['name']
