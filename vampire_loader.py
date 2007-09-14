@@ -15,9 +15,16 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# XML
+from xml.sax import ContentHandler
+from xml.sax.saxutils import unescape, escape
+
+# Vampire classes
+from vampire import Experience, ExperienceEntry, Trait, TraitList, Vampire
+
 def normalize_whitespace(text):
-    "Remove redundant whitespace from a string"
-    return ' '.join(text.split())
+	"Remove redundant whitespace from a string"
+	return ' '.join(text.split())
 
 class VampireLoader(ContentHandler):
 	def __init__(self):

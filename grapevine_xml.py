@@ -220,7 +220,7 @@ class GEX(object):
 		self.vampire_loader = None
 
 	def load_from_file(self, filename):
-		from vampire import VampireLoader
+		from vampire_loader import VampireLoader
 		self.filename = filename
 		self.vampire_loader = VampireLoader()
 		
