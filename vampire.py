@@ -164,15 +164,39 @@ class Experience(AttributedListModel):
 	def add_entry(self, entry, calculate_expenditures = True):
 		print "Appending entry %s" % entry.get_xml()
 		self.entries.append(entry)
+
+		# Signal the addition
 		path = (len(self.list) - 1, )
-		self.emit('row-inserted', path, self.get_iter(path))
+		self.row_inserted(path, self.get_iter(path))
+
+		# Sort the entries using date
+		old_list = []
+		old_list.extend(self.entries)
 		self.entries.sort(key=operator.attrgetter('date'))
+
+		# Signal the reordering
+		new_indices = []
+		for old_entry in old_list:
+			new_indices.append(self.entries.index(old_entry))
+		self.rows_reordered((), None, new_indices)
 		print "After-sort entry %s" % entry.get_xml()
+
+		# Calculate new earned/unspent totals
 		if calculate_expenditures:
 			idx = self.entries.index(entry)
 			if idx > 0:
 				entry.calculate_expenditures_from(self.entries[idx - 1])
-				print "After-calc entry %s" % entry.get_xml()
+			else:
+				entry.calculate_expenditures()
+			self.row_changed((idx,), self.get_iter((idx,)))
+			print "After-calc entry %s" % entry.get_xml()
+
+			for cascade_idx in range(idx + 1, len(self.entries)):
+				self.entries[cascade_idx].calculate_expenditures_from(
+					self.entries[cascade_idx - 1])
+				path = (cascade_idx,)
+				self.row_changed(path, self.get_iter(path))
+
 
 	def get_xml(self, indent=''):
 		end_tag = ">\n" if len(self.entries) > 0 else "/>"
@@ -210,6 +234,11 @@ class ExperienceEntry(Attributed):
 	def __str__(self):
 		return self.get_xml()
 
+	def calculate_expenditures(self):
+		tmp_e = ExperienceEntry()
+		tmp_e.unspent = '0'
+		tmp_e.earned  = '0'
+		self.calculate_expenditures_from(tmp_e)
 	def calculate_expenditures_from(self, next_entry):
 		t = int(self.type)
 		ne_u = float(next_entry.unspent)
@@ -217,25 +246,25 @@ class ExperienceEntry(Attributed):
 		s_c  = float(self.change)
 		s_u  = float(self.unspent)
 		s_e  = float(self.earned)
-		if self.type == 3:   # Spend
+		if t == 3:   # Spend
 			self.unspent = str(ne_u - s_c)
 			self.earned = "%s" % next_entry.earned
-		elif self.type == 0: # Earn
+		elif t == 0: # Earn
 			self.unspent = str(ne_u + s_c)
 			self.earned  = str(ne_e + s_c)
-		elif self.type == 4: # Unspend
+		elif t == 4: # Unspend
 			self.unspent = str(ne_u + s_c)
 			self.earned  = "%s" % next_entry.earned
-		elif self.type == 1: # Lose
+		elif t == 1: # Lose
 			self.unspent = "%s" % next_entry.earned
 			self.earned  = str(ne_e - s_c)
-		elif self.type == 2: # Set Earned To
+		elif t == 2: # Set Earned To
 			self.unspent = "%s" % next_entry.unspent
 			self.earned  = "%s" % self.change
-		elif self.type == 5: # Set Unspent To
+		elif t == 5: # Set Unspent To
 			self.unspent = "%s" % self.change
 			self.earned  = "%s" % next_entry.earned
-		elif self.type == 6: # Comment
+		elif t == 6: # Comment
 			self.unspent = "%s" % next_entry.unspent
 			self.earned  = "%s" % next_entry.earned
 		else:
