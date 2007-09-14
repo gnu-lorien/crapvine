@@ -30,7 +30,7 @@ from number_as_text_attribute_box import NumberAsTextAttributeBox
 from number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporaryAttributeBox
 from menu_navigator import MenuNavigator
 
-from vampire import Trait
+from trait import Trait
 from experience import ExperienceEntry
 from dateutil.parser import parse
 from datetime import datetime, date

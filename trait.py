@@ -15,6 +15,14 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import copy
+
+# PyGtk
+import gobject
+
+# Character Support
+from grapevine_xml import Attributed, AttributedListModel
+
 class TraitList(AttributedListModel):
 	required_attrs = ['name']
 	text_attrs = []

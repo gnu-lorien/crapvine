@@ -20,7 +20,8 @@ from xml.sax import ContentHandler
 from xml.sax.saxutils import unescape, escape
 
 # Vampire Support
-from vampire import Trait, TraitList, Vampire
+from vampire import  Vampire
+from trait import Trait, TraitList
 from experience import Experience, ExperienceEntry
 
 def normalize_whitespace(text):
