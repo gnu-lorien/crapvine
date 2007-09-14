@@ -25,6 +25,7 @@ from grapevine_xml import AttributeReader, Attributed, AttributedListModel
 from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
 from xml.sax.saxutils import unescape, escape
+import operator
 
 def normalize_whitespace(text):
     "Remove redundant whitespace from a string"
@@ -170,11 +171,14 @@ class Experience(AttributedListModel):
 		self.entries = self.list
 		path = (0,)
 		self.emit('row-inserted', path, self.get_iter(path))
+		self.entries.sort(key=operator.attrgetter('date'))
 	def append_entry(self, entry, calculate_expenditures = True):
 		""" Don't support calculating yet because cascading up is hard """
+		print "Appending entry %s" % entry.get_xml()
 		self.entries.append(entry)
 		path = (len(self.list) - 1, )
 		self.emit('row-inserted', path, self.get_iter(path))
+		self.entries.sort(key=operator.attrgetter('date'))
 	def add_entry_with_date_sort(self, entry, calculate_expenditures = True):
 		raise AttributeError('Not implemented')
 
@@ -198,7 +202,6 @@ class Experience(AttributedListModel):
 			return ExperienceEntry.map_type_to_str(targ['type'])
 		else:
 			return super(Experience, self).on_get_value(index, column)
-
 
 class ExperienceEntry(Attributed):
 	required_attrs = []
