@@ -32,6 +32,7 @@ from menu_navigator import MenuNavigator
 
 from vampire import Trait, ExperienceEntry
 from dateutil.parser import parse
+from datetime import datetime, date
 
 import pdb
 
@@ -131,6 +132,10 @@ class CharacterWindow:
 		dlg_xml = gtk.glade.XML(configuration.get_add_experience_xml_file_path())
 		dlg = dlg_xml.get_widget('add_experience_entry')
 		dlg_xml.get_widget('type').set_active(0)
+		date_widget = dlg_xml.get_widget('date')
+		now_date = datetime.now()
+		date_widget.select_month(now_date.month, now_date.year)
+		date_widget.select_day(now_date.day)
 		response = dlg.run()
 		print response
 		dlg.hide()
@@ -144,7 +149,10 @@ class CharacterWindow:
 				False)
 			e.change = dlg_xml.get_widget('change').get_value()
 			e.type = dlg_xml.get_widget('type').get_active()
-			e.date = dlg_xml.get_widget('date_combo').get_active_text()
+			date_tuple = date_widget.get_date()
+			print date_tuple
+			selected_date = date(date_tuple[0], date_tuple[1], date_tuple[2])
+			e.date = datetime.combine(selected_date, datetime.now().time())
 			print e
 			self.character.experience.prepend_entry(e)
 

@@ -152,7 +152,7 @@ class Experience(AttributedListModel):
 	defaults = {}
 	linked_defaults = {}
 	text_children = []
-	column_attrs = ['date', 'change', 'type', 'reason', 'unspent', 'earned']
+	column_attrs = ['date', 'change', 'type', 'unspent', 'earned', 'reason']
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
 	def __init__(self):

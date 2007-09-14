@@ -157,8 +157,9 @@ class Attributed(object):
 				raise ValueError('Cannot set attribute %s to value %s, no valid numbers' % (name, value))
 		# Check date_attrs
 		if name in self.date_attrs:
-			object.__setattr__(self, name, parse(value))
-			return
+			if not isinstance(value, datetime):
+				object.__setattr__(self, name, parse(value))
+				return
 		# Check bool_attrs
 		object.__setattr__(self, name, value)
 

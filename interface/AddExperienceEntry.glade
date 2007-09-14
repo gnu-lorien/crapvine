@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Thu Sep  6 07:37:50 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Thu Sep 13 23:23:09 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkDialog" id="add_experience_entry">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -26,16 +26,13 @@
               </widget>
             </child>
             <child>
-              <widget class="GtkComboBoxEntry" id="date_combo">
+              <widget class="GtkCalendar" id="date">
                 <property name="visible">True</property>
+                <property name="can_focus">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <child internal-child="entry">
-                  <widget class="GtkEntry" id="date_entry">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                  </widget>
-                </child>
+                <property name="year">2007</property>
+                <property name="month">8</property>
+                <property name="day">13</property>
               </widget>
               <packing>
                 <property name="fill">False</property>
