@@ -134,7 +134,7 @@ class CharacterWindow:
 		dlg_xml.get_widget('type').set_active(0)
 		date_widget = dlg_xml.get_widget('date')
 		now_date = datetime.now()
-		date_widget.select_month(now_date.month, now_date.year)
+		date_widget.select_month(now_date.month - 1, now_date.year)
 		date_widget.select_day(now_date.day)
 		response = dlg.run()
 		print response
@@ -151,7 +151,7 @@ class CharacterWindow:
 			e.type = dlg_xml.get_widget('type').get_active()
 			date_tuple = date_widget.get_date()
 			print date_tuple
-			selected_date = date(date_tuple[0], date_tuple[1], date_tuple[2])
+			selected_date = date(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
 			e.date = datetime.combine(selected_date, datetime.now().time())
 			print e
 			self.character.experience.prepend_entry(e)
