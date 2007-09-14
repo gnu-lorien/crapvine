@@ -19,8 +19,9 @@
 from xml.sax import ContentHandler
 from xml.sax.saxutils import unescape, escape
 
-# Vampire classes
-from vampire import Experience, ExperienceEntry, Trait, TraitList, Vampire
+# Vampire Support
+from vampire import Trait, TraitList, Vampire
+from experience import Experience, ExperienceEntry
 
 def normalize_whitespace(text):
 	"Remove redundant whitespace from a string"
