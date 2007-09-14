@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Thu Sep 13 23:04:16 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Fri Sep 14 11:21:58 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="winCharacter">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -1176,10 +1176,30 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <placeholder/>
+                                  <widget class="GtkHBox" id="number_as_text_with_temporary_attr_selfcontrol_tempselfcontrol">
+                                    <property name="visible">True</property>
+                                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                                    <child>
+                                      <placeholder/>
+                                    </child>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">6</property>
+                                  </packing>
                                 </child>
                                 <child>
-                                  <placeholder/>
+                                  <widget class="GtkHBox" id="number_as_text_with_temporary_attr_conscience_tempconscience">
+                                    <property name="visible">True</property>
+                                    <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                                    <child>
+                                      <placeholder/>
+                                    </child>
+                                  </widget>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="position">7</property>
+                                  </packing>
                                 </child>
                               </widget>
                               <packing>
