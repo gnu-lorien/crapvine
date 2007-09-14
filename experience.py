@@ -76,6 +76,17 @@ class Experience(AttributedListModel):
 				path = (cascade_idx,)
 				self.row_changed(path, self.get_iter(path))
 
+		self.__update_earned_unspent()
+
+	def __update_earned_unspent(self):
+		if len(self.entries) == 0:
+			self.earned  = '0'
+			self.unspent = '0'
+			return
+
+		last_entry = self.entries[-1]
+		self.earned  = "%s" % last_entry.earned
+		self.unspent = "%s" % last_entry.unspent
 
 	def get_xml(self, indent=''):
 		end_tag = ">\n" if len(self.entries) > 0 else "/>"
