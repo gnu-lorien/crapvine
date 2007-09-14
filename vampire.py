@@ -71,7 +71,7 @@ class VampireLoader(ContentHandler):
 				raise 'Entry without bounding Experience'
 			ent = ExperienceEntry()
 			ent.read_attributes(attrs)
-			self.current_experience.append_entry(ent, False)
+			self.current_experience.add_entry(ent, False)
 
 		elif name == 'entry':
 			pass
@@ -161,26 +161,18 @@ class Experience(AttributedListModel):
 		self.list = []
 		self.entries = self.list
 
-	def prepend_entry(self, entry, calculate_expenditures = True):
-		pdb.set_trace()
-		if calculate_expenditures:
-			entry.calculate_expenditures_from(self.list[0])
-		self.list = [ ]
-		self.list.append(entry)
-		self.list.extend(self.entries)
-		self.entries = self.list
-		path = (0,)
-		self.emit('row-inserted', path, self.get_iter(path))
-		self.entries.sort(key=operator.attrgetter('date'))
-	def append_entry(self, entry, calculate_expenditures = True):
-		""" Don't support calculating yet because cascading up is hard """
+	def add_entry(self, entry, calculate_expenditures = True):
 		print "Appending entry %s" % entry.get_xml()
 		self.entries.append(entry)
 		path = (len(self.list) - 1, )
 		self.emit('row-inserted', path, self.get_iter(path))
 		self.entries.sort(key=operator.attrgetter('date'))
-	def add_entry_with_date_sort(self, entry, calculate_expenditures = True):
-		raise AttributeError('Not implemented')
+		print "After-sort entry %s" % entry.get_xml()
+		if calculate_expenditures:
+			idx = self.entries.index(entry)
+			if idx > 0:
+				entry.calculate_expenditures_from(self.entries[idx - 1])
+				print "After-calc entry %s" % entry.get_xml()
 
 	def get_xml(self, indent=''):
 		end_tag = ">\n" if len(self.entries) > 0 else "/>"
@@ -250,7 +242,8 @@ class ExperienceEntry(Attributed):
 			raise ValueError("Type must be an integer between 0 and 6")
 
 	@staticmethod
-	def map_type_to_str(type):
+	def map_type_to_str(type_input):
+		type = str(type_input)
 		if type == '0':
 			return 'Earn'
 		elif type == '1':

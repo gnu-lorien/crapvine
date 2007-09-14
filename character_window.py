@@ -154,7 +154,7 @@ class CharacterWindow:
 			selected_date = date(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
 			e.date = datetime.combine(selected_date, datetime.now().time())
 			print e
-			self.character.experience.prepend_entry(e)
+			self.character.experience.add_entry(e)
 
 
 	def on_save_as(self, menuitem):
