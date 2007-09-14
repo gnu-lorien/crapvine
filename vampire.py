@@ -41,9 +41,6 @@ class Vampire(Attributed):
 	def add_experience(self, exp):
 		self.experience = exp
 
-	def ballz(self):
-		print self.__dict__
-
 	def get_xml(self, indent = ''):
 		ret = '%s<vampire %s>%s' % (indent, self.get_attrs_xml(), "\n")
 		local_indent = '%s   ' % (indent)
