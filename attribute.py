@@ -24,7 +24,6 @@ class TextAttr(object):
 	def default(self):
 		return self.__default
 	def __set__(self, instance, value):
-		print 'setting'
 		setattr(instance, self.inst_attr, str(value))
 	def __get__(self, instance, owner):
 		if not instance:
@@ -80,12 +79,61 @@ class NumberAsTextAttr(object):
 		except ValueError:
 			return value
 
+class BoolAttr(object):
+	def __init__(self, name, default = False):
+		self.name = name
+		self.inst_attr = "__%s" % name
+		self.__default = default
+	@property
+	def default(self):
+		return self.__default
+	def __set__(self, instance, value):
+		final_set = False
+		if value == 'yes':
+			final_set = True
+		elif value == 'no':
+			final_set = False
+		elif value:
+			final_set = True
+		setattr(instance, self.inst_attr, value)
+	def __get__(self, instance, owner):
+		if not instance:
+			return self
+		if hasattr(instance, self.inst_attr):
+			return getattr(instance, self.inst_attr)
+		else:
+			return self.__default
+	def __delete__(self, instance):
+		raise AttributeError('Cannot delete attribute')
+
+class DateAttr(object):
+	def __init__(self, name, default = None):
+		self.name = name
+		self.inst_attr = "__%s" % name
+		self.__default = default
+	@property
+	def default(self):
+		return self.__default
+	def __set__(self, instance, value):
+		setattr(instance, self.inst_attr, value)
+	def __get__(self, instance, owner):
+		if not instance:
+			return self
+		if hasattr(instance, self.inst_attr):
+			return getattr(instance, self.inst_attr)
+		else:
+			return self.__default
+	def __delete__(self, instance):
+		raise AttributeError('Cannot delete attribute')
+
 class AttributeBuilder(type):
 	def __init__(cls, name, bases, dict):
 		attribute_class_map = [
 			('required_attrs', TextAttr),
 			('text_attrs', TextAttr),
-			('number_as_text_attrs', NumberAsTextAttr)
+			('number_as_text_attrs', NumberAsTextAttr),
+			('bool_attrs', BoolAttr),
+			('date_attrs', DateAttr)
 		]
 		defaults = getattr(cls, 'defaults', {})
 		for pair in attribute_class_map:
