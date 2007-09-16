@@ -15,14 +15,22 @@
 ##  You should have received a copy of the GNU General Public License
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-class TextAttr(object):
-	def __init__(self, name, default = ''):
-		self.name = name
-		self.inst_attr = "__%s" % name
+class BaseAttr(object):
+	def __init__(self, default = None, linked_default = None):
 		self.__default = default
+		self.__linked_default = linked_default
 	@property
 	def default(self):
 		return self.__default
+	@property
+	def linked_default(self):
+		return self.__linked_default
+
+class TextAttr(BaseAttr):
+	def __init__(self, name, default = '', linked_default = None):
+		BaseAttr.__init__(self, default, linked_default)
+		self.name = name
+		self.inst_attr = "__%s" % name
 	def __set__(self, instance, value):
 		setattr(instance, self.inst_attr, str(value))
 	def __get__(self, instance, owner):
@@ -31,18 +39,18 @@ class TextAttr(object):
 		if hasattr(instance, self.inst_attr):
 			return getattr(instance, self.inst_attr)
 		else:
-			return self.__default
+			if self.linked_default:
+				return getattr(instance, self.linked_default)
+			else:
+				return self.default
 	def __delete__(self, instance):
 		raise AttributeError('Cannot delete attribute')
 
-class NumberAsTextAttr(object):
-	def __init__(self, name, default = '0'):
+class NumberAsTextAttr(BaseAttr):
+	def __init__(self, name, default = '0', linked_default = None):
+		BaseAttr.__init__(self, default, linked_default)
 		self.name = name
 		self.inst_attr = "__%s" % name
-		self.__default = default
-	@property
-	def default(self):
-		return self.__default
 	def __set__(self, instance, value):
 		if not self.__is_valid_grapevine_float(value):
 			raise ValueError('Cannot set attribute to value %s, no valid numbers' % (value))
@@ -50,7 +58,13 @@ class NumberAsTextAttr(object):
 	def __get__(self, instance, owner):
 		if not instance:
 			return self
-		return getattr(instance, self.inst_attr, self.__default)
+		if hasattr(instance, self.inst_attr):
+			return getattr(instance, self.inst_attr)
+		else:
+			if self.linked_default:
+				return getattr(instance, self.linked_default)
+			else:
+				return self.default
 	def __is_valid_grapevine_float(self, value):
 		"""Grapevine can store an integer value, a float value, a range specified by
 		by a '-', and two option values. Any number style string needs to be checked
@@ -79,14 +93,11 @@ class NumberAsTextAttr(object):
 		except ValueError:
 			return value
 
-class BoolAttr(object):
-	def __init__(self, name, default = False):
+class BoolAttr(BaseAttr):
+	def __init__(self, name, default = False, linked_default = None):
+		BaseAttr.__init__(self, default, linked_default)
 		self.name = name
 		self.inst_attr = "__%s" % name
-		self.__default = default
-	@property
-	def default(self):
-		return self.__default
 	def __set__(self, instance, value):
 		final_set = False
 		if value == 'yes':
@@ -102,18 +113,18 @@ class BoolAttr(object):
 		if hasattr(instance, self.inst_attr):
 			return getattr(instance, self.inst_attr)
 		else:
-			return self.__default
+			if self.linked_default:
+				return getattr(instance, self.linked_default)
+			else:
+				return self.default
 	def __delete__(self, instance):
 		raise AttributeError('Cannot delete attribute')
 
-class DateAttr(object):
-	def __init__(self, name, default = None):
+class DateAttr(BaseAttr):
+	def __init__(self, name, default = None, linked_default = None):
+		BaseAttr.__init__(self, default, linked_default)
 		self.name = name
 		self.inst_attr = "__%s" % name
-		self.__default = default
-	@property
-	def default(self):
-		return self.__default
 	def __set__(self, instance, value):
 		setattr(instance, self.inst_attr, value)
 	def __get__(self, instance, owner):
@@ -122,7 +133,10 @@ class DateAttr(object):
 		if hasattr(instance, self.inst_attr):
 			return getattr(instance, self.inst_attr)
 		else:
-			return self.__default
+			if self.linked_default:
+				return getattr(instance, self.linked_default)
+			else:
+				return self.default
 	def __delete__(self, instance):
 		raise AttributeError('Cannot delete attribute')
 
@@ -136,8 +150,14 @@ class AttributeBuilder(type):
 			('date_attrs', DateAttr)
 		]
 		defaults = getattr(cls, 'defaults', {})
+		linked_defaults = getattr(cls, 'linked_defaults', {})
 		for pair in attribute_class_map:
 			current_desired_properties = getattr(cls, pair[0], [])
 			for prop in current_desired_properties:
-				text_attr = pair[1](prop, defaults[prop]) if defaults.has_key(prop) else pair[1](prop)
+				local_kargs = {}
+				if defaults.has_key(prop):
+					local_kargs['default'] = defaults[prop]
+				if linked_defaults.has_key(prop):
+					local_kargs['linked_default'] = linked_defaults[prop]
+				text_attr = pair[1](prop, **local_kargs)
 				setattr(cls, prop, text_attr)

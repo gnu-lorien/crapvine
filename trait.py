@@ -145,12 +145,12 @@ class Trait(TraitAttributed):
 	__metaclass__ = AttributeBuilder
 
 	required_attrs = ['name']
-	text_attrs = ['note']
+	text_attrs = ['note', 'cumguzzle']
 	number_as_text_attrs = ['val']
 	date_attrs = []
 	bool_attrs = []
-	defaults = { 'val' : '1' }
-	linked_defaults = {}
+	defaults = { 'val' : '1', 'cumguzzle' : 'fart' }
+	linked_defaults = {'note' : 'cumguzzle'}
 
 	text_children = []
 	
