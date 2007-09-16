@@ -126,7 +126,10 @@ class DateAttr(BaseAttr):
 		self.name = name
 		self.inst_attr = "__%s" % name
 	def __set__(self, instance, value):
-		setattr(instance, self.inst_attr, value)
+		if not isinstance(value, datetime):
+			setattr(instance, self.inst_attr, parse(value))
+		else:
+			setattr(instance, self.inst_attr, value)
 	def __get__(self, instance, owner):
 		if not instance:
 			return self
