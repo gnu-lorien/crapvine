@@ -147,12 +147,7 @@ class Trait(TraitAttributed):
 	required_attrs = ['name']
 	text_attrs = ['note', 'cumguzzle']
 	number_as_text_attrs = ['val']
-	date_attrs = []
-	bool_attrs = []
-	defaults = { 'val' : '1', 'cumguzzle' : 'fart' }
-	linked_defaults = {'note' : 'cumguzzle'}
-
-	text_children = []
+	defaults = { 'val' : '1' }
 	
 	def get_xml(self, indent=''):
 		return '%s<trait %s/>' % (indent, self.get_attrs_xml())
