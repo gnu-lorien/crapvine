@@ -241,10 +241,13 @@ class GEX(object):
 class TraitAttributed(object):
 	def read_attributes(self, attrs):
 		r = AttributeReader(attrs)
-		# Actually make these required...
+		required_matched = []
 		for attr in self.required_attrs:
 			if attrs.has_key(attr):
 				setattr(self, attr, unescape(attrs.get(attr)))
+				required_matched.append(attr)
+		if self.required_attrs != required_matched:
+			raise AttributeError('Some required attributes were not found!')
 		for attr in self.text_attrs:
 			if attrs.has_key(attr):
 				setattr(self, attr, unescape(attrs.get(attr)))
