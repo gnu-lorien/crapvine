@@ -237,3 +237,50 @@ class GEX(object):
 		out.append('</grapevine>')
 		with file(filename, 'w') as f:
 			f.write("\n".join(out))
+
+class TraitAttributed(object):
+	def read_attributes(self, attrs):
+		r = AttributeReader(attrs)
+		# Actually make these required...
+		for attr in self.required_attrs:
+			if attrs.has_key(attr):
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in self.text_attrs:
+			if attrs.has_key(attr):
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in self.number_as_text_attrs:
+			if attrs.has_key(attr):
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in self.date_attrs:
+			if attrs.has_key(attr):
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in self.bool_attrs:
+			setattr(self, attr, r.b(attr))
+
+	def __attr_default(self, name):
+		return getattr(self.__class__, name).default == getattr(self, name)
+
+	def __simplify_float_str(self, value):
+		try:
+			if float(value) == round(float(value)):
+				return unicode(int(round(float(value))))
+			else:
+				return value
+		except ValueError:
+			return value
+	def get_attrs_xml(self):
+		attrs_strs = []
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.required_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(getattr(self, name))) for name in self.number_as_text_attrs if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in self.date_attrs if not self.__attr_default(name)])
+		for bool_attr in self.bool_attrs:
+			if not self.__attr_default(bool_attr):
+				my_bool = 'yes' if self[bool_attr] else 'no'
+				attrs_strs.append('%s="%s"' % (bool_attr, my_bool))
+		return ' '.join(attrs_strs)
+
+	def __setitem__(self, name, value):
+		return setattr(self, name, value)
+	def __getitem__(self, name):
+		return getattr(self, name)

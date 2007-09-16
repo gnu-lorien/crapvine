@@ -10,5 +10,5 @@ setup (name='crapvine',
       packages=['crapvine'],
       package_dir={'crapvine': '.'},
       package_data={'crapvine': ['exchange_samples/*', 'interface/*'],
-      requires=['dateutil']}
+      requires=['dateutil', 'pygtk']}
 )

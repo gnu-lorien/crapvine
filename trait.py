@@ -16,12 +16,14 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import copy
+import pdb
 
 # PyGtk
 import gobject
 
 # Character Support
-from grapevine_xml import Attributed, AttributedListModel
+from grapevine_xml import Attributed, TraitAttributed, AttributedListModel
+from attribute import AttributeBuilder
 
 class TraitList(AttributedListModel):
 	required_attrs = ['name']
@@ -114,6 +116,10 @@ class TraitList(AttributedListModel):
 				sum += float(t.val)
 			except ValueError:
 				sum += 1
+			except TypeError, e:
+				print t.val.__class__
+				print t.val
+				raise e
 		return sum
 	def get_num_entries(self):
 		return len(self.traits)
@@ -135,7 +141,9 @@ class TraitList(AttributedListModel):
 	def __str__(self):
 		return self.get_xml()
 
-class Trait(Attributed):
+class Trait(TraitAttributed):
+	__metaclass__ = AttributeBuilder
+
 	required_attrs = ['name']
 	text_attrs = ['note']
 	number_as_text_attrs = ['val']
