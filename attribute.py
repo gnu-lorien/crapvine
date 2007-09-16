@@ -150,7 +150,8 @@ class AttributeBuilder(type):
 			('text_attrs', TextAttr),
 			('number_as_text_attrs', NumberAsTextAttr),
 			('bool_attrs', BoolAttr),
-			('date_attrs', DateAttr)
+			('date_attrs', DateAttr),
+			('text_children', TextAttr)
 		]
 		defaults = getattr(cls, 'defaults', {})
 		linked_defaults = getattr(cls, 'linked_defaults', {})
