@@ -17,6 +17,7 @@
 
 import pdb
 from grapevine_xml import Attributed, AttributedListModel
+from attribute import AttributeBuilder
 from xml.sax.saxutils import escape
 
 class Vampire(Attributed):

@@ -22,17 +22,15 @@ import pdb
 import gobject
 
 # Character Support
-from grapevine_xml import Attributed, TraitAttributed, AttributedListModel
+from grapevine_xml import Attributed, AttributedListModel
 from attribute import AttributeBuilder
 
 class TraitList(AttributedListModel):
 	required_attrs = ['name']
-	text_attrs = []
 	number_as_text_attrs = ['display']
-	date_attrs = []
 	bool_attrs = ['abc', 'atomic', 'negative']
 	defaults = { 'atomic' : False, 'negative' : False }
-	linked_defaults = {}
+
 	column_attrs = [ 'name', 'val', 'note' ]
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
@@ -141,9 +139,7 @@ class TraitList(AttributedListModel):
 	def __str__(self):
 		return self.get_xml()
 
-class Trait(TraitAttributed):
-	__metaclass__ = AttributeBuilder
-
+class Trait(Attributed):
 	required_attrs = ['name']
 	text_attrs = ['note', 'cumguzzle']
 	number_as_text_attrs = ['val']

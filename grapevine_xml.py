@@ -23,6 +23,8 @@ from xml.sax.handler import feature_namespaces
 from dateutil.parser import parse
 from datetime import datetime
 
+from attribute import AttributeBuilder, classmaker
+
 class AttributeReader:
 	def __init__(self, attrs):
 		self.attrs = attrs
@@ -60,110 +62,51 @@ class AttributeReader:
 		return self.date(name, default)
 
 class Attributed(object):
+	__metaclass__ = AttributeBuilder
 	def read_attributes(self, attrs):
 		r = AttributeReader(attrs)
-		# Actually make these required...
-		for attr in self.required_attrs:
+		required_matched = []
+		for attr in getattr(self, 'required_attrs', []):
 			if attrs.has_key(attr):
-				self.__setattr__(attr, unescape(attrs.get(attr)))
-		for attr in self.text_attrs:
+				setattr(self, attr, unescape(attrs.get(attr)))
+				required_matched.append(attr)
+		if getattr(self, 'required_attrs', []) != required_matched:
+			raise AttributeError('Some required attributes were not found!')
+		for attr in getattr(self, 'text_attrs', []):
 			if attrs.has_key(attr):
-				self.__setattr__(attr, unescape(attrs.get(attr)))
-		for attr in self.number_as_text_attrs:
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in getattr(self, 'number_as_text_attrs', []):
 			if attrs.has_key(attr):
-				self.__setattr__(attr, unescape(attrs.get(attr)))
-		for attr in self.date_attrs:
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in getattr(self, 'date_attrs', []):
 			if attrs.has_key(attr):
-				self.__setattr__(attr, unescape(attrs.get(attr)))
-		for attr in self.bool_attrs:
-			self.__setattr__(attr, r.b(attr))
+				setattr(self, attr, unescape(attrs.get(attr)))
+		for attr in getattr(self, 'bool_attrs', []):
+			setattr(self, attr, r.b(attr))
 
 	def __attr_default(self, name):
-		if self[name] == '':
-			return True
-		if self.defaults.has_key(name):
-			if self[name] == self.defaults[name]:
-				return True
-		return False
-	def __is_valid_grapevine_float(self, value):
-		"""Grapevine can store an integer value, a float value, a range specified by
-		by a '-', and two option values. Any number style string needs to be checked
-		for all of these options.
+		return getattr(self.__class__, name).default == getattr(self, name)
 
-		returns True if value should be accepted by as a grapevine numeric"""
-		try:
-			float(value)
-			return True
-		except ValueError:
-			can_use = False
-			for separator_str in ['-', ' or ']:
-				for innerval in value.split(separator_str):
-					try:
-						float(innerval)
-						can_use = True
-					except ValueError:
-						pass
-			return can_use
-	def __simplify_float_str(self, value):
-		try:
-			if float(value) == round(float(value)):
-				return unicode(int(round(float(value))))
-			else:
-				return value
-		except ValueError:
-			return value
 	def get_attrs_xml(self):
 		attrs_strs = []
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.required_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self.__simplify_float_str(self[name]))) for name in self.number_as_text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in self.date_attrs if not self.__attr_default(name)])
-		for bool_attr in self.bool_attrs:
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in getattr(self, 'required_attrs', []) if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in getattr(self, 'text_attrs', []) if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(getattr(self, name))) for name in getattr(self, 'number_as_text_attrs', []) if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in getattr(self, 'date_attrs', []) if not self.__attr_default(name)])
+		for bool_attr in getattr(self, 'bool_attrs', []):
 			if not self.__attr_default(bool_attr):
 				my_bool = 'yes' if self[bool_attr] else 'no'
 				attrs_strs.append('%s="%s"' % (bool_attr, my_bool))
 		return ' '.join(attrs_strs)
 
 	def __setitem__(self, name, value):
-		return self.__setattr__(name, value)
+		return setattr(self, name, value)
 	def __getitem__(self, name):
-		return self.__getattribute__(name)
-
-	def __getattribute__(self, name):
-		try:
-			return object.__getattribute__(self, name)
-		except AttributeError, e:
-			if name in self.required_attrs:
-				raise
-			if self.defaults.has_key(name):
-				return self.defaults[name]
-			if self.linked_defaults.has_key(name):
-				return self.__getattribute__(self.linked_defaults[name])
-			if name in self.text_attrs:
-				return '' 
-			if name in self.number_as_text_attrs:
-				return '0' 
-			if name in self.date_attrs:
-				return datetime.now()
-			if name in self.bool_attrs:
-				return 'no'
-			if name in self.text_children:
-				return ''
-			raise
-
-	def __setattr__(self, name, value):
-		if name in self.number_as_text_attrs:
-			if not self.__is_valid_grapevine_float(value):
-				raise ValueError('Cannot set attribute %s to value %s, no valid numbers' % (name, value))
-		# Check date_attrs
-		if name in self.date_attrs:
-			if not isinstance(value, datetime):
-				object.__setattr__(self, name, parse(value))
-				return
-		# Check bool_attrs
-		object.__setattr__(self, name, value)
+		return getattr(self, name)
 
 class AttributedListModel(Attributed, gtk.GenericTreeModel):
+	__metaclass__ = classmaker()
+
 	def __init__(self):
 		Attributed.__init__(self)
 		gtk.GenericTreeModel.__init__(self)
@@ -238,52 +181,3 @@ class GEX(object):
 		with file(filename, 'w') as f:
 			f.write("\n".join(out))
 
-class TraitAttributed(object):
-	def read_attributes(self, attrs):
-		r = AttributeReader(attrs)
-		required_matched = []
-		for attr in self.required_attrs:
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-				required_matched.append(attr)
-		if self.required_attrs != required_matched:
-			raise AttributeError('Some required attributes were not found!')
-		for attr in self.text_attrs:
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-		for attr in self.number_as_text_attrs:
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-		for attr in self.date_attrs:
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-		for attr in self.bool_attrs:
-			setattr(self, attr, r.b(attr))
-
-	def __attr_default(self, name):
-		return getattr(self.__class__, name).default == getattr(self, name)
-
-	def __simplify_float_str(self, value):
-		try:
-			if float(value) == round(float(value)):
-				return unicode(int(round(float(value))))
-			else:
-				return value
-		except ValueError:
-			return value
-	def get_attrs_xml(self):
-		attrs_strs = []
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.required_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(getattr(self, name))) for name in self.number_as_text_attrs if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in self.date_attrs if not self.__attr_default(name)])
-		for bool_attr in self.bool_attrs:
-			if not self.__attr_default(bool_attr):
-				my_bool = 'yes' if self[bool_attr] else 'no'
-				attrs_strs.append('%s="%s"' % (bool_attr, my_bool))
-		return ' '.join(attrs_strs)
-
-	def __setitem__(self, name, value):
-		return setattr(self, name, value)
-	def __getitem__(self, name):
-		return getattr(self, name)

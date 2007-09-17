@@ -22,16 +22,10 @@ import gobject
 
 # Character Support
 from grapevine_xml import Attributed, AttributedListModel
+from attribute import AttributeBuilder
 
 class Experience(AttributedListModel):
-	required_attrs = []
-	text_attrs = []
 	number_as_text_attrs = ['unspent', 'earned']
-	date_attrs = []
-	bool_attrs = []
-	defaults = {}
-	linked_defaults = {}
-	text_children = []
 	column_attrs = ['date', 'change', 'type', 'unspent', 'earned', 'reason']
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
@@ -110,14 +104,9 @@ class Experience(AttributedListModel):
 			return super(Experience, self).on_get_value(index, column)
 
 class ExperienceEntry(Attributed):
-	required_attrs = []
 	text_attrs = ['reason']
 	number_as_text_attrs = ['change', 'type', 'earned', 'unspent']
 	date_attrs = ['date']
-	bool_attrs = []
-	defaults = {}
-	linked_defaults = {}
-	text_children = []
 
 	def get_xml(self, indent=''):
 		return '%s<entry %s/>' % (indent, self.get_attrs_xml())
