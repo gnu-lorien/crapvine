@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Fri Sep 14 11:21:58 2007 by lorien@localhost.localdomain-->
+<!--Generated with glade3 3.2.2 on Tue Sep 18 21:06:08 2007 by lorien@localhost.localdomain-->
 <glade-interface>
   <widget class="GtkWindow" id="winCharacter">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
@@ -154,6 +154,7 @@
                         <property name="label" translatable="yes">gtk-about</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <signal name="activate" handler="on_about"/>
                       </widget>
                     </child>
                   </widget>

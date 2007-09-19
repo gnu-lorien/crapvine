@@ -43,6 +43,7 @@ class CharacterTree:
 			'on_tree_characters_row_activated' : self.on_row_activated,
 			'on_save_as' : self.on_save_as,
 			'on_open' : self.on_open,
+			'on_about' : self.on_about,
 			'gtk_main_quit' : lambda *w: gtk.main_quit()
 		})
 
@@ -113,6 +114,12 @@ class CharacterTree:
 		file_chooser.hide()
 		if response == gtk.RESPONSE_ACCEPT:
 			self.loader.save_contents_to_file(file_chooser.get_filename())
+	def on_about(self, menuitem=None):
+		print 'on_about'
+		dlg_xml = gtk.glade.XML(configuration.get_about_dialog_file_path())
+		dlg = dlg_xml.get_widget('crapvine_about_dlg')
+		dlg.run()
+		dlg.hide()
 
 if __name__ == '__main__':
 	print "Muahaha"

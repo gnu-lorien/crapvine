@@ -6,6 +6,9 @@ def get_base_file_path():
 def get_base_interface_path():
 	return path.join(get_base_file_path(), 'interface')
 
+def get_about_dialog_file_path():
+	return path.join(get_base_interface_path(), 'About.glade')
+
 def get_traitlist_box_xml_file_path():
 	return path.join(get_base_interface_path(), 'TraitlistBox.glade')
 
