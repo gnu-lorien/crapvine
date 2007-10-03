@@ -33,6 +33,8 @@ class VampireLoader(ContentHandler):
 		self.vampires = {}
 		self.current_vampire = None
 
+		self.in_cdata = False
+
 		self.current_traitlist = None
 
 		self.reading_biography = False
@@ -126,10 +128,25 @@ class VampireLoader(ContentHandler):
 			self.current_notes = ''
 
 	def characters(self, ch):
-		if self.reading_biography:
+		if self.reading_biography and self.in_cdata:
 			self.current_biography += ch
-		elif self.reading_notes:
+		elif self.reading_notes and self.in_cdata:
 			self.current_notes += ch
+
+	def ignorableWhitespace(self, space):
+		pass
+
+	def startCDATA(self):
+		self.in_cdata = True
+	def endCDATA(self):
+		self.in_cdata = False
+
+	def startDTD(self):
+		pass
+	def endDTD(self):
+		pass
+	def comment(self, text):
+		pass
 
 	def error(self, exception):
 		print 'Error'
