@@ -160,22 +160,22 @@ class AttributedListModel(Attributed, gtk.GenericTreeModel):
 class GEX(object):
 	def __init__(self):
 		self.filename = None
-		self.vampire_loader = None
+		self.chronicle_loader = None
 
 	def load_from_file(self, filename):
-		from vampire_loader import VampireLoader
+		from chronicle_loader import ChronicleLoader
 		self.filename = filename
-		self.vampire_loader = VampireLoader()
+		self.chronicle_loader = ChronicleLoader()
 		
 		parser = sax2exts.make_parser()
 		parser.setFeature(feature_namespaces, 0)
-		parser.setContentHandler(self.vampire_loader)
-		parser.setProperty(property_lexical_handler, self.vampire_loader)
+		parser.setContentHandler(self.chronicle_loader)
+		parser.setProperty(property_lexical_handler, self.chronicle_loader)
 		print parser
 		parser.parse(self.filename)
 
 	def save_contents_to_file(self, filename):
-		all_character_xml = [c.get_xml('   ') for c in self.loader.vampire_loader.vampires.values()]
+		all_character_xml = [c.get_xml('   ') for c in self.loader.chronicle_loader.vampires.values()]
 		out = ['<?xml version="1.0"?>',
 			'<grapevine version="3">']
 		out.extend(all_character_xml)

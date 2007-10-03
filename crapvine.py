@@ -78,7 +78,7 @@ class CharacterTree:
 			gobject.TYPE_BOOLEAN,
 			gobject.TYPE_STRING)
 
-		for vamp in self.loader.vampire_loader.vampires.values():
+		for vamp in self.loader.chronicle_loader.vampires.values():
 			it = model.append()
 			for i in range(len(self.column_attrs)):
 				model.set(it, i, vamp[self.column_attrs[i]])
@@ -100,7 +100,7 @@ class CharacterTree:
 	def on_row_activated(self, treeview, path, view_column):
 		it = treeview.get_model().get_iter(path)
 		character_name = treeview.get_model().get_value(it, 0)
-		vamp = self.loader.vampire_loader.vampires[character_name]
+		vamp = self.loader.chronicle_loader.vampires[character_name]
 		cw = CharacterWindow(vamp)
 
 	def on_save_as(self, menuitem):
@@ -154,7 +154,7 @@ if __name__ == '__main__':
 		top_loader.load_from_file(options.filename)
 		t = Template(
 			options.template_filename,
-			top_loader.vampire_loader.vampires[options.character_name],
+			top_loader.chronicle_loader.vampires[options.character_name],
 			options.output_filename
 			)
 		t.save()
@@ -165,9 +165,9 @@ if __name__ == '__main__':
 				character_tree.load_file(options.filename)
 		if options.show_character:
 			if character_tree:
-				character = character_tree.loader.vampire_loader.vampires[options.character_name]
+				character = character_tree.loader.chronicle_loader.vampires[options.character_name]
 			else:
-				character = top_loader.vampire_loader.vampires[options.character_name]
+				character = top_loader.chronicle_loader.vampires[options.character_name]
 			CharacterWindow(character)
 
 		gtk.main()
