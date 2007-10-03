@@ -152,8 +152,7 @@ class CharacterWindow:
 			e.type = dlg_xml.get_widget('type').get_active()
 			date_tuple = date_widget.get_date()
 			print date_tuple
-			selected_date = date(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
-			e.date = datetime.combine(selected_date, datetime.now().time())
+			e.date = datetime(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
 			print e
 			self.character.experience.add_entry(e)
 
