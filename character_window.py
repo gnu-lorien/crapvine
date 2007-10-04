@@ -95,7 +95,8 @@ class CharacterWindow:
 			'on_save_as' : self.on_save_as,
 			'add_custom_entry' : self.add_custom_entry,
 			'add_note_to_entry' : self.add_note_to_entry,
-			'add_experience' : self.add_experience
+			'add_experience' : self.add_experience,
+			'activate_row' : self.activate_row
 			}
 		)
 
@@ -155,6 +156,34 @@ class CharacterWindow:
 			e.date = datetime(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
 			print e
 			self.character.experience.add_entry(e)
+	def activate_row(self, treeview, path, view_column):
+		experience_entry = treeview.get_model().get_item_from_path(path)
+		dlg_xml = gtk.glade.XML(configuration.get_add_experience_xml_file_path())
+		dlg = dlg_xml.get_widget('add_experience_entry')
+		dlg_xml.get_widget('type').set_active(int(experience_entry.type))
+		date_widget = dlg_xml.get_widget('date')
+		ee_date = experience_entry.date
+		date_widget.select_month(ee_date.month - 1, ee_date.year)
+		date_widget.select_day(ee_date.day)
+		dlg_xml.get_widget('reason').get_buffer().set_text(experience_entry.reason)
+		dlg_xml.get_widget('change').set_value(int(experience_entry.change))
+		response = dlg.run()
+		print response
+		dlg.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			print 'Accepted'
+			buffer = dlg_xml.get_widget('reason').get_buffer()
+			experience_entry.reason = buffer.get_text(
+				buffer.get_start_iter(),
+				buffer.get_end_iter(),
+				False)
+			experience_entry.change = dlg_xml.get_widget('change').get_value()
+			experience_entry.type = dlg_xml.get_widget('type').get_active()
+			date_tuple = date_widget.get_date()
+			print date_tuple
+			experience_entry.date = datetime(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
+			model = treeview.get_model()
+			model.row_changed(path, model.get_iter(path))
 
 
 	def on_save_as(self, menuitem):
