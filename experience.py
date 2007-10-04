@@ -25,7 +25,8 @@ from grapevine_xml import Attributed, AttributedListModel
 from attribute import AttributeBuilder
 
 class Experience(AttributedListModel):
-	number_as_text_attrs = ['unspent', 'earned']
+	number_as_text_attrs = [('unspent', {'enforce_as':'float'}),
+		('earned', {'enforce_as':'float'})]
 	column_attrs = ['date', 'change', 'type', 'unspent', 'earned', 'reason']
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
@@ -105,7 +106,10 @@ class Experience(AttributedListModel):
 
 class ExperienceEntry(Attributed):
 	text_attrs = ['reason']
-	number_as_text_attrs = ['change', 'type', 'earned', 'unspent']
+	number_as_text_attrs = [('change', {'enforce_as': 'float'}),
+		('type', {'enforce_as':'int'}),
+		('earned', {'enforce_as':'float'}),
+		('unspent', {'enforce_as':'float'})]
 	date_attrs = ['date']
 
 	def get_xml(self, indent=''):

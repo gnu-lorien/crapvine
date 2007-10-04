@@ -65,35 +65,40 @@ class Attributed(object):
 	__metaclass__ = AttributeBuilder
 	def read_attributes(self, attrs):
 		r = AttributeReader(attrs)
-		required_matched = []
-		for attr in getattr(self, 'required_attrs', []):
-			if attrs.has_key(attr):
+		for attr in attrs.keys():
+			if hasattr(self, attr):
 				setattr(self, attr, unescape(attrs.get(attr)))
-				required_matched.append(attr)
-		if getattr(self, 'required_attrs', []) != required_matched:
-			raise AttributeError('Some required attributes were not found!')
-		for attr in getattr(self, 'text_attrs', []):
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-		for attr in getattr(self, 'number_as_text_attrs', []):
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-		for attr in getattr(self, 'date_attrs', []):
-			if attrs.has_key(attr):
-				setattr(self, attr, unescape(attrs.get(attr)))
-		for attr in getattr(self, 'bool_attrs', []):
-			setattr(self, attr, r.b(attr))
 
 	def __attr_default(self, name):
 		return getattr(self.__class__, name).default == getattr(self, name)
 
+	def __get_attrs_names(self, attrs):
+		list = getattr(self, attrs, [])
+		ret_list = []
+		for elem in list:
+			if isinstance(elem, tuple):
+				ret_list.append(elem[0])
+			else:
+				ret_list.append(elem)
+		return ret_list
+	def __get_required_attrs(self):
+		return self.__get_attrs_names('required_attrs')
+	def __get_text_attrs(self):
+		return self.__get_attrs_names('text_attrs')
+	def __get_number_as_text_attrs(self):
+		return self.__get_attrs_names('number_as_text_attrs')
+	def __get_date_attrs(self):
+		return self.__get_attrs_names('date_attrs')
+	def __get_bool_attrs(self):
+		return self.__get_attrs_names('bool_attrs')
+
 	def get_attrs_xml(self):
 		attrs_strs = []
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in getattr(self, 'required_attrs', []) if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in getattr(self, 'text_attrs', []) if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(getattr(self, name))) for name in getattr(self, 'number_as_text_attrs', []) if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in getattr(self, 'date_attrs', []) if not self.__attr_default(name)])
-		for bool_attr in getattr(self, 'bool_attrs', []):
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.__get_required_attrs() if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.__get_text_attrs() if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(getattr(self, name))) for name in self.__get_number_as_text_attrs() if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in self.__get_date_attrs() if not self.__attr_default(name)])
+		for bool_attr in self.__get_bool_attrs():
 			if not self.__attr_default(bool_attr):
 				my_bool = 'yes' if self[bool_attr] else 'no'
 				attrs_strs.append('%s="%s"' % (bool_attr, my_bool))

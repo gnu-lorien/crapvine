@@ -108,15 +108,30 @@ class TextAttr(BaseAttr):
 		raise AttributeError('Cannot delete attribute')
 
 class NumberAsTextAttr(BaseAttr):
-	def __init__(self, name, default = '0', linked_default = None, enforce_as = 'grapevine_float'):
+	def __init__(self, name, default = '0', linked_default = None, enforce_as = 'grapevine_float', simplify = True):
 		BaseAttr.__init__(self, default, linked_default)
 		self.name = name
 		self.inst_attr = "__%s" % name
 		self.enforce_as = enforce_as
+		self.simplify = simplify
 	def __set__(self, instance, value):
-		if not self.__is_valid_grapevine_float(value):
-			raise ValueError('Cannot set attribute to value %s, no valid numbers' % (value))
-		setattr(instance, self.inst_attr, self.__simplify_float_str(value))
+		if self.enforce_as == 'grapevine_float':
+			if not self.__is_valid_grapevine_float(value):
+				raise ValueError('Cannot set attribute to value %s, no valid numbers' % (value))
+		elif self.enforce_as == 'float':
+			try:
+				float(value)
+			except ValueError:
+				raise ValueError('Cannot set attribute to value %s, not a float value' % (value))
+		elif self.enforce_as == 'int':
+			try:
+				int(value)
+			except ValueError:
+				raise ValueError('Cannot set attribute to value %s, not an int value' %(value))
+		if self.simplify:
+			setattr(instance, self.inst_attr, self.__simplify_float_str(value))
+		else:
+			setattr(instance, self.inst_attr, value)
 	def __get__(self, instance, owner):
 		if not instance:
 			return self
@@ -222,19 +237,15 @@ class AttributeBuilder(type):
 			current_desired_properties = getattr(cls, pair[0], [])
 			for prop in current_desired_properties:
 				local_kargs = {}
-				if defaults.has_key(prop):
-					local_kargs['default'] = defaults[prop]
-				if linked_defaults.has_key(prop):
-					local_kargs['linked_default'] = linked_defaults[prop]
-				if isinstance(prop, tuple):
-					# Dealing with a tuple where the first is the property
-					# name and the second is a dictionary of properties
-					attr_name = prop[0]
-					extra_kargs = prop[1]
-					local_kargs.update(extra_kargs)
-					new_attr = pair[1](attr_name, **local_kargs)
-					setattr(cls, attr_name, new_attr)
-				else:
-					# Just the name of the property
-					new_attr = pair[1](prop, **local_kargs)
-					setattr(cls, prop, new_attr)
+				attr_name = prop if not isinstance(prop, tuple) else prop[0]
+
+				if defaults.has_key(attr_name):
+					local_kargs['default'] = defaults[attr_name]
+				if linked_defaults.has_key(attr_name):
+					local_kargs['linked_default'] = linked_defaults[attr_name]
+
+				extra_kargs = {} if not isinstance(prop, tuple) else prop[1]
+				local_kargs.update(extra_kargs)
+
+				new_attr = pair[1](attr_name, **local_kargs)
+				setattr(cls, attr_name, new_attr)
