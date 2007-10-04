@@ -180,7 +180,7 @@ class GEX(object):
 		parser.parse(self.filename)
 
 	def save_contents_to_file(self, filename):
-		all_character_xml = [c.get_xml('   ') for c in self.loader.chronicle_loader.vampires.values()]
+		all_character_xml = [c.get_xml('   ') for c in self.chronicle_loader.vampires.values()]
 		out = ['<?xml version="1.0"?>',
 			'<grapevine version="3">']
 		out.extend(all_character_xml)
