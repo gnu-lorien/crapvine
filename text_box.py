@@ -18,9 +18,10 @@
 import gtk
 import gtk.glade
 import gobject
+import configuration
 
 class TextBox:
-	__text_box_xml_file  = '/home/lorien/tmp/crapvine/interface/TextBox.glade'
+	__text_box_xml_file  = configuration.get_textbox_xml_file_path()
 	def __init__(self, trait_display_name, overlord, character):
 		self.xml = gtk.glade.XML(self.__text_box_xml_file, 'textbox')
 		self.vbox = self.xml.get_widget('textbox')

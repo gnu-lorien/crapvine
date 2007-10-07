@@ -9,6 +9,9 @@ def get_base_interface_path():
 def get_about_dialog_file_path():
 	return path.join(get_base_interface_path(), 'About.glade')
 
+def get_textbox_xml_file_path():
+	return path.join(get_base_interface_path(), 'TextBox.glade')
+
 def get_traitlist_box_xml_file_path():
 	return path.join(get_base_interface_path(), 'TraitlistBox.glade')
 
