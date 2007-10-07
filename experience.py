@@ -28,7 +28,7 @@ from attribute import AttributeBuilder
 class Experience(AttributedListModel):
 	number_as_text_attrs = [('unspent', {'enforce_as':'float'}),
 		('earned', {'enforce_as':'float'})]
-	column_attrs = ['date', 'change', 'type', 'unspent', 'earned', 'reason']
+	column_attrs = ['date', 'type', 'change', 'unspent', 'earned', 'reason']
 	column_attr_types = [ gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING, gobject.TYPE_STRING ]
 
 	def __init__(self):
