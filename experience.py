@@ -16,6 +16,7 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import operator
+import pdb
 
 # PyGtk
 import gobject
@@ -72,6 +73,11 @@ class Experience(AttributedListModel):
 				self.row_changed(path, self.get_iter(path))
 
 		self.__update_earned_unspent()
+
+	def update_entry(self, path, entry):
+		del self.list[path[0]]
+		self.row_deleted(path)
+		self.add_entry(entry)
 
 	def __update_earned_unspent(self):
 		if len(self.entries) == 0:

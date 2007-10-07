@@ -183,8 +183,7 @@ class CharacterWindow:
 			print date_tuple
 			experience_entry.date = datetime(date_tuple[0], date_tuple[1] + 1, date_tuple[2])
 			model = treeview.get_model()
-			model.row_changed(path, model.get_iter(path))
-
+			model.update_entry(path, experience_entry)
 
 	def on_save_as(self, menuitem):
 		file_chooser = gtk.FileChooserDialog('Choose Where to Save %s' % (self.character.name), None, gtk.FILE_CHOOSER_ACTION_SAVE, (gtk.STOCK_CANCEL, gtk.RESPONSE_REJECT, gtk.STOCK_OK, gtk.RESPONSE_ACCEPT))
