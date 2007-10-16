@@ -50,13 +50,13 @@ class MenuNavigator:
 	def __back_up_menu_path(self):
 		if len(self.menu_path) == 0:
 			return
-		self.__change_menu_model(self.menu_path[-1])
+		self.__change_menu_model(self.menu_path[-1].name)
 		del self.menu_path[-1]
 
 	def __add_to_menu_path(self, trait_category):
-		old_menu_name = self.treeMenu.get_model().menu.name
+		old_menu = self.treeMenu.get_model().menu
 		self.__change_menu_model(trait_category)
-		self.menu_path.append(old_menu_name)
+		self.menu_path.append(old_menu)
 
 	def __add_menu_item_to_target(self):
 		if self.target is None:
