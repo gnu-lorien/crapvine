@@ -54,9 +54,9 @@ class MenuNavigator:
 		del self.menu_path[-1]
 
 	def __add_to_menu_path(self, trait_category):
-		old_menu_name == self.treeMenu.get_model().menu.name
-		swap_menu(trait_category)
-		menu_path.append(old_menu_name)
+		old_menu_name = self.treeMenu.get_model().menu.name
+		self.__change_menu_model(trait_category)
+		self.menu_path.append(old_menu_name)
 
 	def __add_menu_item_to_target(self):
 		if self.target is None:
