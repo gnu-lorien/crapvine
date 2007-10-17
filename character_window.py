@@ -93,43 +93,13 @@ class CharacterWindow:
 			'on_btnRemoveTrait_clicked' : self.overlord.on_btnRemoveTrait_clicked,
 			'on_treeMenu_row_activated' : self.overlord.on_treeMenu_row_activated,
 			'on_save_as' : self.on_save_as,
-			'add_custom_entry' : self.add_custom_entry,
-			'add_note_to_entry' : self.add_note_to_entry,
+			'add_custom_entry' : self.overlord.add_custom,
+			'add_note_to_entry' : self.overlord.add_note,
 			'add_experience' : self.add_experience,
 			'activate_row' : self.activate_row
 			}
 		)
 
-	def add_custom_entry(self, widget=None):
-		dlg_xml = gtk.glade.XML(configuration.get_add_custom_entry_xml_file_path())
-		dlg = dlg_xml.get_widget('custom_entry_dialog')
-		response = dlg.run()
-		dlg.hide()
-		if response == gtk.RESPONSE_ACCEPT:
-			print 'Accepted'
-			t = Trait()
-			t['name'] = dlg_xml.get_widget('name').get_text()
-			t['val'] =  unicode(dlg_xml.get_widget('val').get_value())
-			t['note'] = dlg_xml.get_widget('note').get_text()
-			print t
-			self.overlord.add_trait_to_target(t)
-	def add_note_to_entry(self, widget=None):
-		dlg_xml = gtk.glade.XML(configuration.get_add_note_to_entry_xml_file_path())
-		dlg = dlg_xml.get_widget('add_note_to_entry')
-		trait = self.overlord.get_selected_trait_from_target()
-		if not trait:
-			return
-		dlg_xml.get_widget('display').set_label(trait.display_str())
-		dlg_xml.get_widget('note').set_text(trait.note)
-
-		for i in range(11):
-			print trait.display_str(str(i))
-
-		response = dlg.run()
-		dlg.hide()
-		if response == gtk.RESPONSE_ACCEPT:
-			print 'Accepted'
-			trait['note'] = dlg_xml.get_widget('note').get_text()
 	def add_experience(self, widget=None):
 		dlg_xml = gtk.glade.XML(configuration.get_add_experience_xml_file_path())
 		dlg = dlg_xml.get_widget('add_experience_entry')

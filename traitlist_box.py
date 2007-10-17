@@ -20,6 +20,9 @@ import gtk.glade
 import gobject
 import configuration
 
+from menu_navigator import MenuTarget
+from trait import Trait
+
 class TraitlistBox:
 	# Trait columns
 	(
@@ -73,15 +76,15 @@ class TraitlistBox:
 		self.title.set_label('%d %s' % (tl.get_total_value(), self.trait_display_name))
 
 		self.xml.signal_autoconnect({
-			'on_add_to_trait': self.__on_add_to_trait,
-			'on_subtract_from_trait': self.__on_subtract_from_trait,
+			'on_add_to_trait': self.add_to_selected_trait,
+			'on_subtract_from_trait': self.subtract_from_selected_trait,
 			'set_traitbox_focus': self.set_traitbox_focus,
 			'on_scrolledwindow3_set_focus_child': self.set_focus_child,
 			'on_treeTraits_set_focus_child': self.set_focus_child,
 			'on_row_activated': self.__on_row_activated
 		})
 
-	def __on_add_to_trait(self, widget):
+	def add_to_selected_trait(self, widget=None):
 		(model, iter) = self.tree.get_selection().get_selected()
 		path = model.get_path(iter)
 		target_trait = model.get_item(path[0])
@@ -89,8 +92,10 @@ class TraitlistBox:
 		self.__update_title()
 		print "Adding trait on %s" % self.trait_menu_name
 
-	def __on_subtract_from_trait(self, widget):
+	def subtract_from_selected_trait(self, widget=None):
 		(model, iter) = self.tree.get_selection().get_selected()
+		if iter == None:
+			return
 		path = model.get_path(iter)
 		target_trait = model.get_item(path[0])
 		model.decrement_trait(target_trait.name)
@@ -100,6 +105,8 @@ class TraitlistBox:
 
 	def get_selected_trait(self):
 		(model, iter) = self.tree.get_selection().get_selected()
+		if iter == None:
+			return None
 		path = model.get_path(iter)
 		return model.get_item(path[0])
 
@@ -108,7 +115,7 @@ class TraitlistBox:
 
 	def set_traitbox_focus(self, unused):
 		print "Setting traitbox focus"
-		self.overlord.target = self
+		self.overlord.target = TraitlistBoxMenuTarget(self)
 		self.overlord.show_menu(self.trait_menu_name)
 
 	def add_menu_item(self, menu_item):
@@ -131,3 +138,63 @@ class TraitlistBox:
 
 	def tree_model_changed(self, treemodel=None, path=None, iter=None):
 		self.__update_title()
+
+class TraitlistBoxMenuTarget(MenuTarget):
+	def __init__(self, target):
+		assert target != None
+		self.target = target
+
+	def add(self, menu_item, menu_path):
+		menu_path_len = len(menu_path)
+		assert menu_path_len >= 1
+
+		directly_containing_menu = menu_path[menu_path_len - 1]
+		if not directly_containing_menu.autonote:
+			menu_item.note = ''
+
+		self.target.add_menu_item(menu_item)
+
+	def remove(self):
+		self.target.subtract_from_selected_trait()
+
+	def __add_trait_to_target(self, trait):
+		if not self.target:
+			return
+		self.target.add_trait(trait)
+
+	def add_custom(self):
+		dlg_xml = gtk.glade.XML(configuration.get_add_custom_entry_xml_file_path())
+		dlg = dlg_xml.get_widget('custom_entry_dialog')
+		response = dlg.run()
+		dlg.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			print 'Accepted'
+			t = Trait()
+			t['name'] = dlg_xml.get_widget('name').get_text()
+			t['val'] =  unicode(dlg_xml.get_widget('val').get_value())
+			t['note'] = dlg_xml.get_widget('note').get_text()
+			print t
+			self.__add_trait_to_target(t)
+
+	def __get_selected_trait_from_target(self):
+		if not self.target:
+			return None
+		return self.target.get_selected_trait()
+
+	def add_note(self):
+		dlg_xml = gtk.glade.XML(configuration.get_add_note_to_entry_xml_file_path())
+		dlg = dlg_xml.get_widget('add_note_to_entry')
+		trait = self.__get_selected_trait_from_target()
+		if not trait:
+			return
+		dlg_xml.get_widget('display').set_label(trait.display_str())
+		dlg_xml.get_widget('note').set_text(trait.note)
+
+		for i in range(11):
+			print trait.display_str(str(i))
+
+		response = dlg.run()
+		dlg.hide()
+		if response == gtk.RESPONSE_ACCEPT:
+			print 'Accepted'
+			trait['note'] = dlg_xml.get_widget('note').get_text()

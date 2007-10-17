@@ -62,26 +62,25 @@ class MenuNavigator:
 		if self.target is None:
 			return
 		(mainModel, selIter) = self.treeMenu.get_selection().get_selected()
+		if selIter == None:
+			raise ValueError('No menu item selected')
 		path = mainModel.get_path(selIter)
-		trait = copy.copy(mainModel.get_item(path[0]))
-		if not mainModel.menu.autonote:
-			trait.note = ''	
-		self.target.add_menu_item(trait)
-
-	def add_trait_to_target(self, trait):
-		if not self.target:
-			return
-		self.target.add_trait(trait)
-	def get_selected_trait_from_target(self):
-		if not self.target:
-			return None
-		return self.target.get_selected_trait()
+		event_menu_item = copy.copy(mainModel.get_item(path[0]))
+		if isinstance(event_menu_item, MenuReference):
+			raise ValueError('Cannot add an entire submenu at once!')
+		event_menu_path = []
+		event_menu_path.extend(self.menu_path)
+		event_menu_path.append(self.treeMenu.get_model().menu)
+		self.target.add(event_menu_item, event_menu_path)
 
 	def on_btnAddTrait_clicked(self, widget):
 		self.__add_menu_item_to_target()
-
 	def on_btnRemoveTrait_clicked(self, widget):
-		print "Removing a trait"
+		self.target.remove()
+	def add_custom(self, widget=None):
+		self.target.add_custom()
+	def add_note(self, widget=None):
+		self.target.add_note()
 
 	def on_treeMenu_row_activated(self, treeview, path, view_column):
 		menu_item = treeview.get_model().get_item_from_path(path)
@@ -92,3 +91,35 @@ class MenuNavigator:
 				self.__add_to_menu_path(menu_item.reference)
 		else:
 			self.__add_menu_item_to_target()
+
+
+class MenuTarget(object):
+	"""A handler for events from the menu navigation pane"""
+
+	def add(self, menu_item, menu_path):
+		"""Add a trait
+
+		menu_item - The MenuItem that was selected when the add button was 
+			pressed
+		menu_path - A list of Menus that lead up to this item
+		"""
+		pass
+	
+	def remove(self):
+		"""Remove a trait
+
+		Meant to be used to remove the currently selected trait in whatever
+		assigned this handler.
+		"""
+		pass
+
+	def add_custom(self):
+		"""Used to provide a custom dialog for new entries not included in the 
+		menu.
+		"""
+		pass
+
+	def add_note(self):
+		"""Used to handle adding a note to a currently selected entry.
+		"""
+		pass
