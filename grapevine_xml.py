@@ -37,7 +37,7 @@ class AttributeReader:
 			elif bool_val == 'no':
 				return False
 			else:
-				raise 'Boolean xml field set to invalid value |%s|' % (bool_val)
+				raise AttributeError('Boolean xml field set to invalid value |%s|' % (bool_val))
 		return False
 	def b(self, name, default=False):
 		return self.boolean(name, default)

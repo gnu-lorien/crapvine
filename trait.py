@@ -85,7 +85,7 @@ class TraitList(AttributedListModel):
 					path = (idx, )
 					self.row_changed(path, self.get_iter(path))
 		else:
-			raise 'Unknown trait'
+			raise ValueError('Unknown trait')
 
 	def decrement_trait(self, trait_name):
 		if trait_name in [t.name for t in self.traits]:
@@ -105,7 +105,7 @@ class TraitList(AttributedListModel):
 						path = (idx, )
 						self.row_changed(path, self.get_iter(path))
 		else:
-			raise 'Unknown trait'
+			raise ValueError('Unknown trait')
 
 	def get_total_value(self):
 		sum = 0

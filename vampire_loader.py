@@ -58,7 +58,7 @@ class VampireLoader(ContentHandler):
 
 		elif name == 'experience':
 			if self.current_experience:
-				raise 'Experience encountered while still reading traitlist'
+				raise IOError('Experience encountered while still reading traitlist')
 			exp = Experience()
 			exp.read_attributes(attrs)
 			self.current_experience = exp
@@ -67,7 +67,7 @@ class VampireLoader(ContentHandler):
 
 		elif name == 'entry':
 			if not self.current_experience:
-				raise 'Entry without bounding Experience'
+				raise IOError('Entry without bounding Experience')
 			ent = ExperienceEntry()
 			ent.read_attributes(attrs)
 			self.current_experience.add_entry(ent, False)
@@ -83,7 +83,7 @@ class VampireLoader(ContentHandler):
 
 		elif name == 'traitlist':
 			if self.current_traitlist:
-				raise 'TraitList encountered while still reading traitlist'
+				raise IOError('TraitList encountered while still reading traitlist')
 			tl = TraitList()
 			tl.read_attributes(attrs)
 			self.current_traitlist = tl
@@ -92,7 +92,7 @@ class VampireLoader(ContentHandler):
 
 		elif name == 'trait':
 			if not self.current_traitlist:
-				raise 'Trait without bounding traitlist'
+				raise IOError('Trait without bounding traitlist')
 			t = Trait()
 			t.read_attributes(attrs)
 			self.current_traitlist.add_trait(t)

@@ -42,7 +42,7 @@ class MenuNavigator:
 	def __change_menu_model(self, trait_category):
 		menu = self.menu_loader.get_expanded_menu(trait_category)
 		if not menu:
-			raise 'Selected invalid menu %s' % (trait_category)
+			raise ValueError('Selected invalid menu %s' % (trait_category))
 		model = MenuModel(menu)
 		self.treeMenu.set_model(model)
 		self.xml.get_widget('lblMenuTitle').set_label(trait_category)
