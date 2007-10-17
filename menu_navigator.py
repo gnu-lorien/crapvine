@@ -35,7 +35,27 @@ class MenuNavigator:
 	def __create_menu_model(self):
 		pass
 
+	def __is_showing_menu(self, menu_name):
+		current_model = self.treeMenu.get_model()
+		if current_model:
+			current_menu = current_model.menu
+			if current_menu and current_menu.name == menu_name:
+				return True
+		return False
+	def __is_showing_menu_or_submenu(self, menu_name):
+		current_model = self.treeMenu.get_model()
+		if current_model:
+			current_menu = current_model.menu
+			if current_menu and current_menu.name == menu_name:
+				return True
+			else:
+				for menu in self.menu_path:
+					if menu_name == menu.name:
+						return True
+		return False
 	def show_menu(self, trait_category):
+		if self.__is_showing_menu_or_submenu(trait_category):
+			return
 		self.__change_menu_model(trait_category)
 		self.menu_path = []
 
