@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <grapevine version="3">
-  <vampire name="ValueForEverything" nature="Avant-Garde" demeanor="Arbitrator" clan="Malkavian" sect="Nihilist" coterie="Herro Go" sire="oeauoaeu" generation="11" title="Don" blood="12" tempblood="9" willpower="4" tempwillpower="7" conscience="3" selfcontrol="3" tempselfcontrol="1" courage="4" tempcourage="5" path="Path of Evil Revelation" pathtraits="3" aura="+2" aurabonus="Normalcy" physicalmax="11" player="MoufPlayer" status="Withering" id="88878Then" startdate="8/2/2007 8:20:11 PM" npc="yes" lastmodified="8/2/2007 8:22:57 PM">
+  <vampire name="ValueForEverything" nature="Avant-Garde" demeanor="Arbitrator" clan="Malkavian" sect="Nihilist" coterie="Herro Go" sire="oeauoaeu" generation="11" title="Don" blood="12" tempblood="9" willpower="4" tempwillpower="7" conscience="3" selfcontrol="3" tempselfcontrol="1" courage="4" tempcourage="5" path="Path of Evil Revelation" pathtraits="3" aura="+2" physicalmax="11" player="MoufPlayer" status="Withering" id="88878Then" startdate="8/2/2007 8:20:11 AM" npc="yes" lastmodified="1/27/2008 6:28:09 AM">
     <experience unspent="-131" earned="0">
       <entry date="8/2/2007" change="131" type="3" reason="Purchased (Fetishes and Talens), Acknowledged, Admired, Adored, Advocate, Ambidextrous, Amnesia, Angelism, Animal Friendship, Antisocial Disorder, Archaic, Assault Rifle, Avenger, Avoidant, Aware of False Love, Bad Sight, Bard's Tongue, Battle-Scarred, Beast Traits: Control: Blood Smell, Beast Traits: Control: Hunger, Beast Traits: Control: Lust, Believer, Berserk, Berserker, Bipolar Disorder, Blackmail Material, Blessed, Blood x2, Blood Addict, Blood Sweats, Blooded, Bond Girl, Brave, Chain Mail, Clan Status: Assamites x3, Clan Status: Nosferatu x3, Conscience /Conviction x2, Courage x3, Fortitude: Aegis, Fortitude: Endurance, Fortitude: Mettle, Fortitude: Resilience, Fortitude: Resistance, Frail x2, Ignorant, Industry x2, Joes Bitch, Legal, Media, Military, Morality Traits x2, Necromancy: Ash Path: Dead Hand, Necromancy: Ash Path: Ex Nihilo, Necromancy: Ash Path: Lifeless Tongues, Necromancy: Ash Path: Shroud Mastery, Necromancy: Ash Path: Shroudsight, Negative Status: Casualty, Negative Status: Cherry, Negative Status: Cocky, Occult, Political Impulse: Constructionist, Political Impulse: Hardliner, Sabbat: Auctoritas: Binding, Sabbat: Auctoritas: Blood Bath, Sabbat: Auctoritas: Blood Feast, Sabbat: Auctoritas: Creation Rites, Sabbat: Auctoritas: Festivo dello Estinto, Sabbat: Auctoritas: Fire Dancing x2, Self-Control /Instinct x2, Submissive, The Cock Spot, Willpower x2." earned="0" unspent="-131"/>
-      <entry date="8/2/2007 8:20:11 PM" change="0" type="6" reason="Created 7/5/6 with 6 Abilities and 10 Backgrounds, using 4 Negative and 5 Free Traits" earned="0" unspent="-131"/>
+      <entry date="8/2/2007 8:20:11 AM" change="0" type="6" reason="Created 7/5/6 with 6 Abilities and 10 Backgrounds, using 4 Negative and 5 Free Traits" earned="0" unspent="-131"/>
     </experience>
-    <traitlist name="Physical" abc="yes" display="1">
+    <traitlist name="Physical" abc="no" atomic="yes" display="4">
       <trait name="Aggressive" val="2"/>
+      <trait name="Brutal"/>
       <trait name="Resilient" val="3"/>
       <trait name="Savage"/>
       <trait name="Stalwart"/>

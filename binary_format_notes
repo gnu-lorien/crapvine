@@ -1,0 +1,97 @@
+2 bytes: 4
+4 bytes: GVBE
+20 bytes: Unknown
+2 bytes: ?Creature type?(vamp ?= 2)
+<vampire>
+string: name
+string: nature
+string: demeanor
+string: clan
+string: sect
+string: coterie
+string: sire
+2 bytes: generation
+string: title
+2 bytes: blood
+2 bytes: tempblood
+2 bytes: willpower
+2 bytes: tempwillpower
+2 bytes: conscience  * These two could be reversed
+2 bytes: ?tempconscience?
+2 bytes: selfcontrol
+2 bytes: tempselfcontrol
+2 bytes: courage
+2 bytes: tempcourage
+string: path
+2 bytes: pathtraits
+2 bytes: ?temppathtraits?
+string: aura
+string: ?tempaura?Unknown?
+2 bytes: physicalmax
+2 bytes: ?socialmax?Unknown?
+2 bytes: ?mentalmax?Unknown?
+string: player
+string: status
+string: id
+</vampire>
+46 bytes: unknown
+  | 2 bytes: unknown
+  | 8 bytes: ?footer?
+  | ...
+
+<experience>
+<entry>
+string: reason
+</entry>
+24 bytes: unknown
+  | 10 bytes: unknown
+  | 8 bytes: ?footer?
+  | 6 bytes: unknown
+<entry>
+string: reason
+</entry>
+</experience>
+
+8 bytes: unknown
+
+traitlist: physical
+traitlist: social
+traitlist: mental
+traitlist: negative physical
+traitlist: negative social
+traitlist: negative mental
+traitlist: status
+traitlist: abilities
+traitlist: Influences
+traitlist: Backgrounds
+traitlist: Health Levels
+traitlist: Bonds
+traitlist: Miscellaneous
+traitlist: Derangements
+traitlist: Disciplines
+traitlist: Rituals
+traitlist: Merits
+traitlist: Flaws
+traitlist: Equipment
+traitlist: Locations
+
+2 bytes: ?empty string?Unknown?
+string: biography
+string: notes
+
+string: 
+  | 2 bytes: length
+  | length bytes: char
+traitlist:
+  | string: name
+  | bool: abc
+  | bool: atomic
+  | bool: negative
+  | 2 bytes: display
+  | 2 bytes: unknown
+  | 2 bytes: number of entries
+  | trait x number of entries
+trait:
+  | string: name
+  | string: val
+  | string: note
