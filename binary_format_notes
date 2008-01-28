@@ -1,7 +1,50 @@
 2 bytes: 4
 4 bytes: GVBE
-20 bytes: Unknown
-2 bytes: ?Creature type?(vamp ?= 2)
+18 bytes: Unknown
+2 bytes: number of creatures in file
+
+2 bytes: Creature type
+  | vamp == 2
+  | kueijin == 11
+  | mummy == 10
+  | demon == 13
+<kueijin>
+string: name
+string: nature
+string: curmudgeon
+string: dharma
+string: balance
+string: direction
+string: station
+string: poarchetype
+word: hun
+word: temphun
+word: po
+word: temppo
+word: yinchi
+word: tempyinchi
+word: yangchi
+word: tempyangchi
+word: demonchi
+word: tempdemonchi
+word: dharmatraits
+word: tempdharmatraits
+word: willpower
+word: tempwillpower
+word: physicalmax
+word: socialmax
+word: mentalmax
+word: unknown
+string: status
+string: id
+8 bytes: startdate
+string: narrator
+bool: ?npc?
+8 bytes: lastmodified
+</kueijin>
+
+34 bytes: unknown
+
 <vampire>
 string: name
 string: nature
@@ -16,7 +59,7 @@ string: title
 2 bytes: tempblood
 2 bytes: willpower
 2 bytes: tempwillpower
-2 bytes: conscience  * These two could be reversed
+2 bytes: conscience
 2 bytes: ?tempconscience?
 2 bytes: selfcontrol
 2 bytes: tempselfcontrol
@@ -26,10 +69,10 @@ string: path
 2 bytes: pathtraits
 2 bytes: ?temppathtraits?
 string: aura
-string: ?tempaura?Unknown?
+string: aurabonus
 2 bytes: physicalmax
-2 bytes: ?socialmax?Unknown?
-2 bytes: ?mentalmax?Unknown?
+2 bytes: socialmax
+2 bytes: mentalmax
 string: player
 string: status
 string: id
@@ -43,16 +86,17 @@ string: id
 <entry>
 string: reason
 </entry>
-24 bytes: unknown
+20 bytes: unknown
   | 10 bytes: unknown
   | 8 bytes: ?footer?
-  | 6 bytes: unknown
+  | 2 bytes: unknown
 <entry>
+4 bytes: type
 string: reason
+4 bytes: float, earned
+4 bytes: float, unspent
 </entry>
 </experience>
-
-8 bytes: unknown
 
 traitlist: physical
 traitlist: social
@@ -95,3 +139,5 @@ trait:
   | string: name
   | string: val
   | string: note
+bool:
+  | 2 bytes: signed -1 for true, 0 for false
