@@ -17,6 +17,7 @@
 
 from __future__ import with_statement
 import pdb
+from pprint import pprint
 
 class Keyword(object):
 	def __init__(self):
@@ -66,20 +67,24 @@ class Template(object):
 			return keywords
 	def __empty_space(self, out_str, begin, end, keywords):
 		amount_shifted = end - begin
-		print "Input string\n"
-		print "|%s|" % out_str
+		#print "Input string\n"
+		#print "|%s|" % out_str
 		ret_str = "%s%s" % (out_str[:begin], out_str[end:])
-		print "Ret string\n|%s|" % ret_str
+		#print "Ret string\n|%s|" % ret_str
 
 		def keyword_not_in_empty_space(keyword):
-			return keyword.begin < begin or keyword.begin > end
+			return keyword.begin < begin or keyword.begin > (end - 1)
 		ret_keywords = filter(keyword_not_in_empty_space, keywords)
 		print "Originally %d keywords, now %d\n" % (len(keywords), len(ret_keywords))
+		def not_in_keywords(keyword):
+			return keyword not in keywords
+		removed_tags = map(lambda x: x.text, filter(lambda x: x not in ret_keywords, keywords))
+		pprint(removed_tags)
 
 		for keyword in ret_keywords:
-			if keyword.begin > end:
-				keyword.begin += amount_shifted
-				keyword.end += amount_shifted
+			if keyword.begin >= end:
+				keyword.begin -= amount_shifted
+				keyword.end -= amount_shifted
 
 		return (ret_str, ret_keywords)
 
@@ -150,31 +155,36 @@ class Template(object):
 		self.__increment_progress('Removing unnecessary options')
 
 		keywords = self.get_keywords(out_str)
-		keywords.reverse()
 		has_keywords = True
 		#pdb.set_trace()
-		while True:
-			cur_option = None
-			cur_keywords = filter(lambda keyword: keyword.text == '/option', keywords)
-			if len(cur_keywords) < 1:
-				break
+		for topic in Template.option_topics.keys():
+			if topic in self.desired_option_topics:
+				print "Topic %s in desired_option_topics, skipping clearance" % topic
+				continue
 			cur_option = Keyword()
-			cur_option.end = cur_keywords[0].end
+			target_line = "option %s" % topic
+			keyword_texts = map(lambda keyword: keyword.text, keywords)
+			try:
+				i = keyword_texts.index(target_line)
+			except ValueError:
+				print "Topic %s not found, skipping clearance" % topic
+				continue
+			cur_option.begin = keywords[i].begin
 
-			cur_keywords = filter(lambda keyword: keyword.text.split(' ')[0] == 'option', keywords)
-			if len(cur_keywords) < 1:
+			def find_option_end(start):
+				for i in range(start + 1, len(keywords)):
+					if keywords[i].text == '/option':
+						return keywords[i]
+				return None
+
+			ending_keyword = find_option_end(i)
+			if not ending_keyword:
 				raise Exception('option keyword unmatched')
-			cur_keyword = cur_keywords[0]
-			tokens = cur_keyword.text.split(' ')
-			if len(tokens) != 2:
-				raise Exception('Option without a topic')
-			topic = tokens[1]
-			if topic not in self.desired_option_topics:
-				if not Template.option_topics[topic]:
-					cur_option.begin = cur_keyword.begin
-					#out_str = "%s%s" % (out_str[:cur_option.begin], out_str[cur_option.end + 1:])
-					out_str, keywords = self.__empty_space(out_str, cur_option.begin, cur_option.end + 1, keywords)
-					
+			cur_option.end = ending_keyword.end
+
+			print "Empty for %s:\n|%s|\n" % (topic, out_str[cur_option.begin:cur_option.end+1])
+			out_str, keywords = self.__empty_space(out_str, cur_option.begin, cur_option.end + 1, keywords)
+
 		# Parse repeat keyword
 		self.__increment_progress('Processing repeats')
 		keywords = self.get_keywords(out_str)
