@@ -18,6 +18,7 @@
 from __future__ import with_statement
 import pdb
 from pprint import pprint
+from datetime import datetime
 
 class Keyword(object):
 	def __init__(self):
@@ -115,6 +116,34 @@ class Template(object):
 				return tl
 		return None
 
+	dateformat_map = {
+		'AM/PM' : '%p',
+		'd'     : '%e',
+		'dd'    : '%d',
+		'ddd'   : '%a',
+		'dddd'  : '%A',
+		'h'     : '%H',
+		'hh'    : '%H',
+		'm'     : '%m',
+		'mm'    : '%M', # FIXME: Actually context dependent 
+		'mmm'   : '%b',
+		'mmmm'  : '%B',
+		'yy'    : '%y',
+		'yyyy'  : '%Y'
+		}
+	dateformat_process_order = [
+		'dddd', 'ddd', 'dd', 'd', 'hh', 'h', 'mmmm', 'mmm', 'mm', 'm', 'yyyy', 'yy'
+		]
+	def translate_dateformat(self, df):
+		"""
+		Translates a Grapevine style dateformat to a strftime style dateformat
+		"""
+		print "Translated |%s| into " % df
+		for gv_format in self.dateformat_process_order:
+			df = df.replace(gv_format, self.dateformat_map[gv_format])
+		print "|%s|\n" % df
+		return df
+
 	def __start_progress(self, total_passes, text=None):
 		if self.__progress:
 			self.__progress.set_pulse_step(100.0 / float(total_passes) / 100.0)
@@ -142,7 +171,7 @@ class Template(object):
 		Write the template file using the initialized options. This writes out the
 		character to the template.
 		"""
-		self.__start_progress(9, "Reading file %s" % (self.template_filepath))
+		self.__start_progress(10, "Reading file %s" % (self.template_filepath))
 		in_str = ''
 		with open(self.template_filepath) as f:
 			in_str = f.read()
@@ -181,6 +210,20 @@ class Template(object):
 			cur_option.end = ending_keyword.end
 
 			out_str, keywords = self.__empty_space(out_str, cur_option.begin, cur_option.end + 1, keywords)
+
+		# Print dates and eliminate dateformats
+		self.__increment_progress('Processing dates')
+		keywords = self.get_keywords(out_str)
+		current_dateformat = '%D'
+		keywords = self.get_keywords(out_str)
+		keywords.reverse()
+		for keyword in keywords:
+			tokens = keyword.text.split(' ')
+			if tokens[0].lower() == 'dateformat':
+				current_dateformat = self.translate_dateformat(' '.join(tokens[1:]))
+			if tokens[0].lower() == 'printdate':
+				rep_str = datetime.now().strftime(current_dateformat)
+				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 
 		# Parse repeat keyword
 		self.__increment_progress('Processing repeats')
