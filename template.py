@@ -38,11 +38,13 @@ class Template(object):
 		'rumors'    : False,
 		'boons'     : False
 	}
-	def __init__(self, template_filepath, character, output_filepath, progress = None):
+
+	def __init__(self, template_filepath, character, output_filepath, progress = None, desired_option_topics = []):
 		self.character = character
 		self.template_filepath = template_filepath
 		self.output_filepath = output_filepath
 		self.__progress = progress
+		self.desired_option_topics = desired_option_topics
 
 	def get_keywords(self, out_str):
 			keywords = []
