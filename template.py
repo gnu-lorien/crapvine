@@ -66,6 +66,12 @@ class Template(object):
 					cur_key.begin = i
 			return keywords
 	def __empty_space(self, out_str, begin, end, keywords):
+		"""
+		Removes the characters in out_str between begin and end while updating
+		the keywords for the new offsets.
+
+		Returns the tuple (output string, list of keywords)
+		"""
 		amount_shifted = end - begin
 		ret_str = "%s%s" % (out_str[:begin], out_str[end:])
 
