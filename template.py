@@ -67,19 +67,11 @@ class Template(object):
 			return keywords
 	def __empty_space(self, out_str, begin, end, keywords):
 		amount_shifted = end - begin
-		#print "Input string\n"
-		#print "|%s|" % out_str
 		ret_str = "%s%s" % (out_str[:begin], out_str[end:])
-		#print "Ret string\n|%s|" % ret_str
 
 		def keyword_not_in_empty_space(keyword):
 			return keyword.begin < begin or keyword.begin > (end - 1)
 		ret_keywords = filter(keyword_not_in_empty_space, keywords)
-		print "Originally %d keywords, now %d\n" % (len(keywords), len(ret_keywords))
-		def not_in_keywords(keyword):
-			return keyword not in keywords
-		removed_tags = map(lambda x: x.text, filter(lambda x: x not in ret_keywords, keywords))
-		pprint(removed_tags)
 
 		for keyword in ret_keywords:
 			if keyword.begin >= end:
@@ -182,7 +174,6 @@ class Template(object):
 				raise Exception('option keyword unmatched')
 			cur_option.end = ending_keyword.end
 
-			print "Empty for %s:\n|%s|\n" % (topic, out_str[cur_option.begin:cur_option.end+1])
 			out_str, keywords = self.__empty_space(out_str, cur_option.begin, cur_option.end + 1, keywords)
 
 		# Parse repeat keyword
