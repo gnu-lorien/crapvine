@@ -16,6 +16,7 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import with_statement
+import pdb
 
 class Keyword(object):
 	def __init__(self):
@@ -63,6 +64,24 @@ class Template(object):
 					cur_key = Keyword()
 					cur_key.begin = i
 			return keywords
+	def __empty_space(self, out_str, begin, end, keywords):
+		amount_shifted = end - begin
+		print "Input string\n"
+		print "|%s|" % out_str
+		ret_str = "%s%s" % (out_str[:begin], out_str[end:])
+		print "Ret string\n|%s|" % ret_str
+
+		def keyword_not_in_empty_space(keyword):
+			return keyword.begin < begin or keyword.begin > end
+		ret_keywords = filter(keyword_not_in_empty_space, keywords)
+		print "Originally %d keywords, now %d\n" % (len(keywords), len(ret_keywords))
+
+		for keyword in ret_keywords:
+			if keyword.begin > end:
+				keyword.begin += amount_shifted
+				keyword.end += amount_shifted
+
+		return (ret_str, ret_keywords)
 
 	# Map of output name to traitlist name
 	iterable_map = { 
@@ -130,25 +149,31 @@ class Template(object):
 		# Eliminate undesired or unsupported options topics
 		self.__increment_progress('Removing unnecessary options')
 
-		for topic in self.option_topics.keys():
+		keywords = self.get_keywords(out_str)
+		keywords.reverse()
+		has_keywords = True
+		#pdb.set_trace()
+		while True:
+			cur_option = None
+			cur_keywords = filter(lambda keyword: keyword.text == '/option', keywords)
+			if len(cur_keywords) < 1:
+				break
+			cur_option = Keyword()
+			cur_option.end = cur_keywords[0].end
+
+			cur_keywords = filter(lambda keyword: keyword.text.split(' ')[0] == 'option', keywords)
+			if len(cur_keywords) < 1:
+				raise Exception('option keyword unmatched')
+			cur_keyword = cur_keywords[0]
+			tokens = cur_keyword.text.split(' ')
+			if len(tokens) != 2:
+				raise Exception('Option without a topic')
+			topic = tokens[1]
 			if topic not in self.desired_option_topics:
 				if not Template.option_topics[topic]:
-					keywords = self.get_keywords(out_str)
-					keywords.reverse()
-					cur_option = None
-					for i in range(len(keywords)):
-						if keywords[i].text == '/option':
-							assert cur_option == None
-							cur_option = Keyword()
-							cur_option.end = keywords[i].end
-							pass
-						else:
-							tokens = keywords[i].text.split(' ')
-							if len(tokens) == 2 and tokens[0] == 'option':
-								if tokens[1] == topic:
-									cur_option.begin = keywords[i].begin
-									out_str = "%s%s" % (out_str[:cur_option.begin], out_str[cur_option.end + 1:])
-								cur_option = None
+					cur_option.begin = cur_keyword.begin
+					#out_str = "%s%s" % (out_str[:cur_option.begin], out_str[cur_option.end + 1:])
+					out_str, keywords = self.__empty_space(out_str, cur_option.begin, cur_option.end + 1, keywords)
 					
 		# Parse repeat keyword
 		self.__increment_progress('Processing repeats')
