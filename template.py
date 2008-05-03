@@ -25,6 +25,19 @@ class Keyword(object):
 		end = 0
 
 class Template(object):
+	""" Topic name => is supported """
+	option_topics = {
+		'game'      : False,
+		'notes'     : False,
+		'history'   : False,
+		'player'    : False,
+		'items'     : False,
+		'rotes'     : False,
+		'locations' : False,
+		'actions'   : False,
+		'rumors'    : False,
+		'boons'     : False
+	}
 	def __init__(self, template_filepath, character, output_filepath, progress = None):
 		self.character = character
 		self.template_filepath = template_filepath
@@ -353,4 +366,3 @@ class Template(object):
 					doubletempdot * (tmp_dots % 2)
 				)
 		return ''
-
