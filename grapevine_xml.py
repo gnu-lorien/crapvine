@@ -18,7 +18,7 @@
 from __future__ import with_statement
 import gtk
 from xml.sax.saxutils import quoteattr, unescape
-from xml.sax import sax2exts
+from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces, property_lexical_handler
 from dateutil.parser import parse
 from datetime import datetime
@@ -172,7 +172,7 @@ class GEX(object):
 		self.filename = filename
 		self.chronicle_loader = ChronicleLoader()
 		
-		parser = sax2exts.make_parser()
+		parser = make_parser()
 		parser.setFeature(feature_namespaces, 0)
 		parser.setContentHandler(self.chronicle_loader)
 		parser.setProperty(property_lexical_handler, self.chronicle_loader)
