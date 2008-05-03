@@ -46,7 +46,7 @@ class Template(object):
 		self.template_filepath = template_filepath
 		self.output_filepath = output_filepath
 		self.__progress = progress
-		self.desired_option_topics = desired_option_topics
+		self.desired_option_topics = filter(lambda topic: topic in Template.option_topics, desired_option_topics)
 
 	def get_keywords(self, out_str):
 			keywords = []
