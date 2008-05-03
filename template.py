@@ -124,11 +124,11 @@ class Template(object):
 		in_str = ''
 		with open(self.template_filepath) as f:
 			in_str = f.read()
-		self.__increment_progress('Processing repeats')
 
 		out_str = "%s" % (in_str)
 
 		# Parse repeat keyword
+		self.__increment_progress('Processing repeats')
 		keywords = self.get_keywords(out_str)
 		keywords.reverse()
 		repeat_blocks = []
@@ -149,9 +149,9 @@ class Template(object):
 
 		for repeat_block in repeat_blocks:
 			out_str = self.__expandinate_repeat_block(repeat_block, out_str)
-		self.__increment_progress('Processing attributes')
 
 		# Parse attributes
+		self.__increment_progress('Processing attributes')
 		keywords = self.get_keywords(out_str)
 		keywords.reverse()
 		for keyword in keywords:
@@ -162,9 +162,9 @@ class Template(object):
 			except AttributeError:
 				# It's either incorrect or a language keyword
 				pass
-		self.__increment_progress('Processing traitlist counts')
 
 		# Parse iterable counts
+		self.__increment_progress('Processing traitlist counts')
 		keywords = self.get_keywords(out_str)
 		keywords.reverse()
 		for keyword in keywords:
@@ -176,9 +176,9 @@ class Template(object):
 				if tl:
 					rep_str = "%d" % (tl.get_display_total())
 				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
-		self.__increment_progress('Processing tallies')
 
 		# Parse tally keyword
+		self.__increment_progress('Processing tallies')
 		dot = 'O'
 		emptydot = '/'
 		tempdot = '+'
@@ -212,9 +212,9 @@ class Template(object):
 						out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
 					except AttributeError:
 						pass
-		self.__increment_progress('Processing tabs')
 
 		# Parse tab keyword
+		self.__increment_progress('Processing tabs')
 		keywords = self.get_keywords(out_str)
 		keywords.reverse()
 		for keyword in keywords:
@@ -222,9 +222,9 @@ class Template(object):
 			if tokens[0].lower() == 'tab':
 				rep_str = "\t"
 				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
-		self.__increment_progress('Formatting columns')
 
 		# Parse col keyword
+		self.__increment_progress('Formatting columns')
 		lines = out_str.split("\n")
 		out_lines = []
 		for line in lines:
@@ -259,8 +259,8 @@ class Template(object):
 			out_lines.append(line)
 			#print line
 		out_str = "\n".join(out_lines)
-		self.__increment_progress("Writing file %s" % (self.output_filepath))
 
+		self.__increment_progress("Writing file %s" % (self.output_filepath))
 		with open(self.output_filepath, 'w') as f:
 			f.write(out_str)
 		self.__increment_progress()
