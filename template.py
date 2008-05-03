@@ -116,6 +116,10 @@ class Template(object):
 				my_out = ". %s" % (text)
 			print "%d%% complete%s" % ((100.0 / self.__total_passes) * self.__current_pass, my_out)
 	def save(self, progress=None):
+		"""
+		Write the template file using the initalized options. This writes out the
+		character to the template.
+		"""
 		self.__start_progress(8, "Reading file %s" % (self.template_filepath))
 		in_str = ''
 		with open(self.template_filepath) as f:
