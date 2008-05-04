@@ -19,6 +19,7 @@ from __future__ import with_statement
 import pdb
 from pprint import pprint
 from datetime import datetime
+from pyparsing import *
 
 class Keyword(object):
 	def __init__(self):
@@ -148,24 +149,36 @@ class Template(object):
 		'h'     : '%H',
 		'hh'    : '%H',
 		'm'     : '%m',
-		'mm'    : '%M', # FIXME: Actually context dependent 
+		'mm'    : '%m',
 		'mmm'   : '%b',
 		'mmmm'  : '%B',
 		'yy'    : '%y',
 		'yyyy'  : '%Y'
 		}
-	dateformat_process_order = [
-		'dddd', 'ddd', 'dd', 'd', 'hh', 'h', 'mmmm', 'mmm', 'mm', 'm', 'yyyy', 'yy'
-		]
 	def translate_dateformat(self, df):
 		"""
 		Translates a Grapevine style dateformat to a strftime style dateformat
 		"""
 		print "Translated |%s| into " % df
-		for gv_format in self.dateformat_process_order:
-			df = df.replace(gv_format, self.dateformat_map[gv_format])
-		print "|%s|\n" % df
-		return df
+		parse_lang = Word('AM/PM') | Word('dddd') | Word('ddd') | Word('dd') | Literal('d') | Word('hh') | Literal('h') | Word('mmmm') | Word('mmm') | Word('mm') | Literal('m') | Word('yyyy') | Word('yy')
+		ret_str = ""
+		last_match_hours = False
+		for match in parse_lang.searchString(df):
+			pprint(match)
+			mtext = match[0]
+			if self.dateformat_map.has_key(mtext):
+				if not last_match_hours:
+					ret_str = "%s%s" % (ret_str, self.dateformat_map[mtext])
+				else:
+					ret_str = "%s%s" % (ret_str, '%M')
+			else:
+				ret_str = "%s%s" % (ret_str, mtext)
+			if mtext == 'h' or mtext == 'hh':
+				last_match_hours = True
+			else:
+				last_match_hours = False
+		print "|%s|" % ret_str
+		return ret_str
 
 	def __start_progress(self, total_passes, text=None):
 		if self.__progress:
