@@ -86,6 +86,29 @@ class Template(object):
 				keyword.end -= amount_shifted
 
 		return (ret_str, ret_keywords)
+	def __replace_keyword(self, out_str, keyword, new_text, keywords):
+		"""
+		Replaces a keyword in out_str with new_text and updates the offsets of the
+		remaining keywords.
+
+		Returns a tuple (output string, list of keywords)
+		"""
+		amount_shifted = keyword.end - keyword.begin + len(new_text)
+		ret_str = "%s%s%s" % (
+			out_str[:keyword.begin],
+			new_text,
+			out_str[keyword.end+1:])
+
+		def keyword_not_in_empty_space(kw):
+			return kw.begin < keyword.begin or kw.begin > (keyword.end - 1)
+		ret_keywords = filter(keyword_not_in_empty_space, keywords)
+
+		for kw in ret_keywords:
+			if kw.begin >= keyword.end:
+				kw.begin -= amount_shifted
+				kw.end -= amount_shifted
+
+		return (ret_str, ret_keywords)
 
 	# Map of output name to traitlist name
 	iterable_map = { 
@@ -215,15 +238,24 @@ class Template(object):
 		self.__increment_progress('Processing dates')
 		keywords = self.get_keywords(out_str)
 		current_dateformat = '%D'
-		keywords = self.get_keywords(out_str)
-		keywords.reverse()
-		for keyword in keywords:
-			tokens = keyword.text.split(' ')
-			if tokens[0].lower() == 'dateformat':
-				current_dateformat = self.translate_dateformat(' '.join(tokens[1:]))
-			if tokens[0].lower() == 'printdate':
-				rep_str = datetime.now().strftime(current_dateformat)
-				out_str = "%s%s%s" % (out_str[:keyword.begin], rep_str, out_str[keyword.end+1:])
+		total_num_of_printdates = len(
+			filter(
+				lambda kw: kw.text.lower() == 'printdate',
+				keywords))
+		for pd_idx in range(total_num_of_printdates):
+			processed_printdate = False
+			kw_idx = 0
+			while not processed_printdate:
+				keyword = keywords[kw_idx]
+				kw_idx += 1
+				tokens = keyword.text.split(' ')
+				if tokens[0].lower() == 'dateformat':
+					current_dateformat = self.translate_dateformat(' '.join(tokens[1:]))
+				if tokens[0].lower() == 'printdate':
+					rep_str = datetime.now().strftime(current_dateformat)
+					print "Dateformat: |%s| Expanded: |%s|" % (current_dateformat, rep_str)
+					(out_str, keywords) = self.__replace_keyword(out_str, keyword, rep_str, keywords)
+					processed_printdate = True
 
 		# Parse repeat keyword
 		self.__increment_progress('Processing repeats')
