@@ -270,6 +270,23 @@ class Template(object):
 					(out_str, keywords) = self.__replace_keyword(out_str, keyword, rep_str, keywords)
 					processed_printdate = True
 
+		# Clear out dateformat keywords
+		keywords = self.get_keywords(out_str)
+		total_num_of_dateformats = len(
+			filter(
+				lambda kw: kw.text.lower().split(' ')[0] == 'dateformat',
+				keywords))
+		for df_idx in range(total_num_of_dateformats):
+			processed_dateformat = False
+			kw_idx = 0
+			while not processed_dateformat:
+				keyword = keywords[kw_idx]
+				kw_idx += 1
+				tokens = keyword.text.split(' ')
+				if tokens[0].lower() == 'dateformat':
+					(out_str, keywords) = self.__replace_keyword(out_str, keyword, '', keywords)
+					processed_dateformat = True
+
 		# Parse repeat keyword
 		self.__increment_progress('Processing repeats')
 		keywords = self.get_keywords(out_str)
