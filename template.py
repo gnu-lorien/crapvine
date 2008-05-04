@@ -94,7 +94,7 @@ class Template(object):
 
 		Returns a tuple (output string, list of keywords)
 		"""
-		amount_shifted = keyword.end - keyword.begin + len(new_text)
+		amount_shifted = keyword.end - keyword.begin - len(new_text) + 1
 		ret_str = "%s%s%s" % (
 			out_str[:keyword.begin],
 			new_text,
