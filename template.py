@@ -287,12 +287,12 @@ class Template(object):
 						display = tokens[1]
 					else:
 						display = tl.display
-					iter = traitlist_iters[tl_name]
-					if mod == '+' and iter:
-						iter = tl.iter_next(iter)
-						traitlist_iters[tl_name] = iter
-					if iter:
-						trait = tl.get_item_from_path(tl.get_path(iter))
+					titer = traitlist_iters[tl_name]
+					if mod == '+' and titer:
+						titer = tl.iter_next(titer)
+						traitlist_iters[tl_name] = titer
+					if titer:
+						trait = tl.get_item_from_path(tl.get_path(titer))
 						rep_str = "%s" % (trait.display_str(display))
 						replaces.append((k.begin, rep_str, k.end+1))
 						#l_str = "%s%s%s" % (l_str[:k.begin], rep_str, l_str[k.end+1:])
@@ -306,10 +306,10 @@ class Template(object):
 				l_str = "%s%s%s" % (l_str[:rep[0]], rep[1], l_str[rep[2]:])
 			num_none = 0
 			for n in to_increment.keys():
-				iter = traitlist_iters[n]
+				titer = traitlist_iters[n]
 				tl = traitlists[n]
-				if iter:
-					traitlist_iters[n] = tl.iter_next(iter)
+				if titer:
+					traitlist_iters[n] = tl.iter_next(titer)
 				else:
 					++num_none
 			#print "Num none: %d | to_increment: %d" % (num_none, len(to_increment))

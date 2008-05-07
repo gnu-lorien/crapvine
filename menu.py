@@ -190,8 +190,8 @@ class MenuModel(gtk.GenericTreeModel):
 		return 1
 	def on_get_column_type(self, index):
 		return gobject.TYPE_STRING
-	def on_get_path(self, iter):
-		return (iter, )
+	def on_get_path(self, titer):
+		return (titer, )
 	def on_get_iter(self, path):
 		return path[0]
 	def on_get_value(self, index, column):
@@ -209,8 +209,8 @@ class MenuModel(gtk.GenericTreeModel):
 		return None
 	def on_iter_has_child(self, node):
 		return False
-	def on_iter_n_children(self, iter):
-		if iter:
+	def on_iter_n_children(self, titer):
+		if titer:
 			return 0
 		return len(self.menu.items)
 	def on_iter_nth_child(self, parent, n):

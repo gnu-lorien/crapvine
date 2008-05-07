@@ -32,8 +32,8 @@ class TextBox:
 		self.character = character
 
 		buffer = self.textview.get_buffer()
-		iter = buffer.get_start_iter()
-		buffer.insert(iter, character[trait_display_name])
+		titer = buffer.get_start_iter()
+		buffer.insert(titer, character[trait_display_name])
 		buffer.connect('changed', self.on_text_changed)
 
 		self.title.set_label(self.trait_display_name.capitalize())

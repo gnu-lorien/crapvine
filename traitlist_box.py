@@ -85,18 +85,18 @@ class TraitlistBox:
 		})
 
 	def add_to_selected_trait(self, widget=None):
-		(model, iter) = self.tree.get_selection().get_selected()
-		path = model.get_path(iter)
+		(model, titer) = self.tree.get_selection().get_selected()
+		path = model.get_path(titer)
 		target_trait = model.get_item(path[0])
 		model.increment_trait(target_trait.name)
 		self.__update_title()
 		print "Adding trait on %s" % self.trait_menu_name
 
 	def subtract_from_selected_trait(self, widget=None):
-		(model, iter) = self.tree.get_selection().get_selected()
-		if iter == None:
+		(model, titer) = self.tree.get_selection().get_selected()
+		if titer == None:
 			return
-		path = model.get_path(iter)
+		path = model.get_path(titer)
 		target_trait = model.get_item(path[0])
 		model.decrement_trait(target_trait.name)
 		self.__update_title()
@@ -104,10 +104,10 @@ class TraitlistBox:
 		print "Subtracting trait from %s" % self.trait_menu_name
 
 	def get_selected_trait(self):
-		(model, iter) = self.tree.get_selection().get_selected()
-		if iter == None:
+		(model, titer) = self.tree.get_selection().get_selected()
+		if titer == None:
 			return None
-		path = model.get_path(iter)
+		path = model.get_path(titer)
 		return model.get_item(path[0])
 
 	def set_focus_child(self, unused, unused_as_well):
@@ -136,7 +136,7 @@ class TraitlistBox:
 	def __update_title(self):
 		self.title.set_label('%d %s' % (self.tree.get_model().get_total_value(), self.trait_display_name))
 
-	def tree_model_changed(self, treemodel=None, path=None, iter=None):
+	def tree_model_changed(self, treemodel=None, path=None, titer=None):
 		self.__update_title()
 
 class TraitlistBoxMenuTarget(MenuTarget):

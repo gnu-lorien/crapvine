@@ -188,9 +188,9 @@ class CharacterWindow:
 			str)
 
 		for entry in experience.entries:
-			iter = model.append()
+			titer = model.append()
 			for i in range(len(experience.column_attrs)):
-				model.set(iter, i, entry[experience.column_attrs[i]])
+				model.set(titer, i, entry[experience.column_attrs[i]])
 		self.tree_experience.set_model(self.character.experience)
 
 

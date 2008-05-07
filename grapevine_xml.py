@@ -125,10 +125,10 @@ class AttributedListModel(Attributed, gtk.GenericTreeModel):
 		return len(self.column_attrs)
 	def on_get_column_type(self, index):
 		return self.column_attr_types[index]
-	def on_get_path(self, iter):
+	def on_get_path(self, titer):
 		if len(self.list) == 0:
 			return None
-		return (iter, )
+		return (titer, )
 	def on_get_iter(self, path):
 		if len(self.list) == 0:
 			return None
@@ -146,8 +146,8 @@ class AttributedListModel(Attributed, gtk.GenericTreeModel):
 		return None
 	def on_iter_has_child(self, node):
 		return False
-	def on_iter_n_children(self, iter):
-		if iter:
+	def on_iter_n_children(self, titer):
+		if titer:
 			return 0
 		return len(self.list)
 	def on_iter_nth_child(self, parent, n):
