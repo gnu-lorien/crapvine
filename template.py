@@ -127,6 +127,29 @@ class Template(object):
 
 		out_str = "%s" % (in_str)
 
+		# Eliminate undesired or unsupported options topics
+		self.__increment_progress('Removing unnecessary options')
+
+		for topic in self.option_topics.keys():
+			if topic not in self.desired_option_topics:
+				if not Template.option_topics[topic]:
+					keywords = self.get_keywords(out_str)
+					keywords.reverse()
+					cur_option = None
+					for i in range(len(keywords)):
+						if keywords[i].text == '/option':
+							assert cur_option == None
+							cur_option = Keyword()
+							cur_option.end = keywords[i].end
+							pass
+						else:
+							tokens = keywords[i].text.split(' ')
+							if len(tokens) == 2 and tokens[0] == 'option':
+								if tokens[1] == topic:
+									cur_option.begin = keywords[i].begin
+									out_str = "%s%s" % (out_str[:cur_option.begin], out_str[cur_option.end + 1:])
+								cur_option = None
+					
 		# Parse repeat keyword
 		self.__increment_progress('Processing repeats')
 		keywords = self.get_keywords(out_str)
