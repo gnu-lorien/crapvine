@@ -180,12 +180,12 @@ class CharacterWindow:
 			self.tree_experience.append_column(column)
 
 		model = gtk.ListStore(
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING)
+			str,
+			str,
+			str,
+			str,
+			str,
+			str)
 
 		for entry in experience.entries:
 			iter = model.append()

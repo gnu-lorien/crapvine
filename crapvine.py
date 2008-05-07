@@ -72,11 +72,11 @@ class CharacterTree:
 			self.tree_characters.append_column(column)
 
 		model = gtk.ListStore(
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_STRING,
-			gobject.TYPE_BOOLEAN,
-			gobject.TYPE_STRING)
+			str,
+			str,
+			str,
+			bool,
+			str)
 
 		for vamp in self.loader.chronicle_loader.vampires.values():
 			it = model.append()
