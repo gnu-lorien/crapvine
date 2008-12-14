@@ -65,11 +65,12 @@ class CharacterTree:
 			dlg.hide()
 	def __reload_tree(self):
 		self.tree_characters = self.xml.get_widget('treeCharacters')
-		for i in range(len(self.column_labels)):
-			renderer = gtk.CellRendererText()
-			renderer.set_data("column", i)
-			column = gtk.TreeViewColumn(self.column_labels[i], renderer, text=i)
-			self.tree_characters.append_column(column)
+		if [col.get_title() for col in self.tree_characters.get_columns()] != self.column_labels:
+			for i in range(len(self.column_labels)):
+				renderer = gtk.CellRendererText()
+				renderer.set_data("column", i)
+				column = gtk.TreeViewColumn(self.column_labels[i], renderer, text=i)
+				self.tree_characters.append_column(column)
 
 		model = gtk.ListStore(
 			gobject.TYPE_STRING,
