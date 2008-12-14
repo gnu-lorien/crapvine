@@ -40,6 +40,7 @@ class TraitList(AttributedListModel):
 		AttributedListModel.__init__(self)
 		self.list = []
 		self.traits = self.list
+		self.trait_changes = None
 
 	def add_menu_item(self, menu_item):
 		t = Trait()
@@ -51,6 +52,7 @@ class TraitList(AttributedListModel):
 	def add_trait(self, trait):
 		if self.atomic:
 			self.traits.append(trait)
+			self.__added_trait(trait)
 			path = (len(self.traits) - 1, )
 			self.row_inserted(path, self.get_iter(path))
 		else:
@@ -58,6 +60,7 @@ class TraitList(AttributedListModel):
 				for en in enumerate(self.traits):
 					t = en[1]
 					if trait.name == t.name:
+						original_trait = copy.copy(t)
 						idx = en[0]
 						try:
 							t.val = str(float(t.val) + float(trait.val))
@@ -65,10 +68,13 @@ class TraitList(AttributedListModel):
 							t.val = '2'
 						if t.note == '':
 							t.note = trait.note
+						modified_trait = copy.copy(t)
+						self.__modified_trait(original_trait, modified_trait)
 						path = (idx, )
 						self.row_changed(path, self.get_iter(path))
 			else:
 				self.traits.append(trait)
+				self.__added_trait(trait)
 				path = (len(self.traits) - 1, )
 				self.row_inserted(path, self.get_iter(path))
 
@@ -82,6 +88,7 @@ class TraitList(AttributedListModel):
 						t.val = str(float(t.val) + 1)
 					except ValueError:
 						t.val = '1'
+					self.__incremented_trait(t)
 					path = (idx, )
 					self.row_changed(path, self.get_iter(path))
 		else:
@@ -93,8 +100,10 @@ class TraitList(AttributedListModel):
 				t = en[1]
 				if trait_name == t.name:
 					idx = en[0]
+					original_trait = copy.copy(t)
 					if t.val == '1':
 						del self.traits[idx]
+						self.__deleted_trait(original_trait)
 						path = (idx, )
 						self.row_deleted(path)
 					else:
@@ -102,6 +111,7 @@ class TraitList(AttributedListModel):
 							t.val = str(float(t.val) - 1)
 						except ValueError:
 							t.val = '1'
+						self.__decremented_trait(t)
 						path = (idx, )
 						self.row_changed(path, self.get_iter(path))
 		else:
@@ -138,6 +148,24 @@ class TraitList(AttributedListModel):
 		return ret
 	def __str__(self):
 		return self.get_xml()
+
+	def __added_trait(self, trait):
+		"""Should make copy""" 
+		pass
+	def __modified_trait(self, original, modified):
+		"""Given copies"""
+		pass
+	def __incremented_trait(self, trait):
+		"""Should make copy"""
+		pass
+	def __decremented_trait(self, trait):
+		"""Should make copy"""
+		pass
+	def __deleted_trait(self, trait):
+		"""Given copies"""
+		pass
+	def get_changes_strings(self, display = "1"):
+
 
 class Trait(Attributed):
 	required_attrs = ['name']
