@@ -16,16 +16,18 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from __future__ import with_statement
-import configuration
+import crapvine
+print(dir(crapvine))
+from crapvine.xml import grapevine_xml
+from crapvine.gui import configuration
 import gobject
 import gtk
 import gtk.glade
-from character_window import CharacterWindow
+from crapvine.gui.character_window import CharacterWindow
 import traceback
 from optparse import OptionParser
-import grapevine_xml
 import pdb
-from template import Template
+from crapvine.template.template import Template
 
 class CharacterTree:
 	column_labels = [ 'Name', 'Sect', 'Clan', 'NPC?', 'Status' ]

@@ -16,8 +16,8 @@
 ##  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import pdb
-from grapevine_xml import Attributed, AttributedListModel
-from attribute import AttributeBuilder
+from crapvine.xml.grapevine_xml import Attributed, AttributedListModel
+from crapvine.xml.attribute import AttributeBuilder
 from xml.sax.saxutils import escape
 
 class Chronicle(Attributed):

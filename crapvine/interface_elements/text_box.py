@@ -18,7 +18,7 @@
 import gtk
 import gtk.glade
 import gobject
-import configuration
+from crapvine.gui import configuration
 
 class TextBox:
 	__text_box_xml_file  = configuration.get_textbox_xml_file_path()

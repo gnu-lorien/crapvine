@@ -18,7 +18,7 @@
 import gtk
 import gtk.glade
 import gobject
-import configuration
+from crapvine.gui import configuration
 
 class NumberAsTextAttributeBox:
 	__glade_xml_file = configuration.get_number_as_text_attribute_box_xml_file_path()

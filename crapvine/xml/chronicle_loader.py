@@ -20,7 +20,7 @@ from xml.sax import ContentHandler
 from xml.sax.saxutils import unescape, escape
 
 from vampire_loader import VampireLoader
-from chronicle import Chronicle
+from crapvine.types.chronicle import Chronicle
 
 def normalize_whitespace(text):
 	"Remove redundant whitespace from a string"

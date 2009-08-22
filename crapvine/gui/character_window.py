@@ -23,15 +23,15 @@ from xml.sax import make_parser
 from xml.sax.handler import feature_namespaces
 
 import configuration
-from traitlist_box import TraitlistBox
-from text_box import TextBox
-from text_attribute_box import TextAttributeBox
-from number_as_text_attribute_box import NumberAsTextAttributeBox
-from number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporaryAttributeBox
-from menu_navigator import MenuNavigator
+from crapvine.interface_elements.traitlist_box import TraitlistBox
+from crapvine.interface_elements.text_box import TextBox
+from crapvine.interface_elements.text_attribute_box import TextAttributeBox
+from crapvine.interface_elements.number_as_text_attribute_box import NumberAsTextAttributeBox
+from crapvine.interface_elements.number_as_text_with_temporary_attribute_box import NumberAsTextWithTemporaryAttributeBox
+from crapvine.gui.menu_navigator import MenuNavigator
 
-from trait import Trait
-from experience import ExperienceEntry
+from crapvine.xml.trait import Trait
+from crapvine.xml.experience import ExperienceEntry
 from dateutil.parser import parse
 from datetime import datetime, date
 

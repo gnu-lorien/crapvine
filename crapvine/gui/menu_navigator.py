@@ -17,7 +17,7 @@
 
 import gtk
 import copy
-from menu import MenuLoader, MenuModel, MenuReference
+from crapvine.xml.menu import MenuLoader, MenuModel, MenuReference
 
 class MenuNavigator:
 	def __init__(self, xml):

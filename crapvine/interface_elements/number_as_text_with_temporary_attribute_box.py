@@ -18,8 +18,8 @@
 import gtk
 import gtk.glade
 import gobject
-import configuration
-from template import Template
+from crapvine.gui import configuration
+from crapvine.template.template import Template
 
 class NumberAsTextWithTemporaryAttributeBox:
 	__glade_xml_file = configuration.get_number_as_text_with_temporary_attribute_box_xml_file_path()

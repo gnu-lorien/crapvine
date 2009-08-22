@@ -18,7 +18,7 @@
 import gtk
 import gtk.glade
 import gobject
-import configuration
+from crapvine.gui import configuration
 
 class TextAttributeBox:
 	__glade_xml_file = configuration.get_text_attribute_box_xml_file_path()

@@ -18,10 +18,10 @@
 import gtk
 import gtk.glade
 import gobject
-import configuration
+from crapvine.gui import configuration
 
-from menu_navigator import MenuTarget
-from trait import Trait
+from crapvine.gui.menu_navigator import MenuTarget
+from crapvine.xml.trait import Trait
 
 class TraitlistBox:
 	# Trait columns

@@ -20,9 +20,9 @@ from xml.sax import ContentHandler
 from xml.sax.saxutils import unescape, escape
 
 # Vampire Support
-from vampire import  Vampire
-from trait import Trait, TraitList
-from experience import Experience, ExperienceEntry
+from crapvine.types.vampire import  Vampire
+from crapvine.xml.trait import Trait, TraitList
+from crapvine.xml.experience import Experience, ExperienceEntry
 
 def normalize_whitespace(text):
 	"Remove redundant whitespace from a string"
