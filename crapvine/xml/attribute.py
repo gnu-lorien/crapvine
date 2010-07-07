@@ -183,7 +183,7 @@ class BoolAttr(BaseAttr):
 			final_set = False
 		elif value:
 			final_set = True
-		setattr(instance, self.inst_attr, value)
+		setattr(instance, self.inst_attr, final_set)
 	def __get__(self, instance, owner):
 		if not instance:
 			return self
