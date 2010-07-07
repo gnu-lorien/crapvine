@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.2.2 on Wed Aug  1 19:52:36 2007 by lorien@localhost.localdomain-->
+<?xml version="1.0"?>
 <glade-interface>
+  <!-- interface-requires gtk+ 2.16 -->
+  <!-- interface-naming-policy toplevel-contextual -->
   <widget class="GtkWindow" id="winTraitlistBox">
     <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
     <child>
@@ -14,18 +14,18 @@
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
             <child>
               <widget class="GtkButton" id="btnSubtractFromTrait">
+                <property name="label" translatable="yes">-</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="label" translatable="yes">-</property>
-                <property name="response_id">0</property>
                 <signal name="clicked" handler="on_subtract_from_trait"/>
                 <signal name="clicked" handler="set_traitbox_focus"/>
               </widget>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
+                <property name="position">0</property>
               </packing>
             </child>
             <child>
@@ -39,12 +39,11 @@
             </child>
             <child>
               <widget class="GtkButton" id="btnAddToTrait">
+                <property name="label" translatable="yes">+</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="label" translatable="yes">+</property>
-                <property name="response_id">0</property>
                 <signal name="clicked" handler="on_add_to_trait"/>
                 <signal name="clicked" handler="set_traitbox_focus"/>
               </widget>
@@ -58,6 +57,7 @@
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
+            <property name="position">0</property>
           </packing>
         </child>
         <child>
@@ -65,20 +65,19 @@
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
-            <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
-            <signal name="set_focus_child" handler="on_scrolledwindow3_set_focus_child"/>
+            <property name="hscrollbar_policy">automatic</property>
+            <property name="vscrollbar_policy">automatic</property>
             <signal name="focus" handler="on_scrolledwindow3_focus"/>
+            <signal name="set_focus_child" handler="on_scrolledwindow3_set_focus_child"/>
             <child>
               <widget class="GtkTreeView" id="treeTraits">
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-                <property name="headers_clickable">True</property>
-                <signal name="row_activated" handler="on_row_activated"/>
-                <signal name="cursor_changed" handler="set_traitbox_focus"/>
-                <signal name="set_focus_child" handler="on_treeTraits_set_focus_child"/>
                 <signal name="focus" handler="on_treeTraits_focus"/>
+                <signal name="cursor_changed" handler="set_traitbox_focus"/>
+                <signal name="row_activated" handler="on_row_activated"/>
+                <signal name="set_focus_child" handler="on_treeTraits_set_focus_child"/>
               </widget>
             </child>
           </widget>

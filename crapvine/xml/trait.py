@@ -165,7 +165,7 @@ class TraitList(AttributedListModel):
 		"""Given copies"""
 		pass
 	def get_changes_strings(self, display = "1"):
-
+		pass
 
 class Trait(Attributed):
 	required_attrs = ['name']
