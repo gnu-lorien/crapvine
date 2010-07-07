@@ -91,13 +91,18 @@ class Attributed(object):
 		return self.__get_attrs_names('date_attrs')
 	def __get_bool_attrs(self):
 		return self.__get_attrs_names('bool_attrs')
+	def __format_date(self, date):
+		if date.hour == date.minute == date.second == 0:
+			return date.strftime("%m/%d/%Y")
+		else:
+			return date.strftime("%m/%d/%Y %H:%M:%S %p")
 
 	def get_attrs_xml(self):
 		attrs_strs = []
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.__get_required_attrs() if not self.__attr_default(name)])
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(self[name])) for name in self.__get_text_attrs() if not self.__attr_default(name)])
 		attrs_strs.extend(['%s=%s' % (name, quoteattr(getattr(self, name))) for name in self.__get_number_as_text_attrs() if not self.__attr_default(name)])
-		attrs_strs.extend(['%s=%s' % (name, quoteattr(str(self[name]))) for name in self.__get_date_attrs() if not self.__attr_default(name)])
+		attrs_strs.extend(['%s=%s' % (name, quoteattr(self.__format_date(self[name]))) for name in self.__get_date_attrs() if not self.__attr_default(name)])
 		for bool_attr in self.__get_bool_attrs():
 			if not self.__attr_default(bool_attr):
 				my_bool = 'yes' if self[bool_attr] else 'no'
