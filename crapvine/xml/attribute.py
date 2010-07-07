@@ -181,6 +181,8 @@ class BoolAttr(BaseAttr):
 			final_set = True
 		elif value == 'no':
 			final_set = False
+		elif value == 'False':
+			final_set = False
 		elif value:
 			final_set = True
 		setattr(instance, self.inst_attr, final_set)
