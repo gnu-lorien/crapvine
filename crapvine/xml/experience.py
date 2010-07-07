@@ -119,7 +119,7 @@ class ExperienceEntry(Attributed):
 	date_attrs = ['date']
 
 	def get_xml(self, indent=''):
-		return '%s<entry %s/>' % (indent, self.get_attrs_xml())
+		return '%s<entry %s/>' % (indent, self.get_attrs_xml(include_defaults=True))
 	def __str__(self):
 		return self.get_xml()
 
