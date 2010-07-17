@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <grapevine version="3">
-  <vampire name="VampireDefaultCategories" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" status="Active" startdate="7/17/2010 3:16:45 PM" lastmodified="7/17/2010 3:17:35 PM">
+  <vampire name="VampireDefaultCategories" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" status="Active" startdate="7/17/2010 3:16:45 PM" lastmodified="7/17/2010 3:42:39 PM">
     <experience unspent="0" earned="0"/>
     <traitlist name="Physical" abc="yes" display="1">
       <trait name="Aggressive"/>
@@ -62,5 +62,15 @@
     </traitlist>
     <traitlist name="Equipment" abc="yes" display="1"/>
     <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <boon type="Trivial Boon" partner="VampireDefaultCategories" owed="no" date="7/17/2010">
+      <description>
+        <![CDATA[This boon is owed for HA]]>
+      </description>
+    </boon>
+    <boon type="Trivial Boon" partner="VampireDefaultCategories" owed="yes" date="7/17/2010">
+      <description>
+        <![CDATA[This boon is owed for HA]]>
+      </description>
+    </boon>
   </vampire>
 </grapevine>
