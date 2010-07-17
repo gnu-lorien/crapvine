@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <vampire name="VampireDefaultCategories" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" status="Active" startdate="7/17/2010 3:16:45 PM" lastmodified="7/17/2010 3:17:35 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1">
+      <trait name="Aggressive"/>
+    </traitlist>
+    <traitlist name="Social" abc="yes" display="1">
+      <trait name="Alluring"/>
+    </traitlist>
+    <traitlist name="Mental" abc="yes" display="1">
+      <trait name="Alert"/>
+    </traitlist>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1">
+      <trait name="Clumsy"/>
+    </traitlist>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1">
+      <trait name="Bestial"/>
+    </traitlist>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1">
+      <trait name="Deceitful"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1">
+      <trait name="Acknowledged"/>
+    </traitlist>
+    <traitlist name="Abilities" abc="yes" display="1">
+      <trait name="Academics"/>
+    </traitlist>
+    <traitlist name="Influences" abc="yes" display="1">
+      <trait name="Bureaucracy"/>
+    </traitlist>
+    <traitlist name="Backgrounds" abc="yes" display="1">
+      <trait name="Allies"/>
+    </traitlist>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Torpor"/>
+    </traitlist>
+    <traitlist name="Bonds" abc="yes" display="1">
+      <trait name="VampireDefaultCategories"/>
+    </traitlist>
+    <traitlist name="Miscellaneous" abc="no" display="1">
+      <trait name="Clan Status: Brujah"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5">
+      <trait name="Acute Sanguinary Aversion" val="2"/>
+    </traitlist>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="5">
+      <trait name="Animalism: Feral Whispers" val="3" note="basic"/>
+    </traitlist>
+    <traitlist name="Rituals" abc="no" atomic="yes" display="5">
+      <trait name="Basic: Banish Big Brother" val="2"/>
+    </traitlist>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4">
+      <trait name="Ability Aptitude"/>
+    </traitlist>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4">
+      <trait name="Absent-Minded" val="2-3"/>
+    </traitlist>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </vampire>
+</grapevine>
