@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<grapevine version="3">
+  <changeling name="Changeling" glamour="4" banality="3" willpower="2" physicalmax="11" status="Active" startdate="7/15/2010 5:35:47 PM" lastmodified="7/15/2010 5:35:47 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Arts" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Realms" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </changeling>
+  <demon name="Demon" torment="3" faith="3" willpower="4" conscience="1" conviction="1" courage="1" physicalmax="11" status="Active" startdate="7/15/2010 5:36:16 PM" lastmodified="7/15/2010 5:36:16 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Lores" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Apocalyptic Form" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </demon>
+  <fera name="Fera" rage="3" gnosis="3" willpower="3" honor="0" temphonor="0" glory="0" tempglory="0" wisdom="0" tempwisdom="0" physicalmax="11" status="Active" startdate="7/15/2010 5:36:00 PM" lastmodified="7/15/2010 5:36:00 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Honor" abc="yes" display="1"/>
+    <traitlist name="Glory" abc="yes" display="1"/>
+    <traitlist name="Wisdom" abc="yes" display="1"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Location" abc="yes" atomic="yes" display="5"/>
+  </fera>
+  <hunter name="Hunter" conviction="3" willpower="3" mercy="0" vision="0" zeal="0" physicalmax="11" status="Active" startdate="7/15/2010 5:35:51 PM" lastmodified="7/15/2010 5:35:51 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Edges" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </hunter>
+  <kueijin name="Kuei-Jin" hun="1" po="3" yinchi="1" yangchi="1" demonchi="1" dharmatraits="1" willpower="1" physicalmax="11" status="Active" startdate="7/15/2010 5:36:06 PM" lastmodified="7/15/2010 5:36:06 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Torpor"/>
+    </traitlist>
+    <traitlist name="Guanxi" abc="yes" display="1"/>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </kueijin>
+  <mage name="Mage" willpower="2" arete="1" quintessence="0" paradox="0" physicalmax="11" status="Active" startdate="7/15/2010 5:35:38 PM" lastmodified="7/15/2010 5:35:38 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Resonance" abc="yes" display="1"/>
+    <traitlist name="Reputation" abc="yes" display="1"/>
+    <traitlist name="Spheres" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rotes" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mage>
+  <mortal name="Mortal" willpower="2" humanity="1" conscience="1" selfcontrol="1" courage="1" blood="0" truefaith="0" physicalmax="11" status="Active" startdate="7/15/2010 5:35:56 PM" lastmodified="7/15/2010 5:35:56 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Numina" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mortal>
+  <mummy name="Mummy" willpower="5" sekhem="1" balance="1" memory="1" integrity="1" joy="1" ba="5" ka="5" physicalmax="11" status="Active" startdate="7/15/2010 5:36:10 PM" lastmodified="7/15/2010 5:36:10 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Humanity" abc="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+      <trait name="Dead" val="2"/>
+    </traitlist>
+    <traitlist name="Hekau" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Spells" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rituals" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </mummy>
+  <vampire name="Vampire" generation="13" blood="10" willpower="2" conscience="1" selfcontrol="1" courage="1" pathtraits="1" physicalmax="11" status="Active" startdate="7/15/2010 5:35:04 PM" lastmodified="7/15/2010 5:35:04 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Torpor"/>
+    </traitlist>
+    <traitlist name="Bonds" abc="yes" display="1"/>
+    <traitlist name="Miscellaneous" abc="no" display="1"/>
+    <traitlist name="Derangements" abc="yes" atomic="yes" negative="yes" display="5"/>
+    <traitlist name="Disciplines" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rituals" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </vampire>
+  <various name="Various" physicalmax="11" status="Active" startdate="7/15/2010 5:36:22 PM" lastmodified="7/15/2010 5:36:22 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Tempers" abc="yes" display="2">
+      <trait name="Essence"/>
+      <trait name="Gnosis"/>
+      <trait name="Rage"/>
+      <trait name="Willpower"/>
+    </traitlist>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Powers" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </various>
+  <werewolf name="Wereworlf" rage="3" gnosis="3" willpower="3" honor="0" temphonor="0" glory="0" tempglory="0" wisdom="0" tempwisdom="0" physicalmax="11" status="Active" startdate="7/15/2010 5:35:34 PM" lastmodified="7/15/2010 5:35:34 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Health Levels" abc="no" display="1">
+      <trait name="Healthy" val="2"/>
+      <trait name="Bruised" val="3"/>
+      <trait name="Wounded" val="2"/>
+      <trait name="Incapacitated"/>
+      <trait name="Mortally Wounded"/>
+    </traitlist>
+    <traitlist name="Features" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Gifts" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Rites" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Honor" abc="yes" display="1"/>
+    <traitlist name="Glory" abc="yes" display="1"/>
+    <traitlist name="Wisdom" abc="yes" display="1"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+  </werewolf>
+  <wraith name="Wraith" ethnos="Wraith" pathos="2" corpus="2" willpower="2" angst="2" physicalmax="11" status="Active" startdate="7/15/2010 5:35:42 PM" lastmodified="7/15/2010 5:35:42 PM">
+    <experience unspent="0" earned="0"/>
+    <traitlist name="Physical" abc="yes" display="1"/>
+    <traitlist name="Social" abc="yes" display="1"/>
+    <traitlist name="Mental" abc="yes" display="1"/>
+    <traitlist name="Negative Physical" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Social" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Negative Mental" abc="yes" negative="yes" display="1"/>
+    <traitlist name="Abilities" abc="yes" display="1"/>
+    <traitlist name="Backgrounds" abc="yes" display="1"/>
+    <traitlist name="Status" abc="yes" display="1"/>
+    <traitlist name="Influences" abc="yes" display="1"/>
+    <traitlist name="Arcanoi" abc="no" atomic="yes" display="5"/>
+    <traitlist name="Merits" abc="yes" atomic="yes" display="4"/>
+    <traitlist name="Flaws" abc="yes" atomic="yes" negative="yes" display="4"/>
+    <traitlist name="Equipment" abc="yes" display="1"/>
+    <traitlist name="Locations" abc="yes" atomic="yes" display="5"/>
+    <traitlist name="Thorns" abc="yes" atomic="yes" negative="yes" display="4"/>
+  </wraith>
+</grapevine>
